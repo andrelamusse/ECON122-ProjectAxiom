@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NWU ECON122 • Project Axiom Active Assessment Engine</title>
+  
+  <!-- Typography & Styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/axiom.css">
+
+  <!-- KaTeX Mathematical Notation (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation & Status Chrome -->
+  <header>
+    <div class="header-bar">
+      <div class="brand-group">
+        <span class="brand-name">NWU ECON122</span>
+        <span class="exam-tag">Blind Assessment Testbed</span>
+      </div>
+      <div class="stats-group">
+        <button class="mode-toggle-btn" id="modeToggleBtn">Mode: Practice (Instant Feedback)</button>
+        <div class="timer-pill">
+          <span>⏱️</span>
+          <span id="timerDisplay">45:00</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Assessment Workspace -->
+  <main class="main-wrapper">
+    
+    <!-- Sidebar Question Palette -->
+    <aside class="sidebar-panel">
+      <div class="sidebar-title">
+        <span>Question Palette</span>
+        <span id="paletteCount">23 Questions</span>
+      </div>
+      <div class="question-grid" id="questionGrid"></div>
+      
+      <div class="action-btn-block">
+        <button class="primary-btn" id="submitExamBtn">Submit Completed Assessment</button>
+      </div>
+    </aside>
+
+    <!-- Question View Area -->
+    <section class="content-panel">
+      <div class="question-card" id="questionCard">
+        <div class="q-header-row">
+          <div>
+            <span class="q-num-label" id="currentQNum">Question 1 of 23</span>
+            <span class="q-marks-label" id="currentMarks">[2 Marks]</span>
+          </div>
+          <button class="flag-btn" id="flagBtn">🏳️ Flag for Review</button>
+        </div>
+
+        <!-- Bilingual Question Stems -->
+        <div class="stem-text-en" id="stemEn">Loading question stem...</div>
+        <div class="stem-text-af" id="stemAf">Laai vraagteks...</div>
+
+        <!-- Interactive Answer Canvas / Options / Calc -->
+        <div id="interactiveArea"></div>
+
+        <!-- Instant Feedback Box (Practice Mode) -->
+        <div id="feedbackContainer"></div>
+
+        <!-- Navigation Buttons -->
+        <div style="display: flex; justify-content: space-between; margin-top: 2rem; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+          <button class="secondary-btn" id="prevBtn">← Previous Question</button>
+          <button class="primary-btn" id="nextBtn">Next Question →</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Discreet Greyscale Transparent Sources & Credits Footer -->
+  <footer>
+    <div id="telemetry-badge" style="font-size: 0.72rem; color: var(--text-faint); margin-bottom: 0.75rem; font-family: var(--font-mono);">
+      Connecting to telemetry cluster...
+    </div>
+    <div class="credits-block">
+      Project Axiom • Academic Simulation Environment • Standardized Examination Framework • North-West University Curricular Calibration • All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Core State & Engine Scripts -->
+  <script src="js/telemetry.js"></script>
+  <script src="js/canvas-engine.js"></script>
+  <script src="js/questions-db.js"></script>
+  <script src="js/exam-engine.js"></script>
+</body>
+</html>
