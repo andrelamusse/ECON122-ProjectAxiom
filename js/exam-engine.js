@@ -17,6 +17,8 @@ class AxiomExamEngine {
     this.flagged = new Set();
     this.canvasEngines = {};
 
+    this.lastRenderedQId = null;
+    this.lastAnswerAttempt = {};
     this.initUI();
     this.startNewAssessment();
   }
@@ -186,10 +188,21 @@ class AxiomExamEngine {
       this.renderCanvasInterface(q, interactiveArea);
     }
 
-    // Feedback Display
+    // Feedback Display with Top-Stacking & Question-Switch Handling
     const fbContainer = document.getElementById('feedbackContainer');
+    const isQuestionSwitch = (this.lastRenderedQId !== q.id);
+    this.lastRenderedQId = q.id;
+
     if (this.mode === 'practice' && this.userAnswers[q.id] !== undefined) {
-      this.showFeedback(q, fbContainer);
+      if (isQuestionSwitch) {
+        fbContainer.innerHTML = '';
+        this.showFeedback(q, fbContainer);
+      } else {
+        if (this.lastAnswerAttempt[q.id] !== this.userAnswers[q.id]) {
+          this.showFeedback(q, fbContainer);
+        }
+      }
+      this.lastAnswerAttempt[q.id] = this.userAnswers[q.id];
     } else {
       fbContainer.innerHTML = '';
     }
@@ -235,6 +248,7 @@ class AxiomExamEngine {
         </div>
       `;
       row.addEventListener('click', () => {
+        if (this.userAnswers[q.id] === opt.key) return;
         this.recordAnswer(q.id, opt.key);
         this.renderQuestion();
       });
@@ -392,8 +406,25 @@ class AxiomExamEngine {
       }
     }
 
+    // Schedule 5-second fadeout on all previous attempt cards
+    const previousCards = container.querySelectorAll('.feedback-box:not(.fading-out)');
+    previousCards.forEach(card => {
+      card.removeAttribute('data-latest');
+      if (!card.dataset.fadeTimerSet) {
+        card.dataset.fadeTimerSet = 'true';
+        setTimeout(() => {
+          card.classList.add('fading-out');
+          setTimeout(() => {
+            if (card.parentNode) card.remove();
+          }, 600);
+        }, 5000); // 5 seconds
+      }
+    });
+
+    // Create newest feedback card
     const box = document.createElement('div');
     box.className = `feedback-box ${isCorrect ? 'correct' : 'incorrect'}`;
+    box.setAttribute('data-latest', 'true');
     box.innerHTML = `
       <div class="fb-heading" style="color: ${isCorrect ? 'var(--accent-emerald)' : 'var(--accent-rose)'};">
         ${isCorrect ? '✅ Correct Solution' : '❌ Incorrect Assessment'} • Marks: ${earnedMarks} / ${q.marks}
@@ -404,7 +435,23 @@ class AxiomExamEngine {
         ${q.derivation_en}
       </div>
     `;
-    container.appendChild(box);
+
+    // Prepend so the latest attempt is placed at the top and stays!
+    container.prepend(box);
+
+    if (window.AxiomMath) {
+      window.AxiomMath.renderElement(box);
+    } else if (window.renderMathInElement) {
+      renderMathInElement(box, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '\(', right: '\)', display: false},
+          {left: '\[', right: '\]', display: true},
+          {left: '$', right: '$', display: false}
+        ],
+        throwOnError: false
+      });
+    }
   }
 
   submitExam() {

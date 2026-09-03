@@ -1235,3 +1235,48 @@ header {
   background: linear-gradient(90deg, #111a30 0%, #1a284a 50%, #111a30 100%);
   color: #fce18b;
 }
+
+/* Dynamic Feedback Stack with 5-Second Fadeout & Top Placement */
+#feedbackContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.feedback-box {
+  background: var(--bg-subtle);
+  border-left: 4px solid var(--accent-azure);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.35rem;
+  box-sizing: border-box;
+  max-height: 800px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.55s ease, max-height 0.55s ease, margin 0.55s ease, padding 0.55s ease, transform 0.55s ease;
+  animation: feedbackSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes feedbackSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feedback-box.fading-out {
+  opacity: 0 !important;
+  max-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-width: 0 !important;
+  transform: translateY(-8px) scale(0.97);
+  pointer-events: none;
+}
