@@ -1338,7 +1338,10 @@ header {
   background: var(--bg-surface);
   border: 1.5px solid var(--accent-gold);
   border-radius: var(--radius-lg);
-  max-width: 500px;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
   width: 100%;
   padding: 1.75rem;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
@@ -1347,6 +1350,38 @@ header {
 }
 .feedback-modal-backdrop.open .feedback-card, .glossary-modal-backdrop.open .glossary-card {
   transform: translateY(0);
+}
+
+.axiom-matrix-table u,
+.glossary-card u {
+  text-decoration: underline 2px solid var(--accent-gold);
+  text-underline-offset: 3px;
+  font-weight: 700;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+[data-theme="light"] .axiom-matrix-table u,
+[data-theme="light"] .glossary-card u {
+  text-decoration: underline 2px solid #b45309;
+  text-underline-offset: 3px;
+  font-weight: 700;
+  color: #92400e;
+  background: rgba(180, 83, 9, 0.08);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.glossary-card strong, .glossary-card b {
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+[data-theme="light"] .glossary-card strong, [data-theme="light"] .glossary-card b {
+  color: #92400e;
+  font-weight: 700;
 }
 
 /* Glossary & Feedback Modal Components */
@@ -1365,6 +1400,88 @@ header {
   font-weight: 800;
   letter-spacing: 0.02em;
   color: var(--accent-gold);
+}
+
+.glossary-memo-notice {
+  background: rgba(56, 189, 248, 0.08);
+  border-left: 3px solid var(--accent-azure);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.memo-badge {
+  font-weight: 700;
+  color: var(--accent-azure);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.glossary-lang-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.glossary-lang-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.35rem;
+}
+
+.exam-tag-sm {
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.glossary-def-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-main);
+}
+
+.glossary-def-text-af {
+  font-size: 0.88rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.glossary-ref-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-azure);
+}
+
+#glossaryDoneBtn {
+  min-height: 44px;
 }
 
 .glossary-close-btn, #glossaryCloseBtn {
@@ -1432,19 +1549,52 @@ header {
   display: inline;
   white-space: normal;
   transition: all 0.2s;
-  padding: 0 1px;
+  padding: 1px 3px;
+  border-radius: var(--radius-xs);
+  touch-action: manipulation;
+}
+.glossary-term:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+  background: var(--accent-gold-glow);
+  border-radius: var(--radius-xs);
 }
 .glossary-icon {
   display: inline-block;
-  font-size: 0.82em;
-  margin-left: 2px;
-  margin-right: 2px;
+  font-size: 0.85em;
+  margin-left: 3px;
+  margin-right: 1px;
   vertical-align: middle;
   line-height: 1;
 }
 .glossary-term:hover {
   background: var(--accent-gold-glow);
   border-bottom-style: solid;
+}
+.term-col .glossary-term {
+  display: inline-block;
+  padding: 2px 4px;
+}
+.chain-node .glossary-term {
+  color: inherit;
+  border-bottom: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+[data-theme="light"] .glossary-term {
+  color: #8c6007;
+  border-bottom-color: #b3861b;
+}
+[data-theme="light"] .glossary-term:focus-visible {
+  outline-color: #8c6007;
+  background: rgba(179, 134, 27, 0.15);
+}
+[data-theme="light"] .glossary-term:hover {
+  background: rgba(179, 134, 27, 0.12);
 }
 
 /* SVG Diagrams */

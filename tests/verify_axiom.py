@@ -166,10 +166,14 @@ class AxiomVerificationHarness:
         # Check for correct double-backslash delimiter: r"left:\s*['\"]\\\\\(['\"]"
         double_bs_matches = re.findall(r"left:\s*['\"]\\[\\][\(\[]['\"]", html_raw)
 
-        # Also check axiom-math.js if present
+        # Also check axiom-math.js and exam-engine.js if present
         math_raw = self.loaded_raw_files.get("axiom_math", "")
         if math_raw:
             single_bs_matches.extend(re.findall(r"left:\s*['\"]\\[\(\[]['\"]", math_raw))
+        engine_raw = self.loaded_raw_files.get("exam_engine", "")
+        if engine_raw:
+            single_bs_matches.extend(re.findall(r"left:\s*['\"]\\[\(\[]['\"]", engine_raw))
+            double_bs_matches.extend(re.findall(r"left:\s*['\"]\\[\\][\(\[]['\"]", engine_raw))
 
         pass_1_3 = len(single_bs_matches) == 0 and len(double_bs_matches) > 0
         msg_1_3 = f"Found {len(single_bs_matches)} single-escaped delimiter bugs (expected 0) and {len(double_bs_matches)} double-escaped delimiters"
@@ -211,7 +215,7 @@ class AxiomVerificationHarness:
             msg_1_5 = "Question q14_15 not found in question bank"
         self.log_result(1, "T1_05_DISCIPLINARY_ACCURACY_Q14_15", "q14_15 accurately distinguishes Quasi-Money (R590 000m) from M2 (R1 195 000m)", pass_1_5, msg_1_5)
 
-        # 1.6 Glossary Database Completeness
+        # 1.6 Glossary Database Completeness & HTML Button Mapping
         glossary_raw = self.loaded_raw_files.get("glossary", "")
         required_terms = [
             "fiduciary_money",
@@ -221,12 +225,70 @@ class AxiomVerificationHarness:
             "credit_multiplier",
             "pure_public_good",
             "free_rider_problem",
-            "pigouvian_tax"
+            "pigouvian_tax",
+            "money",
+            "narrow_money_m1",
+            "quasi_money",
+            "intermediate_money_m2",
+            "broad_money_m3",
+            "cash_reserve_requirement",
+            "prime_rate",
+            "active_balances",
+            "speculative_balances",
+            "market_failure",
+            "non_rivalry",
+            "non_excludability",
+            "common_property_resources",
+            "negative_externality",
+            "marginal_external_cost",
+            "marginal_social_cost",
+            "deadweight_loss",
+            "progressive_tax",
+            "proportional_tax",
+            "regressive_tax",
+            "fiscal_drag",
+            "budget_deficit",
+            "crowding_out",
+            "inflation",
+            "cpi_basket",
+            "headline_inflation",
+            "core_inflation",
+            "gdp_deflator",
+            "demand_pull_inflation",
+            "cost_push_inflation",
+            "stagflation",
+            "inflation_targeting",
+            "real_interest_rate",
+            "redistribution_effects"
         ]
         missing_terms = [t for t in required_terms if t not in glossary_raw]
-        pass_1_6 = len(missing_terms) == 0
-        msg_1_6 = f"All {len(required_terms)} key terminology items present" if pass_1_6 else f"Missing terms: {missing_terms}"
-        self.log_result(1, "T1_06_GLOSSARY_DATABASE_INTEGRITY", "Interactive Glossary contains core Chapter 14, 15, and 20 terminology", pass_1_6, msg_1_6, {"missing": missing_terms})
+        html_terms = set(re.findall(r'data-term="([^"]+)"', html_raw))
+        unmapped_html_terms = [t for t in html_terms if f'"{t}":' not in glossary_raw]
+        has_underlined_keywords = "<u>" in glossary_raw and "</u>" in glossary_raw
+        
+        # Comprehensive Button Audit: all <button> tags must have explicit type attribute
+        raw_buttons = re.findall(r'<button\b([^>]*)>', html_raw)
+        buttons_missing_type = [b for b in raw_buttons if 'type=' not in b]
+        
+        # Accessible Glossary Button Audit: all .glossary-term elements must have role, tabindex, aria-haspopup
+        raw_glossary_spans = re.findall(r'<[^>]*class="[^"]*glossary-term[^"]*"([^>]*)>', html_raw)
+        inaccessible_glossary_spans = [s for s in raw_glossary_spans if 'role="button"' not in s or 'tabindex=' not in s or 'aria-haspopup=' not in s]
+
+        pass_1_6 = (
+            len(required_terms) == 42 and
+            len(missing_terms) == 0 and
+            len(unmapped_html_terms) == 0 and
+            has_underlined_keywords and
+            len(buttons_missing_type) == 0 and
+            len(inaccessible_glossary_spans) == 0 and
+            len(raw_glossary_spans) >= 42
+        )
+        msg_1_6 = (
+            f"All {len(required_terms)} key terminology items present with underlined keywords, {len(raw_glossary_spans)} accessible definition buttons & 100% button type parity"
+            if pass_1_6 else
+            f"Missing: {missing_terms}, Unmapped: {unmapped_html_terms}, Missing types: {len(buttons_missing_type)}, Inaccessible spans: {len(inaccessible_glossary_spans)}"
+        )
+        self.log_result(1, "T1_06_GLOSSARY_DATABASE_INTEGRITY", "Interactive Glossary contains core Chapter 14, 15, and 20 terminology with accessible definition buttons", pass_1_6, msg_1_6, {"missing": missing_terms, "unmapped_html": unmapped_html_terms, "buttons_missing_type": len(buttons_missing_type), "inaccessible_glossary_spans": len(inaccessible_glossary_spans)})
 
         # 1.7 SVG Diagram Mathematical Subscripts
         # Check that SVG diagram labels use <tspan> or Unicode rather than raw underscores like M_s or M_d

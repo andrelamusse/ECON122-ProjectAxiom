@@ -33,8 +33,8 @@
         </div>
         
         <div class="view-tabs">
-          <button class="tab-btn active" id="tabAssessmentBtn">📝 Assessment Mode</button>
-          <button class="tab-btn" id="tabSummaryBtn">📖 Executive Summary</button>
+          <button type="button" class="tab-btn active" id="tabAssessmentBtn">📝 Assessment Mode</button>
+          <button type="button" class="tab-btn" id="tabSummaryBtn">📖 Executive Summary</button>
         </div>
       </div>
 
@@ -61,13 +61,13 @@
           </select>
         </div>
 
-        <button class="icon-action-btn" id="newTestBtn" title="Generate New Shuffled Test">🔀 New Test</button>
+        <button type="button" class="icon-action-btn" id="newTestBtn" title="Generate New Shuffled Test">🔀 New Test</button>
       </div>
 
       <!-- Stats & Theme Controls -->
       <div class="stats-group">
-        <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode">🌓 Theme</button>
-        <button class="mode-toggle-btn" id="modeToggleBtn">Practice Mode</button>
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode">🌓 Theme</button>
+        <button type="button" class="mode-toggle-btn" id="modeToggleBtn">Practice Mode</button>
         <div class="timer-pill" id="timerPill">
           <span>⏱️</span>
           <span id="timerDisplay">37:30</span>
@@ -83,7 +83,7 @@
     <!-- Sidebar Question Palette -->
     <aside class="sidebar-panel">
       <!-- Mobile accordion toggle -->
-      <div class="palette-toggle-bar" id="paletteToggleBar">
+      <div class="palette-toggle-bar" id="paletteToggleBar" tabindex="0" role="button" aria-expanded="false" aria-controls="questionGrid" aria-label="Toggle Question Navigator">
         <span>📋 Question Navigator</span>
         <span id="paletteCollapseIcon">▼</span>
       </div>
@@ -96,7 +96,7 @@
       <div class="question-grid" id="questionGrid"></div>
       
       <div class="action-btn-block">
-        <button class="primary-btn" id="submitExamBtn">Submit Completed Assessment</button>
+        <button type="button" class="primary-btn" id="submitExamBtn">Submit Completed Assessment</button>
       </div>
     </aside>
 
@@ -108,7 +108,7 @@
             <span class="q-num-label" id="currentQNum">Question 1 of 25</span>
             <span class="q-marks-label" id="currentMarks">[2 Marks • Exam Standard]</span>
           </div>
-          <button class="flag-btn" id="flagBtn">🏳️ Flag for Review</button>
+          <button type="button" class="flag-btn" id="flagBtn">🏳️ Flag for Review</button>
         </div>
 
         <!-- Bilingual Question Stems -->
@@ -123,8 +123,8 @@
 
         <!-- Navigation Buttons -->
         <div style="display: flex; justify-content: space-between; margin-top: 1.75rem; border-top: 1px solid var(--border-subtle); padding-top: 1.15rem; flex-wrap: wrap; gap: 0.5rem;">
-          <button class="secondary-btn" id="prevBtn">← Previous Question</button>
-          <button class="primary-btn" id="nextBtn">Next Question →</button>
+          <button type="button" class="secondary-btn" id="prevBtn">← Previous Question</button>
+          <button type="button" class="primary-btn" id="nextBtn">Next Question →</button>
         </div>
       </div>
     </section>
@@ -161,7 +161,7 @@
         <!-- Section 1.1: Tabular Definition Matrix -->
         <div class="section-subtitle-bar">
           <h3 class="section-subtitle">📋 Tabular Definition Matrix: Core Monetary Concepts</h3>
-          <span class="section-badge">12 Formal Terms • Mohr Ch. 14</span>
+          <span class="section-badge">14 Formal Terms • Mohr Ch. 14</span>
         </div>
         <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0 0 1rem 0; line-height: 1.6;">
           Publication-grade terminology reference. Interactive gold terms open the bilingual academic glossary with English and Afrikaans definitions.
@@ -180,11 +180,11 @@
             <tbody>
               <tr>
                 <td class="term-col">
-                  <strong>Money / Geld</strong>
+                  <strong><span class="glossary-term" data-term="money" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Money / Geld <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(M\)</span>
                 </td>
                 <td class="def-col">
-                  Any commodity or asset generally accepted by the public as payment for goods and services or in the legal discharge of debt and financial obligations.
+                  <u>Any commodity or asset generally accepted</u> by the public as payment for goods and services or in the legal discharge of debt, performing three non-negotiable functions: a <u>medium of exchange</u>, a <u>unit of account</u>, and a <u>store of value</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Medium of exchange</span>, <span class="kw-highlight">unit of account</span>, <span class="kw-highlight">store of value</span>.
@@ -193,11 +193,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="fiduciary_money">Fiduciary (Fiat) Money <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="fiduciary_money" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Fiduciary (Fiat) Money <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: Paper &amp; Coin</span>
                 </td>
                 <td class="def-col">
-                  Currency that possesses zero intrinsic commercial value (paper notes, base coins, bank ledger bits) whose value derives exclusively from public trust and state legal tender status.
+                  Money that is <u>intrinsically worthless</u> (paper notes, base metal coins, digital bits) but derives its economic value from <u>public trust</u> and the legal status conferred upon it by the state as <u>legal tender</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Intrinsically worthless</span>, <span class="kw-highlight">public trust</span>, <span class="kw-highlight">legal tender</span>.
@@ -206,11 +206,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Narrow Money (M1)</strong>
+                  <strong><span class="glossary-term" data-term="narrow_money_m1" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Narrow Money (M1) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(M_1\)</span>
                 </td>
                 <td class="def-col">
-                  The primary transactional money aggregate comprising notes and coins in active circulation outside the banking sector plus all check and transmission (demand) deposits of domestic private entities with commercial banks.
+                  The primary transactional money aggregate comprising <u>cash (notes and coins in active circulation</u> outside the banking sector) plus all <u>checkable and transmission (demand) deposits</u> of the domestic private sector held with commercial banks.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Cash outside banks</span>, <span class="kw-highlight">demand deposits</span>, <span class="kw-highlight">immediate transaction liquidity</span>.
@@ -219,11 +219,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="quasi_money">Quasi-Money (Near Money) <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="quasi_money" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Quasi-Money (Near Money) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(QM\)</span>
                 </td>
                 <td class="def-col">
-                  Short-term and medium-term deposits (including ordinary savings accounts) held by the private sector with banking institutions that serve as a store of value and can be converted into transaction money rapidly at negligible cost.
+                  <u>Short-term and medium-term deposits</u> (including ordinary savings deposits) held by the private sector with commercial banks that serve as a <u>store of value</u> and can be <u>converted into transaction money (\(M_1\)) rapidly at negligible cost</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Short- &amp; medium-term deposits</span>, <span class="kw-highlight">near-money liquidity</span>, <span class="kw-highlight">store of value</span>.
@@ -232,11 +232,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Intermediate Money (M2)</strong>
+                  <strong><span class="glossary-term" data-term="intermediate_money_m2" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Intermediate Money (M2) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(M_2\)</span>
                 </td>
                 <td class="def-col">
-                  An intermediate monetary aggregate defined mathematically as narrow money supply plus quasi-money: \(M_2 = M_1 + \text{Quasi-Money}\) (short-term and medium-term commercial bank deposits).
+                  An intermediate monetary aggregate defined as <u>narrow money (\(M_1\)) plus quasi-money</u>: \(M_2 = M_1 + \text{Quasi-Money}\) (short-term and medium-term commercial bank deposits).
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">\(M_1\) + Quasi-Money</span>, <span class="kw-highlight">intermediate liquidity</span>, <span class="kw-highlight">savings deposits</span>.
@@ -245,63 +245,76 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Broad Money (M3)</strong>
+                  <strong><span class="glossary-term" data-term="broad_money_m3" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Broad Money (M3) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(M_3\)</span>
                 </td>
                 <td class="def-col">
-                  The most comprehensive monetary aggregate recognized by the SARB, defined as \(M_2\) plus all long-term deposits with commercial banks; serves as the primary macro-prudential monetary indicator.
+                  The most comprehensive official South African monetary measure, defined mathematically as <u>\(M_2\) plus all long-term deposits</u> (maturities exceeding 6 months) of the domestic private sector with monetary banking institutions.
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">\(M_2\) + Long-term deposits</span>, <span class="kw-highlight">broadest aggregate</span>, <span class="kw-highlight">SARB anchor indicator</span>.
+                  <span class="kw-highlight">\(M_2\) + Long-term deposits</span>, <span class="kw-highlight">broadest aggregate</span>, <span class="kw-highlight">SARB anchor</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §14.1</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Cash Reserve Requirement</strong>
-                  <span class="term-symbol">Symbol: \(r\)</span>
+                  <strong><span class="glossary-term" data-term="credit_multiplier" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Credit (Deposit) Multiplier <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: \(m = 1/r\)</span>
                 </td>
                 <td class="def-col">
-                  The legally mandated statutory minimum fraction of total bank deposits that private commercial banks must deposit in non-interest-bearing accounts with the South African Reserve Bank.
+                  The factor by which the commercial banking system can <u>expand total bank deposits</u> for every unit of new cash reserves injected, expressed as \(m = \frac{1}{r}\) (where \(r\) is the <u>statutory cash reserve requirement ratio</u>).
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">Statutory minimum percentage</span>, <span class="kw-highlight">non-interest-bearing SARB vault reserve</span>, <span class="kw-highlight">credit governor</span>.
+                  <span class="kw-highlight">Expand total deposits</span>, <span class="kw-highlight">\(m = 1/r\)</span>, <span class="kw-highlight">statutory reserve ratio</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §14.2</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="repo_rate">Repurchase (Repo) Rate <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="cash_reserve_requirement" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Cash Reserve Requirement <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: \(r\)</span>
+                </td>
+                <td class="def-col">
+                  The <u>minimum percentage of total customer deposit liabilities</u> that commercial banks are legally mandated to hold as <u>non-interest-bearing cash reserves</u> in an operational account at the SARB (currently 2.5% in South Africa).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Statutory minimum %</span>, <span class="kw-highlight">non-interest-bearing SARB vault reserve</span>, <span class="kw-highlight">credit governor</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="repo_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Repurchase (Repo) Rate <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(i_{\text{repo}}\)</span>
                 </td>
                 <td class="def-col">
-                  The benchmark policy interest rate at which the SARB tenders liquidity to registered commercial banks at weekly repurchase auctions to cover their daily interbank liquidity shortage.
+                  The <u>benchmark policy interest rate</u> at which the South African Reserve Bank provides cash liquidity to commercial banks at <u>weekly refinancing auctions</u> to fund their <u>daily liquidity shortage</u>.
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">SARB benchmark policy rate</span>, <span class="kw-highlight">weekly repo auctions</span>, <span class="kw-highlight">liquidity deficit refinancing</span>.
+                  <span class="kw-highlight">SARB benchmark policy rate</span>, <span class="kw-highlight">weekly repo auctions</span>, <span class="kw-highlight">liquidity deficit</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §14.4</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Prime Overdraft Rate</strong>
+                  <strong><span class="glossary-term" data-term="prime_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Prime Overdraft Rate <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(i_{\text{prime}}\)</span>
                 </td>
                 <td class="def-col">
-                  The standard benchmark lending rate charged by private commercial banks to their most creditworthy corporate and retail borrowers, traditionally set in South Africa at 350 basis points above the repo rate (\(i_{\text{prime}} = i_{\text{repo}} + 3.50\%\)).
+                  The <u>benchmark commercial lending rate</u> charged by private banks to their most creditworthy corporate and private clients, established in South Africa by convention at <u>Repo Rate + 3.50%</u>.
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">Commercial bank benchmark lending rate</span>, <span class="kw-highlight">fixed spread over repo (+3.50%)</span>.
+                  <span class="kw-highlight">Commercial bank benchmark rate</span>, <span class="kw-highlight">fixed spread over repo (+3.50%)</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §14.4</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Active Cash Balances</strong>
+                  <strong><span class="glossary-term" data-term="active_balances" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Active Cash Balances (L1) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(L_1(Y)\)</span>
                 </td>
                 <td class="def-col">
-                  Money demanded by households and enterprises to bridge the temporal gap between income receipt and expenditure (transactions motive) and for unforeseen contingencies (precautionary motive); strictly a positive function of real national income \(Y\).
+                  Money demanded and held for the <u>transactions motive</u> and <u>precautionary motive</u>; determined directly by and a <u>positive function of national income (\(Y\))</u>: \(L_1 = f(Y)\), completely independent of the interest rate.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Transactions &amp; precautionary motives</span>, <span class="kw-highlight">positive function of income \(Y\)</span>, <span class="kw-highlight">interest-inelastic</span>.
@@ -310,11 +323,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="liquidity_preference">Speculative Balances <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="speculative_balances" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Speculative Balances (L2) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(L_2(i)\)</span>
                 </td>
                 <td class="def-col">
-                  Idle cash balances held as financial assets to take advantage of future expected movements in bond prices and interest rates; inversely related to the nominal interest rate \(i\).
+                  Money held as a liquid asset to take advantage of expected movements in bond prices and interest rates; an <u>inverse (negative) function of the market interest rate (\(i\))</u>: \(L_2 = f(i)\).
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Speculative asset demand</span>, <span class="kw-highlight">inverse function of interest rate \(i\)</span>, <span class="kw-highlight">opportunity cost of cash</span>.
@@ -323,11 +336,24 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="liquidity_trap">Liquidity Trap <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="liquidity_preference" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Liquidity Preference <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: \(M_d = L_1(Y) + L_2(i)\)</span>
+                </td>
+                <td class="def-col">
+                  Keynes's theory that individuals hold money for three distinct motives: <u>transactions motive</u> (\(L_1\)), <u>precautionary motive</u> (\(L_1\)), and <u>speculative motive</u> (\(L_2\)). Active balances \(L_1\) depend positively on <u>income (\(Y\))</u>, while passive balances \(L_2\) are inversely related to the <u>interest rate (\(i\))</u>.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Transactions &amp; precautionary (\(L_1\))</span>, <span class="kw-highlight">speculative (\(L_2\))</span>, <span class="kw-highlight">\(f(Y)\) and \(f(i)\)</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="liquidity_trap" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Liquidity Trap <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: Horizontal \(M_d\)</span>
                 </td>
                 <td class="def-col">
-                  A Keynesian market boundary where interest rates fall so low that the speculative demand for money becomes perfectly elastic; additional central bank liquidity injections are hoarded into idle cash rather than lowering interest rates.
+                  A macroeconomic situation where nominal interest rates are so low that the <u>speculative demand for money becomes perfectly elastic (horizontal)</u>. Further injections of money supply are <u>hoarded as cash</u>, rendering expansionary monetary policy <u>ineffective at lowering interest rates</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Infinitely elastic speculative demand</span>, <span class="kw-highlight">horizontal \(M_d\) segment</span>, <span class="kw-highlight">monetary policy impotence</span>.
@@ -367,7 +393,7 @@
             <div class="step-item">
               <span class="step-badge">Step 2</span>
               <div class="step-content">
-                <div class="step-header">Statutory Cash Reserve Retention</div>
+                <div class="step-header">Statutory Cash Reserve Retention: <span class="glossary-term" data-term="cash_reserve_requirement" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Cash Reserve Requirement <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
                   Assuming a statutory reserve requirement of \(r = 10\%\) (\(0.10\)), Bank A is legally required to hold \(\text{R}1\,000\) in reserve with the SARB. This leaves \(\text{R}9\,000\) as <em>excess loanable reserves</em>.
                 </div>
@@ -398,7 +424,7 @@
             <div class="step-item">
               <span class="step-badge">Step 5</span>
               <div class="step-content">
-                <div class="step-header">Theoretical Maximum Cumulative Money Creation</div>
+                <div class="step-header">Theoretical Maximum Cumulative Money Creation: <span class="glossary-term" data-term="credit_multiplier" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Credit Multiplier <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
                   Summing the infinite convergent series produces the maximum total deposit expansion:
                   <div class="equation-highlight" style="margin: 0.5rem 0;">
@@ -434,9 +460,9 @@
             <div class="step-item">
               <span class="step-badge">Step 1</span>
               <div class="step-content">
-                <div class="step-header">SARB MPC Policy Rate Decision</div>
+                <div class="step-header">SARB MPC Policy Rate Decision: <span class="glossary-term" data-term="repo_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Repo Rate <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
-                  To counteract rising demand-pull or wage-push inflation expectations, the SARB Monetary Policy Committee (MPC) raises the benchmark Repurchase (Repo) Rate (\(i_{\text{repo}} \uparrow\)) at its weekly Wednesday liquidity refinancing auction.
+                  To counteract rising demand-pull or wage-push inflation expectations, the SARB Monetary Policy Committee (MPC) raises the benchmark <span class="glossary-term" data-term="repo_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Repurchase (Repo) Rate <span class="glossary-icon">💡</span></span> (\(i_{\text{repo}} \uparrow\)) at its weekly Wednesday liquidity refinancing auction.
                 </div>
               </div>
             </div>
@@ -444,9 +470,9 @@
             <div class="step-item">
               <span class="step-badge">Step 2</span>
               <div class="step-content">
-                <div class="step-header">Interbank &amp; Prime Overdraft Pass-Through</div>
+                <div class="step-header">Interbank &amp; Prime Overdraft Pass-Through: <span class="glossary-term" data-term="prime_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Prime Rate <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
-                  Commercial banks face an immediate increase in the cost of refinancing their daily liquidity deficit at the SARB window. Within 24 hours, commercial banks pass on this cost by lifting the benchmark Prime Overdraft Rate (\(i_{\text{prime}} \uparrow = i_{\text{repo}} + 3.50\%\)) and floating deposit rates.
+                  Commercial banks face an immediate increase in the cost of refinancing their daily liquidity deficit at the SARB window. Within 24 hours, commercial banks pass on this cost by lifting the benchmark <span class="glossary-term" data-term="prime_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Prime Overdraft Rate <span class="glossary-icon">💡</span></span> (\(i_{\text{prime}} \uparrow = i_{\text{repo}} + 3.50\%\)) and floating deposit rates.
                 </div>
               </div>
             </div>
@@ -484,18 +510,18 @@
             <div class="step-item">
               <span class="step-badge">Step 6</span>
               <div class="step-content">
-                <div class="step-header">Disinflation &amp; Price Stability</div>
+                <div class="step-header">Disinflation &amp; Price Stability: <span class="glossary-term" data-term="headline_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Headline Inflation <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
-                  Firms face excess inventory and dampening demand, reducing their pricing power. Upward pressure on consumer prices dissipates, driving headline CPI inflation (\(\pi \downarrow\)) back toward the SARB 4.5% target midpoint.
+                  Firms face excess inventory and dampening demand, reducing their pricing power. Upward pressure on consumer prices dissipates, driving <span class="glossary-term" data-term="headline_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">headline CPI inflation <span class="glossary-icon">💡</span></span> (\(\pi \downarrow\)) back toward the SARB 4.5% target midpoint.
                 </div>
               </div>
             </div>
           </div>
 
           <div class="transmission-flow-chain">
-            <span class="chain-node">Repo Rate \(i_{\text{repo}} \uparrow\)</span>
+            <span class="chain-node"><span class="glossary-term" data-term="repo_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Repo Rate \(i_{\text{repo}} \uparrow\) <span class="glossary-icon">💡</span></span></span>
             <span class="chain-arrow">➔</span>
-            <span class="chain-node">Prime Rate \(i_{\text{prime}} \uparrow\)</span>
+            <span class="chain-node"><span class="glossary-term" data-term="prime_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Prime Rate \(i_{\text{prime}} \uparrow\) <span class="glossary-icon">💡</span></span></span>
             <span class="chain-arrow">➔</span>
             <span class="chain-node">Credit Cost \(\uparrow\)</span>
             <span class="chain-arrow">➔</span>
@@ -503,7 +529,7 @@
             <span class="chain-arrow">➔</span>
             <span class="chain-node">Aggregate Demand \(AD \downarrow\)</span>
             <span class="chain-arrow">➔</span>
-            <span class="chain-node">Inflation Rate \(\pi \downarrow\)</span>
+            <span class="chain-node"><span class="glossary-term" data-term="inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Inflation Rate \(\pi \downarrow\) <span class="glossary-icon">💡</span></span></span>
           </div>
         </div>
       </section>
@@ -523,7 +549,7 @@
         <!-- Section 2.1: Tabular Definition Matrix -->
         <div class="section-subtitle-bar">
           <h3 class="section-subtitle">📋 Tabular Definition Matrix: Public Sector &amp; Taxation Architecture</h3>
-          <span class="section-badge">16 Formal Terms • Mohr Ch. 15</span>
+          <span class="section-badge">17 Formal Terms • Mohr Ch. 15</span>
         </div>
         <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0 0 1rem 0; line-height: 1.6;">
           Publication-grade fiscal economics definitions distinguishing market failure modes, externality structures, equity criteria, and budgetary stances.
@@ -542,37 +568,37 @@
             <tbody>
               <tr>
                 <td class="term-col">
-                  <strong>Market Failure</strong>
+                  <strong><span class="glossary-term" data-term="market_failure" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Market Failure <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Allocative Inefficiency</span>
                 </td>
                 <td class="def-col">
-                  An economic situation in which the free, unhindered price mechanism fails to allocate scarce resources socially efficiently, yielding sub-optimal output and net deadweight social welfare loss.
+                  A failure of the unregulated free market mechanism to achieve <u>allocative efficiency</u>, occurring when <u>Marginal Social Benefit does not equal Marginal Social Cost (\(\text{MSB} \ne \text{MSC}\))</u>, resulting in social overproduction or underprovision of commodities.
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">Inefficient resource allocation</span>, <span class="kw-highlight">Pareto sub-optimal</span>, <span class="kw-highlight">welfare loss</span>.
+                  <span class="kw-highlight">Allocative efficiency</span>, <span class="kw-highlight">\(\text{MSB} \ne \text{MSC}\)</span>, <span class="kw-highlight">over-/underprovision</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §15.1</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="pure_public_good">Pure Public Good <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="pure_public_good" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Pure Public Good <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Non-Rival &amp; Non-Excludable</span>
                 </td>
                 <td class="def-col">
-                  A good or service displaying complete non-rivalry in consumption and complete non-excludability in access (e.g. national defense, flood warning systems, lighthouses, basic rule of law).
+                  A good characterized by both <u>non-rivalry in consumption</u> (one person's use does not diminish another's) and <u>non-excludability in access</u> (it is impossible or prohibitively costly to exclude non-payers from enjoying it).
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">Non-rival consumption</span>, <span class="kw-highlight">non-excludable access</span>, <span class="kw-highlight">zero marginal cost of extra user</span>.
+                  <span class="kw-highlight">Non-rivalry</span>, <span class="kw-highlight">non-excludability</span>, <span class="kw-highlight">zero marginal cost</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §15.2</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Non-Rivalry in Consumption</strong>
+                  <strong><span class="glossary-term" data-term="non_rivalry" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Non-Rivalry in Consumption <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Criterion 1 of Public Goods</span>
                 </td>
                 <td class="def-col">
-                  The property where one individual consuming or benefiting from a good does not in any way reduce the quantity, quality, or availability of that good for consumption by any other person.
+                  A condition where <u>one person's consumption of a good does not reduce the quantity or quality available</u> for consumption by others, meaning the marginal cost of admitting an additional consumer is strictly zero.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Undiminished availability</span>, <span class="kw-highlight">simultaneous consumption</span>, <span class="kw-highlight">MC = 0</span>.
@@ -581,11 +607,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Non-Excludability in Access</strong>
+                  <strong><span class="glossary-term" data-term="non_excludability" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Non-Excludability in Access <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Criterion 2 of Public Goods</span>
                 </td>
                 <td class="def-col">
-                  The technological or economic impossibility (or prohibitive cost) of preventing non-paying consumers from accessing, enjoying, or benefiting from the good once it has been produced.
+                  A property where it is <u>technically impossible or prohibitively expensive to prevent non-payers</u> from accessing and benefiting from a good or service once it has been provided.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Costly/impossible exclusion</span>, <span class="kw-highlight">open access</span>, <span class="kw-highlight">unpriced consumption</span>.
@@ -594,11 +620,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="free_rider_problem">Free-Rider Problem <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="free_rider_problem" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Free-Rider Problem <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Incentive Failure</span>
                 </td>
                 <td class="def-col">
-                  A market failure stemming directly from non-excludability wherein rational self-interested consumers withhold payment hoping others will pay, causing private firms to underprovide or totally fail to supply the good.
+                  A market incentive failure where rational individuals <u>consume a non-excludable good without contributing to its cost</u>, causing private competitive markets to <u>underprovide or completely fail to supply</u> the socially desirable good.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Consumption without payment</span>, <span class="kw-highlight">private market underprovision</span>, <span class="kw-highlight">necessitates tax funding</span>.
@@ -607,11 +633,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Common Property Resources</strong>
+                  <strong><span class="glossary-term" data-term="common_property_resources" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Common Property Resources <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Rival &amp; Non-Excludable</span>
                 </td>
                 <td class="def-col">
-                  Natural resources that are rival in consumption (depletable) but non-excludable in access (e.g. oceanic fisheries, shared communal grazing pasture), inexorably precipitating the Tragedy of the Commons.
+                  Environmental or natural resources that are <u>rival in consumption but non-excludable in access</u> (e.g. oceanic fish stocks or communal pastures), inevitably precipitating overexploitation (the <u>Tragedy of the Commons</u>).
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Rival but non-excludable</span>, <span class="kw-highlight">Tragedy of the Commons</span>, <span class="kw-highlight">resource depletion</span>.
@@ -620,11 +646,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="negative_externality">Negative Externality <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="negative_externality" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Negative Production Externality <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Spillover Cost (\(\text{MEC} > 0\))</span>
                 </td>
                 <td class="def-col">
-                  An uncompensated cost or damage imposed by producers or consumers on third parties who are not participants in the market transaction (e.g. factory sulfur emissions polluting regional water sources).
+                  An <u>uncompensated cost imposed on third parties</u> during production (such as environmental pollution), causing <u>Marginal Social Cost to exceed Marginal Private Cost (\(\text{MSC} > \text{MPC}\))</u>, leading the unregulated market to <u>overproduce</u> relative to the social optimum.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Uncompensated third-party cost</span>, <span class="kw-highlight">\(\text{MSC} > \text{MPC}\)</span>, <span class="kw-highlight">market overproduction</span>.
@@ -633,11 +659,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Marginal External Cost</strong>
+                  <strong><span class="glossary-term" data-term="marginal_external_cost" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Marginal External Cost <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(\text{MEC}\)</span>
                 </td>
                 <td class="def-col">
-                  The additional monetary damage and unpriced social harm inflicted on innocent third parties for each additional unit of physical output produced.
+                  The <u>uncompensated external cost or environmental damage inflicted on third parties</u> by producing one additional unit of output: \(\text{MEC} = \text{MSC} - \text{MPC}\).
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Damage per extra unit</span>, <span class="kw-highlight">vertical gap between MSC and MPC</span>.
@@ -646,11 +672,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Marginal Social Cost</strong>
+                  <strong><span class="glossary-term" data-term="marginal_social_cost" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Marginal Social Cost <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(\text{MSC} = \text{MPC} + \text{MEC}\)</span>
                 </td>
                 <td class="def-col">
-                  The true, complete opportunity cost to society of producing an additional unit of output, defined as private internal production costs plus the marginal external cost: \(\text{MSC} = \text{MPC} + \text{MEC}\).
+                  The <u>total cost to society</u> of producing one extra unit of output, defined mathematically as <u>Marginal Private Cost plus Marginal External Cost</u>: \(\text{MSC} = \text{MPC} + \text{MEC}\).
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Full social opportunity cost</span>, <span class="kw-highlight">\(\text{MPC} + \text{MEC}\)</span>.
@@ -659,11 +685,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="pigouvian_tax">Pigouvian Tax <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="pigouvian_tax" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Pigouvian Tax <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(t = \text{MEC}\)</span>
                 </td>
                 <td class="def-col">
-                  A specific per-unit corrective excise tax levied on polluters set equal to the Marginal External Cost at the socially optimum output level, forcing private firms to internalize the externality.
+                  A specific per-unit corrective tax set <u>exactly equal to the Marginal External Cost (\(t = \text{MEC}\))</u> levied on polluters to <u>internalize the externality</u>, shifting \(\text{MPC}\) up to \(\text{MSC}\) to restore the <u>social optimum</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Tax set equal to MEC</span>, <span class="kw-highlight">internalizes external cost</span>, <span class="kw-highlight">shifts MPC to MSC</span>.
@@ -672,24 +698,24 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="deadweight_loss">Deadweight Loss (DWL) <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="deadweight_loss" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Deadweight Loss (DWL) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(\text{DWL}\)</span>
                 </td>
                 <td class="def-col">
-                  The net loss of total economic welfare (combined consumer and producer surplus) caused by allocative distortion (such as uncorrected externalities or excise taxation) that is captured by no party.
+                  The <u>permanent loss of combined consumer and producer surplus</u> caused by market distortions, allocative inefficiency, or taxes that is <u>not recovered by any economic agent or the state</u>.
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">Permanent net surplus loss</span>, <span class="kw-highlight">allocative inefficiency</span>, <span class="kw-highlight">excess burden</span>.
+                  <span class="kw-highlight">Permanent net surplus loss</span>, <span class="kw-highlight">allocative distortion</span>, <span class="kw-highlight">excess burden</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §15.3</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="progressive_tax">Progressive Tax <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="progressive_tax" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Progressive Tax <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Criteria: \(\text{MTR} > \text{ATR}\)</span>
                 </td>
                 <td class="def-col">
-                  A tax structure wherein the Average Tax Rate (\(\text{ATR} = \frac{\text{Tax}}{\text{Income}}\)) increases as personal taxable income increases, ensuring wealthier taxpayers pay a higher proportion of income (e.g. SA PIT: 18% to 45%).
+                  A tax structure where the <u>Average Tax Rate increases as taxable income rises</u> (\(\text{MTR} > \text{ATR}\)), ensuring that <u>higher-income earners pay a proportionally larger percentage</u> of their income in tax (e.g. South African personal income tax).
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">ATR rises with income</span>, <span class="kw-highlight">MTR &gt; ATR</span>, <span class="kw-highlight">vertical equity</span>.
@@ -698,11 +724,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Proportional Tax</strong>
+                  <strong><span class="glossary-term" data-term="proportional_tax" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Proportional Tax <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Criteria: \(\text{MTR} = \text{ATR}\)</span>
                 </td>
                 <td class="def-col">
-                  A flat tax structure in which the Average Tax Rate remains constant regardless of income level, meaning tax liability increases in direct linear proportion to income (e.g. SA Corporate Income Tax at 27%).
+                  A tax system where the <u>Average Tax Rate remains constant</u> across all income levels (\(\text{MTR} = \text{ATR}\)), so that all income earners pay the <u>exact same percentage</u> of their taxable income (e.g. SA Corporate Income Tax at 27%).
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Constant ATR across all incomes</span>, <span class="kw-highlight">MTR = ATR</span>, <span class="kw-highlight">flat percentage</span>.
@@ -711,24 +737,24 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Regressive Tax</strong>
+                  <strong><span class="glossary-term" data-term="regressive_tax" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Regressive Tax <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Criteria: \(\text{MTR} < \text{ATR}\)</span>
                 </td>
                 <td class="def-col">
-                  A tax structure wherein the Average Tax Rate falls as income increases. While Value Added Tax (VAT at 15%) has a uniform statutory rate, it is economically regressive relative to income because poorer households consume a larger share of disposable earnings.
+                  A tax system where the <u>Average Tax Rate falls as taxable income rises</u> (\(\text{MTR} < \text{ATR}\)), placing a <u>proportionally heavier financial burden on low-income earners</u> (e.g. South African VAT at 15% or specific excise duties).
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">ATR falls as income rises</span>, <span class="kw-highlight">MTR &lt; ATR</span>, <span class="kw-highlight">disproportionate burden on poor</span>.
+                  <span class="kw-highlight">ATR falls as income rises</span>, <span class="kw-highlight">MTR &lt; ATR</span>, <span class="kw-highlight">burden on poor</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §15.4</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="fiscal_drag">Fiscal Drag (Bracket Creep) <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="fiscal_drag" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Fiscal Drag (Bracket Creep) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Inflation Tax Effect</span>
                 </td>
                 <td class="def-col">
-                  The automatic fiscal process whereby nominal wage increases push taxpayers into higher statutory income tax brackets during periods of inflation, elevating their real tax burden without any real increase in purchasing power.
+                  The automatic phenomenon where <u>inflation pushes nominal wages into higher statutory tax brackets</u> without an increase in real purchasing power, thereby <u>increasing the taxpayer's average tax rate</u> without any statutory rate increase.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Nominal wage inflation</span>, <span class="kw-highlight">higher statutory tax bracket</span>, <span class="kw-highlight">unlegislated tax hike</span>.
@@ -737,14 +763,27 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>National Budget Deficit</strong>
+                  <strong><span class="glossary-term" data-term="budget_deficit" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">National Budget Deficit <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Condition: \(G > T\)</span>
                 </td>
                 <td class="def-col">
-                  The annual fiscal shortfall occurring when total government expenditure (\(G\)) exceeds total tax and non-tax revenues (\(T\)) during a given fiscal year, necessitating public debt issuance by the National Treasury.
+                  A fiscal condition where <u>total government expenditures exceed total government tax revenues</u> (\(G > T\)) in a single fiscal year, requiring the Treasury to finance the gap through <u>public borrowing and bond issuance</u>.
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">Spending exceeds revenue</span>, <span class="kw-highlight">Treasury bond borrowing</span>, <span class="kw-highlight">accumulates sovereign debt</span>.
+                  <span class="kw-highlight">Spending exceeds revenue</span>, <span class="kw-highlight">Treasury bond borrowing</span>, <span class="kw-highlight">sovereign debt</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.5</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="crowding_out" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Crowding-Out Effect <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Mechanism: \(G \uparrow \rightarrow i \uparrow \rightarrow I \downarrow\)</span>
+                </td>
+                <td class="def-col">
+                  The reduction in <u>private consumption and investment spending</u> that occurs when large government budget deficits and increased state borrowing <u>bid up domestic market interest rates</u>.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Displaces private investment</span>, <span class="kw-highlight">deficit financing bids up \(i\)</span>, <span class="kw-highlight">neutralizes stimulus</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §15.5</span></td>
               </tr>
@@ -815,9 +854,9 @@
             <div class="step-item">
               <span class="step-badge">Step 5</span>
               <div class="step-content">
-                <div class="step-header">Fiscal Revenue vs Deadweight Loss Triangle</div>
+                <div class="step-header">Fiscal Revenue vs Deadweight Loss Triangle: <span class="glossary-term" data-term="deadweight_loss" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Deadweight Loss <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
-                  Government collects tax revenue of \(T = t \times Q_1\) (represented by the tax rectangle). Because market output contracts from \(Q_0\) to \(Q_1\), mutually beneficial trades are destroyed, creating a Harberger deadweight loss (DWL) triangle of lost consumer and producer surplus.
+                  Government collects tax revenue of \(T = t \times Q_1\) (represented by the tax rectangle). Because market output contracts from \(Q_0\) to \(Q_1\), mutually beneficial trades are destroyed, creating a Harberger <span class="glossary-term" data-term="deadweight_loss" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">deadweight loss (DWL) <span class="glossary-icon">💡</span></span> triangle of lost consumer and producer surplus.
                 </div>
               </div>
             </div>
@@ -841,9 +880,9 @@
             <div class="step-item">
               <span class="step-badge">Step 1</span>
               <div class="step-content">
-                <div class="step-header">Fiscal Stimulus / Budget Deficit Expansion</div>
+                <div class="step-header">Fiscal Stimulus / Budget Deficit Expansion: <span class="glossary-term" data-term="budget_deficit" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Budget Deficit <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
-                  Government implements expansionary fiscal spending or confronts a structural tax shortfall, creating or widening the national budget deficit (\(G > T\)).
+                  Government implements expansionary fiscal spending or confronts a structural tax shortfall, creating or widening the national <span class="glossary-term" data-term="budget_deficit" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">budget deficit <span class="glossary-icon">💡</span></span> (\(G > T\)).
                 </div>
               </div>
             </div>
@@ -881,7 +920,7 @@
             <div class="step-item">
               <span class="step-badge">Step 5</span>
               <div class="step-content">
-                <div class="step-header">Suppression of Private Investment (\(I \downarrow\))</div>
+                <div class="step-header">Suppression of Private Investment (\(I \downarrow\)): <span class="glossary-term" data-term="crowding_out" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Crowding Out <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
                   Private investment in physical capital, equipment, and residential construction is suppressed (\(I \downarrow\)). The net expansion in Aggregate Demand is partially or fully neutralized, reducing long-run economic growth potential.
                 </div>
@@ -890,7 +929,7 @@
           </div>
 
           <div class="transmission-flow-chain">
-            <span class="chain-node">Deficit \(G > T\)</span>
+            <span class="chain-node"><span class="glossary-term" data-term="budget_deficit" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Deficit \(G > T\) <span class="glossary-icon">💡</span></span></span>
             <span class="chain-arrow">➔</span>
             <span class="chain-node">Treasury Bonds \(\uparrow\)</span>
             <span class="chain-arrow">➔</span>
@@ -900,7 +939,7 @@
             <span class="chain-arrow">➔</span>
             <span class="chain-node">Private Investment \(I \downarrow\)</span>
             <span class="chain-arrow">➔</span>
-            <span class="chain-node"><span class="glossary-term" data-term="crowding_out">Crowding Out <span class="glossary-icon">💡</span></span></span>
+            <span class="chain-node"><span class="glossary-term" data-term="crowding_out" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Crowding Out <span class="glossary-icon">💡</span></span></span>
           </div>
         </div>
       </section>
@@ -939,11 +978,11 @@
             <tbody>
               <tr>
                 <td class="term-col">
-                  <strong>Inflation</strong>
+                  <strong><span class="glossary-term" data-term="inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Inflation / Inflasie <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(\pi\)</span>
                 </td>
                 <td class="def-col">
-                  A continuous and considerable rise in the general price level across the entire economy over time, resulting in an irreversible decline in the purchasing power of money.
+                  A <u>continuous and considerable increase in the general price level</u> of goods and services across the entire economy over time, resulting in an ongoing <u>drop in the purchasing power of money</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Continuous process</span>, <span class="kw-highlight">considerable increase</span>, <span class="kw-highlight">general price level</span>, <span class="kw-highlight">purchasing power loss</span>.
@@ -952,24 +991,24 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="cpi_basket">Consumer Price Index (CPI) <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="cpi_basket" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Consumer Price Index (CPI) <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Statistical Indicator</span>
                 </td>
                 <td class="def-col">
-                  A monthly statistical Laspeyres-type index that reflects the weighted average cost of a fixed representative basket of consumer goods and services purchased by typical urban households.
+                  A statistical price index reflecting the <u>weighted average cost of a fixed representative basket</u> of consumer goods and services purchased by typical urban households, utilized as the official benchmark for <u>headline inflation</u>.
                 </td>
                 <td class="kw-col">
-                  <span class="kw-highlight">Representative urban basket</span>, <span class="kw-highlight">weighted average index</span>, <span class="kw-highlight">includes consumer imports</span>.
+                  <span class="kw-highlight">Representative urban basket</span>, <span class="kw-highlight">weighted average index</span>, <span class="kw-highlight">headline anchor</span>.
                 </td>
                 <td class="cite-col"><span class="citation-badge">Mohr §20.2</span></td>
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Headline Inflation Rate</strong>
+                  <strong><span class="glossary-term" data-term="headline_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Headline Inflation <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(\pi_{\text{headline}}\)</span>
                 </td>
                 <td class="def-col">
-                  The unadjusted twelve-month (year-on-year) percentage change in the total Consumer Price Index, including all volatile food, beverage, and energy components.
+                  The official year-on-year percentage rate of change in the <u>unadjusted overall Consumer Price Index (CPI)</u>, measuring price movements across the <u>full consumer basket without excluding any items</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Total all-items CPI change</span>, <span class="kw-highlight">includes volatile food &amp; fuel</span>, <span class="kw-highlight">year-on-year %</span>.
@@ -978,11 +1017,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Core (Underlying) Inflation</strong>
+                  <strong><span class="glossary-term" data-term="core_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Core (Underlying) Inflation <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Symbol: \(\pi_{\text{core}}\)</span>
                 </td>
                 <td class="def-col">
-                  An adjusted inflation indicator derived by mathematically stripping highly volatile price categories (fresh agricultural food, vegetables, and energy) from the CPI to discern underlying trend inflation.
+                  A measure of underlying price pressure that <u>excludes volatile, non-market items</u> (such as fresh food, energy/fuel costs, and indirect tax changes) to identify <u>fundamental long-term inflation trends</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Excludes volatile food &amp; energy</span>, <span class="kw-highlight">underlying inflation trend</span>, <span class="kw-highlight">policy guidance</span>.
@@ -991,11 +1030,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="gdp_deflator">GDP Price Deflator <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="gdp_deflator" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">GDP Price Deflator <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Implicit Price Index</span>
                 </td>
                 <td class="def-col">
-                  A comprehensive implicit price index capturing the prices of all final goods and services produced domestically, calculated as \(\frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100\); includes capital goods but excludes imports.
+                  A comprehensive price index calculated as \(\frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100\), reflecting the prices of <u>all final goods and services produced domestically</u>, including capital goods but <u>strictly excluding imported goods</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Domestically produced goods</span>, <span class="kw-highlight">includes capital goods</span>, <span class="kw-highlight">strictly excludes imports</span>.
@@ -1004,11 +1043,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="demand_pull_inflation">Demand-Pull Inflation <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="demand_pull_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Demand-Pull Inflation <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Origin: Excess \(AD\)</span>
                 </td>
                 <td class="def-col">
-                  Inflation initiated by aggregate demand for goods and services outstripping aggregate productive supply at existing prices ("too much money chasing too few goods"), shifting the \(AD\) curve rightwards.
+                  Inflation initiated when <u>aggregate demand expands faster than aggregate supply</u> (\(AD > AS\)) at or near full employment ('too much money chasing too few goods'), shifting the <u>Aggregate Demand (\(AD\)) curve rightward</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Excess aggregate demand</span>, <span class="kw-highlight">AD shifts right</span>, <span class="kw-highlight">output and price level rise</span>.
@@ -1017,11 +1056,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="cost_push_inflation">Cost-Push Inflation <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="cost_push_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Cost-Push Inflation <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Origin: Supply Shock</span>
                 </td>
                 <td class="def-col">
-                  Inflation initiated by autonomous supply-side spikes in the costs of production (imported oil shocks, Rand exchange rate depreciation, wage hikes exceeding productivity), shifting the \(SAS\) curve leftwards.
+                  Inflation initiated by <u>sharp increases in production costs</u> (such as nominal wage increases exceeding productivity, fuel price hikes, or Rand depreciation), shifting the <u>Short-Run Aggregate Supply (\(\text{SAS}\)) curve leftward</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Rising production costs</span>, <span class="kw-highlight">SAS shifts left</span>, <span class="kw-highlight">supply-side shock</span>.
@@ -1030,11 +1069,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong><span class="glossary-term" data-term="stagflation">Stagflation <span class="glossary-icon">💡</span></span></strong>
+                  <strong><span class="glossary-term" data-term="stagflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Stagflation <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Condition: \(P \uparrow, Y \downarrow, u \uparrow\)</span>
                 </td>
                 <td class="def-col">
-                  The toxic economic dilemma of persistent high inflation occurring simultaneously with economic stagnation, falling real GDP output (\(Y \downarrow\)), and surging unemployment (\(u \uparrow\)).
+                  The toxic macroeconomic condition of <u>high inflation</u> occurring simultaneously with <u>declining or stagnant real GDP (\(Y \downarrow\))</u> and <u>rising unemployment</u>, classically triggered by an <u>adverse supply shock</u> shifting \(\text{SAS}\) leftward.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">High inflation + high unemployment</span>, <span class="kw-highlight">adverse supply shock</span>, <span class="kw-highlight">falling real GDP</span>.
@@ -1043,11 +1082,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Inflation Targeting</strong>
+                  <strong><span class="glossary-term" data-term="inflation_targeting" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Inflation Targeting <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">SARB Band: 3% to 6%</span>
                 </td>
                 <td class="def-col">
-                  A monetary policy framework wherein the central bank commits publicly to using policy interest rate adjustments to anchor future headline CPI inflation within an explicit target range (3% to 6% in South Africa).
+                  A monetary policy framework in which the central bank (SARB) explicitly commits to <u>anchoring future headline CPI inflation within a specified numerical band (3% to 6%)</u> using the <u>repo rate as its primary operational instrument</u>.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Explicit numerical target (3%–6%)</span>, <span class="kw-highlight">anchoring expectations</span>, <span class="kw-highlight">forward-looking repo adjustments</span>.
@@ -1056,11 +1095,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Real Interest Rate</strong>
-                  <span class="term-symbol">Fisher Equation: \(r \approx i - \pi\)</span>
+                  <strong><span class="glossary-term" data-term="real_interest_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Real Interest Rate <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Fisher: \(r \approx i - \pi\)</span>
                 </td>
                 <td class="def-col">
-                  The nominal interest rate adjusted for inflation, representing the actual percentage growth in real purchasing power earned by lenders or paid by borrowers: \(r \approx i - \pi\).
+                  The <u>nominal interest rate adjusted for inflation</u> according to the Fisher Equation: \(r \approx i - \pi\), measuring the <u>actual percentage growth in purchasing power</u> earned by lenders or paid by borrowers.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Inflation-adjusted return</span>, <span class="kw-highlight">Fisher Equation: \(r \approx i - \pi\)</span>, <span class="kw-highlight">true purchasing power yield</span>.
@@ -1069,11 +1108,11 @@
               </tr>
               <tr>
                 <td class="term-col">
-                  <strong>Redistribution Effects</strong>
+                  <strong><span class="glossary-term" data-term="redistribution_effects" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Redistribution Effects <span class="glossary-icon">💡</span></span></strong>
                   <span class="term-symbol">Arbitrary Wealth Shift</span>
                 </td>
                 <td class="def-col">
-                  Unanticipated inflation arbitrarily transfers real wealth from lenders (creditors) and fixed-income pensioners to borrowers (debtors), because loan contracts are repaid in depreciated currency units.
+                  The arbitrary transfer of real wealth caused by unanticipated inflation: <u>debtors (borrowers) gain</u> while <u>creditors (lenders) and fixed-income pensioners lose</u>, because debt liabilities are repaid in depreciated currency units.
                 </td>
                 <td class="kw-col">
                   <span class="kw-highlight">Debtors gain, creditors lose</span>, <span class="kw-highlight">pensioners harmed</span>, <span class="kw-highlight">arbitrary wealth transfer</span>.
@@ -1093,7 +1132,7 @@
         <!-- Process Card 1: 5 Steps / Pillars of Inflation Definition -->
         <div class="process-card">
           <div class="process-header">
-            <h4 class="process-title">🔥 The 5 Steps / Pillars of the Official Philip Mohr Inflation Definition</h4>
+            <h4 class="process-title">🔥 The 5 Steps / Pillars of the Official Philip Mohr <span class="glossary-term" data-term="inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Inflation <span class="glossary-icon">💡</span></span> Definition</h4>
             <p class="process-subtitle">
               Why a single price increase is NOT inflation: the five non-negotiable structural criteria required by Philip Mohr (6th Edition) for an exam-grade inflation diagnosis.
             </p>
@@ -1145,7 +1184,7 @@
               <div class="step-content">
                 <div class="step-header">Official Empirical Measurement via Index</div>
                 <div class="step-desc">
-                  The inflation rate must be statistically captured and verified through an officially recognized price index (such as the headline year-on-year percentage rate of change in the Consumer Price Index):
+                  The inflation rate must be statistically captured and verified through an officially recognized price index (such as the headline year-on-year percentage rate of change in the <span class="glossary-term" data-term="cpi_basket" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Consumer Price Index <span class="glossary-icon">💡</span></span>):
                   <div class="equation-highlight" style="margin: 0.5rem 0;">
                     \(\pi_t = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100\)
                   </div>
@@ -1158,7 +1197,7 @@
         <!-- Process Card 2: Wage-Price Spiral -->
         <div class="process-card">
           <div class="process-header">
-            <h4 class="process-title">🌪️ The Wage-Price Spiral Cost-Push Propagation Mechanism</h4>
+            <h4 class="process-title">🌪️ The Wage-Price Spiral <span class="glossary-term" data-term="cost_push_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Cost-Push <span class="glossary-icon">💡</span></span> Propagation Mechanism</h4>
             <p class="process-subtitle">
               How an autonomous supply shock triggers competing income claims between trade unions and firms, mutating into persistent inflationary momentum.
             </p>
@@ -1208,16 +1247,16 @@
             <div class="step-item">
               <span class="step-badge">Step 5</span>
               <div class="step-content">
-                <div class="step-header">Self-Reinforcing Wage-Price Spiral</div>
+                <div class="step-header">Self-Reinforcing Wage-Price Spiral: <span class="glossary-term" data-term="cost_push_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Cost-Push Spiral <span class="glossary-icon">💡</span></span></div>
                 <div class="step-desc">
-                  Higher consumer prices erode real wages once more, triggering a subsequent cycle of aggressive wage negotiations and cost increases. The inflation process becomes entrenched unless central bank interest rate policy firmly re-anchors expectations.
+                  Higher consumer prices erode real wages once more, triggering a subsequent cycle of aggressive wage negotiations and cost increases. The <span class="glossary-term" data-term="inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">inflation <span class="glossary-icon">💡</span></span> process becomes entrenched unless central bank interest rate policy firmly re-anchors expectations.
                 </div>
               </div>
             </div>
           </div>
 
           <div class="transmission-flow-chain">
-            <span class="chain-node">Cost Shock</span>
+            <span class="chain-node"><span class="glossary-term" data-term="cost_push_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Cost Shock <span class="glossary-icon">💡</span></span></span>
             <span class="chain-arrow">➔</span>
             <span class="chain-node">\(SAS\) Left</span>
             <span class="chain-arrow">➔</span>
@@ -1229,7 +1268,7 @@
             <span class="chain-arrow">➔</span>
             <span class="chain-node">Firms Raise Prices \(P \uparrow\)</span>
             <span class="chain-arrow">➔</span>
-            <span class="chain-node">Wage-Price Spiral</span>
+            <span class="chain-node"><span class="glossary-term" data-term="stagflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Stagflation Risk <span class="glossary-icon">💡</span></span></span>
           </div>
         </div>
       </section>
@@ -1321,15 +1360,15 @@
                   <td class="curve-meta-label">Valid Slope Range</td>
                   <td class="curve-meta-val">
                     <strong>Money Supply (\(M_s\)):</strong> Strictly vertical (\(90^\circ\) / slope \(=\infty\)), perfectly interest-inelastic central bank target.<br>
-                    <strong>Money Demand (\(M_d\)):</strong> Downward-sloping (\(-15^\circ\) to \(-75^\circ\)) reflecting speculative liquidity preference; flattens to horizontal (\(0^\circ\)) at the Liquidity Trap.
+                    <strong>Money Demand (\(M_d\)):</strong> Downward-sloping (\(-15^\circ\) to \(-75^\circ\)) reflecting <span class="glossary-term" data-term="liquidity_preference" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">speculative liquidity preference <span class="glossary-icon">💡</span></span>; flattens to horizontal (\(0^\circ\)) at the <span class="glossary-term" data-term="liquidity_trap" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Liquidity Trap <span class="glossary-icon">💡</span></span>.
                   </td>
                 </tr>
                 <tr>
                   <td class="curve-meta-label">Shift Triggers</td>
                   <td class="curve-meta-val">
-                    <strong>\(M_s\) Shifts Right:</strong> Central bank expands liquidity, cuts repo rate, or lowers cash reserve requirements (\(r \downarrow\)).<br>
-                    <strong>\(M_s\) Shifts Left:</strong> SARB tightens liquidity, hikes repo rate, or increases cash reserve requirements.<br>
-                    <strong>\(M_d\) Shifts Right:</strong> Surge in Real GDP / National Income (\(Y \uparrow\)) or higher price level (\(P \uparrow\)), expanding active transactions demand \(L_1(Y)\).<br>
+                    <strong>\(M_s\) Shifts Right:</strong> Central bank expands liquidity, cuts <span class="glossary-term" data-term="repo_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">repo rate <span class="glossary-icon">💡</span></span>, or lowers <span class="glossary-term" data-term="cash_reserve_requirement" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">cash reserve requirements <span class="glossary-icon">💡</span></span> (\(r \downarrow\)).<br>
+                    <strong>\(M_s\) Shifts Left:</strong> SARB tightens liquidity, hikes <span class="glossary-term" data-term="repo_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">repo rate <span class="glossary-icon">💡</span></span>, or increases <span class="glossary-term" data-term="cash_reserve_requirement" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">cash reserve requirements <span class="glossary-icon">💡</span></span>.<br>
+                    <strong>\(M_d\) Shifts Right:</strong> Surge in Real GDP / National Income (\(Y \uparrow\)) or higher price level (\(P \uparrow\)), expanding <span class="glossary-term" data-term="active_balances" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">active transactions demand \(L_1(Y)\) <span class="glossary-icon">💡</span></span>.<br>
                     <strong>\(M_d\) Shifts Left:</strong> Macroeconomic contraction or drop in national income (\(Y \downarrow\)).
                   </td>
                 </tr>
@@ -1337,7 +1376,7 @@
                   <td class="curve-meta-label">Impact on P &amp; Y</td>
                   <td class="curve-meta-val">
                     <strong>Expansionary Monetary Policy (\(M_s\) right):</strong> Lowers equilibrium interest rates (\(i \downarrow\)), stimulating consumption (\(C \uparrow\)) and private investment (\(I \uparrow\)), shifting \(AD\) rightwards, boosting Real GDP (\(Y \uparrow\)) and raising the price level (\(P \uparrow\)).<br>
-                    <strong>Liquidity Trap:</strong> Further monetary injections fail to lower interest rates further; funds are absorbed into idle balances with zero stimulatory impact on \(Y\).
+                    <strong><span class="glossary-term" data-term="liquidity_trap" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Liquidity Trap <span class="glossary-icon">💡</span></span>:</strong> Further monetary injections fail to lower interest rates further; funds are absorbed into idle balances with zero stimulatory impact on \(Y\).
                   </td>
                 </tr>
               </tbody>
@@ -1350,7 +1389,7 @@
           <div class="curve-decoder-header">
             <div>
               <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-emerald); text-transform: uppercase;">Graph Decoder 2 • Chapter 15</span>
-              <h3 class="curve-decoder-title">🏭 Negative Production Externality, Deadweight Loss &amp; Pigouvian Tax</h3>
+              <h3 class="curve-decoder-title">🏭 <span class="glossary-term" data-term="negative_externality" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Negative Production Externality <span class="glossary-icon">💡</span></span>, <span class="glossary-term" data-term="deadweight_loss" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Deadweight Loss <span class="glossary-icon">💡</span></span> &amp; <span class="glossary-term" data-term="pigouvian_tax" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Pigouvian Tax <span class="glossary-icon">💡</span></span></h3>
             </div>
             <span class="citation-badge">Mohr §15.3</span>
           </div>
@@ -1418,22 +1457,22 @@
                   <td class="curve-meta-label">Valid Slope Range</td>
                   <td class="curve-meta-val">
                     <strong>Demand (\(DD = \text{MSB}\)):</strong> Downward-sloping (\(-15^\circ\) to \(-75^\circ\)), reflecting diminishing marginal utility.<br>
-                    <strong>Supply (\(\text{MPC}\) and \(\text{MSC}\)):</strong> Upward-sloping (\(+15^\circ\) to \(+75^\circ\)), reflecting increasing marginal private production costs; \(\text{MSC}\) runs strictly parallel above \(\text{MPC}\) separated by vertical distance \(\text{MEC}\).
+                    <strong>Supply (\(\text{MPC}\) and \(\text{MSC}\)):</strong> Upward-sloping (\(+15^\circ\) to \(+75^\circ\)), reflecting increasing marginal private production costs; \(\text{MSC}\) runs strictly parallel above \(\text{MPC}\) separated by vertical distance <span class="glossary-term" data-term="marginal_external_cost" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">\(\text{MEC}\) <span class="glossary-icon">💡</span></span>.
                   </td>
                 </tr>
                 <tr>
                   <td class="curve-meta-label">Shift Triggers</td>
                   <td class="curve-meta-val">
-                    <strong>Widening Externality Damage:</strong> Rising unpriced environmental harm increases \(\text{MEC}\), pushing \(\text{MSC}\) further above \(\text{MPC}\), widening the Deadweight Loss triangle.<br>
-                    <strong>Pigouvian Tax Levy (\(t = \text{MEC}\)):</strong> Internalizes the damage, shifting private producer cost curve upwards from \(\text{MPC}\) to coincide with \(\text{MSC}\).<br>
+                    <strong>Widening Externality Damage:</strong> Rising unpriced environmental harm increases \(\text{MEC}\), pushing \(\text{MSC}\) further above \(\text{MPC}\), widening the <span class="glossary-term" data-term="deadweight_loss" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Deadweight Loss <span class="glossary-icon">💡</span></span> triangle.<br>
+                    <strong><span class="glossary-term" data-term="pigouvian_tax" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Pigouvian Tax Levy (\(t = \text{MEC}\)) <span class="glossary-icon">💡</span></span>:</strong> Internalizes the damage, shifting private producer cost curve upwards from \(\text{MPC}\) to coincide with \(\text{MSC}\).<br>
                     <strong>Abatement Technology:</strong> Cleaner production filters reduce pollution damage, lowering \(\text{MEC}\) and shifting \(\text{MSC}\) downwards towards \(\text{MPC}\).
                   </td>
                 </tr>
                 <tr>
                   <td class="curve-meta-label">Impact on P &amp; Y</td>
                   <td class="curve-meta-val">
-                    <strong>Unregulated Market Equilibrium (\(E_1\)):</strong> Market overproduces (\(Q_1 &gt; Q_2\)) at an artificially low price (\(P_1 &lt; P_2\)), generating net Deadweight Loss (DWL) from excessive pollution.<br>
-                    <strong>Corrected Social Optimum (\(E_2\)):</strong> Output contracts to optimal volume (\(Q_2 &lt; Q_1\)) and consumer price rises to reflect full social opportunity cost (\(P_2 &gt; P_1\)), completely eradicating Deadweight Loss and restoring Pareto efficiency.
+                    <strong>Unregulated Market Equilibrium (\(E_1\)):</strong> Market overproduces (\(Q_1 &gt; Q_2\)) at an artificially low price (\(P_1 &lt; P_2\)), generating net <span class="glossary-term" data-term="deadweight_loss" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Deadweight Loss (DWL) <span class="glossary-icon">💡</span></span> from excessive pollution.<br>
+                    <strong>Corrected Social Optimum (\(E_2\)):</strong> Output contracts to optimal volume (\(Q_2 &lt; Q_1\)) and consumer price rises to reflect full social opportunity cost (\(P_2 &gt; P_1\)), completely eradicating <span class="glossary-term" data-term="deadweight_loss" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Deadweight Loss <span class="glossary-icon">💡</span></span> and restoring Pareto efficiency.
                   </td>
                 </tr>
               </tbody>
@@ -1446,7 +1485,7 @@
           <div class="curve-decoder-header">
             <div>
               <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-rose); text-transform: uppercase;">Graph Decoder 3 • Chapter 20</span>
-              <h3 class="curve-decoder-title">🌪️ AD-AS Macroeconomic Framework: Demand-Pull vs Cost-Push Stagflation</h3>
+              <h3 class="curve-decoder-title">🌪️ AD-AS Macroeconomic Framework: <span class="glossary-term" data-term="demand_pull_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Demand-Pull <span class="glossary-icon">💡</span></span> vs <span class="glossary-term" data-term="cost_push_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Cost-Push <span class="glossary-icon">💡</span></span> <span class="glossary-term" data-term="stagflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Stagflation <span class="glossary-icon">💡</span></span></h3>
             </div>
             <span class="citation-badge">Mohr §20.3</span>
           </div>
@@ -1528,7 +1567,7 @@
                 <tr>
                   <td class="curve-meta-label">Shift Triggers</td>
                   <td class="curve-meta-val">
-                    <strong>\(AD\) Shifts Right:</strong> Monetary easing (repo rate cut), fiscal expansion (\(G \uparrow\), \(T \downarrow\)), surge in consumer/business confidence, or export boom (\(X \uparrow\)).<br>
+                    <strong>\(AD\) Shifts Right:</strong> Monetary easing (<span class="glossary-term" data-term="repo_rate" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">repo rate cut <span class="glossary-icon">💡</span></span>), fiscal expansion (\(G \uparrow\), \(T \downarrow\)), surge in consumer/business confidence, or export boom (\(X \uparrow\)).<br>
                     <strong>\(SAS\) Shifts Left (Adverse Supply Shock):</strong> International crude oil price hikes, sharp Rand depreciation raising imported intermediate costs, nominal wage increases exceeding productivity, or Eskom electricity tariff increases.<br>
                     <strong>\(LRAS\) Shifts Right:</strong> Capital deepening, technological innovation, workforce skills growth, or structural supply-side labor market reforms.
                   </td>
@@ -1536,8 +1575,8 @@
                 <tr>
                   <td class="curve-meta-label">Impact on P &amp; Y</td>
                   <td class="curve-meta-val">
-                    <strong>Demand-Pull Inflation (\(AD\) Right):</strong> Price level rises (\(P_0 \rightarrow P_1\)) and Real GDP expands above potential (\(Y_f \rightarrow Y_1\)), creating an inflationary output gap and reducing cyclical unemployment.<br>
-                    <strong>Cost-Push Stagflation (\(SAS\) Left):</strong> Price level rises (\(P_0 \rightarrow P_1\)) while Real GDP contracts below potential (\(Y_f \rightarrow Y_1\)), precipitating simultaneous high inflation and escalating unemployment — the policy dilemma where demand stimulus worsens inflation while tightening worsens unemployment.
+                    <strong><span class="glossary-term" data-term="demand_pull_inflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Demand-Pull Inflation (\(AD\) Right) <span class="glossary-icon">💡</span></span>:</strong> Price level rises (\(P_0 \rightarrow P_1\)) and Real GDP expands above potential (\(Y_f \rightarrow Y_1\)), creating an inflationary output gap and reducing cyclical unemployment.<br>
+                    <strong><span class="glossary-term" data-term="stagflation" tabindex="0" role="button" aria-haspopup="dialog" title="Click to view full exam definition and memo keywords">Cost-Push Stagflation (\(SAS\) Left) <span class="glossary-icon">💡</span></span>:</strong> Price level rises (\(P_0 \rightarrow P_1\)) while Real GDP contracts below potential (\(Y_f \rightarrow Y_1\)), precipitating simultaneous high inflation and escalating unemployment — the policy dilemma where demand stimulus worsens inflation while tightening worsens unemployment.
                   </td>
                 </tr>
               </tbody>
@@ -1551,28 +1590,58 @@
   </div>
 
   <!-- Interactive Glossary Modal Popup -->
-  <div class="glossary-modal-backdrop" id="glossaryModal">
+  <div class="glossary-modal-backdrop" id="glossaryModal" role="dialog" aria-modal="true" aria-labelledby="glossaryModalTitle">
     <div class="glossary-card">
       <div class="glossary-card-header">
-        <span class="glossary-card-title" id="glossaryModalTitle">Glossary Term</span>
-        <button class="glossary-close-btn" id="glossaryCloseBtn">&times;</button>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.35rem;">💡</span>
+          <span class="glossary-card-title" id="glossaryModalTitle">Glossary Term</span>
+        </div>
+        <button class="glossary-close-btn" id="glossaryCloseBtn" type="button" aria-label="Close glossary definition modal">&times;</button>
       </div>
-      <div style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem;" id="glossaryModalDefEn">English Definition</div>
-      <div style="font-size: 0.88rem; font-style: italic; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;" id="glossaryModalDefAf">Afrikaans Definisie</div>
-      <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--accent-cyan);" id="glossaryModalRef">Philip Mohr Citation</div>
+
+      <!-- Scoring memo note -->
+      <div class="glossary-memo-notice">
+        <span class="memo-badge">🎯 Full Marks Marking Memo Standard</span>
+        <span>Key phrases are <strong>underlined</strong>. Reproduce these core keywords in tests and exams to secure full marks.</span>
+      </div>
+
+      <!-- English Section -->
+      <div class="glossary-lang-block">
+        <div class="glossary-lang-label">
+          <span>🇬🇧 English Exam Definition</span>
+          <span class="exam-tag-sm">Official Memo</span>
+        </div>
+        <div class="glossary-def-text" id="glossaryModalDefEn">English Definition</div>
+      </div>
+
+      <!-- Afrikaans Section -->
+      <div class="glossary-lang-block">
+        <div class="glossary-lang-label">
+          <span>🇿🇦 Afrikaans Eksamendefinisie</span>
+          <span class="exam-tag-sm">Amptelike Memo</span>
+        </div>
+        <div class="glossary-def-text-af" id="glossaryModalDefAf">Afrikaans Definisie</div>
+      </div>
+
+      <!-- Prescribed Textbook Reference -->
+      <div class="glossary-ref-box" id="glossaryModalRef">Philip Mohr Citation</div>
+
+      <!-- Bottom Action Button for Easy Mobile / Desktop Dismissal -->
+      <button type="button" class="secondary-btn" id="glossaryDoneBtn" style="width: 100%; margin-top: 1rem; min-height: 44px;">Close Definition • Sluit</button>
     </div>
   </div>
 
   
   <!-- Floating Student Feedback Button -->
-  <button id="openFeedbackBtn" class="floating-feedback-btn">💬 Feedback</button>
+  <button type="button" id="openFeedbackBtn" class="floating-feedback-btn" aria-label="Open feedback and error reporting modal">💬 Feedback</button>
 
   <!-- Student Feedback Modal (Direct WhatsApp to Creator Andre Lamusse) -->
   <div class="feedback-modal-backdrop" id="feedbackModal">
     <div class="feedback-card">
       <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
         <h3 style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 800; margin: 0; color: var(--accent-gold);">💬 Feedback & Error Reporting</h3>
-        <button id="closeFeedbackBtn" class="glossary-close-btn">&times;</button>
+        <button id="closeFeedbackBtn" class="glossary-close-btn" type="button" aria-label="Close feedback modal">&times;</button>
       </div>
 
       <!-- Creator Information -->
@@ -1708,10 +1777,12 @@
       // Glossary Popups
       const modal = document.getElementById('glossaryModal');
       const closeBtn = document.getElementById('glossaryCloseBtn');
+      const doneBtn = document.getElementById('glossaryDoneBtn');
       const mTitle = document.getElementById('glossaryModalTitle');
       const mEn = document.getElementById('glossaryModalDefEn');
       const mAf = document.getElementById('glossaryModalDefAf');
       const mRef = document.getElementById('glossaryModalRef');
+      let lastFocusedElement = null;
 
       document.body.addEventListener('click', (e) => {
         const target = e.target.closest('.glossary-term');
@@ -1719,22 +1790,66 @@
           const termKey = target.getAttribute('data-term');
           const termData = window.AXIOM_GLOSSARY[termKey];
           if (termData) {
-            mTitle.textContent = termData.title;
-            mEn.textContent = termData.def_en;
-            mAf.textContent = termData.def_af;
-            mRef.textContent = "📖 Source: " + termData.ref;
+            lastFocusedElement = target;
+            mTitle.innerHTML = termData.title;
+            mEn.innerHTML = termData.def_en;
+            mAf.innerHTML = termData.def_af;
+            mRef.innerHTML = "📖 Prescribed Reference: " + termData.ref;
             modal.classList.add('open');
+            if (closeBtn) closeBtn.focus();
             // KaTeX rendering inside glossary modal
             if (window.AxiomMath) {
               window.AxiomMath.renderElement(modal);
+            } else if (window.renderMathInElement) {
+              window.renderMathInElement(modal, {
+                delimiters: [
+                  { left: '$$', right: '$$', display: true },
+                  { left: '\\(', right: '\\)', display: false },
+                  { left: '\\[', right: '\\]', display: true },
+                  { left: '$', right: '$', display: false }
+                ],
+                throwOnError: false
+              });
             }
           }
         }
       });
 
-      closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+      const closeModal = () => {
+        if (modal && modal.classList.contains('open')) {
+          modal.classList.remove('open');
+          if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+            lastFocusedElement.focus();
+          }
+        }
+      };
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (doneBtn) doneBtn.addEventListener('click', closeModal);
       modal.addEventListener('click', (e) => {
-        if (e.target === modal) modal.classList.remove('open');
+        if (e.target === modal) closeModal();
+      });
+
+      // Keyboard Accessibility: Enter or Space on .glossary-term opens modal
+      document.body.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          const target = e.target.closest('.glossary-term');
+          if (target && (!modal || !modal.classList.contains('open'))) {
+            e.preventDefault();
+            target.click();
+          }
+        }
+      });
+
+      // Keyboard Accessibility: Escape key dismisses modals
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeModal();
+          const fbModalEl = document.getElementById('feedbackModal');
+          if (fbModalEl && fbModalEl.classList.contains('open')) {
+            fbModalEl.classList.remove('open');
+          }
+        }
       });
 
       // WhatsApp Feedback Modal Logic

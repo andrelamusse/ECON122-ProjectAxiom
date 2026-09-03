@@ -41,10 +41,10 @@
       "test_id": "T1_03_KATEX_DELIMITER_ESCAPING",
       "name": "KaTeX Delimiters double-escaped (\\\\( and \\\\[) to avoid JS string collapse",
       "passed": true,
-      "message": "Found 0 single-escaped delimiter bugs (expected 0) and 4 double-escaped delimiters",
+      "message": "Found 0 single-escaped delimiter bugs (expected 0) and 10 double-escaped delimiters",
       "details": {
         "single_bs_found": 0,
-        "double_bs_found": 4
+        "double_bs_found": 10
       }
     },
     {
@@ -68,11 +68,14 @@
     {
       "tier": 1,
       "test_id": "T1_06_GLOSSARY_DATABASE_INTEGRITY",
-      "name": "Interactive Glossary contains core Chapter 14, 15, and 20 terminology",
+      "name": "Interactive Glossary contains core Chapter 14, 15, and 20 terminology with accessible definition buttons",
       "passed": true,
-      "message": "All 8 key terminology items present",
+      "message": "All 42 key terminology items present with underlined keywords, 89 accessible definition buttons & 100% button type parity",
       "details": {
-        "missing": []
+        "missing": [],
+        "unmapped_html": [],
+        "buttons_missing_type": 0,
+        "inaccessible_glossary_spans": 0
       }
     },
     {
