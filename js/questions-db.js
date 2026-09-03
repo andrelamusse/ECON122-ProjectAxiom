@@ -1,7 +1,4 @@
 // Project Axiom - Master Blind Assessment Database
-// Exactly 126 Calibrated, High-Yield Exam Questions (42 per Study Unit)
-// Zero Chapter Indicators • Non-Trivial Balanced Options • Strict Exam Standard
-
 window.AXIOM_MASTER_BANK = [
   {
     "id": "q14_01",
@@ -464,12 +461,12 @@ window.AXIOM_MASTER_BANK = [
     "type": "calculation",
     "marks": 3,
     "difficulty": "Exam",
-    "stem_en": "Given: Notes and coins in circulation = R85 000 million, Demand deposits = R520 000 million, Short-term deposits = R310 000 million, Medium-term deposits = R280 000 million, Long-term deposits = R195 000 million. Calculate the value of Quasi-Money in R millions.",
-    "stem_af": "Gegee: Note en munte in omloop = R85 000m, Onmiddellik opeisbare deposito's = R520 000m, Korttermyn = R310 000m, Mediumtermyn = R280 000m, Langtermyn = R195 000m. Bereken die waarde van Kwasigeld in R miljoen.",
-    "expectedNumber": 590000,
+    "stem_en": "Given the following monetary statistics for South Africa: Notes and coins in circulation = R85 000 million, Demand deposits = R520 000 million, Short-term deposits = R310 000 million, Medium-term deposits = R280 000 million, and Long-term deposits = R195 000 million. Calculate the total M2 money supply in R millions.",
+    "stem_af": "Gegewe die volgende monetêre data: Note en munte in omloop = R85 000m, Onmiddellik opeisbare deposito's = R520 000m, Korttermyn = R310 000m, Mediumtermyn = R280 000m, en Langtermyn = R195 000m. Bereken die totale M2-geldvoorraad in R miljoen.",
+    "expectedNumber": 1195000,
     "tolerance": 50,
-    "derivation_en": "Quasi-Money = Short-term deposits + Medium-term deposits = 310 000 + 280 000 = R590 000 million.",
-    "derivation_af": "Kwasigeld = Korttermyn + Mediumtermyn = 310 000 + 280 000 = R590 000 miljoen."
+    "derivation_en": "Step 1: Calculate Narrow Money M1 = Notes & coins (R85 000m) + Demand deposits (R520 000m) = R605 000 million. Step 2: Calculate Quasi-Money = Short-term (R310 000m) + Medium-term (R280 000m) = R590 000 million. Step 3: Total M2 = M1 + Quasi-Money = 605 000 + 590 000 = R1 195 000 million. (Quasi-money alone is R590 000m).",
+    "derivation_af": "Stap 1: Bereken M1 = R85 000m + R520 000m = R605 000m. Stap 2: Bereken Kwasigeld = R310 000m + R280 000m = R590 000m. Stap 3: Totale M2 = M1 + Kwasigeld = 605 000 + 590 000 = R1 195 000 miljoen."
   },
   {
     "id": "q14_16",
