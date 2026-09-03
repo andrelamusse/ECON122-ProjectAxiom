@@ -507,44 +507,42 @@
   <!-- Floating Student Feedback Button -->
   <button id="openFeedbackBtn" class="floating-feedback-btn">💬 Feedback</button>
 
-  <!-- Student Feedback Modal -->
+  <!-- Student Feedback Modal (Direct WhatsApp to Creator Andre Lamusse) -->
   <div class="feedback-modal-backdrop" id="feedbackModal">
     <div class="feedback-card">
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem; margin-bottom: 1rem;">
-        <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0; color: var(--accent-cyan);">💬 Student Feedback & Report</h3>
-        <button id="closeFeedbackBtn" style="background: transparent; border: none; font-size: 1.4rem; color: var(--text-muted); cursor: pointer;">&times;</button>
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 800; margin: 0; color: var(--accent-gold);">💬 Feedback & Error Reporting</h3>
+        <button id="closeFeedbackBtn" class="glossary-close-btn">&times;</button>
       </div>
 
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Have feedback, noticed an error in a question, or have a feature request? Let us know directly:
-      </p>
-
-      <form id="feedbackForm" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="7b7c5364-d6a7-47b2-9d33-4f93e62057d1">
-        <input type="hidden" name="subject" value="New ECON122 Project Axiom Student Feedback">
-        
-        <div style="margin-bottom: 0.85rem;">
-          <label style="display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.35rem;">Rating</label>
-          <select name="rating" class="header-select" style="width: 100%; padding: 0.5rem;">
-            <option value="5">⭐⭐⭐⭐⭐ Excellent (Very Helpful for Exam)</option>
-            <option value="4">⭐⭐⭐⭐ Good (Minor Suggestions)</option>
-            <option value="3">⭐⭐⭐ Neutral</option>
-            <option value="2">⭐⭐ Needs Improvement</option>
-            <option value="1">⭐ Problematic</option>
-          </select>
+      <!-- Creator Information -->
+      <div style="display: flex; align-items: center; gap: 0.85rem; background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: var(--radius-md); padding: 0.85rem 1rem; margin-bottom: 1.25rem;">
+        <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); border: 1.5px solid var(--accent-gold); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0;">
+          👨‍💻
         </div>
-
-        <div style="margin-bottom: 1rem;">
-          <label style="display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.35rem;">Your Message or Question Correction</label>
-          <textarea name="message" required rows="4" style="width: 100%; background: var(--bg-card); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); color: var(--text-main); padding: 0.65rem; font-family: var(--font-sans); font-size: 0.88rem; outline: none;" placeholder="e.g. Question 14 explanation was very clear, but in Question 8 could you clarify..."></textarea>
+        <div>
+          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--accent-gold); letter-spacing: 0.06em;">Platform Creator & Developer</div>
+          <div style="font-size: 1.1rem; font-weight: 800; color: var(--text-main);">Andre Lamusse</div>
         </div>
+      </div>
 
-        <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
-          <button type="button" class="secondary-btn" id="cancelFeedbackBtn">Cancel</button>
-          <button type="submit" class="primary-btn" id="submitFeedbackBtn">Submit Feedback</button>
-        </div>
-      </form>
-      <div id="feedbackResult" style="margin-top: 0.75rem; font-size: 0.82rem; text-align: center; color: var(--accent-emerald); display: none;"></div>
+      <!-- Note for Students -->
+      <div style="background: rgba(56, 189, 248, 0.08); border-left: 3px solid var(--accent-azure); padding: 0.85rem 1rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin-bottom: 1.5rem; font-size: 0.88rem; line-height: 1.6; color: var(--text-main);">
+        <strong>📸 Important Note:</strong><br>
+        Please take a <strong>screenshot of all issues</strong> and explain the problem clearly so I can assist and update the engine immediately.
+      </div>
+
+      <!-- WhatsApp Direct Action Button -->
+      <a href="https://wa.me/27660673757?text=Hi%20Andre%2C%20I%20have%20feedback%20%2F%20found%20an%20issue%20on%20Project%20Axiom%20ECON122%3A" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; background: #25D366; color: #ffffff; text-decoration: none; font-weight: 800; font-size: 1rem; padding: 0.85rem 1.25rem; border-radius: var(--radius-md); box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35); transition: all 0.2s ease; min-height: 48px;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 2.029.816 3.094.817l.003-.001c3.181 0 5.767-2.586 5.768-5.766.001-3.181-2.587-5.767-5.769-5.768zm7.417 5.767c-.002 4.073-3.316 7.387-7.388 7.388-1.258 0-2.457-.323-3.526-.889l-4.534 1.189 1.21-4.421c-.658-1.125-1.008-2.414-1.008-3.737.002-4.074 3.316-7.388 7.39-7.388 4.073 0 7.387 3.315 7.387 7.388z"/>
+        </svg>
+        Send to Creator on WhatsApp
+      </a>
+
+      <div style="text-align: center; margin-top: 1rem;">
+        <button type="button" class="secondary-btn" id="cancelFeedbackBtn" style="width: 100%;">Close</button>
+      </div>
     </div>
   </div>
 
@@ -679,59 +677,18 @@
         if (e.target === modal) modal.classList.remove('open');
       });
 
-      // Feedback Modal Logic
+      // WhatsApp Feedback Modal Logic
       const openFbBtn = document.getElementById('openFeedbackBtn');
       const closeFbBtn = document.getElementById('closeFeedbackBtn');
       const cancelFbBtn = document.getElementById('cancelFeedbackBtn');
       const fbModal = document.getElementById('feedbackModal');
-      const fbForm = document.getElementById('feedbackForm');
-      const fbResult = document.getElementById('feedbackResult');
 
       if (openFbBtn && fbModal) {
         openFbBtn.addEventListener('click', () => fbModal.classList.add('open'));
-        closeFbBtn.addEventListener('click', () => fbModal.classList.remove('open'));
-        cancelFbBtn.addEventListener('click', () => fbModal.classList.remove('open'));
+        if (closeFbBtn) closeFbBtn.addEventListener('click', () => fbModal.classList.remove('open'));
+        if (cancelFbBtn) cancelFbBtn.addEventListener('click', () => fbModal.classList.remove('open'));
         fbModal.addEventListener('click', (e) => {
           if (e.target === fbModal) fbModal.classList.remove('open');
-        });
-
-        fbForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          const formData = new FormData(fbForm);
-          const submitBtn = document.getElementById('submitFeedbackBtn');
-          submitBtn.textContent = 'Sending...';
-          submitBtn.disabled = true;
-
-          fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            body: formData
-          })
-          .then(async (response) => {
-            if (response.status == 200) {
-              fbResult.style.display = 'block';
-              fbResult.textContent = '✅ Thank you! Your feedback has been sent successfully.';
-              fbForm.reset();
-              setTimeout(() => {
-                fbModal.classList.remove('open');
-                fbResult.style.display = 'none';
-                submitBtn.textContent = 'Submit Feedback';
-                submitBtn.disabled = false;
-              }, 2500);
-            } else {
-              fbResult.style.display = 'block';
-              fbResult.style.color = 'var(--accent-rose)';
-              fbResult.textContent = 'Something went wrong. Please try again.';
-              submitBtn.textContent = 'Submit Feedback';
-              submitBtn.disabled = false;
-            }
-          })
-          .catch(error => {
-            fbResult.style.display = 'block';
-            fbResult.style.color = 'var(--accent-rose)';
-            fbResult.textContent = 'Network error sending feedback.';
-            submitBtn.textContent = 'Submit Feedback';
-            submitBtn.disabled = false;
-          });
         });
       }
 
