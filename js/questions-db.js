@@ -1217,6 +1217,364 @@ window.AXIOM_MASTER_BANK = [
     "derivation_af": "Digitale betalingstegnologie verlaag transaksiekoste en verminder die behoefte om fisiese banknote en munte vir daaglikse aankope te hou."
   },
   {
+    "id": "q14_38",
+    "ch": 14,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Deposit Expansion: A central bank injects R20 000 million of new reserves into the banking system. If the required reserve ratio is 8% and banks hold zero excess reserves with no cash drain, calculate the total theoretical increase in bank deposits (in R millions).",
+    "stem_af": "Deposito-uitbreiding: 'n Sentrale bank spuit R20 000 miljoen se nuwe reserwes in die stelsel. As die reserweverhouding 8% is sonder kontantverliese, bereken die totale teoretiese toename in bankdeposito's (in R miljoen).",
+    "expectedNumber": 250000,
+    "tolerance": 50,
+    "derivation_en": "Credit Multiplier m = 1 / r = 1 / 0.08 = 12.5. Total Deposits = Injection * m = 20 000 * 12.5 = R250 000 million.",
+    "derivation_af": "Vermenigvuldiger m = 1 / 0,08 = 12,5. Totale deposito's = 20 000 * 12,5 = R250 000 miljoen."
+  },
+  {
+    "id": "q14_39",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In Keynesian monetary theory, the 'liquidity trap' refers to a situation where:",
+    "stem_af": "In Keynesiaanse monetêre teorie verwys die 'likiditeitsval' na 'n situasie waar:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Commercial banks face statutory lending ceilings that restrict consumer credit creation.",
+        "text_af": "Handelsbanke wetlike leningsplafonne in die gesig staar wat verbruikerskrediet inperk."
+      },
+      {
+        "key": "B",
+        "text_en": "High inflation expectations drive real money demand down to zero across all sectors.",
+        "text_af": "Hoë inflasieverwagtinge reële geldvraag na nul toe dryf oor alle ekonomiese sektore."
+      },
+      {
+        "key": "C",
+        "text_en": "Interest rates are so low that speculative money demand becomes completely horizontal.",
+        "text_af": "Rentekoerse so laag is dat die spekulasievraag na geld volkome horisontaal word."
+      },
+      {
+        "key": "D",
+        "text_en": "Commercial bank excess reserves are fully absorbed by central bank debenture auctions.",
+        "text_af": "Banke se oorskotreserwes ten volle deur sentrale bank skuldbriefveilings geabsorbeer word."
+      }
+    ],
+    "correctKey": "C",
+    "derivation_en": "At rock-bottom interest rates, bond prices are at their ceiling. Everyone expects interest rates to rise (bond prices to fall), so agents hoard all additional money (perfectly elastic demand).",
+    "derivation_af": "By baie lae rentekoerse verkies almal om kontant te hou (horisontale MD), wat monetêre beleid oneffektief maak."
+  },
+  {
+    "id": "q14_40",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "Which of the following describes the difference between an endogenous and exogenous money supply view?",
+    "stem_af": "Watter van die volgende beskryf die verskil tussen 'n endogene en eksogene geldvoorraadbeskouing?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Exogenous views hold that commercial banks set the repo rate while central banks fix loans.",
+        "text_af": "Eksogene beskouings voer aan banke bepaal die repokoers terwyl die sentrale bank lenings stel."
+      },
+      {
+        "key": "B",
+        "text_en": "Endogenous views require bank deposits to be backed 100% by physical central bank bullion.",
+        "text_af": "Endogene beskouings vereis dat bankdeposito's 100% deur sentrale bank goud gerugsteun word."
+      },
+      {
+        "key": "C",
+        "text_en": "Exogenous views assume that commercial banks operate without statutory reserve ratios.",
+        "text_af": "Eksogene beskouings aanvaar dat handelsbanke heeltemal sonder statutêre reserwes funksioneer."
+      },
+      {
+        "key": "D",
+        "text_en": "Endogenous views hold that banks create credit deposits, while the central bank sets rates.",
+        "text_af": "Endogene beskouings hou dat banke kredietdeposito's skep terwyl die sentrale bank koerse stel."
+      }
+    ],
+    "correctKey": "D",
+    "derivation_en": "Modern central banking recognizes money as endogenous: banks create deposits by extending loans, and the SARB controls the price of liquidity (Repo rate) rather than fixing money supply exogenously.",
+    "derivation_af": "In 'n endogene stelsel skep banke geld wanneer hulle lenings toestaan, en die sentrale bank beïnvloed dit via die repokoers."
+  },
+  {
+    "id": "q14_41",
+    "ch": 14,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Monetary Aggregates: In an economy, M1 = R620 000 million, Short-term deposits = R340 000 million, Medium-term deposits = R290 000 million, and Long-term deposits = R210 000 million. Calculate the total broad money supply M3 (in R millions).",
+    "stem_af": "Monetêre Totale: M1 = R620 000m, Korttermyn = R340 000m, Mediumtermyn = R290 000m, en Langtermyn = R210 000m. Bereken die totale breë geldvoorraad M3 (in R miljoen).",
+    "expectedNumber": 1460000,
+    "tolerance": 50,
+    "derivation_en": "M2 = M1 + Short-term + Medium-term = 620 000 + 340 000 + 290 000 = R1 250 000 million. M3 = M2 + Long-term = 1 250 000 + 210 000 = R1 460 000 million.",
+    "derivation_af": "M2 = 620 000 + 340 000 + 290 000 = R1 250 000m. M3 = 1 250 000 + 210 000 = R1 460 000 miljoen."
+  },
+  {
+    "id": "q14_42",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "If the South African Reserve Bank conducts monetary tightening by raising the repo rate, what is the expected impact on aggregate domestic demand and the exchange rate?",
+    "stem_af": "Indien die SARB monetêre beleid verskerp deur die repokoers te verhoog, wat is die verwagte impak op binnelandse totale vraag en die wisselkoers?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Higher interest rates dampen domestic spending and attract capital inflows that support the currency.",
+        "text_af": "Hoër rentekoerse demp binnelandse besteding en lok kapitaalinvloei wat die geldeenheid ondersteun."
+      },
+      {
+        "key": "B",
+        "text_en": "Household borrowing accelerates sharply while foreign portfolio investors liquidate government bonds.",
+        "text_af": "Huishoudelike lenings versnel skerp terwyl buitelandse beleggers staatseffekte haastig likwideer."
+      },
+      {
+        "key": "C",
+        "text_en": "Commercial bank prime overdraft lending rates drop automatically below the headline inflation rate.",
+        "text_af": "Handelsbanke se primakoers daal outomaties tot onder die amptelike verbruikersprys-inflasiekoers."
+      },
+      {
+        "key": "D",
+        "text_en": "Statutory consumption taxes decline by an equivalent percentage margin across all retail companies.",
+        "text_af": "Statutêre verbruiksbelasting daal met 'n gelykwaardige marge oor alle geregistreerde handelaars."
+      }
+    ],
+    "correctKey": "A",
+    "derivation_en": "Repo hike raises borrowing costs (contracting C and I) and increases interest differentials, which attracts portfolio capital inflows, supporting the Rand.",
+    "derivation_af": "Hoër rentekoerse verlaag besteding (C en I) en lok buitelandse kapitaal wat die Rand ondersteun."
+  },
+  {
+    "id": "q14_43",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In the South African Reserve Bank's endogenous monetary framework, lowering the repurchase (repo) rate by 50 basis points initiates a transmission sequence where:",
+    "stem_af": "In die Suid-Afrikaanse Reserwebank se endogene monetêre raamwerk bring 'n verlaging van die repokoers met 50 basispunte 'n transmissievolgorde teweeg waarin:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "commercial banks reduce prime lending rates, stimulating credit demand and expanding bank deposits.",
+        "text_af": "handelsbanke primêre uitleenkoerse verlaag, wat kredietvraag stimuleer en bankdeposito's verhoog."
+      },
+      {
+        "key": "B",
+        "text_en": "commercial banks raise liquid reserve ratios, curtailing private borrowing and shrinking credit volume.",
+        "text_af": "handelsbanke likiede reserweverhoudings verhoog, wat privaatlenings bekamp en kredietvolume krimp."
+      },
+      {
+        "key": "C",
+        "text_en": "the central bank sells sovereign treasury bills, elevating interbank lending costs and deposit yields.",
+        "text_af": "die sentrale bank skatkiswissels verkoop, wat interbankuitleenkoste en depositokoerse opstoot."
+      },
+      {
+        "key": "D",
+        "text_en": "the central bank increases statutory cash reserves, compelling private institutions to ration credit.",
+        "text_af": "die sentrale bank statutêre kontantreserwes verhoog, wat privaat instellings dwing om krediet te rantsoeneer."
+      }
+    ],
+    "correctKey": "A",
+    "derivation_en": "Under the SARB endogenous money model, a repo rate cut lowers the cost of refinancing for commercial banks, inducing them to decrease prime overdraft rates. Cheaper credit stimulates borrowing by firms and households, creating new bank deposits and expanding the money supply.",
+    "derivation_af": "Onder die SARB se endogene geldmodel verlaag 'n repokoersverlaging herfinansieringskoste vir handelsbanke, wat hulle beweeg om prima-uitleenkoerse te verlaag. Goedkoper krediet verhoog leenvraag, skep nuwe bankdeposito's en vergroot die geldvoorraad."
+  },
+  {
+    "id": "q14_44",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In the South African money market under an endogenous money supply system, an upward revision of the policy repo rate from 7% to 8% is depicted by:",
+    "stem_af": "In die Suid-Afrikaanse geldmark onder 'n endogene geldvoorraadstelsel word 'n opwaartse verstelling van die repokoers van 7% na 8% uitgebeeld deur:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "a rightward shift of the vertical money supply curve, reducing the equilibrium interest rate.",
+        "text_af": "'n regwaartse verskuiwing van die vertikale geldvoorraadkromme, wat die markrentekoers verlaag."
+      },
+      {
+        "key": "B",
+        "text_en": "an upward parallel shift of the horizontal money supply curve, reducing the quantity of money.",
+        "text_af": "'n opwaartse parallelle verskuiwing van die horisontale geldvoorraadlyn, wat die geldhoeveelheid krimp."
+      },
+      {
+        "key": "C",
+        "text_en": "a downward pivot of the demand for money curve, leaving nominal market cash balances intact.",
+        "text_af": "'n afwaartse wenteling van die geldvraagkromme, wat nominale kontantsaldo's onveranderd laat."
+      },
+      {
+        "key": "D",
+        "text_en": "a leftward displacement of the downward-sloping liquidity curve, expanding bank reserves.",
+        "text_af": "'n linkswaartse verskuiwing van die afwaartshellende likiditeitskromme, wat bankreserwes vergroot."
+      }
+    ],
+    "correctKey": "B",
+    "derivation_en": "In the SARB endogenous framework, the money supply schedule is horizontal at the repo rate. Increasing the repo rate from 7% to 8% shifts this horizontal line upward, intersecting the downward-sloping demand for money curve at a lower quantity of money.",
+    "derivation_af": "In die SARB se endogene stelsel is die geldvoorraadkromme horisontaal teen die repokoers. 'n Verhoging van 7% na 8% verskuif hierdie lyn opwaarts en sny die afwaartshellende vraagkromme by 'n laer geldhoeveelheid."
+  },
+  {
+    "id": "q14_45",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "When an industrial corporation argues that additional liquid cash balances allow factory expansion and greater output, economic theory clarifies that:",
+    "stem_af": "Wanneer 'n industriële onderneming aanvoer dat bykomende likiede kontant fabrieksuitbreiding en groter uitset moontlik maak, verduidelik ekonomiese teorie dat:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "money functions as the most fundamental primary factor of production generating real goods.",
+        "text_af": "geld as die mees fundamentele primêre produksiefaktor funksioneer wat reële produksie lewer."
+      },
+      {
+        "key": "B",
+        "text_en": "money constitutes tangible physical capital directly transforming raw materials into output.",
+        "text_af": "geld tasbare fisiese kapitaal verteenwoordig wat grondstowwe regstreeks in produkte omskep."
+      },
+      {
+        "key": "C",
+        "text_en": "money is a financial medium of exchange facilitating the procurement of real capital assets.",
+        "text_af": "geld 'n finansiële ruilmiddel is wat die aankoop van reële fisiese produksiefaktore fasiliteer."
+      },
+      {
+        "key": "D",
+        "text_en": "money represents entrepreneurial risk capacity creating direct macroeconomic physical value.",
+        "text_af": "geld entrepreneursrisikokapasiteit verteenwoordig wat direkte reële ekonomiese waarde skep."
+      }
+    ],
+    "correctKey": "C",
+    "derivation_en": "Money is not a factor of production (factors are strictly land, labour, capital, and entrepreneurship). Money is a financial asset and medium of exchange that facilitates the purchase and employment of real capital equipment.",
+    "derivation_af": "Geld is nie 'n produksiefaktor nie (faktorinsette is slegs grond, arbeid, kapitaal en entrepreneurskap). Geld is 'n finansiële bate en ruilmiddel wat die verkryging en aanwending van fisiese kapitaalgoedere moontlik maak."
+  },
+  {
+    "id": "q14_46",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "Under the Constitution of the Republic of South Africa and the SARB Act, the primary statutory objective of the South African Reserve Bank is to:",
+    "stem_af": "Ingevolge die Grondwet van die Republiek van Suid-Afrika en die Reserwebankwet is die primêre statutêre doelwit van die Suid-Afrikaanse Reserwebank om:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "finance sovereign budgetary shortfalls through direct open market monetization of state debt.",
+        "text_af": "staatstekorte te finansier deur regstreekse monetisering van staatsskuld op ope markte."
+      },
+      {
+        "key": "B",
+        "text_en": "guarantee absolute full employment across all provincial sectors by maintaining low rates.",
+        "text_af": "volindiensname in alle provinsiale sektore te waarborg deur rentekoerse laag te hou."
+      },
+      {
+        "key": "C",
+        "text_en": "enforce administrative ceilings on consumer credit interest rates charged by commercial banks.",
+        "text_af": "administratiewe plafonne op verbruikerskredietrentekoerse by handelsbanke af te dwing."
+      },
+      {
+        "key": "D",
+        "text_en": "protect the value of the currency in the interest of balanced and sustainable economic growth.",
+        "text_af": "die waarde van die geldeenheid te beskerm ter ondersteuning van gebalanseerde ekonomiese groei."
+      }
+    ],
+    "correctKey": "D",
+    "derivation_en": "Section 224 of the South African Constitution explicitly mandates that the primary object of the SARB is to protect the value of the currency (price stability) in the interest of balanced and sustainable economic growth.",
+    "derivation_af": "Artikel 224 van die Suid-Afrikaanse Grondwet bepaal dat die primêre doelwit van die SARB is om die waarde van die geldeenheid (prysstabiliteit) te beskerm ter wille van gebalanseerde en volhoubare ekonomiese groei."
+  },
+  {
+    "id": "q14_47",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In the conduct of its monetary policy framework, the South African Reserve Bank currently operationalizes its primary mandate by:",
+    "stem_af": "In die uitvoering van sy monetêre beleidsraamwerk operasionaliseer die Suid-Afrikaanse Reserwebank tans sy primêre mandaat deur:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "targeting headline CPI inflation within a continuous 3% to 6% band using the repurchase rate.",
+        "text_af": "hooflyn-VPI-inflasie binne 'n 3% tot 6% mikpuntband te teiken met behulp van die repokoers."
+      },
+      {
+        "key": "B",
+        "text_en": "fixing the statutory growth rate of the broad M3 money aggregate within explicit target bands.",
+        "text_af": "die statutêre groeikoers van die breë M3-geldvoorraadtotaal binne eksplisiete mikperke te hou."
+      },
+      {
+        "key": "C",
+        "text_en": "pegging the nominal exchange rate of the Rand against a trade-weighted basket of currencies.",
+        "text_af": "die nominale Randwisselkoers teen 'n handelsgeweegde mandjie van buitelandse valuta te koppel."
+      },
+      {
+        "key": "D",
+        "text_en": "rationing the physical volume of credit extended by private banking institutions to consumers.",
+        "text_af": "die fisiese volume krediet wat deur privaat bankinstellings aan verbruikers toegestaan word te beperk."
+      }
+    ],
+    "correctKey": "A",
+    "derivation_en": "South Africa utilizes formal inflation targeting, wherein the SARB targets headline CPI inflation within an official continuous target band of 3% to 6%, utilizing the repo rate as its primary operational instrument.",
+    "derivation_af": "Suid-Afrika gebruik inflasieteikening waarvolgens die SARB hooflyn-VPI-inflasie binne 'n amptelike deurlopende band van 3% tot 6% teiken, met die repokoers as hoofbeleidsinstrument."
+  },
+  {
+    "id": "q14_48",
+    "ch": 14,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Commercial Bank Cash Reserves: Under South African banking regulations, registered banks are legally required to hold a statutory cash reserve requirement of 2.5% against total deposit liabilities. If a commercial bank currently holds R80 000 million in total deposit liabilities, calculate the mandatory minimum reserve balance (in R millions) that the bank must deposit in a non-interest-bearing reserve account with the SARB.",
+    "stem_af": "Handelsbank Kontantreserwes: Ingevolge Suid-Afrikaanse bankregulasies moet geregistreerde banke 'n statutêre kontantreserwevereiste van 2.5% teen totale depositoverpligtinge hou. As 'n handelsbank tans R80 000 miljoen in totale deposito's hou, bereken die verpligte minimum reserwesaldo (in R miljoen) wat die bank by die SARB moet deponeer.",
+    "expectedNumber": 2000,
+    "tolerance": 1.0,
+    "derivation_en": "Statutory Reserve Requirement = Total Deposits * Reserve Ratio = R80 000 million * 0.025 = R2 000 million.",
+    "derivation_af": "Statutêre Kontantreserwevereiste = Totale Deposito's * Reserweverhouding = R80 000 miljoen * 0.025 = R2 000 miljoen."
+  },
+  {
+    "id": "q14_49",
+    "ch": 14,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Credit Multiplier: If the SARB statutory cash reserve requirement is fixed at 2.5% of commercial bank deposits, and assuming banks hold no excess reserves and there is no cash drain into public currency circulation, calculate the theoretical maximum credit multiplier.",
+    "stem_af": "Kredietvermenigvuldiger: As die SARB statutêre kontantreserwevereiste op 2.5% van handelsbankdeposito's vasgestel is, en met die aanname dat banke geen oortollige reserwes hou en daar geen kontantuitvloei na die publiek is nie, bereken die teoretiese maksimum kredietvermenigvuldiger.",
+    "expectedNumber": 40.0,
+    "tolerance": 0.1,
+    "derivation_en": "Credit Multiplier = 1 / Statutory Reserve Requirement = 1 / 0.025 = 40.0.",
+    "derivation_af": "Kredietvermenigvuldiger = 1 / Statutêre Reserwevereiste = 1 / 0.025 = 40.0."
+  },
+  {
+    "id": "q14_50",
+    "ch": 14,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "The endogenous approach to the money supply differs from the traditional exogenous view because the endogenous approach maintains that:",
+    "stem_af": "Die endogene benadering tot die geldvoorraad verskil van die tradisionele eksogene beskouing omdat die endogene benadering aanvoer dat:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "the central bank determines the exact quantity of currency in circulation through open market asset buys.",
+        "text_af": "die sentrale bank die presiese hoeveelheid kontant in omloop bepaal deur bateverkope op die ope mark."
+      },
+      {
+        "key": "B",
+        "text_en": "the money supply is credit-driven and determined by the demand for bank loans at the ruling interest rate.",
+        "text_af": "die geldvoorraad kredietgedrewe is en bepaal word deur die vraag na banklenings teen die heersende rentekoers."
+      },
+      {
+        "key": "C",
+        "text_en": "commercial banks are completely constrained by the physical quantity of gold bullion held in bank vaults.",
+        "text_af": "handelsbanke ten volle ingeperk word deur die fisiese voorraad goud wat in bankkluise bewaar word."
+      },
+      {
+        "key": "D",
+        "text_en": "the volume of demand deposits expands independently of commercial lending decisions across the economy.",
+        "text_af": "die volume vraagdeposito's onafhanklik van kommersiële leningsbesluite oor die ekonomie heen uitbrei."
+      }
+    ],
+    "correctKey": "B",
+    "derivation_en": "Under the endogenous view, the central bank sets the price of reserves (the repo rate), and the quantity of money expands endogenously as creditworthy borrowers demand loans from commercial banks.",
+    "derivation_af": "Onder die endogene beskouing stel die sentrale bank die prys van reserwes (die repokoers) vas, en die geldvoorraad brei endogeen uit soos kredietwaardige leners lenings by handelsbanke aanvra."
+  },
+  {
     "id": "q15_01",
     "ch": 15,
     "type": "mcq",
@@ -2412,6 +2770,343 @@ window.AXIOM_MASTER_BANK = [
     "derivation_af": "Hernubare energie skep positiewe eksterne voordele wat nie deur die mark beloon word nie; subsidies help om uitset tot die optimum te verhoog."
   },
   {
+    "id": "q15_38",
+    "ch": 15,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Senior Tax Rebate Calculation: A 68-year-old individual earns an annual taxable income resulting in a gross tax liability before rebates of R64 000. Statutory primary rebate = R17 235 and secondary rebate (for age 65 and older) = R9 444. Calculate the net tax payable after both rebates (in Rands).",
+    "stem_af": "Senior Belastingkorting: 'n 68-jarige individu se bruto belasting voor kortings is R64 000. Primêre korting = R17 235 en sekondêre korting (ouderdom 65+) = R9 444. Bereken die netto belasting betaalbaar na beide kortings (in Rand).",
+    "expectedNumber": 37321,
+    "tolerance": 10,
+    "derivation_en": "Total Rebates = Primary + Secondary = 17 235 + 9 444 = R26 679. Net Tax = Gross Tax - Total Rebates = 64 000 - 26 679 = R37 321.",
+    "derivation_af": "Totale kortings = 17 235 + 9 444 = R26 679. Netto belasting = 64 000 - 26 679 = R37 321."
+  },
+  {
+    "id": "q15_39",
+    "ch": 15,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Fiscal Deficit Ratio: A country's total government expenditure in a fiscal year is R2 100 billion while total revenue is R1 850 billion. If the country's nominal GDP is R6 250 billion, calculate the budget deficit as a percentage of GDP (enter percentage rounded to one decimal place).",
+    "stem_af": "Fiskale Tekortverhouding: Staatsbesteding is R2 100 miljard en staatsinkomste is R1 850 miljard. As nominale BBP R6 250 miljard is, bereken die begrotingstekort as 'n persentasie van BBP (voer persentasie tot een desimale plek in).",
+    "expectedNumber": 4.0,
+    "tolerance": 0.1,
+    "derivation_en": "Deficit = 2 100 - 1 850 = R250 billion. Deficit-to-GDP Ratio = (250 / 6 250) * 100 = 4.0%.",
+    "derivation_af": "Tekort = 2 100 - 1 850 = R250 miljard. Tekort/BBP = (250 / 6 250) * 100 = 4,0%."
+  },
+  {
+    "id": "q15_40",
+    "ch": 15,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In Keynesian fiscal analysis, the 'Balanced Budget Multiplier' demonstrates that if government expenditure and tax revenue increase by the exact same amount (ΔG = ΔT):",
+    "stem_af": "In Keynesiaanse fiskale analise toon die 'Gebalanseerde Begrotingsvermenigvuldiger' dat as staatsbesteding en belasting met presies dieselfde bedrag toeneem (ΔG = ΔT):",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Aggregate demand remains completely unchanged because higher taxes cancel out public spending.",
+        "text_af": "Totale vraag bly heeltemal onveranderd omdat hoër belasting besteding presies uitkanselleer."
+      },
+      {
+        "key": "B",
+        "text_en": "The national debt expands automatically by double the amount of the initial public spending.",
+        "text_af": "Die staatskuld brei outomaties uit met dubbel die bedrag van die aanvanklike besteding."
+      },
+      {
+        "key": "C",
+        "text_en": "The commercial banking credit multiplier drops to zero due to private liquidity absorption.",
+        "text_af": "Die bankkredietvermenigvuldiger daal na nul weens oormatige likiditeitsabsorpsie in die mark."
+      },
+      {
+        "key": "D",
+        "text_en": "Equilibrium income increases by an amount exactly equal to the change in government spending.",
+        "text_af": "Ewewiginkomste neem toe met 'n bedrag presies gelyk aan die verandering in staatsbesteding."
+      }
+    ],
+    "correctKey": "D",
+    "derivation_en": "The balanced budget multiplier is equal to 1. Because government spending has a direct 1-to-1 impact on AD while taxes impact AD through consumption (c * ΔT), an equal rise in G and T increases output by ΔG.",
+    "derivation_af": "Die gebalanseerde begrotingsvermenigvuldiger is gelyk aan 1. Uitset styg met presies die toename in G."
+  },
+  {
+    "id": "q15_41",
+    "ch": 15,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "The 'deadweight loss' (excess burden) of a tax on a consumer commodity measures:",
+    "stem_af": "Die 'dooiegewigverlies' (ekseslas) van 'n belasting op 'n verbruiksgoed meet:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "The total administrative expenditure incurred by SARS auditors during annual tax assessments.",
+        "text_af": "Die totale administratiewe uitgawes van SAID-ouditeure tydens jaarlikse belastingaanslae."
+      },
+      {
+        "key": "B",
+        "text_en": "The legal fines and penalties imposed by commercial courts on corporate tax avoidance.",
+        "text_af": "Die regstraf en boetes wat howe oplê vir maatskappybelastingontduiking en doeanebedrog."
+      },
+      {
+        "key": "C",
+        "text_en": "The loss of economic surplus (consumer plus producer surplus) not captured as tax revenue.",
+        "text_af": "Die verlies aan ekonomiese surplus wat nie deur die owerheid as belasting ingevorder word nie."
+      },
+      {
+        "key": "D",
+        "text_en": "The interest charges paid to foreign institutional investors on outstanding national debt.",
+        "text_af": "Die rentekoste wat aan buitelandse institusionele beleggers op staatskuld betaal word."
+      }
+    ],
+    "correctKey": "C",
+    "derivation_en": "Deadweight loss arises because taxes alter relative prices, causing consumers to buy less and producers to sell less, destroying mutually beneficial trade surplus.",
+    "derivation_af": "Dooiegewigverlies is die verlies aan maatskaplike welvaart wat ontstaan omdat belasting vrye markbesluite verwring."
+  },
+  {
+    "id": "q15_42",
+    "ch": 15,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "Which category represents the single largest source of tax revenue collected annually by the South African Revenue Service (SARS)?",
+    "stem_af": "Watter kategorie verteenwoordig die grootste enkele bron van belastinginkomste wat jaarliks deur die SAID ingevorder word?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Personal Income Tax (PIT) levied on individual wage and salary earners.",
+        "text_af": "Persoonlike Inkomstebelasting gehef op individuele loon- en salarisverdieners."
+      },
+      {
+        "key": "B",
+        "text_en": "Customs import tariffs collected at commercial harbor seaports and airports.",
+        "text_af": "Doeane-invoertariewe ingevorder by kommersiële seehawens en internasionale lughawens."
+      },
+      {
+        "key": "C",
+        "text_en": "Specific excise duties levied on domestic petroleum refining and tobacco.",
+        "text_af": "Spesifieke aksynsregte gehef op binnelandse petroleumraffinering en tabakprodukte."
+      },
+      {
+        "key": "D",
+        "text_en": "Municipal property assessment rates collected on urban residential houses.",
+        "text_af": "Munisipale eiendomsbelasting ingevorder op stedelike residensiële eiendomme."
+      }
+    ],
+    "correctKey": "A",
+    "derivation_en": "Personal Income Tax constitutes approximately 38% to 40% of total national tax revenue in South Africa, followed by VAT (approx 25-27%) and Corporate Income Tax (approx 18-20%).",
+    "derivation_af": "Persoonlike inkomstebelasting is die grootste enkele inkomstebron vir die nasionale regering (ongeveer 38-40% van totale belasting)."
+  },
+  {
+    "id": "q15_43",
+    "ch": 15,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In national accounting and public finance, the public sector of South Africa is formally defined as consisting of:",
+    "stem_af": "In nasionale rekeninge en openbare finansies word die openbare sektor van Suid-Afrika formeel gedefinieer as bestaande uit:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "the national treasury, the national revenue fund, and all registered private commercial banks.",
+        "text_af": "die nasionale tesourie, die nasionale inkomstefonds, en alle geregistreerde privaat banke."
+      },
+      {
+        "key": "B",
+        "text_en": "the executive branch of the central government, national defense, and civil administration.",
+        "text_af": "die uitvoerende gesag van die sentrale regering, nasionale verdediging en burgerlike diens."
+      },
+      {
+        "key": "C",
+        "text_en": "general government (central, provincial, and local) plus public state-owned corporations.",
+        "text_af": "algemene owerheid (sentraal, provinsiaal en plaaslik) plus openbare korporasies en staatsbeheerde entiteite."
+      },
+      {
+        "key": "D",
+        "text_en": "the South African Reserve Bank, parliamentary committees, and municipal trade associations.",
+        "text_af": "die Suid-Afrikaanse Reserwebank, parlementêre komitees en plaaslike munisipale handelsverenigings."
+      }
+    ],
+    "correctKey": "C",
+    "derivation_en": "The South African public sector comprises general government (central government, provincial governments, and local authorities) plus public corporations / state-owned enterprises (e.g. Eskom, Transnet).",
+    "derivation_af": "Die Suid-Afrikaanse openbare sektor bestaan uit algemene owerheid (sentrale regering, provinsiale regerings en plaaslike owerhede) plus openbare korporasies / staatsondernemings (soos Eskom en Transnet)."
+  },
+  {
+    "id": "q15_44",
+    "ch": 15,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In a Lorenz curve diagram representing South African household income distribution, the diagonal 45-degree ray indicates:",
+    "stem_af": "In 'n Lorenz-kromme-diagram wat Suid-Afrikaanse huishoudelike inkomesteverdeling voorstel, dui die 45-grade diagonale lyn op:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "a regressive distribution where the top quintile pays the largest share of indirect sales taxes.",
+        "text_af": "'n regressiewe verdeling waar die hoogste kwintiel die grootste deel van indirekte belasting betaal."
+      },
+      {
+        "key": "B",
+        "text_en": "maximum income concentration where one household receives the entirety of national real income.",
+        "text_af": "maksimum inkomstekonsentrasie waar 'n enkele huishouding die totale nasionale inkomste ontvang."
+      },
+      {
+        "key": "C",
+        "text_en": "the statutory tax threshold below which individuals are exempt from normal income tax charges.",
+        "text_af": "die statutêre belastingdrempel waaronder individue vrygestel is van normale inkomstebelasting."
+      },
+      {
+        "key": "D",
+        "text_en": "perfect income equality where each cumulative population percentile earns an equal income share.",
+        "text_af": "volkome inkomstegelykheid waar elke kumulatiewe bevolkingspersentasie 'n gelyke deel van inkomste verdien."
+      }
+    ],
+    "correctKey": "D",
+    "derivation_en": "The 45-degree diagonal line in a Lorenz curve represents perfect income equality: 10% of the population earns 10% of income, 50% earns 50%, and so on. The further the Lorenz curve bows away from this line (e.g. SA Gini ~0.67), the greater the inequality.",
+    "derivation_af": "Die 45-grade diagonale lyn in 'n Lorenz-kromme verteenwoordig volkome inkomstegelykheid: 10% van die bevolking verdien 10% van inkomste, 50% verdien 50%, ensovoorts. Hoe verder die kromme wegbuig (bv. SA Gini ~0.67), hoe groter die ongelykheid."
+  },
+  {
+    "id": "q15_45",
+    "ch": 15,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "When the unregulated manufacturing of synthetic chemicals emits air pollution that harms nearby residents, market failure occurs because:",
+    "stem_af": "Wanneer die ongereguleerde vervaardiging van sintetiese chemikalieë lugbesoedeling vrystel wat nabygeleë inwoners benadeel, vind markmislukking plaas omdat:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "marginal social costs exceed marginal private costs, causing private competitive markets to overproduce.",
+        "text_af": "marginale maatskaplike koste marginale privaatkoste oorskry, wat veroorsaak dat die mark te veel produseer."
+      },
+      {
+        "key": "B",
+        "text_en": "marginal private benefits exceed marginal social benefits, causing private competitive markets to underproduce.",
+        "text_af": "marginale privaatvoordele marginale maatskaplike voordele oorskry, wat veroorsaak dat die mark te min lewer."
+      },
+      {
+        "key": "C",
+        "text_en": "the chemical satisfies non-rivalry and non-excludability criteria, leading inevitably to free-rider issues.",
+        "text_af": "die chemiese produk nie-mededingend en nie-uitsluitbaar is, wat lei tot 'n vryryersprobleem onder verbruikers."
+      },
+      {
+        "key": "D",
+        "text_en": "statutory corporate profit taxation forces producer output to contract below the allocative optimum level.",
+        "text_af": "statutêre maatskappybelasting produsente dwing om produksie onder die allokatiewe optimum vlak in te kort."
+      }
+    ],
+    "correctKey": "A",
+    "derivation_en": "A negative externality creates an external cost, meaning Marginal Social Cost (MSC) = Marginal Private Cost (MPC) + Marginal External Cost. Since MSC > MPC, the free market equates Price with MPC rather than MSC, generating overproduction relative to the social optimum.",
+    "derivation_af": "'n Negatiewe eksternaliteit skep 'n eksterne koste, wat beteken dat Marginale Maatskaplike Koste (MMK) > Marginale Privaat Koste (MPK). Omdat markte by MPK produseer, lei dit tot oorproduksie vergeleke met die maatskaplik optimale vlak."
+  },
+  {
+    "id": "q15_46",
+    "ch": 15,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In the Keynesian open-economy macroeconomic model, autonomous government spending ($G$) and the proportional income tax rate ($t$) represent, respectively:",
+    "stem_af": "In die Keynesiaanse oop-ekonomie makro-ekonomiese model verteenwoordig outonome regeringsbesteding ($G$) en die proporsionele belastingkoers ($t$) onderskeidelik:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "an autonomous leakage shrinking equilibrium income, and an induced injection increasing the multiplier.",
+        "text_af": "'n outonome lekkasie wat ewewigsinkomste krimp, en 'n geïnduseerde inspuiting wat die vermenigvuldiger vergroot."
+      },
+      {
+        "key": "B",
+        "text_en": "an autonomous injection expanding equilibrium income, and an induced leakage reducing the multiplier.",
+        "text_af": "'n outonome inspuiting wat ewewigsinkomste verhoog, en 'n geïnduseerde lekkasie wat die vermenigvuldiger verklein."
+      },
+      {
+        "key": "C",
+        "text_en": "an induced injection leaving the multiplier unchanged, and an autonomous leakage expanding production.",
+        "text_af": "'n geïnduseerde inspuiting wat die vermenigvuldiger onveranderd laat, en 'n outonome lekkasie wat produksie uitbrei."
+      },
+      {
+        "key": "D",
+        "text_en": "an induced leakage expanding public savings balances, and an autonomous injection reducing tax drag.",
+        "text_af": "'n geïnduseerde lekkasie wat staatsbesparings verhoog, en 'n outonome inspuiting wat fiskale remming verlig."
+      }
+    ],
+    "correctKey": "B",
+    "derivation_en": "Government spending ($G$) is an injection into the circular flow of income ($Y_e$ rises). Taxes ($t$) are leakages; a higher tax rate reduces disposable income ($Y_d = (1-t)Y$), diminishing the marginal propensity to consume out of national income and reducing the Keynesian multiplier.",
+    "derivation_af": "Regeringsbesteding ($G$) is 'n inspuiting in die inkomstestroom wat ewewigsinkomste verhoog. Belasting ($t$) is 'n lekkasie; 'n hoër belastingkoers verlaag besteebare inkomste en verklein die Keynesiaanse vermenigvuldiger."
+  },
+  {
+    "id": "q15_47",
+    "ch": 15,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In public sector economics, the restructuring and privatisation of state-owned enterprises is primarily justified on the economic grounds of:",
+    "stem_af": "In openbare sektor-ekonomie word die herstrukturering en privatisering van staatsondernemings hoofsaaklik geregverdig op die ekonomiese gronde van:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "expanding civil service employment opportunities and securing state control over market prices.",
+        "text_af": "uitbreiding van staatsdiens-werkgeleenthede en verstewiging van staatsbeheer oor markpryse."
+      },
+      {
+        "key": "B",
+        "text_en": "eliminating private market competition to ensure stable monopolistic profits for utility providers.",
+        "text_af": "die uitskakeling van privaat mededinging om stabiele monopolistiese winste vir openbare dienste te verseker."
+      },
+      {
+        "key": "C",
+        "text_en": "improving productive efficiency, alleviating fiscal deficits, and introducing competitive market disciplines.",
+        "text_af": "die verbetering van produktiewe doeltreffendheid, verligting van fiskale tekorte en bevordering van markdissipline."
+      },
+      {
+        "key": "D",
+        "text_en": "transforming excludable private consumer goods into pure non-rival public goods for society.",
+        "text_af": "die omskakeling van uitsluitbare privaat verbruiksgoedere na suiwer nie-mededingende openbare goedere."
+      }
+    ],
+    "correctKey": "C",
+    "derivation_en": "Privatisation transfers ownership of state-owned assets to private investors to foster market competition, expose management to capital market disciplines, increase productive and allocative efficiency, and relieve state budget deficits.",
+    "derivation_af": "Privatisering dra eienaarskap van staatsondernemings oor na die privaatsektor om doeltreffendheid te bevorder, mededinging te skep, en fiskale druk op die staatsbegroting te verlig."
+  },
+  {
+    "id": "q15_48",
+    "ch": 15,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "SARS Individual Income Tax (2026 Statutory Brackets): An individual taxpayer under the age of 65 earns a taxable income of R375 000 for the 2026 tax year. According to statutory SARS tax tables, the tax liability on income between R370 501 and R512 800 is R77 362 plus 31% of the taxable amount above R370 500. After deducting the single primary rebate of R17 235, calculate the net normal tax payable (in Rands) by the taxpayer.",
+    "stem_af": "SARS Individuele Inkomstebelasting (2026 Statutêre Kerwe): 'n Belastingbetaler onder 65 jaar verdien 'n belasbare inkomste van R375 000 vir die 2026-belastingjaar. Volgens statutêre SARS-tabelle is die belasting op inkomste tussen R370 501 en R512 800 gelyk aan R77 362 plus 31% van die belasbare bedrag bo R370 500. Na aftrekking van die primêre korting van R17 235, bereken die netto normale belasting betaalbaar (in Rand) deur die belastingbetaler.",
+    "expectedNumber": 61522,
+    "tolerance": 1.0,
+    "derivation_en": "Tax on R375 000 = R77 362 + [0.31 * (R375 000 - R370 500)] = R77 362 + [0.31 * R4 500] = R77 362 + R1 395 = R78 757. Net tax payable = R78 757 - Primary Rebate R17 235 = R61 522.",
+    "derivation_af": "Belasting op R375 000 = R77 362 + [0.31 * (R375 000 - R370 500)] = R77 362 + R1 395 = R78 757. Netto belasting = R78 757 - Primêre korting R17 235 = R61 522."
+  },
+  {
+    "id": "q15_49",
+    "ch": 15,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Effective Tax Rate (2026 Standards): A South African taxpayer with a taxable income of R375 000 pays a net normal income tax of R61 522 after all allowable statutory rebates. Calculate the taxpayer's effective (average) tax rate as a percentage, rounded to two decimal places.",
+    "stem_af": "Effektiewe Belastingkoers (2026 Standaarde): 'n Suid-Afrikaanse belastingbetaler met 'n belasbare inkomste van R375 000 betaal 'n netto normale inkomstebelasting van R61 522 na aftrekking van alle statutêre kortings. Bereken die belastingbetaler se effektiewe (gemiddelde) belastingkoers as 'n persentasie, afgerond tot twee desimale plekke.",
+    "expectedNumber": 16.41,
+    "tolerance": 0.05,
+    "derivation_en": "Effective (Average) Tax Rate = (Total Tax Paid / Total Taxable Income) * 100 = (61 522 / 375 000) * 100 = 16.4058...% -> 16.41%.",
+    "derivation_af": "Effektiewe (Gemiddelde) Belastingkoers = (Totale Belasting Betaal / Belasbare Inkomste) * 100 = (61 522 / 375 000) * 100 = 16.41%."
+  },
+  {
+    "id": "q15_50",
+    "ch": 15,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Fiscal Multiplier and Tax Revenue: An economy is characterized by: C = 85 + 0.5Yd, I = 75, G = 70, T = 0.25Y, Yd = Y - T, X = 30, and Z = 30 + 0.3Yd. At the macroeconomic equilibrium income of Y = 270.59, calculate the total tax revenue collected by the government (in millions), rounded to two decimal places.",
+    "stem_af": "Fiskale Vermenigvuldiger en Belastinginkomste: 'n Ekonomie word gekenmerk deur: C = 85 + 0.5Yd, I = 75, G = 70, T = 0.25Y, Yd = Y - T, X = 30, en Z = 30 + 0.3Yd. Teen die makro-ekonomiese ewewigsinkomste van Y = 270.59, bereken die totale belastinginkomste wat deur die regering ingevorder word (in miljoene), afgerond tot twee desimale plekke.",
+    "expectedNumber": 67.65,
+    "tolerance": 0.1,
+    "derivation_en": "Tax revenue T = t * Y = 0.25 * 270.59 = 67.6475 -> 67.65 million. (Note: Government budget balance = T - G = 67.65 - 70 = -2.35 million, representing a budget deficit).",
+    "derivation_af": "Belastinginkomste T = t * Y = 0.25 * 270.59 = 67.65 miljoen. (Begrotingstekort = G - T = 70 - 67.65 = 2.35 miljoen)."
+  },
+  {
     "id": "q20_01",
     "ch": 20,
     "type": "mcq",
@@ -3565,262 +4260,6 @@ window.AXIOM_MASTER_BANK = [
     "derivation_af": "Geankerde verwagtinge stuit selfvoedende loon-prys-spirale, verlaag langtermynrente en skep stabiliteit vir volhoubare ekonomiese groei."
   },
   {
-    "id": "q14_38",
-    "ch": 14,
-    "type": "calculation",
-    "marks": 3,
-    "difficulty": "Exam",
-    "stem_en": "Deposit Expansion: A central bank injects R20 000 million of new reserves into the banking system. If the required reserve ratio is 8% and banks hold zero excess reserves with no cash drain, calculate the total theoretical increase in bank deposits (in R millions).",
-    "stem_af": "Deposito-uitbreiding: 'n Sentrale bank spuit R20 000 miljoen se nuwe reserwes in die stelsel. As die reserweverhouding 8% is sonder kontantverliese, bereken die totale teoretiese toename in bankdeposito's (in R miljoen).",
-    "expectedNumber": 250000,
-    "tolerance": 50,
-    "derivation_en": "Credit Multiplier m = 1 / r = 1 / 0.08 = 12.5. Total Deposits = Injection * m = 20 000 * 12.5 = R250 000 million.",
-    "derivation_af": "Vermenigvuldiger m = 1 / 0,08 = 12,5. Totale deposito's = 20 000 * 12,5 = R250 000 miljoen."
-  },
-  {
-    "id": "q14_39",
-    "ch": 14,
-    "type": "mcq",
-    "marks": 2,
-    "difficulty": "Exam",
-    "stem_en": "In Keynesian monetary theory, the 'liquidity trap' refers to a situation where:",
-    "stem_af": "In Keynesiaanse monetêre teorie verwys die 'likiditeitsval' na 'n situasie waar:",
-    "options": [
-      {
-        "key": "A",
-        "text_en": "Commercial banks face statutory lending ceilings that restrict consumer credit creation.",
-        "text_af": "Handelsbanke wetlike leningsplafonne in die gesig staar wat verbruikerskrediet inperk."
-      },
-      {
-        "key": "B",
-        "text_en": "High inflation expectations drive real money demand down to zero across all sectors.",
-        "text_af": "Hoë inflasieverwagtinge reële geldvraag na nul toe dryf oor alle ekonomiese sektore."
-      },
-      {
-        "key": "C",
-        "text_en": "Interest rates are so low that speculative money demand becomes completely horizontal.",
-        "text_af": "Rentekoerse so laag is dat die spekulasievraag na geld volkome horisontaal word."
-      },
-      {
-        "key": "D",
-        "text_en": "Commercial bank excess reserves are fully absorbed by central bank debenture auctions.",
-        "text_af": "Banke se oorskotreserwes ten volle deur sentrale bank skuldbriefveilings geabsorbeer word."
-      }
-    ],
-    "correctKey": "C",
-    "derivation_en": "At rock-bottom interest rates, bond prices are at their ceiling. Everyone expects interest rates to rise (bond prices to fall), so agents hoard all additional money (perfectly elastic demand).",
-    "derivation_af": "By baie lae rentekoerse verkies almal om kontant te hou (horisontale MD), wat monetêre beleid oneffektief maak."
-  },
-  {
-    "id": "q14_40",
-    "ch": 14,
-    "type": "mcq",
-    "marks": 2,
-    "difficulty": "Exam",
-    "stem_en": "Which of the following describes the difference between an endogenous and exogenous money supply view?",
-    "stem_af": "Watter van die volgende beskryf die verskil tussen 'n endogene en eksogene geldvoorraadbeskouing?",
-    "options": [
-      {
-        "key": "A",
-        "text_en": "Exogenous views hold that commercial banks set the repo rate while central banks fix loans.",
-        "text_af": "Eksogene beskouings voer aan banke bepaal die repokoers terwyl die sentrale bank lenings stel."
-      },
-      {
-        "key": "B",
-        "text_en": "Endogenous views require bank deposits to be backed 100% by physical central bank bullion.",
-        "text_af": "Endogene beskouings vereis dat bankdeposito's 100% deur sentrale bank goud gerugsteun word."
-      },
-      {
-        "key": "C",
-        "text_en": "Exogenous views assume that commercial banks operate without statutory reserve ratios.",
-        "text_af": "Eksogene beskouings aanvaar dat handelsbanke heeltemal sonder statutêre reserwes funksioneer."
-      },
-      {
-        "key": "D",
-        "text_en": "Endogenous views hold that banks create credit deposits, while the central bank sets rates.",
-        "text_af": "Endogene beskouings hou dat banke kredietdeposito's skep terwyl die sentrale bank koerse stel."
-      }
-    ],
-    "correctKey": "D",
-    "derivation_en": "Modern central banking recognizes money as endogenous: banks create deposits by extending loans, and the SARB controls the price of liquidity (Repo rate) rather than fixing money supply exogenously.",
-    "derivation_af": "In 'n endogene stelsel skep banke geld wanneer hulle lenings toestaan, en die sentrale bank beïnvloed dit via die repokoers."
-  },
-  {
-    "id": "q14_41",
-    "ch": 14,
-    "type": "calculation",
-    "marks": 3,
-    "difficulty": "Exam",
-    "stem_en": "Monetary Aggregates: In an economy, M1 = R620 000 million, Short-term deposits = R340 000 million, Medium-term deposits = R290 000 million, and Long-term deposits = R210 000 million. Calculate the total broad money supply M3 (in R millions).",
-    "stem_af": "Monetêre Totale: M1 = R620 000m, Korttermyn = R340 000m, Mediumtermyn = R290 000m, en Langtermyn = R210 000m. Bereken die totale breë geldvoorraad M3 (in R miljoen).",
-    "expectedNumber": 1460000,
-    "tolerance": 50,
-    "derivation_en": "M2 = M1 + Short-term + Medium-term = 620 000 + 340 000 + 290 000 = R1 250 000 million. M3 = M2 + Long-term = 1 250 000 + 210 000 = R1 460 000 million.",
-    "derivation_af": "M2 = 620 000 + 340 000 + 290 000 = R1 250 000m. M3 = 1 250 000 + 210 000 = R1 460 000 miljoen."
-  },
-  {
-    "id": "q14_42",
-    "ch": 14,
-    "type": "mcq",
-    "marks": 2,
-    "difficulty": "Exam",
-    "stem_en": "If the South African Reserve Bank conducts monetary tightening by raising the repo rate, what is the expected impact on aggregate domestic demand and the exchange rate?",
-    "stem_af": "Indien die SARB monetêre beleid verskerp deur die repokoers te verhoog, wat is die verwagte impak op binnelandse totale vraag en die wisselkoers?",
-    "options": [
-      {
-        "key": "A",
-        "text_en": "Higher interest rates dampen domestic spending and attract capital inflows that support the currency.",
-        "text_af": "Hoër rentekoerse demp binnelandse besteding en lok kapitaalinvloei wat die geldeenheid ondersteun."
-      },
-      {
-        "key": "B",
-        "text_en": "Household borrowing accelerates sharply while foreign portfolio investors liquidate government bonds.",
-        "text_af": "Huishoudelike lenings versnel skerp terwyl buitelandse beleggers staatseffekte haastig likwideer."
-      },
-      {
-        "key": "C",
-        "text_en": "Commercial bank prime overdraft lending rates drop automatically below the headline inflation rate.",
-        "text_af": "Handelsbanke se primakoers daal outomaties tot onder die amptelike verbruikersprys-inflasiekoers."
-      },
-      {
-        "key": "D",
-        "text_en": "Statutory consumption taxes decline by an equivalent percentage margin across all retail companies.",
-        "text_af": "Statutêre verbruiksbelasting daal met 'n gelykwaardige marge oor alle geregistreerde handelaars."
-      }
-    ],
-    "correctKey": "A",
-    "derivation_en": "Repo hike raises borrowing costs (contracting C and I) and increases interest differentials, which attracts portfolio capital inflows, supporting the Rand.",
-    "derivation_af": "Hoër rentekoerse verlaag besteding (C en I) en lok buitelandse kapitaal wat die Rand ondersteun."
-  },
-  {
-    "id": "q15_38",
-    "ch": 15,
-    "type": "calculation",
-    "marks": 3,
-    "difficulty": "Exam",
-    "stem_en": "Senior Tax Rebate Calculation: A 68-year-old individual earns an annual taxable income resulting in a gross tax liability before rebates of R64 000. Statutory primary rebate = R17 235 and secondary rebate (for age 65 and older) = R9 444. Calculate the net tax payable after both rebates (in Rands).",
-    "stem_af": "Senior Belastingkorting: 'n 68-jarige individu se bruto belasting voor kortings is R64 000. Primêre korting = R17 235 en sekondêre korting (ouderdom 65+) = R9 444. Bereken die netto belasting betaalbaar na beide kortings (in Rand).",
-    "expectedNumber": 37321,
-    "tolerance": 10,
-    "derivation_en": "Total Rebates = Primary + Secondary = 17 235 + 9 444 = R26 679. Net Tax = Gross Tax - Total Rebates = 64 000 - 26 679 = R37 321.",
-    "derivation_af": "Totale kortings = 17 235 + 9 444 = R26 679. Netto belasting = 64 000 - 26 679 = R37 321."
-  },
-  {
-    "id": "q15_39",
-    "ch": 15,
-    "type": "calculation",
-    "marks": 3,
-    "difficulty": "Exam",
-    "stem_en": "Fiscal Deficit Ratio: A country's total government expenditure in a fiscal year is R2 100 billion while total revenue is R1 850 billion. If the country's nominal GDP is R6 250 billion, calculate the budget deficit as a percentage of GDP (enter percentage rounded to one decimal place).",
-    "stem_af": "Fiskale Tekortverhouding: Staatsbesteding is R2 100 miljard en staatsinkomste is R1 850 miljard. As nominale BBP R6 250 miljard is, bereken die begrotingstekort as 'n persentasie van BBP (voer persentasie tot een desimale plek in).",
-    "expectedNumber": 4.0,
-    "tolerance": 0.1,
-    "derivation_en": "Deficit = 2 100 - 1 850 = R250 billion. Deficit-to-GDP Ratio = (250 / 6 250) * 100 = 4.0%.",
-    "derivation_af": "Tekort = 2 100 - 1 850 = R250 miljard. Tekort/BBP = (250 / 6 250) * 100 = 4,0%."
-  },
-  {
-    "id": "q15_40",
-    "ch": 15,
-    "type": "mcq",
-    "marks": 2,
-    "difficulty": "Exam",
-    "stem_en": "In Keynesian fiscal analysis, the 'Balanced Budget Multiplier' demonstrates that if government expenditure and tax revenue increase by the exact same amount (ΔG = ΔT):",
-    "stem_af": "In Keynesiaanse fiskale analise toon die 'Gebalanseerde Begrotingsvermenigvuldiger' dat as staatsbesteding en belasting met presies dieselfde bedrag toeneem (ΔG = ΔT):",
-    "options": [
-      {
-        "key": "A",
-        "text_en": "Aggregate demand remains completely unchanged because higher taxes cancel out public spending.",
-        "text_af": "Totale vraag bly heeltemal onveranderd omdat hoër belasting besteding presies uitkanselleer."
-      },
-      {
-        "key": "B",
-        "text_en": "The national debt expands automatically by double the amount of the initial public spending.",
-        "text_af": "Die staatskuld brei outomaties uit met dubbel die bedrag van die aanvanklike besteding."
-      },
-      {
-        "key": "C",
-        "text_en": "The commercial banking credit multiplier drops to zero due to private liquidity absorption.",
-        "text_af": "Die bankkredietvermenigvuldiger daal na nul weens oormatige likiditeitsabsorpsie in die mark."
-      },
-      {
-        "key": "D",
-        "text_en": "Equilibrium income increases by an amount exactly equal to the change in government spending.",
-        "text_af": "Ewewiginkomste neem toe met 'n bedrag presies gelyk aan die verandering in staatsbesteding."
-      }
-    ],
-    "correctKey": "D",
-    "derivation_en": "The balanced budget multiplier is equal to 1. Because government spending has a direct 1-to-1 impact on AD while taxes impact AD through consumption (c * ΔT), an equal rise in G and T increases output by ΔG.",
-    "derivation_af": "Die gebalanseerde begrotingsvermenigvuldiger is gelyk aan 1. Uitset styg met presies die toename in G."
-  },
-  {
-    "id": "q15_41",
-    "ch": 15,
-    "type": "mcq",
-    "marks": 2,
-    "difficulty": "Exam",
-    "stem_en": "The 'deadweight loss' (excess burden) of a tax on a consumer commodity measures:",
-    "stem_af": "Die 'dooiegewigverlies' (ekseslas) van 'n belasting op 'n verbruiksgoed meet:",
-    "options": [
-      {
-        "key": "A",
-        "text_en": "The total administrative expenditure incurred by SARS auditors during annual tax assessments.",
-        "text_af": "Die totale administratiewe uitgawes van SAID-ouditeure tydens jaarlikse belastingaanslae."
-      },
-      {
-        "key": "B",
-        "text_en": "The legal fines and penalties imposed by commercial courts on corporate tax avoidance.",
-        "text_af": "Die regstraf en boetes wat howe oplê vir maatskappybelastingontduiking en doeanebedrog."
-      },
-      {
-        "key": "C",
-        "text_en": "The loss of economic surplus (consumer plus producer surplus) not captured as tax revenue.",
-        "text_af": "Die verlies aan ekonomiese surplus wat nie deur die owerheid as belasting ingevorder word nie."
-      },
-      {
-        "key": "D",
-        "text_en": "The interest charges paid to foreign institutional investors on outstanding national debt.",
-        "text_af": "Die rentekoste wat aan buitelandse institusionele beleggers op staatskuld betaal word."
-      }
-    ],
-    "correctKey": "C",
-    "derivation_en": "Deadweight loss arises because taxes alter relative prices, causing consumers to buy less and producers to sell less, destroying mutually beneficial trade surplus.",
-    "derivation_af": "Dooiegewigverlies is die verlies aan maatskaplike welvaart wat ontstaan omdat belasting vrye markbesluite verwring."
-  },
-  {
-    "id": "q15_42",
-    "ch": 15,
-    "type": "mcq",
-    "marks": 2,
-    "difficulty": "Exam",
-    "stem_en": "Which category represents the single largest source of tax revenue collected annually by the South African Revenue Service (SARS)?",
-    "stem_af": "Watter kategorie verteenwoordig die grootste enkele bron van belastinginkomste wat jaarliks deur die SAID ingevorder word?",
-    "options": [
-      {
-        "key": "A",
-        "text_en": "Personal Income Tax (PIT) levied on individual wage and salary earners.",
-        "text_af": "Persoonlike Inkomstebelasting gehef op individuele loon- en salarisverdieners."
-      },
-      {
-        "key": "B",
-        "text_en": "Customs import tariffs collected at commercial harbor seaports and airports.",
-        "text_af": "Doeane-invoertariewe ingevorder by kommersiële seehawens en internasionale lughawens."
-      },
-      {
-        "key": "C",
-        "text_en": "Specific excise duties levied on domestic petroleum refining and tobacco.",
-        "text_af": "Spesifieke aksynsregte gehef op binnelandse petroleumraffinering en tabakprodukte."
-      },
-      {
-        "key": "D",
-        "text_en": "Municipal property assessment rates collected on urban residential houses.",
-        "text_af": "Munisipale eiendomsbelasting ingevorder op stedelike residensiële eiendomme."
-      }
-    ],
-    "correctKey": "A",
-    "derivation_en": "Personal Income Tax constitutes approximately 38% to 40% of total national tax revenue in South Africa, followed by VAT (approx 25-27%) and Corporate Income Tax (approx 18-20%).",
-    "derivation_af": "Persoonlike inkomstebelasting is die grootste enkele inkomstebron vir die nasionale regering (ongeveer 38-40% van totale belasting)."
-  },
-  {
     "id": "q20_38",
     "ch": 20,
     "type": "calculation",
@@ -3947,5 +4386,214 @@ window.AXIOM_MASTER_BANK = [
     "correctKey": "B",
     "derivation_en": "Very low or negative inflation risks deflationary depression, increases real debt burdens, and leaves no room for real wage adjustments when nominal wages are sticky downwards.",
     "derivation_af": "Deflasie ontmoedig besteding en verhoog die reële las van skuld, wat ernstige ekonomiese inkrimping kan veroorsaak."
+  },
+  {
+    "id": "q20_43",
+    "ch": 20,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In the aggregate demand and aggregate supply (AD-AS) model, an upward and leftward shift of the aggregate supply curve (AS1 to AS2) illustrates:",
+    "stem_af": "In die totale vraag en totale aanbod (AD-AS) model illustreer 'n opwaartse en linkswaartse verskuiwing van die totale aanbodkromme (AS1 na AS2):",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "demand-pull inflation accompanied by rising real output and expanding employment levels.",
+        "text_af": "vraagtrekinflasie gepaardgaande met stygende reële produksie en verhoogde indiensname."
+      },
+      {
+        "key": "B",
+        "text_en": "a deflationary spiral driven by autonomous reductions in national investment spending.",
+        "text_af": "'n deflasionêre spiraal gedryf deur outonome dalings in nasionale investeringsbesteding."
+      },
+      {
+        "key": "C",
+        "text_en": "a demand-side economic expansion driven by sudden depreciation of the domestic currency.",
+        "text_af": "'n vraaggedrewe ekonomiese uitbreiding veroorsaak deur skerp depresiasie van die binnelandse valuta."
+      },
+      {
+        "key": "D",
+        "text_en": "cost-push inflation resulting in higher price levels combined with falling real output.",
+        "text_af": "koste-stootinflasie wat lei tot hoër prysvlakke gekombineer met dalende reële produksie."
+      }
+    ],
+    "correctKey": "D",
+    "derivation_en": "An upward and leftward shift of the AS curve signifies cost-push inflation (triggered by rising input costs such as wages or electricity). The new equilibrium occurs at a higher price level and a lower level of real output/GDP (stagflation).",
+    "derivation_af": "'n Opwaartse en linkswaartse verskuiwing van die AS-kromme dui op koste-stootinflasie (aangevuur deur hoër insetkoste soos lone of elektrisiteitstariewe), wat gelyktydig lei tot hoër pryse en laer reële uitset (stagflasie)."
+  },
+  {
+    "id": "q20_44",
+    "ch": 20,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "To curb accelerating demand-pull inflation generated by excessive aggregate domestic spending, the macroeconomic authorities should implement:",
+    "stem_af": "Om versnellende vraagtrekinflasie te bekamp wat deur buitensporige totale binnelandse besteding veroorsaak word, moet die makro-ekonomiese owerhede:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "an increase in the SARB repo rate combined with reduced government spending or higher taxes.",
+        "text_af": "'n verhoging in die SARB-repokoers gekombineer met verlaagde regeringsbesteding of hoër belasting."
+      },
+      {
+        "key": "B",
+        "text_en": "a decrease in statutory bank cash reserves combined with higher national infrastructure spending.",
+        "text_af": "'n verlaging in statutêre bankreserwes gekombineer met hoër besteding aan openbare infrastruktuur."
+      },
+      {
+        "key": "C",
+        "text_en": "an expansionary monetary policy package combined with statutory reductions in corporate tax rates.",
+        "text_af": "'n ekspansiewe monetêre beleidspakket gekombineer met statutêre verlagings in maatskappybelasting."
+      },
+      {
+        "key": "D",
+        "text_en": "a reduction in the repo rate combined with emergency consumer subsidies on fuel and electricity.",
+        "text_af": "'n verlaging in die repokoers gekombineer met direkte verbruikersubsidies op brandstof en krag."
+      }
+    ],
+    "correctKey": "A",
+    "derivation_en": "Demand-pull inflation requires restrictive (contractionary) policy: contractionary monetary policy (raising the repo rate to curb credit and consumption) alongside contractionary fiscal policy (reducing G or increasing T to reduce disposable income and AD).",
+    "derivation_af": "Vraagtrekinflasie vereis beperkende beleid: beperkende monetêre beleid (verhoging van die repokoers om krediet en besteding te bekamp) tesame met beperkende fiskale beleid (verlaging van G of verhoging van T)."
+  },
+  {
+    "id": "q20_45",
+    "ch": 20,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "The traditional short-run Phillips curve illustrates an empirical macroeconomic relationship between:",
+    "stem_af": "Die tradisionele korttermyn Phillips-kromme illustreer 'n empiriese makro-ekonomiese verwantskap tussen:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "the statutory rate of Value Added Tax and the nationwide volume of household consumer demand.",
+        "text_af": "die statutêre koers van Belasting op Toegevoegde Waarde en die totale huishoudelike verbruiksvraag."
+      },
+      {
+        "key": "B",
+        "text_en": "the rate of inflation and the rate of unemployment, demonstrating an inverse short-run trade-off.",
+        "text_af": "die koers van inflasie en die koers van werkloosheid, wat 'n omgekeerde korttermyn-afruil toon."
+      },
+      {
+        "key": "C",
+        "text_en": "the nominal exchange rate of the Rand and the real growth rate of merchandise import volumes.",
+        "text_af": "die nominale Randwisselkoers en die reële groeikoers van binnelandse goedere-invoervolumes."
+      },
+      {
+        "key": "D",
+        "text_en": "the commercial bank prime overdraft rate and the annual velocity of broad M3 money circulation.",
+        "text_af": "die handelsbank-prima-uitleenkoers en die jaarlikse omloopsnelheid van breë M3-geldvoorraad."
+      }
+    ],
+    "correctKey": "B",
+    "derivation_en": "The traditional short-run Phillips curve shows an inverse (negative) relationship between inflation and unemployment: lower unemployment is associated with higher demand and higher inflation, whereas higher unemployment lowers wage pressure and inflation.",
+    "derivation_af": "Die tradisionele korttermyn Phillips-kromme dui op 'n omgekeerde verband tussen inflasie en werkloosheid: laer werkloosheid gaan gepaard met hoër vraag en inflasie, terwyl hoër werkloosheid loondruk en inflasie afkoel."
+  },
+  {
+    "id": "q20_46",
+    "ch": 20,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "In professional macroeconomic analysis, inflation is strictly defined as satisfying which of the following criteria?",
+    "stem_af": "In professionele makro-ekonomiese analise word inflasie streng gedefinieer as 'n proses wat aan watter kriteria voldoen?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A once-off upward price adjustment in a single key commodity such as retail automotive fuel.",
+        "text_af": "'n Eenmalige opwaartse prysaanpassing in 'n enkele sleutelkommoditeit soos kleinhandelbrandstof."
+      },
+      {
+        "key": "B",
+        "text_en": "A periodic increase in the statutory excise duties levied on imported luxury tobacco products.",
+        "text_af": "'n Periodieke verhoging in die statutêre aksynsregte wat op ingevoerde tabakprodukte gehef word."
+      },
+      {
+        "key": "C",
+        "text_en": "A continuous and considerable increase in the general price level across the entire economy.",
+        "text_af": "'n Deurlopende en aansienlike styging in die algemene prysvlak oor die hele ekonomie heen."
+      },
+      {
+        "key": "D",
+        "text_en": "An unexpected seasonal spike in agricultural crop prices caused by localized severe droughts.",
+        "text_af": "'n Onverwagse seisoenale styging in landbou-oesvalutapryse weens gelokaliseerde ernstige droogtes."
+      }
+    ],
+    "correctKey": "C",
+    "derivation_en": "Inflation is formally defined as a continuous (persistent over time) and considerable (substantive, not negligible) increase in the general price level (affecting goods and services across the economy, not just a single commodity).",
+    "derivation_af": "Inflasie word formeel gedefinieer as 'n deurlopende en aansienlike styging in die algemene prysvlak oor die ekonomie as geheel, nie bloot 'n eenmalige styging in 'n individuele produk se prys nie."
+  },
+  {
+    "id": "q20_47",
+    "ch": 20,
+    "type": "mcq",
+    "marks": 2,
+    "difficulty": "Exam",
+    "stem_en": "A simultaneous economic occurrence of high inflation, stagnating economic growth, and rising unemployment (stagflation) is caused by:",
+    "stem_af": "'n Gelyktydige ekonomiese voorkoms van hoë inflasie, stagnerende ekonomiese groei en stygende werkloosheid (stagflasie) word veroorsaak deur:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "an unexpected surge in autonomous consumer confidence that shifts aggregate demand sharply rightward.",
+        "text_af": "'n onverwagse oplewing in verbruikersvertroue wat totale vraag skerp na regs laat verskuif in die mark."
+      },
+      {
+        "key": "B",
+        "text_en": "a sustained expansion in public infrastructure investment that lowers domestic private production costs.",
+        "text_af": "'n volgehoue toename in openbare infrastruktuurbesteding wat binnelandse privaat produksiekoste verlaag."
+      },
+      {
+        "key": "C",
+        "text_en": "a prolonged period of monetary tightening by the central bank that forces price levels down rapidly.",
+        "text_af": "'n langdurige periode van monetêre verkramping deur die sentrale bank wat prysvlakke vinnig afdruk."
+      },
+      {
+        "key": "D",
+        "text_en": "a severe adverse supply shock that pushes production costs upward and shifts aggregate supply leftward.",
+        "text_af": "'n ernstige nadelige aanbodskok wat produksiekoste verhoog en die totale aanbod na links laat verskuif."
+      }
+    ],
+    "correctKey": "D",
+    "derivation_en": "Stagflation (stagnation + inflation) is caused by adverse supply shocks (e.g. sharp oil price increases, electricity tariff hikes, or severe drought) that shift the Aggregate Supply (AS) curve upward/leftward, raising prices while decreasing real GDP.",
+    "derivation_af": "Stagflasie word veroorsaak deur nadelige aanbodskokke (bv. skerp styging in oliepryse of kragtariewe) wat die totale aanbodkromme links-opwaarts verskuif, wat pryse laat styg terwyl reële BBP krimp en werkloosheid toeneem."
+  },
+  {
+    "id": "q20_48",
+    "ch": 20,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "GDP Deflator Inflation (2011-2012): According to South African national accounts, Real GDP was R1 905 736 million in 2011 and R1 954 303 million in 2012, while Nominal GDP was R2 917 539 million in 2011 and R3 155 195 million in 2012. Calculate the inflation rate (as a percentage) for 2012 as measured by the GDP deflator, rounded to two decimal places.",
+    "stem_af": "BBP-Deflator Inflasie (2011-2012): Volgens Suid-Afrikaanse nasionale rekeninge was Reële BBP R1 905 736 miljoen in 2011 en R1 954 303 miljoen in 2012, terwyl Nominale BBP R2 917 539 miljoen in 2011 en R3 155 195 miljoen in 2012 was. Bereken die inflasiekoers (as 'n persentasie) vir 2012 soos gemeet deur die BBP-deflator, afgerond tot twee desimale plekke.",
+    "expectedNumber": 5.46,
+    "tolerance": 0.05,
+    "derivation_en": "GDP Deflator 2011 = (Nominal / Real) * 100 = (2 917 539 / 1 905 736) * 100 = 153.09257. GDP Deflator 2012 = (3 155 195 / 1 954 303) * 100 = 161.44861. Inflation Rate 2012 = [(161.44861 - 153.09257) / 153.09257] * 100 = 5.458% -> 5.46%.",
+    "derivation_af": "BBP-Deflator 2011 = (2 917 539 / 1 905 736) * 100 = 153.09257. BBP-Deflator 2012 = (3 155 195 / 1 954 303) * 100 = 161.44861. Inflasiekoers = [(161.44861 - 153.09257) / 153.09257] * 100 = 5.46%."
+  },
+  {
+    "id": "q20_49",
+    "ch": 20,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "GDP Deflator Inflation (2016-2017): National statistics record Real GDP of R46 324 million in 2016 and R47 760 million in 2017, with Nominal GDP of R58 421 million in 2016 and R60 798 million in 2017. Calculate the inflation rate (as a percentage) for 2017 as measured by the GDP deflator, rounded to two decimal places.",
+    "stem_af": "BBP-Deflator Inflasie (2016-2017): Nasionale statistieke rapporteer Reële BBP van R46 324 miljoen in 2016 en R47 760 miljoen in 2017, en Nominale BBP van R58 421 miljoen in 2016 en R60 798 miljoen in 2017. Bereken die inflasiekoers (as 'n persentasie) vir 2017 soos gemeet deur die BBP-deflator, afgerond tot twee desimale plekke.",
+    "expectedNumber": 0.94,
+    "tolerance": 0.05,
+    "derivation_en": "GDP Deflator 2016 = (58 421 / 46 324) * 100 = 126.11389. GDP Deflator 2017 = (60 798 / 47 760) * 100 = 127.30067. Inflation Rate 2017 = [(127.30067 - 126.11389) / 126.11389] * 100 = 0.941% -> 0.94%.",
+    "derivation_af": "BBP-Deflator 2016 = (58 421 / 46 324) * 100 = 126.11389. BBP-Deflator 2017 = (60 798 / 47 760) * 100 = 127.30067. Inflasiekoers = [(127.30067 - 126.11389) / 126.11389] * 100 = 0.94%."
+  },
+  {
+    "id": "q20_50",
+    "ch": 20,
+    "type": "calculation",
+    "marks": 3,
+    "difficulty": "Exam",
+    "stem_en": "Purchasing Power of Money: If consumer price inflation remains constant at the SARB's upper target boundary of 6.0% per year, calculate the real purchasing power (in base-year Rands) of a fixed nominal annual income of R100 000 after exactly 3 years, rounded to the nearest integer.",
+    "stem_af": "Koopkrag van Geld: Indien verbruikersprys-inflasie konstant bly teen die SARB se boonste mikpunt van 6.0% per jaar, bereken die reële koopkrag (in basisjaar-Rand) van 'n vaste nominale jaarlikse inkomste van R100 000 na presies 3 jaar, afgerond tot die naaste heelgetal.",
+    "expectedNumber": 83962,
+    "tolerance": 5.0,
+    "derivation_en": "Real Purchasing Power = Nominal Income / (1 + i)^n = R100 000 / (1 + 0.06)^3 = R100 000 / 1.191016 = R83 961.93 -> R83 962.",
+    "derivation_af": "Reële Koopkrag = Nominale Inkomste / (1 + i)^n = R100 000 / (1.06)^3 = R100 000 / 1.191016 = R83 962."
   }
 ];

@@ -9,19 +9,19 @@
     {
       "tier": 1,
       "test_id": "T1_01_QUESTION_COUNT_AND_CHAPTERS",
-      "name": "126 Questions (42/ch: 14, 15, 20; 110 MCQs, 16 Calcs)",
+      "name": "150 Questions (50/ch: 14, 15, 20; 126 MCQs, 24 Calcs)",
       "passed": true,
-      "message": "Total: 126/126, Ch14: 42/42, Ch15: 42/42, Ch20: 42/42, MCQs: 110/110, Calcs: 16/16",
+      "message": "Total: 150/150, Ch14: 50/50, Ch15: 50/50, Ch20: 50/50, MCQs: 126/126, Calcs: 24/24",
       "details": {
-        "total": 126,
+        "total": 150,
         "chapters": {
-          "14": 42,
-          "15": 42,
-          "20": 42
+          "14": 50,
+          "15": 50,
+          "20": 50
         },
         "types": {
-          "mcq": 110,
-          "calculation": 16
+          "mcq": 126,
+          "calculation": 24
         }
       }
     },
@@ -30,7 +30,7 @@
       "test_id": "T1_02_QUESTION_SCHEMA_INTEGRITY",
       "name": "Complete question schema (stems, derivations, options, calculations)",
       "passed": true,
-      "message": "Schema valid across all 126 items",
+      "message": "Schema valid across all 150 items",
       "details": {
         "failures_count": 0,
         "samples": []
@@ -90,19 +90,19 @@
       "test_id": "T2_01_ANTI_TRIVIALITY_KEY_DISTRIBUTION",
       "name": "Balanced correctKey distribution (each A, B, C, D between 20% and 30%)",
       "passed": true,
-      "message": "Distribution: A: 27 (24.5%), B: 28 (25.5%), C: 28 (25.5%), D: 27 (24.5%). Max Key: 25.5% (limit 35%). Ext batch max: 34.8%.",
+      "message": "Distribution: A: 31 (24.6%), B: 32 (25.4%), C: 32 (25.4%), D: 31 (24.6%). Max Key: 25.4% (limit 35%). Ext batch max: 34.8%.",
       "details": {
         "counts": {
-          "A": 27,
-          "B": 28,
-          "C": 28,
-          "D": 27
+          "A": 31,
+          "B": 32,
+          "C": 32,
+          "D": 31
         },
         "percentages": {
-          "A": 24.545454545454547,
-          "B": 25.454545454545453,
-          "C": 25.454545454545453,
-          "D": 24.545454545454547
+          "A": 24.6031746031746,
+          "B": 25.396825396825395,
+          "C": 25.396825396825395,
+          "D": 24.6031746031746
         },
         "ext_counts": {
           "A": 10,
@@ -117,7 +117,7 @@
       "test_id": "T2_02_DISTRACTOR_LENGTH_SYMMETRY",
       "name": "Distractor length symmetry (stdev <= 15%, max/min ratio <= 1.25, no giveaway length)",
       "passed": true,
-      "message": "0/110 questions exceed length ratio 1.25x or 15% variance. 0 correct options visibly elongated.",
+      "message": "0/126 questions exceed length ratio 1.25x or 15% variance. 0 correct options visibly elongated.",
       "details": {
         "asymmetric_count": 0,
         "samples": []
@@ -139,7 +139,7 @@
       "test_id": "T2_04_CALCULATION_TOLERANCE_BOUNDARIES",
       "name": "Quantitative calculation questions boundary & tolerance verification",
       "passed": true,
-      "message": "All 16 quantitative questions pass exact tolerance boundary evaluations",
+      "message": "All 24 quantitative questions pass exact tolerance boundary evaluations",
       "details": {
         "failures": []
       }
@@ -149,7 +149,7 @@
       "test_id": "T2_05_MCQ_OPTIONS_PERMUTATION_COMPLETENESS",
       "name": "MCQ option permutation completeness (unique non-empty options for A, B, C, D)",
       "passed": true,
-      "message": "All 110 MCQs have exactly distinct {A, B, C, D} options with non-empty content",
+      "message": "All 126 MCQs have exactly distinct {A, B, C, D} options with non-empty content",
       "details": {
         "failures": []
       }
@@ -159,7 +159,7 @@
       "test_id": "T3_01_BILINGUAL_LINGUISTIC_PARITY",
       "name": "Bilingual parity (zero untranslated English in Afrikaans stems, options, derivations)",
       "passed": true,
-      "message": "Zero untranslated English detected across all 126 items",
+      "message": "Zero untranslated English detected across all 150 items",
       "details": {
         "failures_count": 0,
         "samples": []
@@ -180,17 +180,17 @@
       "test_id": "T3_03_CHAPTER_DIFFICULTY_MATRIX",
       "name": "Curricular difficulty matrix covers all three chapters",
       "passed": true,
-      "message": "Difficulty distribution: Ch14={'Exam': 42}, Ch15={'Exam': 42}, Ch20={'Exam': 42}",
+      "message": "Difficulty distribution: Ch14={'Exam': 50}, Ch15={'Exam': 50}, Ch20={'Exam': 50}",
       "details": {
         "matrix": {
           "14": {
-            "Exam": 42
+            "Exam": 50
           },
           "15": {
-            "Exam": 42
+            "Exam": 50
           },
           "20": {
-            "Exam": 42
+            "Exam": 50
           }
         }
       }
@@ -262,9 +262,9 @@
       "test_id": "T5_01_MCQ_SUBMISSION_SIMULATION",
       "name": "Automated student MCQ submissions oracle (correctKey full marks, distractors 0 marks)",
       "passed": true,
-      "message": "Verified 440 submissions across all 110 MCQs (correct=100%, incorrect=0%, explicit marks)",
+      "message": "Verified 504 submissions across all 126 MCQs (correct=100%, incorrect=0%, explicit marks)",
       "details": {
-        "sim_count": 440,
+        "sim_count": 504,
         "failures": []
       }
     },
@@ -273,9 +273,9 @@
       "test_id": "T5_02_OPTION_SHUFFLING_INVARIANCE",
       "name": "Option shuffling state machine stress oracle (Fisher-Yates invariant scoring)",
       "passed": true,
-      "message": "Verified 2200 shuffled permutations across 110 MCQs; scoring is 100% mark-invariant",
+      "message": "Verified 2520 shuffled permutations across 126 MCQs; scoring is 100% mark-invariant",
       "details": {
-        "permutations": 2200,
+        "permutations": 2520,
         "failures": []
       }
     },
@@ -284,9 +284,9 @@
       "test_id": "T5_03_CALCULATION_BOUNDARY_AND_PARSER_STRESS",
       "name": "Quantitative calculation boundary (+/- 0.001) & forgiving string parser stress",
       "passed": true,
-      "message": "Verified 263 calculation stress tests across all 16 quantitative questions",
+      "message": "Verified 392 calculation stress tests across all 24 quantitative questions",
       "details": {
-        "sim_count": 263,
+        "sim_count": 392,
         "failures": []
       }
     },
@@ -295,7 +295,7 @@
       "test_id": "T5_04_QUESTION_BANK_FUZZING",
       "name": "Question bank fuzzing (zero duplicate stems, option uniqueness, property integrity)",
       "passed": true,
-      "message": "Fuzzed all 126 questions across stems, options, properties, and LaTeX syntax; 0 anomalies",
+      "message": "Fuzzed all 150 questions across stems, options, properties, and LaTeX syntax; 0 anomalies",
       "details": {
         "fuzz_issues_count": 0,
         "samples": []
@@ -304,9 +304,9 @@
     {
       "tier": 5,
       "test_id": "T5_05_MULTI_SIZE_EXAM_SESSIONS",
-      "name": "Multi-size timed assessment session simulation (10, 25, 42, 50, 100, 126 questions)",
+      "name": "Multi-size timed assessment session simulation (10, 25, 42, 50, 100, 150 questions)",
       "passed": true,
-      "message": "Successfully simulated exam sessions for sizes [10, 25, 42, 50, 100, 126] (balanced units, exact mark tallying)",
+      "message": "Successfully simulated exam sessions for sizes [10, 25, 42, 50, 100, 150] (balanced units, exact mark tallying)",
       "details": {
         "tested_sizes": [
           10,
@@ -314,7 +314,7 @@
           42,
           50,
           100,
-          126
+          150
         ]
       }
     }

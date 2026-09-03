@@ -3,7 +3,7 @@
 Project Axiom: Headless Verification & 4-Tier E2E Test Suite
 =============================================================
 Automated test harness verifying:
-- Tier 1: Feature Coverage & Structural Integrity (126-Q Schema, KaTeX Delimiters & Zero Raw LaTeX, Disciplinary Accuracy for q14_15)
+- Tier 1: Feature Coverage & Structural Integrity (150-Q Schema, KaTeX Delimiters & Zero Raw LaTeX, Disciplinary Accuracy for q14_15)
 - Tier 2: Boundary, Corner & Anti-Triviality (Key Distribution 20-30%, Distractor Symmetry <= 15%, Zero Giveaway Stems, Calculation Tolerances)
 - Tier 3: Cross-Feature Pairwise (Bilingual Parity, Language Synchronicity, Difficulty Matrix, Scoring Engine Simulation)
 - Tier 4: Real-World Workload Scenarios (Mobile 100vw & 44px Tap Targets, Telemetry 300s Active Engagement, Offline Autonomy)
@@ -112,15 +112,15 @@ class AxiomVerificationHarness:
             type_counts[qtype] = type_counts.get(qtype, 0) + 1
 
         pass_1_1 = (
-            total_q == 126 and
-            ch_counts.get(14) == 42 and
-            ch_counts.get(15) == 42 and
-            ch_counts.get(20) == 42 and
-            type_counts.get("mcq") == 110 and
-            (type_counts.get("calc", 0) + type_counts.get("calculation", 0)) == 16
+            total_q == 150 and
+            ch_counts.get(14) == 50 and
+            ch_counts.get(15) == 50 and
+            ch_counts.get(20) == 50 and
+            type_counts.get("mcq") == 126 and
+            (type_counts.get("calc", 0) + type_counts.get("calculation", 0)) == 24
         )
-        msg_1_1 = f"Total: {total_q}/126, Ch14: {ch_counts.get(14)}/42, Ch15: {ch_counts.get(15)}/42, Ch20: {ch_counts.get(20)}/42, MCQs: {type_counts.get('mcq')}/110, Calcs: {type_counts.get('calc', 0) + type_counts.get('calculation', 0)}/16"
-        self.log_result(1, "T1_01_QUESTION_COUNT_AND_CHAPTERS", "126 Questions (42/ch: 14, 15, 20; 110 MCQs, 16 Calcs)", pass_1_1, msg_1_1, {"total": total_q, "chapters": ch_counts, "types": type_counts})
+        msg_1_1 = f"Total: {total_q}/150, Ch14: {ch_counts.get(14)}/50, Ch15: {ch_counts.get(15)}/50, Ch20: {ch_counts.get(20)}/50, MCQs: {type_counts.get('mcq')}/126, Calcs: {type_counts.get('calc', 0) + type_counts.get('calculation', 0)}/24"
+        self.log_result(1, "T1_01_QUESTION_COUNT_AND_CHAPTERS", "150 Questions (50/ch: 14, 15, 20; 126 MCQs, 24 Calcs)", pass_1_1, msg_1_1, {"total": total_q, "chapters": ch_counts, "types": type_counts})
 
         # 1.2 Question Schema Integrity
         schema_failures = []
@@ -621,7 +621,7 @@ class AxiomVerificationHarness:
         mcqs = [q for q in self.questions_bank if q.get("type") == "mcq"]
         calcs = [q for q in self.questions_bank if q.get("type") in ("calc", "calculation")]
 
-        # 5.1 Automated Student MCQ Submission Oracle (All 110 MCQs)
+        # 5.1 Automated Student MCQ Submission Oracle (All 126 MCQs)
         mcq_oracle_failures = []
         mcq_sim_count = 0
         for q in mcqs:
@@ -647,7 +647,7 @@ class AxiomVerificationHarness:
                         mcq_oracle_failures.append(f"{qid}: distractor '{k}' awarded {d_marks} marks")
 
         pass_5_1 = len(mcq_oracle_failures) == 0
-        msg_5_1 = f"Verified {mcq_sim_count} submissions across all 110 MCQs (correct=100%, incorrect=0%, explicit marks)" if pass_5_1 else f"{len(mcq_oracle_failures)} MCQ simulation failures"
+        msg_5_1 = f"Verified {mcq_sim_count} submissions across all 126 MCQs (correct=100%, incorrect=0%, explicit marks)" if pass_5_1 else f"{len(mcq_oracle_failures)} MCQ simulation failures"
         self.log_result(5, "T5_01_MCQ_SUBMISSION_SIMULATION", "Automated student MCQ submissions oracle (correctKey full marks, distractors 0 marks)", pass_5_1, msg_5_1, {"sim_count": mcq_sim_count, "failures": mcq_oracle_failures[:5]})
 
         # 5.2 Option Shuffling State Machine Stress Oracle (Fisher-Yates Permutations)
@@ -684,10 +684,10 @@ class AxiomVerificationHarness:
                         break
 
         pass_5_2 = len(shuffle_failures) == 0
-        msg_5_2 = f"Verified {shuffle_count} shuffled permutations across 110 MCQs; scoring is 100% mark-invariant" if pass_5_2 else f"{len(shuffle_failures)} shuffle failures"
+        msg_5_2 = f"Verified {shuffle_count} shuffled permutations across 126 MCQs; scoring is 100% mark-invariant" if pass_5_2 else f"{len(shuffle_failures)} shuffle failures"
         self.log_result(5, "T5_02_OPTION_SHUFFLING_INVARIANCE", "Option shuffling state machine stress oracle (Fisher-Yates invariant scoring)", pass_5_2, msg_5_2, {"permutations": shuffle_count, "failures": shuffle_failures[:5]})
 
-        # 5.3 Quantitative Calculation Boundary & String Parsing Oracle (All 16 Calcs)
+        # 5.3 Quantitative Calculation Boundary & String Parsing Oracle (All 24 Calcs)
         calc_failures = []
         calc_sim_count = 0
         for q in calcs:
@@ -771,7 +771,7 @@ class AxiomVerificationHarness:
                 calc_sim_count += 1
 
         pass_5_3 = len(calc_failures) == 0
-        msg_5_3 = f"Verified {calc_sim_count} calculation stress tests across all 16 quantitative questions" if pass_5_3 else f"{len(calc_failures)} calculation stress failures: {calc_failures}"
+        msg_5_3 = f"Verified {calc_sim_count} calculation stress tests across all 24 quantitative questions" if pass_5_3 else f"{len(calc_failures)} calculation stress failures: {calc_failures}"
         self.log_result(5, "T5_03_CALCULATION_BOUNDARY_AND_PARSER_STRESS", "Quantitative calculation boundary (+/- 0.001) & forgiving string parser stress", pass_5_3, msg_5_3, {"sim_count": calc_sim_count, "failures": calc_failures})
 
         # 5.4 Database Fuzzing & Structural Adversarial Audit
@@ -819,15 +819,15 @@ class AxiomVerificationHarness:
                         fuzz_issues.append(f"{qid}: unrendered LaTeX '{cmd}' in text")
 
         pass_5_4 = len(fuzz_issues) == 0
-        msg_5_4 = f"Fuzzed all 126 questions across stems, options, properties, and LaTeX syntax; 0 anomalies" if pass_5_4 else f"{len(fuzz_issues)} fuzzing anomalies"
+        msg_5_4 = f"Fuzzed all 150 questions across stems, options, properties, and LaTeX syntax; 0 anomalies" if pass_5_4 else f"{len(fuzz_issues)} fuzzing anomalies"
         self.log_result(5, "T5_04_QUESTION_BANK_FUZZING", "Question bank fuzzing (zero duplicate stems, option uniqueness, property integrity)", pass_5_4, msg_5_4, {"fuzz_issues_count": len(fuzz_issues), "samples": fuzz_issues[:5]})
 
         # 5.5 Randomized Multi-Size Examination Session Simulation
-        sim_sizes = [10, 25, 42, 50, 100, 126]
+        sim_sizes = [10, 25, 42, 50, 100, 150]
         session_failures = []
         for size in sim_sizes:
             pool = list(self.questions_bank)
-            if size == 126:
+            if size == 150:
                 selected = pool
             else:
                 u14 = [q for q in pool if (q.get("ch") or q.get("chapter")) == 14]
@@ -865,7 +865,7 @@ class AxiomVerificationHarness:
 
         pass_5_5 = len(session_failures) == 0
         msg_5_5 = f"Successfully simulated exam sessions for sizes {sim_sizes} (balanced units, exact mark tallying)" if pass_5_5 else f"{len(session_failures)} session failures"
-        self.log_result(5, "T5_05_MULTI_SIZE_EXAM_SESSIONS", "Multi-size timed assessment session simulation (10, 25, 42, 50, 100, 126 questions)", pass_5_5, msg_5_5, {"tested_sizes": sim_sizes})
+        self.log_result(5, "T5_05_MULTI_SIZE_EXAM_SESSIONS", "Multi-size timed assessment session simulation (10, 25, 42, 50, 100, 150 questions)", pass_5_5, msg_5_5, {"tested_sizes": sim_sizes})
 
     # =========================================================================
     # Main Execution & Summary Reporting
@@ -933,8 +933,8 @@ class AxiomVerificationHarness:
         print("=" * 76)
 
         # 1. Stage files
-        print("--- Staging files: git add index.html admin.html css/ js/ tests/ assets/ ---")
-        res_add = subprocess.run(["git", "add", "index.html", "admin.html", "css/", "js/", "tests/", "assets/"], cwd=self.base_dir, capture_output=True, text=True)
+        print("--- Staging files: git add .gitignore index.html admin.html css/ js/ tests/ assets/ ---")
+        res_add = subprocess.run(["git", "add", ".gitignore", "index.html", "admin.html", "css/", "js/", "tests/", "assets/"], cwd=self.base_dir, capture_output=True, text=True)
         print(f"git add exit code: {res_add.returncode}")
         if res_add.stdout:
             print(res_add.stdout)
@@ -947,7 +947,7 @@ class AxiomVerificationHarness:
         print(res_status.stdout)
 
         # 3. git commit
-        commit_msg = "feat(axiom): publication-grade Oxford/Cambridge UI, KaTeX math audit, 126-question overhaul, and E2E test verification"
+        commit_msg = "feat(axiom): publication-grade Oxford/Cambridge UI, KaTeX math audit, 150-question overhaul, and E2E test verification"
         print(f"--- Committing with message: {commit_msg} ---")
         res_commit = subprocess.run(["git", "commit", "-m", commit_msg], cwd=self.base_dir, capture_output=True, text=True)
         print(f"git commit exit code: {res_commit.returncode}")

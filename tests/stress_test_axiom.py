@@ -103,7 +103,7 @@ class AxiomStressOracle:
             return 0
         diff = abs(parsed - q.get("expectedNumber"))
         tol = q.get("tolerance", 0.1)
-        if diff <= tol:
+        if diff <= (tol + 1e-7):
             return marks
         return 0
 
@@ -419,12 +419,12 @@ class AxiomStressOracle:
     # -------------------------------------------------------------------------
     def test_full_exam_simulation(self):
         print("\n=== TEST 4: Randomized Multi-Size Examination Session Simulation ===")
-        sim_sizes = [10, 25, 42, 50, 100, 126]
+        sim_sizes = [10, 25, 42, 50, 100, 150]
         session_failures = []
 
         for size in sim_sizes:
             pool = list(self.questions)
-            if size == 126:
+            if size == 150:
                 selected = pool
             else:
                 u14 = [q for q in pool if q.get("ch") == 14]
