@@ -101,5 +101,18 @@ window.AXIOM_GLOSSARY = {
     "def_en": "Inflation initiated by aggregate demand expanding faster than aggregate supply (excess demand), shifting the AD curve rightwards and bidding up prices.",
     "def_af": "Inflasie veroorsaak deur te veel besteding wat die totale vraagkromme regs skuif.",
     "ref": "Mohr (6th ed.), Chapter 20.3"
+  },
+  "quasi_money": {
+    "title": "Quasi-Money (Near Money) / Kwasigeld",
+    "def_en": "Short- and medium-term deposits (including savings deposits) held by the private domestic sector with commercial banks that can easily and rapidly be converted into transaction money (M1) at low transaction cost.",
+    "def_af": "Kort- en mediumtermyn deposito's by monetêre instellings wat maklik en teen lae koste in transaksiegeld (M1) omgesit kan word.",
+    "ref": "Mohr (6th ed.), Chapter 14.1"
+  },
+  "crowding_out": {
+    "title": "Crowding-Out Effect / Verdringingseffek",
+    "def_en": "The reduction in private consumption and investment spending that occurs when high government budget deficits and increased state borrowing bid up domestic market interest rates.",
+    "def_af": "Die daling in private investering en besteding wat veroorsaak word wanneer hoë staatslenings die markrentekoerse opdryf.",
+    "ref": "Mohr (6th ed.), Chapter 15.5"
   }
 };
+

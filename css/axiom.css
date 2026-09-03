@@ -878,6 +878,413 @@ header {
   white-space: normal;
 }
 
+/* ==========================================================================
+   EXECUTIVE SUMMARY SUITE: TABLES, STEPPERS & CURVE DECODERS
+   ========================================================================== */
+
+/* Summary Quick Navigation Bar */
+.summary-nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  background: var(--bg-surface);
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-gold);
+  box-shadow: var(--shadow-card);
+  flex-wrap: wrap;
+}
+
+.summary-nav-label {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 0.5rem;
+}
+
+.summary-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem;
+  min-height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.summary-nav-link:hover, .summary-nav-link:focus-visible {
+  border-color: var(--accent-gold);
+  background: var(--bg-card-hover);
+  color: var(--accent-gold);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Section Divider Headers inside Unit Cards */
+.section-subtitle-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px dashed var(--border-strong);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.section-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.section-badge {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--border-gold);
+  color: var(--accent-gold);
+  text-transform: uppercase;
+}
+
+/* Tabular Definition Matrices */
+.axiom-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem 0 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.axiom-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  min-width: 760px;
+}
+
+.axiom-matrix-table thead tr {
+  background: var(--bg-surface);
+  border-bottom: 2px solid var(--border-gold);
+}
+
+.axiom-matrix-table th {
+  padding: 0.95rem 1.15rem;
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-gold);
+  vertical-align: middle;
+}
+
+.axiom-matrix-table td {
+  padding: 0.95rem 1.15rem;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  vertical-align: top;
+}
+
+.axiom-matrix-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.axiom-matrix-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.axiom-matrix-table tbody tr:hover {
+  background: var(--bg-card-hover);
+}
+
+.term-col {
+  width: 22%;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.term-symbol {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent-azure);
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.def-col {
+  width: 44%;
+  color: var(--text-main);
+  line-height: 1.65;
+}
+
+.kw-col {
+  width: 20%;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.kw-highlight {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-gold);
+  text-underline-offset: 3px;
+  color: var(--accent-gold);
+}
+
+.cite-col {
+  width: 14%;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  white-space: nowrap;
+}
+
+.citation-badge {
+  display: inline-block;
+  background: rgba(129, 140, 248, 0.12);
+  border: 1px solid rgba(129, 140, 248, 0.28);
+  color: var(--accent-indigo);
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+/* Multi-Step Processes & Transmission Cards */
+.process-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: var(--radius-md);
+  padding: 1.65rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.process-header {
+  margin-bottom: 1.25rem;
+}
+
+.process-title {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  margin: 0 0 0.4rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.process-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.stepper-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.95rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.95rem 1.15rem;
+  line-height: 1.6;
+  font-size: 0.89rem;
+  color: var(--text-main);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.step-item:hover {
+  border-color: var(--border-gold);
+}
+
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gold);
+  color: #0b1329;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 0.74rem;
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.65rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-header {
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 0.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+}
+
+.step-desc {
+  color: var(--text-muted);
+  font-size: 0.87rem;
+  line-height: 1.6;
+}
+
+.transmission-flow-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-top: 1.15rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+.chain-node {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  background: rgba(212, 175, 55, 0.14);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-gold);
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+.chain-arrow {
+  color: var(--accent-rose);
+  font-weight: 800;
+  font-size: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Complete Graph & Curve Decoder Matrix */
+.curve-decoder-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--accent-gold);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-card);
+}
+
+.curve-decoder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-gold);
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.curve-decoder-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  margin: 0;
+}
+
+.curve-grid-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 490px) 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.curve-meta-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.87rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-surface);
+}
+
+.curve-meta-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.curve-meta-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.curve-meta-table tr:last-child td {
+  border-bottom: none;
+}
+
+.curve-meta-label {
+  font-weight: 700;
+  color: var(--accent-gold);
+  width: 30%;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+}
+
+.curve-meta-val {
+  color: var(--text-main);
+}
+
+
 /* Floating Feedback & Glossary */
 .floating-feedback-btn {
   position: fixed;
@@ -1177,6 +1584,37 @@ header {
   .concept-grid {
     grid-template-columns: 1fr;
   }
+  .curve-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .curve-decoder-card {
+    padding: 1.35rem 1rem;
+  }
+  .process-card {
+    padding: 1.35rem 1rem;
+  }
+  .step-item {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+  .step-badge {
+    align-self: flex-start;
+  }
+  .transmission-flow-chain {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+  .summary-nav-bar {
+    gap: 0.5rem;
+  }
+  .summary-nav-link {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-height: 44px;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1213,6 +1651,22 @@ header {
     margin: 0 0.5rem;
     box-sizing: border-box;
   }
+  .summary-nav-link {
+    flex: 1 1 100%;
+    min-height: 44px;
+  }
+  .axiom-matrix-table {
+    font-size: 0.82rem;
+  }
+  .axiom-matrix-table th, .axiom-matrix-table td {
+    padding: 0.65rem 0.75rem;
+  }
+  .curve-meta-table td {
+    padding: 0.65rem 0.75rem;
+  }
+  .curve-meta-label {
+    width: 35%;
+  }
 }
 
 /* Light Mode Contrast Hardening */
@@ -1235,6 +1689,133 @@ header {
   background: linear-gradient(90deg, #111a30 0%, #1a284a 50%, #111a30 100%);
   color: #fce18b;
 }
+
+/* Light Mode Contrast Hardening for Executive Summary Suite */
+[data-theme="light"] .summary-nav-bar {
+  background: #fdfbf7;
+  border-color: var(--border-gold);
+}
+[data-theme="light"] .summary-nav-link {
+  background: #f4ede1;
+  border-color: var(--border-subtle);
+  color: #0f172a;
+}
+[data-theme="light"] .summary-nav-link:hover, [data-theme="light"] .summary-nav-link:focus-visible {
+  background: #eae2d1;
+  border-color: #b3861b;
+  color: #785005;
+}
+[data-theme="light"] .section-subtitle {
+  color: #8c6007;
+}
+[data-theme="light"] .section-badge {
+  background: rgba(179, 134, 27, 0.12);
+  border-color: var(--border-gold);
+  color: #785005;
+}
+[data-theme="light"] .axiom-table-wrapper {
+  background: #fbf9f4;
+  border-color: var(--border-subtle);
+}
+[data-theme="light"] .axiom-matrix-table thead tr {
+  background: #eee8db;
+  border-bottom-color: var(--border-gold);
+}
+[data-theme="light"] .axiom-matrix-table th {
+  color: #785005;
+}
+[data-theme="light"] .axiom-matrix-table td {
+  border-bottom-color: var(--border-subtle);
+  color: #0f172a;
+}
+[data-theme="light"] .axiom-matrix-table tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02);
+}
+[data-theme="light"] .axiom-matrix-table tbody tr:hover {
+  background: #e9e2d3;
+}
+[data-theme="light"] .term-col {
+  color: #0f172a;
+}
+[data-theme="light"] .term-symbol {
+  color: #0284c7;
+}
+[data-theme="light"] .def-col {
+  color: #0f172a;
+}
+[data-theme="light"] .kw-highlight {
+  color: #92400e;
+  text-decoration-color: #b45309;
+}
+[data-theme="light"] .citation-badge {
+  background: rgba(79, 70, 229, 0.08);
+  border-color: rgba(79, 70, 229, 0.25);
+  color: #4338ca;
+}
+[data-theme="light"] .process-card {
+  background: #fbf9f4;
+  border-color: var(--border-subtle);
+  border-left-color: var(--accent-gold);
+}
+[data-theme="light"] .process-title {
+  color: #8c6007;
+}
+[data-theme="light"] .process-subtitle {
+  color: #475569;
+}
+[data-theme="light"] .step-item {
+  background: #ffffff;
+  border-color: var(--border-subtle);
+  color: #0f172a;
+}
+[data-theme="light"] .step-item:hover {
+  border-color: var(--border-gold);
+}
+[data-theme="light"] .step-badge {
+  background: #b3861b;
+  color: #ffffff;
+}
+[data-theme="light"] .step-header {
+  color: #8c6007;
+}
+[data-theme="light"] .step-desc {
+  color: #334155;
+}
+[data-theme="light"] .transmission-flow-chain {
+  background: #f5f0e4;
+  border-color: var(--border-gold);
+  color: #0f172a;
+}
+[data-theme="light"] .chain-node {
+  background: rgba(179, 134, 27, 0.12);
+  border-color: var(--border-gold);
+  color: #785005;
+}
+[data-theme="light"] .curve-decoder-card {
+  background: #fbf9f4;
+  border-color: var(--border-subtle);
+}
+[data-theme="light"] .curve-decoder-title {
+  color: #8c6007;
+}
+[data-theme="light"] .curve-meta-table {
+  background: #ffffff;
+  border-color: var(--border-subtle);
+}
+[data-theme="light"] .curve-meta-table tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02);
+}
+[data-theme="light"] .curve-meta-table td {
+  border-bottom-color: var(--border-subtle);
+  color: #0f172a;
+}
+[data-theme="light"] .curve-meta-label {
+  color: #8c6007;
+}
+[data-theme="light"] .curve-meta-val {
+  color: #0f172a;
+}
+
 
 /* Dynamic Feedback Stack with 5-Second Fadeout & Top Placement */
 #feedbackContainer {

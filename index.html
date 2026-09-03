@@ -136,69 +136,1134 @@
     <div class="summary-container">
 
       <!-- =========================================================================
-           UNIT 1: MONETARY SECTOR & SARB (CHAPTER 14)
+           TOP NAV: QUICK SYLLABUS JUMP BAR
            ========================================================================= -->
-      <section class="unit-summary-card">
+      <nav class="summary-nav-bar" aria-label="Executive Summary Syllabus Navigation">
+        <span class="summary-nav-label">⚡ Syllabus Jump:</span>
+        <a href="#unit14" class="summary-nav-link">🪙 Ch. 14: Monetary &amp; SARB</a>
+        <a href="#unit15" class="summary-nav-link">🏛️ Ch. 15: Public Sector &amp; Tax</a>
+        <a href="#unit20" class="summary-nav-link">🔥 Ch. 20: Inflation &amp; AD-AS</a>
+        <a href="#curveDecoder" class="summary-nav-link">📐 Complete Curve Decoder</a>
+      </nav>
+
+      <!-- =========================================================================
+           STUDY UNIT 1: THE MONETARY SECTOR & THE SARB (CHAPTER 14)
+           ========================================================================= -->
+      <section class="unit-summary-card" id="unit14">
         <div class="unit-header">
           <div>
-            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase;">Study Unit 1 • Chapter 14</span>
-            <h2 class="unit-title">The Monetary Sector & The South African Reserve Bank</h2>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-azure); text-transform: uppercase;">Study Unit 1 • Chapter 14</span>
+            <h2 class="unit-title">The Monetary Sector &amp; The South African Reserve Bank</h2>
           </div>
-          <span class="exam-tag">Core Theory</span>
+          <span class="exam-tag">Core Syllabus Matrix</span>
         </div>
 
-        <div class="concept-grid">
-          <!-- Concept 1: Money Functions -->
-          <div class="concept-box">
-            <div class="concept-title">🪙 Functions & Evolution of Money</div>
-            <div class="concept-body">
-              Money overcomes the barter economy's <strong>double coincidence of wants</strong>.
-              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Medium of Exchange:</strong> Generally accepted in payment for goods and settlement of debt.</li>
-                <li><strong>Unit of Account:</strong> Common denominator quoting relative prices.</li>
-                <li><strong>Store of Value:</strong> Retains purchasing power across time (eroded by inflation).</li>
-              </ul>
-              South African currency is <span class="glossary-term" data-term="fiduciary_money">fiduciary money <span class="glossary-icon">💡</span></span>: intrinsically worthless paper backed by public trust and legal tender law.
+        <!-- Section 1.1: Tabular Definition Matrix -->
+        <div class="section-subtitle-bar">
+          <h3 class="section-subtitle">📋 Tabular Definition Matrix: Core Monetary Concepts</h3>
+          <span class="section-badge">12 Formal Terms • Mohr Ch. 14</span>
+        </div>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0 0 1rem 0; line-height: 1.6;">
+          Publication-grade terminology reference. Interactive gold terms open the bilingual academic glossary with English and Afrikaans definitions.
+        </p>
+
+        <div class="axiom-table-wrapper">
+          <table class="axiom-matrix-table">
+            <thead>
+              <tr>
+                <th style="width: 22%;">Economic Term &amp; Symbol</th>
+                <th style="width: 42%;">Official Exam Definition</th>
+                <th style="width: 22%;">Key Keywords Emphasized</th>
+                <th style="width: 14%;">Prescribed Citation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="term-col">
+                  <strong>Money / Geld</strong>
+                  <span class="term-symbol">Symbol: \(M\)</span>
+                </td>
+                <td class="def-col">
+                  Any commodity or asset generally accepted by the public as payment for goods and services or in the legal discharge of debt and financial obligations.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Medium of exchange</span>, <span class="kw-highlight">unit of account</span>, <span class="kw-highlight">store of value</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.1</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="fiduciary_money">Fiduciary (Fiat) Money <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: Paper &amp; Coin</span>
+                </td>
+                <td class="def-col">
+                  Currency that possesses zero intrinsic commercial value (paper notes, base coins, bank ledger bits) whose value derives exclusively from public trust and state legal tender status.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Intrinsically worthless</span>, <span class="kw-highlight">public trust</span>, <span class="kw-highlight">legal tender</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.1</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Narrow Money (M1)</strong>
+                  <span class="term-symbol">Symbol: \(M_1\)</span>
+                </td>
+                <td class="def-col">
+                  The primary transactional money aggregate comprising notes and coins in active circulation outside the banking sector plus all check and transmission (demand) deposits of domestic private entities with commercial banks.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Cash outside banks</span>, <span class="kw-highlight">demand deposits</span>, <span class="kw-highlight">immediate transaction liquidity</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.1</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="quasi_money">Quasi-Money (Near Money) <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: \(QM\)</span>
+                </td>
+                <td class="def-col">
+                  Short-term and medium-term deposits (including ordinary savings accounts) held by the private sector with banking institutions that serve as a store of value and can be converted into transaction money rapidly at negligible cost.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Short- &amp; medium-term deposits</span>, <span class="kw-highlight">near-money liquidity</span>, <span class="kw-highlight">store of value</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.1</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Intermediate Money (M2)</strong>
+                  <span class="term-symbol">Symbol: \(M_2\)</span>
+                </td>
+                <td class="def-col">
+                  An intermediate monetary aggregate defined mathematically as narrow money supply plus quasi-money: \(M_2 = M_1 + \text{Quasi-Money}\) (short-term and medium-term commercial bank deposits).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">\(M_1\) + Quasi-Money</span>, <span class="kw-highlight">intermediate liquidity</span>, <span class="kw-highlight">savings deposits</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.1</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Broad Money (M3)</strong>
+                  <span class="term-symbol">Symbol: \(M_3\)</span>
+                </td>
+                <td class="def-col">
+                  The most comprehensive monetary aggregate recognized by the SARB, defined as \(M_2\) plus all long-term deposits with commercial banks; serves as the primary macro-prudential monetary indicator.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">\(M_2\) + Long-term deposits</span>, <span class="kw-highlight">broadest aggregate</span>, <span class="kw-highlight">SARB anchor indicator</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.1</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Cash Reserve Requirement</strong>
+                  <span class="term-symbol">Symbol: \(r\)</span>
+                </td>
+                <td class="def-col">
+                  The legally mandated statutory minimum fraction of total bank deposits that private commercial banks must deposit in non-interest-bearing accounts with the South African Reserve Bank.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Statutory minimum percentage</span>, <span class="kw-highlight">non-interest-bearing SARB vault reserve</span>, <span class="kw-highlight">credit governor</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="repo_rate">Repurchase (Repo) Rate <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: \(i_{\text{repo}}\)</span>
+                </td>
+                <td class="def-col">
+                  The benchmark policy interest rate at which the SARB tenders liquidity to registered commercial banks at weekly repurchase auctions to cover their daily interbank liquidity shortage.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">SARB benchmark policy rate</span>, <span class="kw-highlight">weekly repo auctions</span>, <span class="kw-highlight">liquidity deficit refinancing</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.4</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Prime Overdraft Rate</strong>
+                  <span class="term-symbol">Symbol: \(i_{\text{prime}}\)</span>
+                </td>
+                <td class="def-col">
+                  The standard benchmark lending rate charged by private commercial banks to their most creditworthy corporate and retail borrowers, traditionally set in South Africa at 350 basis points above the repo rate (\(i_{\text{prime}} = i_{\text{repo}} + 3.50\%\)).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Commercial bank benchmark lending rate</span>, <span class="kw-highlight">fixed spread over repo (+3.50%)</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.4</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Active Cash Balances</strong>
+                  <span class="term-symbol">Symbol: \(L_1(Y)\)</span>
+                </td>
+                <td class="def-col">
+                  Money demanded by households and enterprises to bridge the temporal gap between income receipt and expenditure (transactions motive) and for unforeseen contingencies (precautionary motive); strictly a positive function of real national income \(Y\).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Transactions &amp; precautionary motives</span>, <span class="kw-highlight">positive function of income \(Y\)</span>, <span class="kw-highlight">interest-inelastic</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="liquidity_preference">Speculative Balances <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: \(L_2(i)\)</span>
+                </td>
+                <td class="def-col">
+                  Idle cash balances held as financial assets to take advantage of future expected movements in bond prices and interest rates; inversely related to the nominal interest rate \(i\).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Speculative asset demand</span>, <span class="kw-highlight">inverse function of interest rate \(i\)</span>, <span class="kw-highlight">opportunity cost of cash</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="liquidity_trap">Liquidity Trap <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: Horizontal \(M_d\)</span>
+                </td>
+                <td class="def-col">
+                  A Keynesian market boundary where interest rates fall so low that the speculative demand for money becomes perfectly elastic; additional central bank liquidity injections are hoarded into idle cash rather than lowering interest rates.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Infinitely elastic speculative demand</span>, <span class="kw-highlight">horizontal \(M_d\) segment</span>, <span class="kw-highlight">monetary policy impotence</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §14.3</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Section 1.2: Dedicated Multi-Step Process Cards -->
+        <div class="section-subtitle-bar">
+          <h3 class="section-subtitle">⚙️ Multi-Step Monetary Processes &amp; Transmission Mechanisms</h3>
+          <span class="section-badge">Dedicated Stepper Cards</span>
+        </div>
+
+        <!-- Process Card 1: Credit Creation Multiplier -->
+        <div class="process-card">
+          <div class="process-header">
+            <h4 class="process-title">🏦 The Commercial Bank Credit Creation &amp; Deposit Expansion Process</h4>
+            <p class="process-subtitle">
+              How private commercial banks expand the money supply through fractional reserve banking, and the real-world leakages that constrain the theoretical multiplier.
+            </p>
+          </div>
+
+          <div class="stepper-flow">
+            <div class="step-item">
+              <span class="step-badge">Step 1</span>
+              <div class="step-content">
+                <div class="step-header">Primary Cash Inflow to Initial Bank</div>
+                <div class="step-desc">
+                  An economic agent deposits a primary injection of \(\Delta R = \text{R}10\,000\) in new legal tender cash into Commercial Bank A, increasing bank assets (cash reserves) and liabilities (checkable deposit) equally.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 2</span>
+              <div class="step-content">
+                <div class="step-header">Statutory Cash Reserve Retention</div>
+                <div class="step-desc">
+                  Assuming a statutory reserve requirement of \(r = 10\%\) (\(0.10\)), Bank A is legally required to hold \(\text{R}1\,000\) in reserve with the SARB. This leaves \(\text{R}9\,000\) as <em>excess loanable reserves</em>.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 3</span>
+              <div class="step-content">
+                <div class="step-header">Credit Extension &amp; New Deposit Creation</div>
+                <div class="step-desc">
+                  Bank A lends the \(\text{R}9\,000\) excess reserves to Borrower 1 by crediting a demand deposit. Bank A has literally created \(\text{R}9\,000\) in new book money out of thin air. Borrower 1 writes a check/EFT to pay a supplier.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 4</span>
+              <div class="step-content">
+                <div class="step-header">Secondary Interbank Expansion Rounds</div>
+                <div class="step-desc">
+                  The supplier deposits the \(\text{R}9\,000\) into Commercial Bank B. Bank B must retain \(10\%\) (\(\text{R}900\)) and lends out the remaining \(90\%\) (\(\text{R}8\,100\)) to Borrower 2, propagating across banks in a diminishing geometric sequence:
+                  \(\text{R}10\,000 + \text{R}9\,000 + \text{R}8\,100 + \text{R}7\,290 + \dots\)
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 5</span>
+              <div class="step-content">
+                <div class="step-header">Theoretical Maximum Cumulative Money Creation</div>
+                <div class="step-desc">
+                  Summing the infinite convergent series produces the maximum total deposit expansion:
+                  <div class="equation-highlight" style="margin: 0.5rem 0;">
+                    \(\Delta D = \Delta R \times \frac{1}{r} = \text{R}10\,000 \times \frac{1}{0.10} = \text{R}10\,000 \times 10 = \text{R}100\,000\)
+                  </div>
+                  Net newly created credit money equals \(\Delta D - \Delta R = \text{R}100\,000 - \text{R}10\,000 = \text{R}90\,000\).
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 6</span>
+              <div class="step-content">
+                <div class="step-header">Real-World Constraints &amp; Cash Drains</div>
+                <div class="step-desc">
+                  In practice, the multiplier is significantly smaller than \(\frac{1}{r}\) due to: (a) <strong>Cash drain</strong> (the public retains currency rather than re-depositing), (b) <strong>Excess reserves</strong> (risk-averse banks hold precautionary liquidity), and (c) <strong>Lack of creditworthy borrower demand</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Process Card 2: SARB Repo Transmission Mechanism -->
+        <div class="process-card">
+          <div class="process-header">
+            <h4 class="process-title">📈 The SARB Repurchase (Repo) Rate Monetary Policy Transmission Mechanism</h4>
+            <p class="process-subtitle">
+              The chronological six-stage transmission mechanism through which central bank interest rate decisions propagate through the commercial financial system to manage aggregate demand and anchor inflation expectations.
+            </p>
+          </div>
+
+          <div class="stepper-flow">
+            <div class="step-item">
+              <span class="step-badge">Step 1</span>
+              <div class="step-content">
+                <div class="step-header">SARB MPC Policy Rate Decision</div>
+                <div class="step-desc">
+                  To counteract rising demand-pull or wage-push inflation expectations, the SARB Monetary Policy Committee (MPC) raises the benchmark Repurchase (Repo) Rate (\(i_{\text{repo}} \uparrow\)) at its weekly Wednesday liquidity refinancing auction.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 2</span>
+              <div class="step-content">
+                <div class="step-header">Interbank &amp; Prime Overdraft Pass-Through</div>
+                <div class="step-desc">
+                  Commercial banks face an immediate increase in the cost of refinancing their daily liquidity deficit at the SARB window. Within 24 hours, commercial banks pass on this cost by lifting the benchmark Prime Overdraft Rate (\(i_{\text{prime}} \uparrow = i_{\text{repo}} + 3.50\%\)) and floating deposit rates.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 3</span>
+              <div class="step-content">
+                <div class="step-header">Credit Channel Tightening &amp; Cost Escalation</div>
+                <div class="step-desc">
+                  Borrowing costs for households and corporations escalate across all credit agreements (mortgage bonds, vehicle asset finance, business overdrafts). Concurrently, the incentive to save rises as fixed-deposit yields increase.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 4</span>
+              <div class="step-content">
+                <div class="step-header">Contraction in Private Domestic Expenditure</div>
+                <div class="step-desc">
+                  Higher debt servicing costs erode household disposable income, suppressing autonomous consumption of durables (\(C \downarrow\)). Simultaneously, higher financing hurdle rates lead business firms to postpone capital expenditure (\(I \downarrow\)).
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 5</span>
+              <div class="step-content">
+                <div class="step-header">Aggregate Demand Contraction</div>
+                <div class="step-desc">
+                  Reduced domestic absorption contracts total expenditure, shifting the Aggregate Demand curve downwards/leftwards (\(AD = C + I + G + X - Z \downarrow\)), eliminating the positive output gap.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 6</span>
+              <div class="step-content">
+                <div class="step-header">Disinflation &amp; Price Stability</div>
+                <div class="step-desc">
+                  Firms face excess inventory and dampening demand, reducing their pricing power. Upward pressure on consumer prices dissipates, driving headline CPI inflation (\(\pi \downarrow\)) back toward the SARB 4.5% target midpoint.
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Concept 2: Monetary Aggregates -->
-          <div class="concept-box">
-            <div class="concept-title">📊 Monetary Aggregates (M1, M2, M3)</div>
-            <div class="concept-body">
-              <div class="equation-highlight"><strong>\(M_1\) =</strong> Currency outside banks + Demand deposits</div>
-              <div class="equation-highlight"><strong>\(M_2\) = \(M_1\) +</strong> <span class="glossary-term" data-term="quasi_money">Quasi-Money <span class="glossary-icon">💡</span></span> <span style="font-size: 0.85em; opacity: 0.85;">(Short &amp; Medium-term deposits)</span></div>
-              <div class="equation-highlight"><strong>\(M_3\) = \(M_2\) +</strong> Long-term deposits <span style="font-size: 0.85em; opacity: 0.85;">(Comprehensive Broad Money)</span></div>
-              SARB defines <strong>M3</strong> as the broadest and most reliable monetary indicator.
+          <div class="transmission-flow-chain">
+            <span class="chain-node">Repo Rate \(i_{\text{repo}} \uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Prime Rate \(i_{\text{prime}} \uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Credit Cost \(\uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Private Spending \(C, I \downarrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Aggregate Demand \(AD \downarrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Inflation Rate \(\pi \downarrow\)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           STUDY UNIT 2: THE PUBLIC SECTOR & FISCAL POLICY (CHAPTER 15)
+           ========================================================================= -->
+      <section class="unit-summary-card" id="unit15">
+        <div class="unit-header">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-emerald); text-transform: uppercase;">Study Unit 2 • Chapter 15</span>
+            <h2 class="unit-title">The Public Sector &amp; Fiscal Policy</h2>
+          </div>
+          <span class="exam-tag" style="border-color: var(--accent-emerald); color: var(--accent-emerald);">Core Syllabus Matrix</span>
+        </div>
+
+        <!-- Section 2.1: Tabular Definition Matrix -->
+        <div class="section-subtitle-bar">
+          <h3 class="section-subtitle">📋 Tabular Definition Matrix: Public Sector &amp; Taxation Architecture</h3>
+          <span class="section-badge">16 Formal Terms • Mohr Ch. 15</span>
+        </div>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0 0 1rem 0; line-height: 1.6;">
+          Publication-grade fiscal economics definitions distinguishing market failure modes, externality structures, equity criteria, and budgetary stances.
+        </p>
+
+        <div class="axiom-table-wrapper">
+          <table class="axiom-matrix-table">
+            <thead>
+              <tr>
+                <th style="width: 22%;">Economic Term &amp; Symbol</th>
+                <th style="width: 42%;">Official Exam Definition</th>
+                <th style="width: 22%;">Key Keywords Emphasized</th>
+                <th style="width: 14%;">Prescribed Citation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="term-col">
+                  <strong>Market Failure</strong>
+                  <span class="term-symbol">Allocative Inefficiency</span>
+                </td>
+                <td class="def-col">
+                  An economic situation in which the free, unhindered price mechanism fails to allocate scarce resources socially efficiently, yielding sub-optimal output and net deadweight social welfare loss.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Inefficient resource allocation</span>, <span class="kw-highlight">Pareto sub-optimal</span>, <span class="kw-highlight">welfare loss</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.1</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="pure_public_good">Pure Public Good <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Non-Rival &amp; Non-Excludable</span>
+                </td>
+                <td class="def-col">
+                  A good or service displaying complete non-rivalry in consumption and complete non-excludability in access (e.g. national defense, flood warning systems, lighthouses, basic rule of law).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Non-rival consumption</span>, <span class="kw-highlight">non-excludable access</span>, <span class="kw-highlight">zero marginal cost of extra user</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Non-Rivalry in Consumption</strong>
+                  <span class="term-symbol">Criterion 1 of Public Goods</span>
+                </td>
+                <td class="def-col">
+                  The property where one individual consuming or benefiting from a good does not in any way reduce the quantity, quality, or availability of that good for consumption by any other person.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Undiminished availability</span>, <span class="kw-highlight">simultaneous consumption</span>, <span class="kw-highlight">MC = 0</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Non-Excludability in Access</strong>
+                  <span class="term-symbol">Criterion 2 of Public Goods</span>
+                </td>
+                <td class="def-col">
+                  The technological or economic impossibility (or prohibitive cost) of preventing non-paying consumers from accessing, enjoying, or benefiting from the good once it has been produced.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Costly/impossible exclusion</span>, <span class="kw-highlight">open access</span>, <span class="kw-highlight">unpriced consumption</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="free_rider_problem">Free-Rider Problem <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Incentive Failure</span>
+                </td>
+                <td class="def-col">
+                  A market failure stemming directly from non-excludability wherein rational self-interested consumers withhold payment hoping others will pay, causing private firms to underprovide or totally fail to supply the good.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Consumption without payment</span>, <span class="kw-highlight">private market underprovision</span>, <span class="kw-highlight">necessitates tax funding</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Common Property Resources</strong>
+                  <span class="term-symbol">Rival &amp; Non-Excludable</span>
+                </td>
+                <td class="def-col">
+                  Natural resources that are rival in consumption (depletable) but non-excludable in access (e.g. oceanic fisheries, shared communal grazing pasture), inexorably precipitating the Tragedy of the Commons.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Rival but non-excludable</span>, <span class="kw-highlight">Tragedy of the Commons</span>, <span class="kw-highlight">resource depletion</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="negative_externality">Negative Externality <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Spillover Cost (\(\text{MEC} > 0\))</span>
+                </td>
+                <td class="def-col">
+                  An uncompensated cost or damage imposed by producers or consumers on third parties who are not participants in the market transaction (e.g. factory sulfur emissions polluting regional water sources).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Uncompensated third-party cost</span>, <span class="kw-highlight">\(\text{MSC} > \text{MPC}\)</span>, <span class="kw-highlight">market overproduction</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Marginal External Cost</strong>
+                  <span class="term-symbol">Symbol: \(\text{MEC}\)</span>
+                </td>
+                <td class="def-col">
+                  The additional monetary damage and unpriced social harm inflicted on innocent third parties for each additional unit of physical output produced.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Damage per extra unit</span>, <span class="kw-highlight">vertical gap between MSC and MPC</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Marginal Social Cost</strong>
+                  <span class="term-symbol">Symbol: \(\text{MSC} = \text{MPC} + \text{MEC}\)</span>
+                </td>
+                <td class="def-col">
+                  The true, complete opportunity cost to society of producing an additional unit of output, defined as private internal production costs plus the marginal external cost: \(\text{MSC} = \text{MPC} + \text{MEC}\).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Full social opportunity cost</span>, <span class="kw-highlight">\(\text{MPC} + \text{MEC}\)</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="pigouvian_tax">Pigouvian Tax <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: \(t = \text{MEC}\)</span>
+                </td>
+                <td class="def-col">
+                  A specific per-unit corrective excise tax levied on polluters set equal to the Marginal External Cost at the socially optimum output level, forcing private firms to internalize the externality.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Tax set equal to MEC</span>, <span class="kw-highlight">internalizes external cost</span>, <span class="kw-highlight">shifts MPC to MSC</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="deadweight_loss">Deadweight Loss (DWL) <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Symbol: \(\text{DWL}\)</span>
+                </td>
+                <td class="def-col">
+                  The net loss of total economic welfare (combined consumer and producer surplus) caused by allocative distortion (such as uncorrected externalities or excise taxation) that is captured by no party.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Permanent net surplus loss</span>, <span class="kw-highlight">allocative inefficiency</span>, <span class="kw-highlight">excess burden</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="progressive_tax">Progressive Tax <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Criteria: \(\text{MTR} > \text{ATR}\)</span>
+                </td>
+                <td class="def-col">
+                  A tax structure wherein the Average Tax Rate (\(\text{ATR} = \frac{\text{Tax}}{\text{Income}}\)) increases as personal taxable income increases, ensuring wealthier taxpayers pay a higher proportion of income (e.g. SA PIT: 18% to 45%).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">ATR rises with income</span>, <span class="kw-highlight">MTR &gt; ATR</span>, <span class="kw-highlight">vertical equity</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.4</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Proportional Tax</strong>
+                  <span class="term-symbol">Criteria: \(\text{MTR} = \text{ATR}\)</span>
+                </td>
+                <td class="def-col">
+                  A flat tax structure in which the Average Tax Rate remains constant regardless of income level, meaning tax liability increases in direct linear proportion to income (e.g. SA Corporate Income Tax at 27%).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Constant ATR across all incomes</span>, <span class="kw-highlight">MTR = ATR</span>, <span class="kw-highlight">flat percentage</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.4</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Regressive Tax</strong>
+                  <span class="term-symbol">Criteria: \(\text{MTR} < \text{ATR}\)</span>
+                </td>
+                <td class="def-col">
+                  A tax structure wherein the Average Tax Rate falls as income increases. While Value Added Tax (VAT at 15%) has a uniform statutory rate, it is economically regressive relative to income because poorer households consume a larger share of disposable earnings.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">ATR falls as income rises</span>, <span class="kw-highlight">MTR &lt; ATR</span>, <span class="kw-highlight">disproportionate burden on poor</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.4</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="fiscal_drag">Fiscal Drag (Bracket Creep) <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Inflation Tax Effect</span>
+                </td>
+                <td class="def-col">
+                  The automatic fiscal process whereby nominal wage increases push taxpayers into higher statutory income tax brackets during periods of inflation, elevating their real tax burden without any real increase in purchasing power.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Nominal wage inflation</span>, <span class="kw-highlight">higher statutory tax bracket</span>, <span class="kw-highlight">unlegislated tax hike</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.4</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>National Budget Deficit</strong>
+                  <span class="term-symbol">Condition: \(G > T\)</span>
+                </td>
+                <td class="def-col">
+                  The annual fiscal shortfall occurring when total government expenditure (\(G\)) exceeds total tax and non-tax revenues (\(T\)) during a given fiscal year, necessitating public debt issuance by the National Treasury.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Spending exceeds revenue</span>, <span class="kw-highlight">Treasury bond borrowing</span>, <span class="kw-highlight">accumulates sovereign debt</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §15.5</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Section 2.2: Dedicated Multi-Step Process Cards -->
+        <div class="section-subtitle-bar">
+          <h3 class="section-subtitle">⚙️ Multi-Step Fiscal Processes &amp; Transmission Mechanisms</h3>
+          <span class="section-badge">Dedicated Stepper Cards</span>
+        </div>
+
+        <!-- Process Card 1: Direct vs Indirect Tax Incidence -->
+        <div class="process-card">
+          <div class="process-header">
+            <h4 class="process-title">🧾 Direct vs Indirect Tax Incidence &amp; The Elasticity Transmission Mechanism</h4>
+            <p class="process-subtitle">
+              Why statutory tax liability does NOT dictate who actually pays: how relative price elasticities of demand and supply determine the final economic burden between consumers and producers.
+            </p>
+          </div>
+
+          <div class="stepper-flow">
+            <div class="step-item">
+              <span class="step-badge">Step 1</span>
+              <div class="step-content">
+                <div class="step-header">Statutory Imposition on Producers (Indirect Tax)</div>
+                <div class="step-desc">
+                  Government legally levies a specific excise tax of \(t\) per unit (e.g. fuel levy or sin tax) on manufacturers/suppliers of a commodity. The legal obligation to remit revenue to SARS rests with the seller.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 2</span>
+              <div class="step-content">
+                <div class="step-header">Upward Vertical Supply Curve Shift</div>
+                <div class="step-desc">
+                  Because production costs increase by \(t\) per unit across all output volumes, the market supply curve shifts vertically upwards by exactly the monetary value of the tax: \(S_0 \rightarrow S_1 = S_0 + t\).
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 3</span>
+              <div class="step-content">
+                <div class="step-header">Creation of the Tax Wedge</div>
+                <div class="step-desc">
+                  The consumer pays the higher market gross price (\(P_c\)), but the producer receives only the net price after deducting the tax remittance: \(P_p = P_c - t\). The vertical distance between \(P_c\) and \(P_p\) is the <em>tax wedge</em>.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 4</span>
+              <div class="step-content">
+                <div class="step-header">Economic Incidence Driven by Relative Elasticity</div>
+                <div class="step-desc">
+                  The distribution of the tax burden depends strictly on relative price elasticities:
+                  <ul style="margin: 0.35rem 0 0.35rem 1.25rem; font-size: 0.86rem; color: var(--text-muted);">
+                    <li><strong>Inelastic Demand (\(|E_d| &lt; |E_s|\)):</strong> Consumers cannot easily substitute away; market price rises sharply (\(P_c \approx P_0 + t\)); buyers bear the overwhelming economic burden.</li>
+                    <li><strong>Elastic Demand (\(|E_d| &gt; |E_s|\)):</strong> Consumers readily abandon the good; producers cannot pass the tax forward; sellers absorb the financial burden (\(P_p \ll P_0\)).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 5</span>
+              <div class="step-content">
+                <div class="step-header">Fiscal Revenue vs Deadweight Loss Triangle</div>
+                <div class="step-desc">
+                  Government collects tax revenue of \(T = t \times Q_1\) (represented by the tax rectangle). Because market output contracts from \(Q_0\) to \(Q_1\), mutually beneficial trades are destroyed, creating a Harberger deadweight loss (DWL) triangle of lost consumer and producer surplus.
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Concept 3: Credit Multiplier -->
-          <div class="concept-box">
-            <div class="concept-title">🏦 Commercial Bank Credit Creation</div>
-            <div class="concept-body">
-              Commercial banks create money by advancing credit through fractional reserves.
-              <div class="equation-highlight"><span class="glossary-term" data-term="credit_multiplier">Credit Multiplier <span class="glossary-icon">💡</span></span>: \(m = \frac{1}{r}\)</div>
-              Where <em>r</em> is the cash reserve requirement ratio (e.g., if \(r = 2.5\%\), \(m = 40\)). Constrained by statutory reserve ratios, capital adequacy, and credit demand.
+          <div class="equation-highlight" style="margin-top: 1rem;">
+            <strong>Formal Tax Incidence Ratio:</strong> \(\frac{\text{Consumer Tax Burden}}{\text{Producer Tax Burden}} = \frac{\text{Price Elasticity of Supply } (E_s)}{\text{Price Elasticity of Demand } (|E_d|)}\)
+          </div>
+        </div>
+
+        <!-- Process Card 2: Classical Crowding-Out Mechanism -->
+        <div class="process-card">
+          <div class="process-header">
+            <h4 class="process-title">🏛️ The Classical Crowding-Out Transmission Mechanism</h4>
+            <p class="process-subtitle">
+              The macroeconomic transmission chain through which deficit-financed public spending drives up interest rates and displaces productive private capital formation.
+            </p>
+          </div>
+
+          <div class="stepper-flow">
+            <div class="step-item">
+              <span class="step-badge">Step 1</span>
+              <div class="step-content">
+                <div class="step-header">Fiscal Stimulus / Budget Deficit Expansion</div>
+                <div class="step-desc">
+                  Government implements expansionary fiscal spending or confronts a structural tax shortfall, creating or widening the national budget deficit (\(G > T\)).
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 2</span>
+              <div class="step-content">
+                <div class="step-header">Sovereign Treasury Bond Issuance</div>
+                <div class="step-desc">
+                  To finance the deficit without printing money, the National Treasury issues government bonds (long-term sovereign debt) in the domestic money and capital markets.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 3</span>
+              <div class="step-content">
+                <div class="step-header">Loanable Funds Competition &amp; Interest Rate Surge</div>
+                <div class="step-desc">
+                  Heavy public sector borrowing expands the aggregate demand for loanable funds. In the domestic capital market, competition for investable private savings bids up nominal and real market interest rates (\(i \uparrow\)).
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 4</span>
+              <div class="step-content">
+                <div class="step-header">Hurdle Rate Escalation for Private Capital</div>
+                <div class="step-desc">
+                  Private corporations face higher borrowing costs and higher bond yields. Marginal commercial investment projects whose expected internal rate of return falls below the elevated borrowing cost are canceled or shelved.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 5</span>
+              <div class="step-content">
+                <div class="step-header">Suppression of Private Investment (\(I \downarrow\))</div>
+                <div class="step-desc">
+                  Private investment in physical capital, equipment, and residential construction is suppressed (\(I \downarrow\)). The net expansion in Aggregate Demand is partially or fully neutralized, reducing long-run economic growth potential.
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Concept 4: Keynesian Money Demand -->
-          <div class="concept-box">
-            <div class="concept-title">📈 <span class="glossary-term" data-term="liquidity_preference">Liquidity Preference <span class="glossary-icon">💡</span></span> & <span class="glossary-term" data-term="liquidity_trap">Liquidity Trap <span class="glossary-icon">💡</span></span></div>
-            <div class="concept-body">
-              Total money demand \(M_d = L_1(Y) + L_2(i)\):
-              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Active Balances \(L_1(Y)\):</strong> Transactions & precautionary demand; positive function of income \(Y\), insensitive to interest rates.</li>
-                <li><strong>Speculative Balances \(L_2(i)\):</strong> Idle cash; inverse function of nominal interest rate \(i\) (downward-sloping).</li>
-              </ul>
+          <div class="transmission-flow-chain">
+            <span class="chain-node">Deficit \(G > T\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Treasury Bonds \(\uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Loanable Funds Demand \(\uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Interest Rate \(i \uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Private Investment \(I \downarrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node"><span class="glossary-term" data-term="crowding_out">Crowding Out <span class="glossary-icon">💡</span></span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           STUDY UNIT 3: INFLATION & PRICE INSTABILITY (CHAPTER 20)
+           ========================================================================= -->
+      <section class="unit-summary-card" id="unit20">
+        <div class="unit-header">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-rose); text-transform: uppercase;">Study Unit 3 • Chapter 20</span>
+            <h2 class="unit-title">Inflation &amp; Price Instability</h2>
+          </div>
+          <span class="exam-tag" style="border-color: var(--accent-rose); color: var(--accent-rose);">Core Syllabus Matrix</span>
+        </div>
+
+        <!-- Section 3.1: Tabular Definition Matrix -->
+        <div class="section-subtitle-bar">
+          <h3 class="section-subtitle">📋 Tabular Definition Matrix: Inflation Metrics &amp; Diagnostics</h3>
+          <span class="section-badge">11 Formal Terms • Mohr Ch. 20</span>
+        </div>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0 0 1rem 0; line-height: 1.6;">
+          Formal macroeconomic terminology for price stability analysis, index methodology comparisons, supply/demand shock origins, and redistributive consequences.
+        </p>
+
+        <div class="axiom-table-wrapper">
+          <table class="axiom-matrix-table">
+            <thead>
+              <tr>
+                <th style="width: 22%;">Economic Term &amp; Symbol</th>
+                <th style="width: 42%;">Official Exam Definition</th>
+                <th style="width: 22%;">Key Keywords Emphasized</th>
+                <th style="width: 14%;">Prescribed Citation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="term-col">
+                  <strong>Inflation</strong>
+                  <span class="term-symbol">Symbol: \(\pi\)</span>
+                </td>
+                <td class="def-col">
+                  A continuous and considerable rise in the general price level across the entire economy over time, resulting in an irreversible decline in the purchasing power of money.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Continuous process</span>, <span class="kw-highlight">considerable increase</span>, <span class="kw-highlight">general price level</span>, <span class="kw-highlight">purchasing power loss</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.1</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="cpi_basket">Consumer Price Index (CPI) <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Statistical Indicator</span>
+                </td>
+                <td class="def-col">
+                  A monthly statistical Laspeyres-type index that reflects the weighted average cost of a fixed representative basket of consumer goods and services purchased by typical urban households.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Representative urban basket</span>, <span class="kw-highlight">weighted average index</span>, <span class="kw-highlight">includes consumer imports</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Headline Inflation Rate</strong>
+                  <span class="term-symbol">Symbol: \(\pi_{\text{headline}}\)</span>
+                </td>
+                <td class="def-col">
+                  The unadjusted twelve-month (year-on-year) percentage change in the total Consumer Price Index, including all volatile food, beverage, and energy components.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Total all-items CPI change</span>, <span class="kw-highlight">includes volatile food &amp; fuel</span>, <span class="kw-highlight">year-on-year %</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Core (Underlying) Inflation</strong>
+                  <span class="term-symbol">Symbol: \(\pi_{\text{core}}\)</span>
+                </td>
+                <td class="def-col">
+                  An adjusted inflation indicator derived by mathematically stripping highly volatile price categories (fresh agricultural food, vegetables, and energy) from the CPI to discern underlying trend inflation.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Excludes volatile food &amp; energy</span>, <span class="kw-highlight">underlying inflation trend</span>, <span class="kw-highlight">policy guidance</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="gdp_deflator">GDP Price Deflator <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Implicit Price Index</span>
+                </td>
+                <td class="def-col">
+                  A comprehensive implicit price index capturing the prices of all final goods and services produced domestically, calculated as \(\frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100\); includes capital goods but excludes imports.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Domestically produced goods</span>, <span class="kw-highlight">includes capital goods</span>, <span class="kw-highlight">strictly excludes imports</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.2</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="demand_pull_inflation">Demand-Pull Inflation <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Origin: Excess \(AD\)</span>
+                </td>
+                <td class="def-col">
+                  Inflation initiated by aggregate demand for goods and services outstripping aggregate productive supply at existing prices ("too much money chasing too few goods"), shifting the \(AD\) curve rightwards.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Excess aggregate demand</span>, <span class="kw-highlight">AD shifts right</span>, <span class="kw-highlight">output and price level rise</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="cost_push_inflation">Cost-Push Inflation <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Origin: Supply Shock</span>
+                </td>
+                <td class="def-col">
+                  Inflation initiated by autonomous supply-side spikes in the costs of production (imported oil shocks, Rand exchange rate depreciation, wage hikes exceeding productivity), shifting the \(SAS\) curve leftwards.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Rising production costs</span>, <span class="kw-highlight">SAS shifts left</span>, <span class="kw-highlight">supply-side shock</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong><span class="glossary-term" data-term="stagflation">Stagflation <span class="glossary-icon">💡</span></span></strong>
+                  <span class="term-symbol">Condition: \(P \uparrow, Y \downarrow, u \uparrow\)</span>
+                </td>
+                <td class="def-col">
+                  The toxic economic dilemma of persistent high inflation occurring simultaneously with economic stagnation, falling real GDP output (\(Y \downarrow\)), and surging unemployment (\(u \uparrow\)).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">High inflation + high unemployment</span>, <span class="kw-highlight">adverse supply shock</span>, <span class="kw-highlight">falling real GDP</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.3</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Inflation Targeting</strong>
+                  <span class="term-symbol">SARB Band: 3% to 6%</span>
+                </td>
+                <td class="def-col">
+                  A monetary policy framework wherein the central bank commits publicly to using policy interest rate adjustments to anchor future headline CPI inflation within an explicit target range (3% to 6% in South Africa).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Explicit numerical target (3%–6%)</span>, <span class="kw-highlight">anchoring expectations</span>, <span class="kw-highlight">forward-looking repo adjustments</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.4</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Real Interest Rate</strong>
+                  <span class="term-symbol">Fisher Equation: \(r \approx i - \pi\)</span>
+                </td>
+                <td class="def-col">
+                  The nominal interest rate adjusted for inflation, representing the actual percentage growth in real purchasing power earned by lenders or paid by borrowers: \(r \approx i - \pi\).
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Inflation-adjusted return</span>, <span class="kw-highlight">Fisher Equation: \(r \approx i - \pi\)</span>, <span class="kw-highlight">true purchasing power yield</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.4</span></td>
+              </tr>
+              <tr>
+                <td class="term-col">
+                  <strong>Redistribution Effects</strong>
+                  <span class="term-symbol">Arbitrary Wealth Shift</span>
+                </td>
+                <td class="def-col">
+                  Unanticipated inflation arbitrarily transfers real wealth from lenders (creditors) and fixed-income pensioners to borrowers (debtors), because loan contracts are repaid in depreciated currency units.
+                </td>
+                <td class="kw-col">
+                  <span class="kw-highlight">Debtors gain, creditors lose</span>, <span class="kw-highlight">pensioners harmed</span>, <span class="kw-highlight">arbitrary wealth transfer</span>.
+                </td>
+                <td class="cite-col"><span class="citation-badge">Mohr §20.4</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Section 3.2: Dedicated Multi-Step Process Cards -->
+        <div class="section-subtitle-bar">
+          <h3 class="section-subtitle">⚙️ Multi-Step Inflation Processes &amp; Transmission Mechanisms</h3>
+          <span class="section-badge">Dedicated Stepper Cards</span>
+        </div>
+
+        <!-- Process Card 1: 5 Steps / Pillars of Inflation Definition -->
+        <div class="process-card">
+          <div class="process-header">
+            <h4 class="process-title">🔥 The 5 Steps / Pillars of the Official Philip Mohr Inflation Definition</h4>
+            <p class="process-subtitle">
+              Why a single price increase is NOT inflation: the five non-negotiable structural criteria required by Philip Mohr (6th Edition) for an exam-grade inflation diagnosis.
+            </p>
+          </div>
+
+          <div class="stepper-flow">
+            <div class="step-item">
+              <span class="step-badge">Pillar 1</span>
+              <div class="step-content">
+                <div class="step-header">Dynamic, Continuous Process Over Time</div>
+                <div class="step-desc">
+                  Inflation is strictly an ongoing, sustained dynamic process. A once-off upward price adjustment (such as a single increase in the statutory VAT rate or a once-off municipal water tariff hike) does not constitute inflation unless it unleashes continuous price spirals.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Pillar 2</span>
+              <div class="step-content">
+                <div class="step-header">Considerable &amp; Significant Magnitude</div>
+                <div class="step-desc">
+                  The overall price increase must be considerable and substantial in percentage magnitude. Trivial, negligible, or fractional fluctuations in price indices do not qualify as macroeconomic inflation.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Pillar 3</span>
+              <div class="step-content">
+                <div class="step-header">Broad-Based Across the General Price Level</div>
+                <div class="step-desc">
+                  The price rise must be pervasive across the general price level of the macroeconomy. A localized price increase in one or two isolated goods (e.g. avocado prices surging due to seasonal frost) is merely a relative price change, NOT inflation.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Pillar 4</span>
+              <div class="step-content">
+                <div class="step-header">Sustained Erosion of Purchasing Power</div>
+                <div class="step-desc">
+                  The continuous general price increase causes a direct, irreversible deterioration in the purchasing power of the national currency unit (\(1/P \downarrow\)), requiring economic agents to spend more money to obtain the identical real bundle of goods.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Pillar 5</span>
+              <div class="step-content">
+                <div class="step-header">Official Empirical Measurement via Index</div>
+                <div class="step-desc">
+                  The inflation rate must be statistically captured and verified through an officially recognized price index (such as the headline year-on-year percentage rate of change in the Consumer Price Index):
+                  <div class="equation-highlight" style="margin: 0.5rem 0;">
+                    \(\pi_t = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100\)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Process Card 2: Wage-Price Spiral -->
+        <div class="process-card">
+          <div class="process-header">
+            <h4 class="process-title">🌪️ The Wage-Price Spiral Cost-Push Propagation Mechanism</h4>
+            <p class="process-subtitle">
+              How an autonomous supply shock triggers competing income claims between trade unions and firms, mutating into persistent inflationary momentum.
+            </p>
+          </div>
+
+          <div class="stepper-flow">
+            <div class="step-item">
+              <span class="step-badge">Step 1</span>
+              <div class="step-content">
+                <div class="step-header">Autonomous External Supply Shock</div>
+                <div class="step-desc">
+                  The macroeconomy is hit by an exogenous supply-side shock (e.g. sharp depreciation of the Rand exchange rate, global crude oil price spike, or Eskom tariff escalation).
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 2</span>
+              <div class="step-content">
+                <div class="step-header">SAS Leftward/Upward Shift &amp; Price Surge</div>
+                <div class="step-desc">
+                  Imported input costs escalate, forcing the Short-Run Aggregate Supply curve upwards and leftwards (\(SAS_0 \rightarrow SAS_1\)), raising consumer price levels (\(P_0 \rightarrow P_1\)).
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 3</span>
+              <div class="step-content">
+                <div class="step-header">Real Wage Deterioration &amp; Union Demands</div>
+                <div class="step-desc">
+                  Higher living costs erode workers' real disposable wage (\(W/P \downarrow\)). Organized labor unions demand higher compensatory nominal wage increases to restore historic purchasing power.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 4</span>
+              <div class="step-content">
+                <div class="step-header">Business Cost Pass-Through</div>
+                <div class="step-desc">
+                  Employers concede to nominal wage increases exceeding productivity gains. To protect gross operating profit margins, businesses pass the higher wage bill onto retail selling prices.
+                </div>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">Step 5</span>
+              <div class="step-content">
+                <div class="step-header">Self-Reinforcing Wage-Price Spiral</div>
+                <div class="step-desc">
+                  Higher consumer prices erode real wages once more, triggering a subsequent cycle of aggressive wage negotiations and cost increases. The inflation process becomes entrenched unless central bank interest rate policy firmly re-anchors expectations.
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Diagram 1: Money Market Equilibrium SVG -->
-          <div class="concept-box" style="grid-column: 1 / -1;">
-            <div class="svg-diagram-card">
-              <span class="svg-diagram-title">Visual Derivation: Money Market Equilibrium & Policy Transmission</span>
+          <div class="transmission-flow-chain">
+            <span class="chain-node">Cost Shock</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">\(SAS\) Left</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Price Level \(P \uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Real Wage \(\downarrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Nominal Wage Demands \(\uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Firms Raise Prices \(P \uparrow\)</span>
+            <span class="chain-arrow">➔</span>
+            <span class="chain-node">Wage-Price Spiral</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           STUDY UNIT 4: COMPLETE GRAPH & CURVE DECODER MATRIX
+           ========================================================================= -->
+      <section class="unit-summary-card" id="curveDecoder">
+        <div class="unit-header">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); text-transform: uppercase;">Visual Syllabus Matrix • Chapters 14, 15 &amp; 20</span>
+            <h2 class="unit-title">Complete Graph &amp; Curve Decoder Matrix</h2>
+          </div>
+          <span class="exam-tag">Visual Rigor Suite</span>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0 0 1.5rem 0; line-height: 1.6;">
+          Publication-grade analytical decoder detailing every curve, slope parameter, shift trigger, and final macroeconomic equilibrium impact across the ECON122 syllabus.
+        </p>
+
+        <!-- Curve Decoder Card 1: Money Market -->
+        <div class="curve-decoder-card">
+          <div class="curve-decoder-header">
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-azure); text-transform: uppercase;">Graph Decoder 1 • Chapter 14</span>
+              <h3 class="curve-decoder-title">🪙 The Money Market Equilibrium &amp; Policy Transmission</h3>
+            </div>
+            <span class="citation-badge">Mohr §14.3 &amp; §14.4</span>
+          </div>
+
+          <div class="curve-grid-layout">
+            <!-- SVG Diagram 1 -->
+            <div class="svg-diagram-card" style="margin-top: 0;">
+              <span class="svg-diagram-title">Visual Derivation: Money Market Equilibrium &amp; Liquidity Trap</span>
               <svg class="svg-diagram" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <marker id="arrow1" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -214,101 +1279,86 @@
                 <text x="350" y="295" fill="var(--text-main)" font-size="12" font-family="sans-serif" font-weight="700">Quantity of Money (M)</text>
                 
                 <!-- Money Supply Line (Vertical Exogenous or Policy Repo Target) -->
-                <line x1="240" y1="40" x2="240" y2="270" stroke="#10b981" stroke-width="3"/>
-                <text x="245" y="55" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">s</tspan> (Target)</text>
+                <line x1="250" y1="40" x2="250" y2="270" stroke="#10b981" stroke-width="3"/>
+                <text x="255" y="55" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">s</tspan> (Target)</text>
                 
-                <!-- Money Demand Curve (Downward Sloping) -->
-                <path d="M 100 70 Q 200 200 440 250" fill="none" stroke="#0ea5e9" stroke-width="3"/>
-                <text x="360" y="240" fill="#0ea5e9" font-size="12" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">d</tspan> = L<tspan baseline-shift="sub" font-size="9">1</tspan>(Y) + L<tspan baseline-shift="sub" font-size="9">2</tspan>(i)</text>
-                
-                <!-- Equilibrium Point -->
-                <circle cx="240" cy="180" r="6" fill="#f59e0b"/>
-                <line x1="60" y1="180" x2="240" y2="180" stroke="#f59e0b" stroke-dasharray="4 4" stroke-width="1.5"/>
-                <line x1="240" y1="180" x2="240" y2="270" stroke="#f59e0b" stroke-dasharray="4 4" stroke-width="1.5"/>
-                <text x="25" y="184" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">i*</text>
-                <text x="235" y="290" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">M*</text>
-                
-                <!-- SARB Tightening Shift Annotation -->
+                <!-- SARB Tightening Shift Line -->
                 <line x1="180" y1="40" x2="180" y2="270" stroke="#f43f5e" stroke-dasharray="3 3" stroke-width="2"/>
-                <text x="130" y="55" fill="#f43f5e" font-size="11" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">s</tspan>′ (Tightening)</text>
-                <line x1="60" y1="145" x2="180" y2="145" stroke="#f43f5e" stroke-dasharray="3 3" stroke-width="1.5"/>
-                <text x="25" y="149" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">i<tspan baseline-shift="sub" font-size="9">1</tspan></text>
-                <path d="M 230 110 L 190 110" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow1)"/>
+                <text x="120" y="55" fill="#f43f5e" font-size="11" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">s</tspan>′ (Tightening)</text>
+                <path d="M 240 110 L 190 110" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow1)"/>
+
+                <!-- Money Demand Curve with Liquidity Trap Flattening -->
+                <path d="M 110 65 Q 210 185 360 235 L 460 235" fill="none" stroke="#0ea5e9" stroke-width="3"/>
+                <text x="330" y="225" fill="#0ea5e9" font-size="12" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">d</tspan> = L<tspan baseline-shift="sub" font-size="9">1</tspan>(Y) + L<tspan baseline-shift="sub" font-size="9">2</tspan>(i)</text>
+                <text x="380" y="255" fill="#0ea5e9" font-size="10" font-weight="700" font-family="sans-serif">Liquidity Trap</text>
+                
+                <!-- Initial Equilibrium Point E0 -->
+                <circle cx="250" cy="195" r="5" fill="#f59e0b"/>
+                <line x1="60" y1="195" x2="250" y2="195" stroke="#f59e0b" stroke-dasharray="4 4" stroke-width="1.5"/>
+                <line x1="250" y1="195" x2="250" y2="270" stroke="#f59e0b" stroke-dasharray="4 4" stroke-width="1.5"/>
+                <text x="25" y="199" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">i<tspan baseline-shift="sub" font-size="9">0</tspan></text>
+                <text x="245" y="290" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">0</tspan></text>
+                
+                <!-- Tightened Equilibrium Point E1 -->
+                <circle cx="180" cy="140" r="5" fill="#f43f5e"/>
+                <line x1="60" y1="140" x2="180" y2="140" stroke="#f43f5e" stroke-dasharray="3 3" stroke-width="1.5"/>
+                <text x="25" y="144" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">i<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+                <text x="175" y="290" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">1</tspan></text>
               </svg>
             </div>
-            
-            <div style="background: var(--bg-card); padding: 0.85rem 1rem; border-radius: var(--radius-sm); margin-top: 0.75rem; font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.8;">
-              <strong>SARB Repo Transmission:</strong> <span class="glossary-term" data-term="repo_rate">Repo Rate <span class="glossary-icon">💡</span></span> (\(\uparrow\)) ➔ Prime Rate (\(\uparrow\)) ➔ Credit Cost (\(\uparrow\)) ➔ Domestic Expenditure \(C, I\) (\(\downarrow\)) ➔ AD (\(\downarrow\)) ➔ Demand-pull Inflation cools (\(\downarrow\))
-            </div>
+
+            <!-- Metadata Table 1 -->
+            <table class="curve-meta-table">
+              <tbody>
+                <tr>
+                  <td class="curve-meta-label">Axis Labels</td>
+                  <td class="curve-meta-val">
+                    <strong>Vertical:</strong> Nominal Interest Rate (\(i\))<br>
+                    <strong>Horizontal:</strong> Quantity of Money (\(M\))
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Valid Slope Range</td>
+                  <td class="curve-meta-val">
+                    <strong>Money Supply (\(M_s\)):</strong> Strictly vertical (\(90^\circ\) / slope \(=\infty\)), perfectly interest-inelastic central bank target.<br>
+                    <strong>Money Demand (\(M_d\)):</strong> Downward-sloping (\(-15^\circ\) to \(-75^\circ\)) reflecting speculative liquidity preference; flattens to horizontal (\(0^\circ\)) at the Liquidity Trap.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Shift Triggers</td>
+                  <td class="curve-meta-val">
+                    <strong>\(M_s\) Shifts Right:</strong> Central bank expands liquidity, cuts repo rate, or lowers cash reserve requirements (\(r \downarrow\)).<br>
+                    <strong>\(M_s\) Shifts Left:</strong> SARB tightens liquidity, hikes repo rate, or increases cash reserve requirements.<br>
+                    <strong>\(M_d\) Shifts Right:</strong> Surge in Real GDP / National Income (\(Y \uparrow\)) or higher price level (\(P \uparrow\)), expanding active transactions demand \(L_1(Y)\).<br>
+                    <strong>\(M_d\) Shifts Left:</strong> Macroeconomic contraction or drop in national income (\(Y \downarrow\)).
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Impact on P &amp; Y</td>
+                  <td class="curve-meta-val">
+                    <strong>Expansionary Monetary Policy (\(M_s\) right):</strong> Lowers equilibrium interest rates (\(i \downarrow\)), stimulating consumption (\(C \uparrow\)) and private investment (\(I \uparrow\)), shifting \(AD\) rightwards, boosting Real GDP (\(Y \uparrow\)) and raising the price level (\(P \uparrow\)).<br>
+                    <strong>Liquidity Trap:</strong> Further monetary injections fail to lower interest rates further; funds are absorbed into idle balances with zero stimulatory impact on \(Y\).
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </section>
 
-      <!-- =========================================================================
-           UNIT 2: PUBLIC SECTOR & FISCAL POLICY (CHAPTER 15)
-           ========================================================================= -->
-      <section class="unit-summary-card">
-        <div class="unit-header">
-          <div>
-            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-emerald); text-transform: uppercase;">Study Unit 2 • Chapter 15</span>
-            <h2 class="unit-title">The Public Sector & Fiscal Policy</h2>
-          </div>
-          <span class="exam-tag" style="border-color: var(--accent-emerald); color: var(--accent-emerald);">Core Theory</span>
-        </div>
-
-        <div class="concept-grid">
-          <!-- Market Failure -->
-          <div class="concept-box">
-            <div class="concept-title">⚖️ Market Failure & <span class="glossary-term" data-term="pure_public_good">Public Goods <span class="glossary-icon">💡</span></span></div>
-            <div class="concept-body">
-              <strong>Pure Public Goods:</strong> Non-rival in consumption and non-excludable in access (e.g. National Defense, lighthouse).
-              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong><span class="glossary-term" data-term="free_rider_problem">Free-Rider Problem <span class="glossary-icon">💡</span></span>:</strong> Non-excludability allows individuals to enjoy benefits without paying, causing private underproduction and requiring state tax financing.</li>
-                <li><strong>Common Property Resources:</strong> Rival and non-excludable (leads to the tragedy of the commons).</li>
-              </ul>
+        <!-- Curve Decoder Card 2: Negative Production Externality -->
+        <div class="curve-decoder-card">
+          <div class="curve-decoder-header">
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-emerald); text-transform: uppercase;">Graph Decoder 2 • Chapter 15</span>
+              <h3 class="curve-decoder-title">🏭 Negative Production Externality, Deadweight Loss &amp; Pigouvian Tax</h3>
             </div>
+            <span class="citation-badge">Mohr §15.3</span>
           </div>
 
-          <!-- Negative Externality -->
-          <div class="concept-box">
-            <div class="concept-title">🏭 <span class="glossary-term" data-term="negative_externality">Negative Externalities <span class="glossary-icon">💡</span></span></div>
-            <div class="concept-body">
-              Pollution generates external costs unpriced by competitive markets.
-              <div class="equation-highlight">\(\text{MSC} = \text{MPC} + \text{Marginal External Cost (MEC)}\)</div>
-              Free market produces where \(P = \text{MPC}\), causing overproduction (\(Q_1 > Q_2\)). Solved via a <span class="glossary-term" data-term="pigouvian_tax">Pigouvian Tax <span class="glossary-icon">💡</span></span> (\(t = \text{MEC}\)) to internalize costs and eradicate <span class="glossary-term" data-term="deadweight_loss">Deadweight Loss <span class="glossary-icon">💡</span></span>.
-            </div>
-          </div>
-
-          <!-- Tax Structures -->
-          <div class="concept-box">
-            <div class="concept-title">🧾 Tax Classifications & Equity</div>
-            <div class="concept-body">
-              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong><span class="glossary-term" data-term="progressive_tax">Progressive Tax <span class="glossary-icon">💡</span></span>:</strong> Average Tax Rate (ATR) rises as income rises (e.g. South African PIT, 18%–45%).</li>
-                <li><strong>Proportional Tax:</strong> ATR remains constant across all income tiers.</li>
-                <li><strong>Regressive Tax:</strong> ATR falls as income rises. <em>VAT is regressive relative to income</em> because lower-income households consume a larger share of disposable income.</li>
-                <li><strong><span class="glossary-term" data-term="fiscal_drag">Fiscal Drag <span class="glossary-icon">💡</span></span>:</strong> Inflation pushes nominal incomes into higher brackets without real purchasing growth.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Fiscal Policy & Budget -->
-          <div class="concept-box">
-            <div class="concept-title">🏛️ National Budget & Fiscal Stances</div>
-            <div class="concept-body">
-              <div class="equation-highlight">Budget Deficit: \(G > T\) (Financed via government Treasury bonds)</div>
-              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Expansionary Fiscal:</strong> \(G \uparrow\) or \(T \downarrow\) (boosts AD during economic downturns).</li>
-                <li><strong>Contractionary Fiscal:</strong> \(G \downarrow\) or \(T \uparrow\) (dampens demand-pull inflation).</li>
-                <li><strong>Crowding Out:</strong> Extensive state borrowing raises interest rates, suppressing private capital investment.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Diagram 2: Negative Production Externality SVG -->
-          <div class="concept-box" style="grid-column: 1 / -1;">
-            <div class="svg-diagram-card">
-              <span class="svg-diagram-title">Visual Derivation: Negative Production Externality & Deadweight Loss (DWL)</span>
+          <div class="curve-grid-layout">
+            <!-- SVG Diagram 2 -->
+            <div class="svg-diagram-card" style="margin-top: 0;">
+              <span class="svg-diagram-title">Visual Derivation: Negative Production Externality &amp; Deadweight Loss</span>
               <svg class="svg-diagram" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
                 <!-- Axes -->
                 <line x1="60" y1="20" x2="60" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
@@ -350,83 +1400,60 @@
                 
                 <!-- Pigouvian Tax Bracket -->
                 <line x1="230" y1="148" x2="230" y2="190" stroke="#10b981" stroke-width="2"/>
-                <text x="175" y="172" fill="#10b981" font-size="11" font-weight="700" font-family="sans-serif">Tax = MEC</text>
+                <text x="170" y="172" fill="#10b981" font-size="11" font-weight="700" font-family="sans-serif">Tax = MEC</text>
               </svg>
             </div>
+
+            <!-- Metadata Table 2 -->
+            <table class="curve-meta-table">
+              <tbody>
+                <tr>
+                  <td class="curve-meta-label">Axis Labels</td>
+                  <td class="curve-meta-val">
+                    <strong>Vertical:</strong> Price, Cost and Marginal Benefit (\(P, C, B\))<br>
+                    <strong>Horizontal:</strong> Output Quantity of Polluting Commodity (\(Q\))
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Valid Slope Range</td>
+                  <td class="curve-meta-val">
+                    <strong>Demand (\(DD = \text{MSB}\)):</strong> Downward-sloping (\(-15^\circ\) to \(-75^\circ\)), reflecting diminishing marginal utility.<br>
+                    <strong>Supply (\(\text{MPC}\) and \(\text{MSC}\)):</strong> Upward-sloping (\(+15^\circ\) to \(+75^\circ\)), reflecting increasing marginal private production costs; \(\text{MSC}\) runs strictly parallel above \(\text{MPC}\) separated by vertical distance \(\text{MEC}\).
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Shift Triggers</td>
+                  <td class="curve-meta-val">
+                    <strong>Widening Externality Damage:</strong> Rising unpriced environmental harm increases \(\text{MEC}\), pushing \(\text{MSC}\) further above \(\text{MPC}\), widening the Deadweight Loss triangle.<br>
+                    <strong>Pigouvian Tax Levy (\(t = \text{MEC}\)):</strong> Internalizes the damage, shifting private producer cost curve upwards from \(\text{MPC}\) to coincide with \(\text{MSC}\).<br>
+                    <strong>Abatement Technology:</strong> Cleaner production filters reduce pollution damage, lowering \(\text{MEC}\) and shifting \(\text{MSC}\) downwards towards \(\text{MPC}\).
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Impact on P &amp; Y</td>
+                  <td class="curve-meta-val">
+                    <strong>Unregulated Market Equilibrium (\(E_1\)):</strong> Market overproduces (\(Q_1 &gt; Q_2\)) at an artificially low price (\(P_1 &lt; P_2\)), generating net Deadweight Loss (DWL) from excessive pollution.<br>
+                    <strong>Corrected Social Optimum (\(E_2\)):</strong> Output contracts to optimal volume (\(Q_2 &lt; Q_1\)) and consumer price rises to reflect full social opportunity cost (\(P_2 &gt; P_1\)), completely eradicating Deadweight Loss and restoring Pareto efficiency.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </section>
 
-      <!-- =========================================================================
-           UNIT 3: INFLATION & PRICE INSTABILITY (CHAPTER 20)
-           ========================================================================= -->
-      <section class="unit-summary-card">
-        <div class="unit-header">
-          <div>
-            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-rose); text-transform: uppercase;">Study Unit 3 • Chapter 20</span>
-            <h2 class="unit-title">Inflation & Price Instability</h2>
-          </div>
-          <span class="exam-tag" style="border-color: var(--accent-rose); color: var(--accent-rose);">Core Theory</span>
-        </div>
-
-        <div class="concept-grid">
-          <!-- 4 Pillars -->
-          <div class="concept-box">
-            <div class="concept-title">🔥 4 Pillars of Inflation Definition</div>
-            <div class="concept-body">
-              Inflation is NOT an isolated price increase. It strictly requires:
-              <ol style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li>A dynamic, continuous process over time.</li>
-                <li>A considerable, significant percentage increase.</li>
-                <li>Affecting the general price level across the economy.</li>
-                <li>Erosion of the real purchasing power of money.</li>
-              </ol>
+        <!-- Curve Decoder Card 3: AD-AS Macroeconomic Framework -->
+        <div class="curve-decoder-card">
+          <div class="curve-decoder-header">
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-rose); text-transform: uppercase;">Graph Decoder 3 • Chapter 20</span>
+              <h3 class="curve-decoder-title">🌪️ AD-AS Macroeconomic Framework: Demand-Pull vs Cost-Push Stagflation</h3>
             </div>
+            <span class="citation-badge">Mohr §20.3</span>
           </div>
 
-          <!-- CPI vs GDP Deflator -->
-          <div class="concept-box">
-            <div class="concept-title">📏 Measurement: <span class="glossary-term" data-term="cpi_basket">CPI <span class="glossary-icon">💡</span></span> vs. <span class="glossary-term" data-term="gdp_deflator">GDP Deflator <span class="glossary-icon">💡</span></span></div>
-            <div class="concept-body">
-              <div class="equation-highlight" style="margin-bottom: 0.85rem;">
-                <div style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem; color: var(--text-muted);">Headline Inflation Rate (CPI):</div>
-                \(\pi = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100\)
-              </div>
-              <div class="equation-highlight" style="margin-bottom: 0.85rem;">
-                <div style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem; color: var(--text-muted);">GDP Price Deflator:</div>
-                \(\text{GDP Deflator} = \frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100\)
-              </div>
-              <strong>Scope Contrast:</strong> CPI includes imported consumer goods (petrol, electronics) but excludes capital goods. GDP Deflator includes all domestically produced final goods and services but strictly excludes imports.
-            </div>
-          </div>
-
-          <!-- Demand-Pull vs Cost-Push -->
-          <div class="concept-box">
-            <div class="concept-title">🌪️ <span class="glossary-term" data-term="demand_pull_inflation">Demand-Pull <span class="glossary-icon">💡</span></span> vs. <span class="glossary-term" data-term="cost_push_inflation">Cost-Push <span class="glossary-icon">💡</span></span></div>
-            <div class="concept-body">
-              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Demand-Pull:</strong> AD shifts right. \(P \uparrow\), Real GDP \(Y \uparrow\), Unemployment \(\downarrow\).</li>
-                <li><strong>Cost-Push (<span class="glossary-term" data-term="stagflation">Stagflation <span class="glossary-icon">💡</span></span>):</strong> AS shifts left (oil shock, Rand depreciation, wage spikes). \(P \uparrow\), Output \(Y \downarrow\), Unemployment \(\uparrow\).</li>
-              </ul>
-              SARB targets headline CPI inflation within the <strong>3% to 6%</strong> band.
-            </div>
-          </div>
-
-          <!-- Redistribution Effects -->
-          <div class="concept-box">
-            <div class="concept-title">💸 Redistribution Consequences</div>
-            <div class="concept-body">
-              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Borrowers (Debtors):</strong> Benefit because debt is repaid with devalued currency.</li>
-                <li><strong>Lenders (Creditors) & Pensioners:</strong> Suffer because fixed nominal returns buy fewer goods.</li>
-                <li><strong>Exporters:</strong> Lose competitiveness if domestic inflation exceeds trading partner inflation.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Diagram 3: Cost-Push Stagflation in AD-AS SVG -->
-          <div class="concept-box" style="grid-column: 1 / -1;">
-            <div class="svg-diagram-card">
+          <div class="curve-grid-layout">
+            <!-- SVG Diagram 3 -->
+            <div class="svg-diagram-card" style="margin-top: 0;">
               <span class="svg-diagram-title">Visual Derivation: Cost-Push Stagflation in the AD-AS Framework</span>
               <svg class="svg-diagram" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -456,7 +1483,7 @@
                 
                 <!-- SAS_1 (Leftward Shock: Cost-Push) -->
                 <line x1="90" y1="210" x2="360" y2="60" stroke="#f43f5e" stroke-width="3"/>
-                <text x="340" y="55" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">SAS<tspan baseline-shift="sub" font-size="9">1</tspan> (Shock)</text>
+                <text x="330" y="55" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">SAS<tspan baseline-shift="sub" font-size="9">1</tspan> (Shock)</text>
                 
                 <!-- Initial Equilibrium E0 -->
                 <circle cx="320" cy="187" r="5" fill="#10b981"/>
@@ -476,15 +1503,48 @@
                 <text x="12" y="165" fill="#f43f5e" font-size="10" font-weight="700" font-family="sans-serif">P ↑</text>
                 
                 <path d="M 310 282 L 245 282" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow3)"/>
-                <text x="260" y="305" fill="#f43f5e" font-size="10" font-weight="700" font-family="sans-serif">Y ↓ (Unemployment ↑)</text>
+                <text x="245" y="305" fill="#f43f5e" font-size="10" font-weight="700" font-family="sans-serif">Y ↓ (Unemployment ↑)</text>
               </svg>
             </div>
-            
-            <div style="background: var(--bg-card); padding: 0.85rem 1rem; border-radius: var(--radius-sm); margin-top: 0.75rem; font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.8;">
-              <strong>The Stagflation Dilemma:</strong> Cost-push shifts \(SAS\) left, forcing price levels up (\(P_0 \rightarrow P_1\)) while output contracts below potential (\(Y_f \rightarrow Y_1\)), creating a severe unemployment gap.
-            </div>
+
+            <!-- Metadata Table 3 -->
+            <table class="curve-meta-table">
+              <tbody>
+                <tr>
+                  <td class="curve-meta-label">Axis Labels</td>
+                  <td class="curve-meta-val">
+                    <strong>Vertical:</strong> Aggregate Price Level (\(P\) / CPI)<br>
+                    <strong>Horizontal:</strong> Real Gross Domestic Product / National Output (\(Y\))
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Valid Slope Range</td>
+                  <td class="curve-meta-val">
+                    <strong>Aggregate Demand (\(AD\)):</strong> Downward-sloping (\(-15^\circ\) to \(-75^\circ\)) due to wealth, interest-rate, and international trade effects.<br>
+                    <strong>Short-Run Aggregate Supply (\(SAS\)):</strong> Upward-sloping (\(+15^\circ\) to \(+75^\circ\)) due to sticky nominal wages and temporary profit incentives.<br>
+                    <strong>Long-Run Aggregate Supply (\(LRAS\)):</strong> Strictly vertical (\(90^\circ\)) at full-employment potential output (\(Y_f\)).
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Shift Triggers</td>
+                  <td class="curve-meta-val">
+                    <strong>\(AD\) Shifts Right:</strong> Monetary easing (repo rate cut), fiscal expansion (\(G \uparrow\), \(T \downarrow\)), surge in consumer/business confidence, or export boom (\(X \uparrow\)).<br>
+                    <strong>\(SAS\) Shifts Left (Adverse Supply Shock):</strong> International crude oil price hikes, sharp Rand depreciation raising imported intermediate costs, nominal wage increases exceeding productivity, or Eskom electricity tariff increases.<br>
+                    <strong>\(LRAS\) Shifts Right:</strong> Capital deepening, technological innovation, workforce skills growth, or structural supply-side labor market reforms.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="curve-meta-label">Impact on P &amp; Y</td>
+                  <td class="curve-meta-val">
+                    <strong>Demand-Pull Inflation (\(AD\) Right):</strong> Price level rises (\(P_0 \rightarrow P_1\)) and Real GDP expands above potential (\(Y_f \rightarrow Y_1\)), creating an inflationary output gap and reducing cyclical unemployment.<br>
+                    <strong>Cost-Push Stagflation (\(SAS\) Left):</strong> Price level rises (\(P_0 \rightarrow P_1\)) while Real GDP contracts below potential (\(Y_f \rightarrow Y_1\)), precipitating simultaneous high inflation and escalating unemployment — the policy dilemma where demand stimulus worsens inflation while tightening worsens unemployment.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+
       </section>
 
     </div>
