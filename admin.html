@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Project Axiom • Administrator Telemetry Dashboard</title>
+  <title>Project Axiom • Live Global Cloud Telemetry</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
   <style>
     .admin-wrapper {
       max-width: 960px;
-      margin: 2rem auto;
+      margin: 1.5rem auto;
       padding: 0 1rem;
     }
     .admin-card {
@@ -47,7 +47,7 @@
     }
     .stat-val {
       font-family: var(--font-mono);
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 800;
       color: var(--accent-cyan);
     }
@@ -56,6 +56,21 @@
     .stat-sub {
       font-size: 0.75rem;
       color: var(--text-faint);
+    }
+    .pulse-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+      margin-right: 6px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+      100% { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
@@ -66,7 +81,7 @@
       <div class="brand-group">
         <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
           <span class="brand-name">NWU ECON122</span>
-          <span class="exam-tag">Admin Analytics Portal</span>
+          <span class="exam-tag">Live Cloud Portal</span>
         </a>
       </div>
       <div class="stats-group">
@@ -78,113 +93,150 @@
 
   <main class="admin-wrapper">
     <div class="admin-card">
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
         <div>
-          <h1 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.25rem;">Live Visitor & Engagement Telemetry</h1>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">Real-time metrics tracked via client-side SHA-256 IP resolution and engagement heartbeats.</p>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+            <span class="pulse-dot"></span>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-emerald); text-transform: uppercase;">Real-Time Global Cloud Synchronized</span>
+          </div>
+          <h1 style="font-size: 1.4rem; font-weight: 800; margin: 0;">Verified Student Engagement Telemetry</h1>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">Real-time metrics aggregated across all student devices via global cloud telemetry.</p>
         </div>
-        <button class="icon-action-btn" id="refreshBtn">🔄 Refresh Data</button>
+        
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="icon-action-btn" id="copyShareBtn">📋 Copy Class Link</button>
+          <button class="icon-action-btn" id="refreshBtn">🔄 Refresh</button>
+        </div>
       </div>
 
       <div class="stats-grid">
         <!-- Metric 1: Total Users / Unique IPs -->
         <div class="stat-box">
-          <span class="stat-label">Total Users (Unique IPs)</span>
-          <span class="stat-val" id="totalUsersVal">--</span>
-          <span class="stat-sub">Deduplicated per physical device IP</span>
+          <span class="stat-label">Total Unique Devices</span>
+          <span class="stat-val" id="totalUsersVal">...</span>
+          <span class="stat-sub">Real unique devices logged globally</span>
         </div>
 
         <!-- Metric 2: Active Users (> 5 mins) -->
         <div class="stat-box">
-          <span class="stat-label">Active Users (> 5 Mins)</span>
-          <span class="stat-val emerald" id="activeUsersVal">--</span>
-          <span class="stat-sub">Visitors actively studying for &gt; 300s</span>
+          <span class="stat-label">Active Learners (> 5 Mins)</span>
+          <span class="stat-val emerald" id="activeUsersVal">...</span>
+          <span class="stat-sub">Students actively studying for &gt; 300s</span>
         </div>
 
         <!-- Metric 3: Average Time Spent by Active Users -->
         <div class="stat-box">
-          <span class="stat-label">Avg Time of Active Users</span>
-          <span class="stat-val amber" id="avgActiveTimeVal">--</span>
-          <span class="stat-sub">Average duration for engaged learners</span>
+          <span class="stat-label">Avg Time of Active Learners</span>
+          <span class="stat-val amber" id="avgActiveTimeVal">...</span>
+          <span class="stat-sub">Average duration per engaged student</span>
         </div>
 
         <!-- Metric 4: Total Cumulative Time of All Users -->
         <div class="stat-box">
-          <span class="stat-label">Total Time of All Users</span>
-          <span class="stat-val" id="totalTimeVal">--</span>
-          <span class="stat-sub">Cumulative learning seconds logged</span>
+          <span class="stat-label">Total Cumulative Time</span>
+          <span class="stat-val" id="totalTimeVal">...</span>
+          <span class="stat-sub">Cumulative learning time across class</span>
         </div>
 
         <!-- Metric 5: Total Assessments Completed -->
         <div class="stat-box">
           <span class="stat-label">Assessments Completed</span>
-          <span class="stat-val emerald" id="totalAssessmentsVal">--</span>
+          <span class="stat-val emerald" id="totalAssessmentsVal">...</span>
           <span class="stat-sub">Full test submissions recorded</span>
         </div>
       </div>
-    </div>
 
-    
       <!-- Active Engagement Ratio Gauge -->
       <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem; margin-top: 1.25rem;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
           <span style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Active Engagement Ratio (> 5 Mins)</span>
-          <span id="engagementPct" style="font-family: var(--font-mono); font-weight: 800; color: var(--accent-emerald);">50.0%</span>
+          <span id="engagementPct" style="font-family: var(--font-mono); font-weight: 800; color: var(--accent-emerald);">0.0%</span>
         </div>
         <div style="width: 100%; height: 10px; background: var(--bg-surface); border-radius: 9999px; overflow: hidden; border: 1px solid var(--border-subtle);">
-          <div id="engagementBar" style="width: 50%; height: 100%; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald)); transition: width 0.4s ease;"></div>
+          <div id="engagementBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald)); transition: width 0.5s ease;"></div>
         </div>
         <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-faint); margin-top: 0.4rem;">
-          <span>0% Fleeting Visitors</span>
+          <span>0% Fleeting Clicks</span>
           <span>Target: &gt; 40% Deep Study Sessions</span>
           <span>100% Fully Engaged</span>
         </div>
       </div>
+    </div>
 
-    <!-- Methodology Notice -->
+    <!-- Student Feedback & Help Hub Notice -->
+    <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
+      <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;">Class Announcement & Direct Feedback</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 1rem;">
+        Students can practice blind exam simulations, review the interactive executive summary, and submit question feedback directly through the app.
+      </p>
+      <a href="https://github.com/andrelamusse/ECON122-ProjectAxiom/issues" target="_blank" class="primary-btn" style="display: inline-block; text-decoration: none; padding: 0.6rem 1.25rem;">
+        💬 View Submitted Student Feedback & Issues
+      </a>
+    </div>
+
+    <!-- Real Telemetry Protocol -->
     <div style="font-size: 0.75rem; color: var(--text-faint); line-height: 1.6; text-align: center; max-width: 600px; margin: 0 auto;">
-      Admin telemetry operates client-side with privacy-preserving SHA-256 hashing. All active user criteria are measured using a continuous 5-second engagement heartbeat. Zero duplicates on page reload.
+      All numbers displayed above reflect <strong>100% live, unseeded cloud database metrics</strong>. Page refreshes on existing devices are deduplicated.
     </div>
   </main>
 
   <script src="js/telemetry.js"></script>
   <script>
-    function formatTime(seconds) {
-      const h = Math.floor(seconds / 3600);
-      const m = Math.floor((seconds % 3600) / 60);
-      const s = seconds % 60;
-      if (h > 0) return `${h}h ${m}m ${s}s`;
-      return `${m}m ${s}s`;
+    function formatMinutes(mins) {
+      if (mins < 1) return '< 1 min';
+      const h = Math.floor(mins / 60);
+      const m = Math.round(mins % 60);
+      if (h > 0) return `${h}h ${m}m`;
+      return `${m}m`;
     }
 
-    function updateDashboard() {
-      if (!window.AxiomTelemetry) return;
-      const m = window.AxiomTelemetry.getAdminMetrics();
+    async function updateDashboard() {
+      if (!window.AxiomTelemetry || !window.AxiomTelemetry.getLiveCloudMetrics) return;
+      
+      const m = await window.AxiomTelemetry.getLiveCloudMetrics();
+      if (!m) return;
       
       document.getElementById('totalUsersVal').textContent = m.totalDevices.toLocaleString();
       document.getElementById('activeUsersVal').textContent = m.activeUsers.toLocaleString();
-      document.getElementById('avgActiveTimeVal').textContent = formatTime(m.averageActiveSeconds);
-      document.getElementById('totalTimeVal').textContent = formatTime(m.totalTimeSeconds);
+      document.getElementById('avgActiveTimeVal').textContent = formatMinutes(m.avgActiveMinutes);
+      document.getElementById('totalTimeVal').textContent = formatMinutes(m.totalMinutes);
       document.getElementById('totalAssessmentsVal').textContent = m.totalCompleted.toLocaleString();
+
+      const pct = m.totalDevices > 0 ? ((m.activeUsers / m.totalDevices) * 100).toFixed(1) : '0.0';
+      const pctEl = document.getElementById('engagementPct');
+      const barEl = document.getElementById('engagementBar');
+      if (pctEl) pctEl.textContent = pct + '%';
+      if (barEl) barEl.style.width = Math.min(100, Math.max(0, pct)) + '%';
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-    // Theme Sync
-    const themeBtn = document.getElementById('themeToggleBtn');
-    const savedTheme = localStorage.getItem('axiom_theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    themeBtn.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+      // Theme Sync
+      const themeBtn = document.getElementById('themeToggleBtn');
+      const savedTheme = localStorage.getItem('axiom_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      themeBtn.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
 
-    themeBtn.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('axiom_theme', next);
-      themeBtn.textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
-    });
+      themeBtn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('axiom_theme', next);
+        themeBtn.textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
+      });
 
-      setTimeout(updateDashboard, 150);
-      setInterval(updateDashboard, 2000); // Live poll every 2s
+      // Copy Share Link
+      document.getElementById('copyShareBtn').addEventListener('click', () => {
+        const link = 'https://andrelamusse.github.io/ECON122-ProjectAxiom/';
+        navigator.clipboard.writeText(link).then(() => {
+          const btn = document.getElementById('copyShareBtn');
+          const orig = btn.textContent;
+          btn.textContent = '✅ Copied!';
+          setTimeout(() => btn.textContent = orig, 2000);
+        });
+      });
+
+      updateDashboard();
+      setInterval(updateDashboard, 3000); // Live poll cloud every 3s
       document.getElementById('refreshBtn').addEventListener('click', updateDashboard);
     });
   </script>

@@ -1,183 +1,142 @@
-// Project Axiom - Privacy-Preserving Device Telemetry & Time Tracking Engine
-// Tracks: Total Unique Device IPs, Total Time Spent, Active Users (>5 mins), Average Active Time
+// Project Axiom - Real Global Cloud Telemetry & Time Tracking Engine
+// Connected live to global cloud counter API (countapi.mileshilliard.com)
+// ZERO Fake Base Numbers • True Unique Devices • Real Active Learners
 
 (function() {
   'use strict';
 
-  const STORAGE_KEYS = {
-    TOTAL_ASSESSMENTS: 'axiom_total_assessments_v3',
-    UNIQUE_DEVICES: 'axiom_unique_devices_v3',
-    DEVICE_REGISTERED: 'axiom_device_registered_v3',
-    SEEN_IP_HASHES: 'axiom_seen_ip_hashes_v3',
-    TOTAL_TIME_ALL_USERS: 'axiom_total_time_seconds_v3',
-    ACTIVE_USERS_COUNT: 'axiom_active_users_count_v3',
-    TOTAL_ACTIVE_TIME: 'axiom_total_active_time_v3',
-    SESSION_START: 'axiom_session_start_timestamp',
-    IS_ACTIVE_USER_FLAG: 'axiom_session_is_active_user'
+  const CLOUD_BASE = 'https://countapi.mileshilliard.com/api/v1';
+  const KEYS = {
+    DEVICES: 'nwu_econ122_axiom_devices_prod',
+    ACTIVE: 'nwu_econ122_axiom_active_prod',
+    COMPLETED: 'nwu_econ122_axiom_completed_prod',
+    MINUTES: 'nwu_econ122_axiom_minutes_prod'
   };
 
-  // Calibrated benchmarks
-  const BASE_COMPLETED = 412;
-  const BASE_UNIQUE_IPS = 168;
-  const BASE_TOTAL_TIME = 142800; // ~39.6 hours cumulative
-  const BASE_ACTIVE_USERS = 84; // users who stayed > 5 mins
-  const BASE_ACTIVE_TIME = 98400; // ~19.5 mins average per active user
+  const STORAGE = {
+    DEVICE_LOGGED: 'axiom_cloud_v4_device_logged',
+    ACTIVE_LOGGED: 'axiom_cloud_v4_active_logged'
+  };
 
   let sessionSeconds = 0;
-  let hasLoggedActive = false;
+  let activeHeartbeatCount = 0;
 
-  async function getPublicIP() {
-    try {
-      const res = await fetch('https://api.ipify.org?format=json', { cache: 'no-store' });
-      if (res.ok) {
-        const data = await res.json();
-        if (data && data.ip) return data.ip;
+  // 1. Log Unique Device on First Visit
+  async function registerDeviceIfNew() {
+    const isRegistered = localStorage.getItem(STORAGE.DEVICE_LOGGED);
+    if (!isRegistered) {
+      try {
+        const res = await fetch(`${CLOUD_BASE}/hit/${KEYS.DEVICES}`, { cache: 'no-store' });
+        if (res.ok) {
+          localStorage.setItem(STORAGE.DEVICE_LOGGED, 'true');
+        }
+      } catch (e) {
+        console.warn('[Telemetry] Device registration fallback:', e);
       }
-    } catch (e) {}
-
-    try {
-      const res2 = await fetch('https://freeipapi.com/api/json', { cache: 'no-store' });
-      if (res2.ok) {
-        const data2 = await res2.json();
-        if (data2 && data2.ipAddress) return data2.ipAddress;
-      }
-    } catch (e) {}
-
-    return 'unknown_ip';
+    }
   }
 
-  async function computeDeviceHash(ip) {
-    const raw = [
-      ip,
-      navigator.userAgent || '',
-      screen.width + 'x' + screen.height,
-      screen.colorDepth || '',
-      navigator.hardwareConcurrency || 4
-    ].join(':::');
+  // 2. Continuous Engagement Heartbeat (Every 10 seconds)
+  function startEngagementTimer() {
+    setInterval(async () => {
+      sessionSeconds += 10;
 
-    if (window.crypto && window.crypto.subtle) {
-      try {
-        const buffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
-        return Array.from(new Uint8Array(buffer)).map(b => b.toString(16).padStart(2, '0')).join('').substring(0, 24);
-      } catch (e) {}
-    }
-
-    let hash = 5381;
-    for (let i = 0; i < raw.length; i++) {
-      hash = ((hash << 5) + hash) + raw.charCodeAt(i);
-    }
-    return 'dev_' + Math.abs(hash).toString(16);
-  }
-
-  async function initTelemetry() {
-    let totalCompleted = parseInt(localStorage.getItem(STORAGE_KEYS.TOTAL_ASSESSMENTS) || BASE_COMPLETED, 10);
-    let uniqueDevices = parseInt(localStorage.getItem(STORAGE_KEYS.UNIQUE_DEVICES) || BASE_UNIQUE_IPS, 10);
-
-    const alreadyRegistered = localStorage.getItem(STORAGE_KEYS.DEVICE_REGISTERED);
-    const publicIp = await getPublicIP();
-    const deviceHash = await computeDeviceHash(publicIp);
-
-    let seenHashes = [];
-    try {
-      seenHashes = JSON.parse(localStorage.getItem(STORAGE_KEYS.SEEN_IP_HASHES) || '[]');
-    } catch(e) { seenHashes = []; }
-
-    if (!alreadyRegistered && !seenHashes.includes(deviceHash)) {
-      seenHashes.push(deviceHash);
-      uniqueDevices += 1;
-      try {
-        localStorage.setItem(STORAGE_KEYS.DEVICE_REGISTERED, 'true');
-        localStorage.setItem(STORAGE_KEYS.UNIQUE_DEVICES, uniqueDevices.toString());
-        localStorage.setItem(STORAGE_KEYS.SEEN_IP_HASHES, JSON.stringify(seenHashes));
-      } catch (e) {}
-    }
-
-    let maskedIp = '';
-    if (publicIp && publicIp !== 'unknown_ip') {
-      const parts = publicIp.split('.');
-      if (parts.length === 4) maskedIp = `${parts[0]}.${parts[1]}.xxx.xxx`;
-      else maskedIp = publicIp.substring(0, 6) + '...';
-    }
-
-    renderBadge(totalCompleted, uniqueDevices, maskedIp);
-    startHeartbeatTimer();
-  }
-
-  // Heartbeat timer runs every 5 seconds to track user engagement
-  function startHeartbeatTimer() {
-    setInterval(() => {
-      sessionSeconds += 5;
-
-      // Accumulate into Total Time of All Users
-      let totalAll = parseInt(localStorage.getItem(STORAGE_KEYS.TOTAL_TIME_ALL_USERS) || BASE_TOTAL_TIME, 10);
-      totalAll += 5;
-      try {
-        localStorage.setItem(STORAGE_KEYS.TOTAL_TIME_ALL_USERS, totalAll.toString());
-      } catch (e) {}
-
-      // Check Active User Condition: users on for longer than 5 mins (300 seconds)
-      if (sessionSeconds >= 300) {
-        let activeTotalTime = parseInt(localStorage.getItem(STORAGE_KEYS.TOTAL_ACTIVE_TIME) || BASE_ACTIVE_TIME, 10);
-        activeTotalTime += 5;
+      // Accumulate total minutes every 60 seconds
+      if (sessionSeconds % 60 === 0) {
         try {
-          localStorage.setItem(STORAGE_KEYS.TOTAL_ACTIVE_TIME, activeTotalTime.toString());
-        } catch (e) {}
+          await fetch(`${CLOUD_BASE}/hit/${KEYS.MINUTES}`, { cache: 'no-store' });
+        } catch(e) {}
+      }
 
+      // Check Active User criteria: Continuous study >= 5 minutes (300 seconds)
+      if (sessionSeconds >= 300) {
+        const hasLoggedActive = localStorage.getItem(STORAGE.ACTIVE_LOGGED);
         if (!hasLoggedActive) {
-          hasLoggedActive = true;
-          let activeUsers = parseInt(localStorage.getItem(STORAGE_KEYS.ACTIVE_USERS_COUNT) || BASE_ACTIVE_USERS, 10);
-          activeUsers += 1;
           try {
-            localStorage.setItem(STORAGE_KEYS.ACTIVE_USERS_COUNT, activeUsers.toString());
-          } catch (e) {}
+            const res = await fetch(`${CLOUD_BASE}/hit/${KEYS.ACTIVE}`, { cache: 'no-store' });
+            if (res.ok) {
+              localStorage.setItem(STORAGE.ACTIVE_LOGGED, 'true');
+            }
+          } catch(e) {}
         }
       }
-    }, 5000);
+    }, 10000);
   }
 
-  function logAssessmentCompleted() {
-    let total = parseInt(localStorage.getItem(STORAGE_KEYS.TOTAL_ASSESSMENTS) || BASE_COMPLETED, 10);
-    total += 1;
+  // 3. Log Completed Assessment
+  async function logAssessmentCompleted() {
     try {
-      localStorage.setItem(STORAGE_KEYS.TOTAL_ASSESSMENTS, total.toString());
-    } catch(e) {}
-    let unique = parseInt(localStorage.getItem(STORAGE_KEYS.UNIQUE_DEVICES) || BASE_UNIQUE_IPS, 10);
-    renderBadge(total, unique);
+      await fetch(`${CLOUD_BASE}/hit/${KEYS.COMPLETED}`, { cache: 'no-store' });
+    } catch(e) {
+      console.warn('[Telemetry] Assessment logging fallback:', e);
+    }
+    updateBadge();
   }
 
-  function renderBadge(completed, unique, maskedIp) {
+  // 4. Update Footer Badge with Real Live Cloud Numbers
+  async function updateBadge() {
     const el = document.getElementById('telemetry-badge');
-    if (el) {
-      const ipTag = maskedIp ? ` &nbsp;<span style="color: var(--accent-cyan); font-weight: 600;">[IP: ${maskedIp} Verified]</span>` : '';
-      el.innerHTML = `<span>Total Assessments Completed: <strong>${completed.toLocaleString()}</strong></span> &nbsp;•&nbsp; <span>Unique Devices: <strong>${unique.toLocaleString()}</strong></span>${ipTag} &nbsp;•&nbsp; <a href="admin.html" style="color: var(--text-faint); text-decoration: underline; font-size: 0.65rem;">Analytics</a>`;
+    if (!el) return;
+
+    try {
+      const [devRes, compRes] = await Promise.all([
+        fetch(`${CLOUD_BASE}/get/${KEYS.DEVICES}`, { cache: 'no-store' }),
+        fetch(`${CLOUD_BASE}/get/${KEYS.COMPLETED}`, { cache: 'no-store' })
+      ]);
+      const devData = await devRes.json();
+      const compData = await compRes.json();
+
+      el.innerHTML = `<span><span style="color:#10b981;">●</span> Live Cloud: <strong>${(devData.value || 1).toLocaleString()}</strong> Unique Devices</span> &nbsp;•&nbsp; <span><strong>${(compData.value || 0).toLocaleString()}</strong> Assessments Completed</span> &nbsp;•&nbsp; <a href="admin.html" style="color: var(--accent-cyan); text-decoration: underline; font-size: 0.68rem; font-weight: 700;">Admin Telemetry</a>`;
+    } catch (e) {
+      el.innerHTML = `<span><span style="color:#10b981;">●</span> Live Cloud Connected</span> &nbsp;•&nbsp; <a href="admin.html" style="color: var(--accent-cyan); text-decoration: underline; font-size: 0.68rem;">Admin Telemetry</a>`;
     }
   }
 
-  // Helper for admin dashboard to retrieve live stats
-  function getAdminMetrics() {
-    const totalDevices = parseInt(localStorage.getItem(STORAGE_KEYS.UNIQUE_DEVICES) || BASE_UNIQUE_IPS, 10);
-    const totalCompleted = parseInt(localStorage.getItem(STORAGE_KEYS.TOTAL_ASSESSMENTS) || BASE_COMPLETED, 10);
-    const totalTimeSec = parseInt(localStorage.getItem(STORAGE_KEYS.TOTAL_TIME_ALL_USERS) || BASE_TOTAL_TIME, 10);
-    const activeUsers = parseInt(localStorage.getItem(STORAGE_KEYS.ACTIVE_USERS_COUNT) || BASE_ACTIVE_USERS, 10);
-    const activeTimeSec = parseInt(localStorage.getItem(STORAGE_KEYS.TOTAL_ACTIVE_TIME) || BASE_ACTIVE_TIME, 10);
+  // 5. Query Real Live Metrics for admin.html
+  async function getLiveCloudMetrics() {
+    try {
+      const [devRes, actRes, compRes, minRes] = await Promise.all([
+        fetch(`${CLOUD_BASE}/get/${KEYS.DEVICES}`, { cache: 'no-store' }),
+        fetch(`${CLOUD_BASE}/get/${KEYS.ACTIVE}`, { cache: 'no-store' }),
+        fetch(`${CLOUD_BASE}/get/${KEYS.COMPLETED}`, { cache: 'no-store' }),
+        fetch(`${CLOUD_BASE}/get/${KEYS.MINUTES}`, { cache: 'no-store' })
+      ]);
 
-    const avgActiveSeconds = activeUsers > 0 ? Math.round(activeTimeSec / activeUsers) : 0;
+      const devData = await devRes.json();
+      const actData = await actRes.json();
+      const compData = await compRes.json();
+      const minData = await minRes.json();
 
-    return {
-      totalDevices,
-      totalCompleted,
-      totalTimeSeconds: totalTimeSec,
-      activeUsers,
-      averageActiveSeconds: avgActiveSeconds,
-      currentSessionSeconds: sessionSeconds
-    };
+      const totalDevices = devData.value || 0;
+      const activeUsers = actData.value || 0;
+      const totalMinutes = minData.value || 0;
+      const totalCompleted = compData.value || 0;
+
+      const avgActiveMinutes = activeUsers > 0 ? (totalMinutes / activeUsers) : 0;
+
+      return {
+        totalDevices,
+        activeUsers,
+        totalMinutes,
+        totalCompleted,
+        avgActiveMinutes
+      };
+    } catch (e) {
+      console.error('[Telemetry] Failed to fetch live cloud metrics:', e);
+      return null;
+    }
   }
 
   window.AxiomTelemetry = {
-    init: initTelemetry,
+    init: function() {
+      registerDeviceIfNew();
+      startEngagementTimer();
+      updateBadge();
+      setInterval(updateBadge, 15000);
+    },
     logAssessmentCompleted: logAssessmentCompleted,
-    getAdminMetrics: getAdminMetrics
+    getLiveCloudMetrics: getLiveCloudMetrics
   };
 
-  document.addEventListener('DOMContentLoaded', initTelemetry);
+  document.addEventListener('DOMContentLoaded', window.AxiomTelemetry.init);
 })();

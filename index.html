@@ -482,6 +482,51 @@
     </div>
   </div>
 
+  
+  <!-- Floating Student Feedback Button -->
+  <button id="openFeedbackBtn" class="floating-feedback-btn">💬 Feedback</button>
+
+  <!-- Student Feedback Modal -->
+  <div class="feedback-modal-backdrop" id="feedbackModal">
+    <div class="feedback-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0; color: var(--accent-cyan);">💬 Student Feedback & Report</h3>
+        <button id="closeFeedbackBtn" style="background: transparent; border: none; font-size: 1.4rem; color: var(--text-muted); cursor: pointer;">&times;</button>
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Have feedback, noticed an error in a question, or have a feature request? Let us know directly:
+      </p>
+
+      <form id="feedbackForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="7b7c5364-d6a7-47b2-9d33-4f93e62057d1">
+        <input type="hidden" name="subject" value="New ECON122 Project Axiom Student Feedback">
+        
+        <div style="margin-bottom: 0.85rem;">
+          <label style="display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.35rem;">Rating</label>
+          <select name="rating" class="header-select" style="width: 100%; padding: 0.5rem;">
+            <option value="5">⭐⭐⭐⭐⭐ Excellent (Very Helpful for Exam)</option>
+            <option value="4">⭐⭐⭐⭐ Good (Minor Suggestions)</option>
+            <option value="3">⭐⭐⭐ Neutral</option>
+            <option value="2">⭐⭐ Needs Improvement</option>
+            <option value="1">⭐ Problematic</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <label style="display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.35rem;">Your Message or Question Correction</label>
+          <textarea name="message" required rows="4" style="width: 100%; background: var(--bg-card); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); color: var(--text-main); padding: 0.65rem; font-family: var(--font-sans); font-size: 0.88rem; outline: none;" placeholder="e.g. Question 14 explanation was very clear, but in Question 8 could you clarify..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+          <button type="button" class="secondary-btn" id="cancelFeedbackBtn">Cancel</button>
+          <button type="submit" class="primary-btn" id="submitFeedbackBtn">Submit Feedback</button>
+        </div>
+      </form>
+      <div id="feedbackResult" style="margin-top: 0.75rem; font-size: 0.82rem; text-align: center; color: var(--accent-emerald); display: none;"></div>
+    </div>
+  </div>
+
   <!-- Discreet Footer -->
   <footer>
     <div id="telemetry-badge" style="font-size: 0.72rem; color: var(--text-faint); margin-bottom: 0.75rem; font-family: var(--font-mono);">
@@ -584,6 +629,63 @@
       modal.addEventListener('click', (e) => {
         if (e.target === modal) modal.classList.remove('open');
       });
+
+      // Feedback Modal Logic
+      const openFbBtn = document.getElementById('openFeedbackBtn');
+      const closeFbBtn = document.getElementById('closeFeedbackBtn');
+      const cancelFbBtn = document.getElementById('cancelFeedbackBtn');
+      const fbModal = document.getElementById('feedbackModal');
+      const fbForm = document.getElementById('feedbackForm');
+      const fbResult = document.getElementById('feedbackResult');
+
+      if (openFbBtn && fbModal) {
+        openFbBtn.addEventListener('click', () => fbModal.classList.add('open'));
+        closeFbBtn.addEventListener('click', () => fbModal.classList.remove('open'));
+        cancelFbBtn.addEventListener('click', () => fbModal.classList.remove('open'));
+        fbModal.addEventListener('click', (e) => {
+          if (e.target === fbModal) fbModal.classList.remove('open');
+        });
+
+        fbForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const formData = new FormData(fbForm);
+          const submitBtn = document.getElementById('submitFeedbackBtn');
+          submitBtn.textContent = 'Sending...';
+          submitBtn.disabled = true;
+
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+          })
+          .then(async (response) => {
+            if (response.status == 200) {
+              fbResult.style.display = 'block';
+              fbResult.textContent = '✅ Thank you! Your feedback has been sent successfully.';
+              fbForm.reset();
+              setTimeout(() => {
+                fbModal.classList.remove('open');
+                fbResult.style.display = 'none';
+                submitBtn.textContent = 'Submit Feedback';
+                submitBtn.disabled = false;
+              }, 2500);
+            } else {
+              fbResult.style.display = 'block';
+              fbResult.style.color = 'var(--accent-rose)';
+              fbResult.textContent = 'Something went wrong. Please try again.';
+              submitBtn.textContent = 'Submit Feedback';
+              submitBtn.disabled = false;
+            }
+          })
+          .catch(error => {
+            fbResult.style.display = 'block';
+            fbResult.style.color = 'var(--accent-rose)';
+            fbResult.textContent = 'Network error sending feedback.';
+            submitBtn.textContent = 'Submit Feedback';
+            submitBtn.disabled = false;
+          });
+        });
+      }
+
     });
   </script>
 </body>
