@@ -1,2 +1,15 @@
 __pycache__/
 *.pyc
+tests/analyze_papers.py
+tests/audit_standards.py
+tests/check_*.py
+tests/cleanup_temp.py
+tests/deep_audit.py
+tests/dump_*.py
+tests/find_calcs.py
+tests/inspect_*.py
+tests/parse_db.py
+tests/render_mc2019.py
+tests/scan_keywords.py
+tests/mc2019_pages/
+tests/*.txt
