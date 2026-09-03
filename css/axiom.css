@@ -755,3 +755,151 @@ footer {
     max-width: 100%;
   }
 }
+
+
+/* WCAG 44x44px Tap Target Accessibility Enforcement */
+.q-box {
+  min-width: 44px;
+  min-height: 44px;
+}
+.tool-btn, .flag-btn, .mode-toggle-btn, .theme-toggle-btn, .tab-btn, .header-select, .icon-action-btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Collapsible Question Palette for Mobile Ergonomics */
+.palette-toggle-bar {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* Interactive Glossary Terms */
+.glossary-term {
+  color: var(--accent-cyan);
+  border-bottom: 1.5px dotted var(--accent-cyan);
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: all 0.2s;
+}
+.glossary-term:hover {
+  background: rgba(14, 165, 233, 0.12);
+  border-bottom-style: solid;
+}
+.glossary-icon {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Glossary Modal Popup */
+.glossary-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.glossary-modal-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.glossary-card {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--accent-cyan);
+  border-radius: var(--radius-lg);
+  max-width: 480px;
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(15px);
+  transition: transform 0.2s ease;
+}
+.glossary-modal-backdrop.open .glossary-card {
+  transform: translateY(0);
+}
+.glossary-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+.glossary-card-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+}
+.glossary-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+}
+
+/* Interactive SVG Diagram Presentation Cards */
+.svg-diagram-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.svg-diagram-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+  align-self: flex-start;
+}
+.svg-diagram {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 880px) {
+  .palette-toggle-bar {
+    display: flex;
+  }
+  .sidebar-panel .question-grid {
+    display: none;
+  }
+  .sidebar-panel .question-grid.expanded {
+    display: grid;
+  }
+}

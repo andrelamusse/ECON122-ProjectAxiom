@@ -953,7 +953,7 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African monetary analysis, the transmission mechanism of monetary policy explains how:",
+    "stem_en": "The transmission mechanism of monetary policy explains how:",
     "stem_af": "In Suid-Afrikaanse monetêre ontleding, the transmission mechanism of monetary policy explains how:",
     "options": [
       {
@@ -987,7 +987,7 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African monetary analysis, if the sarb wishes to curb excessive credit extension during high demand-pull inflation, it will:",
+    "stem_en": "If the sarb wishes to curb excessive credit extension during high demand-pull inflation, it will:",
     "stem_af": "In Suid-Afrikaanse monetêre ontleding, if the sarb wishes to curb excessive credit extension during high demand-pull inflation, it will:",
     "options": [
       {
@@ -1021,7 +1021,7 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African monetary analysis, which of the following is an example of active balances in keynes's liquidity preference framework?:",
+    "stem_en": "Which of the following is an example of active balances in keynes's liquidity preference framework?:",
     "stem_af": "In Suid-Afrikaanse monetêre ontleding, which of the following is an example of active balances in keynes's liquidity preference framework?:",
     "options": [
       {
@@ -1055,7 +1055,7 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African monetary analysis, money serves as a 'unit of account' when it:",
+    "stem_en": "Money serves as a 'unit of account' when it:",
     "stem_af": "In Suid-Afrikaanse monetêre ontleding, money serves as a 'unit of account' when it:",
     "options": [
       {
@@ -1089,7 +1089,7 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African monetary analysis, in the interbank overnight money market, banks with surplus settlement balances lend funds to banks with deficits at:",
+    "stem_en": "In the interbank overnight money market, banks with surplus settlement balances lend funds to banks with deficits at:",
     "stem_af": "In Suid-Afrikaanse monetêre ontleding, in the interbank overnight money market, banks with surplus settlement balances lend funds to banks with deficits at:",
     "options": [
       {
@@ -1123,7 +1123,7 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African monetary analysis, an increase in the statutory cash reserve ratio from 2.5% to 5.0% would theoretically:",
+    "stem_en": "An increase in the statutory cash reserve ratio from 2.5% to 5.0% would theoretically:",
     "stem_af": "In Suid-Afrikaanse monetêre ontleding, an increase in the statutory cash reserve ratio from 2.5% to 5.0% would theoretically:",
     "options": [
       {
@@ -1157,7 +1157,7 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African monetary analysis, commercial banks create brand new demand deposits whenever they:",
+    "stem_en": "Commercial banks create brand new demand deposits whenever they:",
     "stem_af": "In Suid-Afrikaanse monetêre ontleding, commercial banks create brand new demand deposits whenever they:",
     "options": [
       {
@@ -1191,7 +1191,7 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African monetary analysis, a significant financial innovation such as the widespread adoption of digital contactless payments and instant clearing tends to:",
+    "stem_en": "A significant financial innovation such as the widespread adoption of digital contactless payments and instant clearing tends to:",
     "stem_af": "In Suid-Afrikaanse monetêre ontleding, a significant financial innovation such as the widespread adoption of digital contactless payments and instant clearing tends to:",
     "options": [
       {

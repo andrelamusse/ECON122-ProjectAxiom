@@ -124,6 +124,23 @@
       </div>
     </div>
 
+    
+      <!-- Active Engagement Ratio Gauge -->
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem; margin-top: 1.25rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <span style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Active Engagement Ratio (> 5 Mins)</span>
+          <span id="engagementPct" style="font-family: var(--font-mono); font-weight: 800; color: var(--accent-emerald);">50.0%</span>
+        </div>
+        <div style="width: 100%; height: 10px; background: var(--bg-surface); border-radius: 9999px; overflow: hidden; border: 1px solid var(--border-subtle);">
+          <div id="engagementBar" style="width: 50%; height: 100%; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald)); transition: width 0.4s ease;"></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-faint); margin-top: 0.4rem;">
+          <span>0% Fleeting Visitors</span>
+          <span>Target: &gt; 40% Deep Study Sessions</span>
+          <span>100% Fully Engaged</span>
+        </div>
+      </div>
+
     <!-- Methodology Notice -->
     <div style="font-size: 0.75rem; color: var(--text-faint); line-height: 1.6; text-align: center; max-width: 600px; margin: 0 auto;">
       Admin telemetry operates client-side with privacy-preserving SHA-256 hashing. All active user criteria are measured using a continuous 5-second engagement heartbeat. Zero duplicates on page reload.

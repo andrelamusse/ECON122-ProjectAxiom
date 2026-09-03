@@ -77,10 +77,17 @@
     
     <!-- Sidebar Question Palette -->
     <aside class="sidebar-panel">
-      <div class="sidebar-title">
+      <!-- Mobile accordion toggle -->
+      <div class="palette-toggle-bar" id="paletteToggleBar">
+        <span>📋 Question Navigator</span>
+        <span id="paletteCollapseIcon">▼</span>
+      </div>
+
+      <div class="sidebar-title" id="desktopPaletteTitle">
         <span>Question Palette</span>
         <span id="paletteCount">25 Questions</span>
       </div>
+      
       <div class="question-grid" id="questionGrid"></div>
       
       <div class="action-btn-block">
@@ -110,7 +117,7 @@
         <div id="feedbackContainer"></div>
 
         <!-- Navigation Buttons -->
-        <div style="display: flex; justify-content: space-between; margin-top: 1.75rem; border-top: 1px solid var(--border-subtle); padding-top: 1.15rem;">
+        <div style="display: flex; justify-content: space-between; margin-top: 1.75rem; border-top: 1px solid var(--border-subtle); padding-top: 1.15rem; flex-wrap: wrap; gap: 0.5rem;">
           <button class="secondary-btn" id="prevBtn">← Previous Question</button>
           <button class="primary-btn" id="nextBtn">Next Question →</button>
         </div>
@@ -123,7 +130,9 @@
   <div id="summaryView" style="padding: 1.5rem 1rem 4rem;">
     <div class="summary-container">
 
-      <!-- Unit 1: Monetary Sector & SARB -->
+      <!-- =========================================================================
+           UNIT 1: MONETARY SECTOR & SARB (CHAPTER 14)
+           ========================================================================= -->
       <section class="unit-summary-card">
         <div class="unit-header">
           <div>
@@ -144,7 +153,7 @@
                 <li><strong>Unit of Account:</strong> Common denominator quoting relative prices.</li>
                 <li><strong>Store of Value:</strong> Retains purchasing power across time (eroded by inflation).</li>
               </ul>
-              South African currency is <strong>fiduciary (fiat) money</strong>: intrinsically worthless paper backed by public trust and legal tender law.
+              South African currency is <span class="glossary-term" data-term="fiduciary_money">fiduciary money <span class="glossary-icon">💡</span></span>: intrinsically worthless paper backed by public trust and legal tender law.
             </div>
           </div>
 
@@ -163,15 +172,15 @@
           <div class="concept-box">
             <div class="concept-title">🏦 Commercial Bank Credit Creation</div>
             <div class="concept-body">
-              Commercial banks create money by advancing credit (loans) through fractional reserves.
-              <div class="equation-highlight">Credit Multiplier: m = \frac{1}{r}</div>
-              Where <em>r</em> is the cash reserve requirement ratio (e.g., if \(r = 2.5\%\), \(m = 40\)). Constrained by reserve ratios, capital adequacy, and borrower creditworthiness.
+              Commercial banks create money by advancing credit through fractional reserves.
+              <div class="equation-highlight"><span class="glossary-term" data-term="credit_multiplier">Credit Multiplier <span class="glossary-icon">💡</span></span>: m = \frac{1}{r}</div>
+              Where <em>r</em> is the cash reserve requirement ratio (e.g., if \(r = 2.5\%\), \(m = 40\)). Constrained by statutory reserve ratios, capital adequacy, and credit demand.
             </div>
           </div>
 
           <!-- Concept 4: Keynesian Money Demand -->
           <div class="concept-box">
-            <div class="concept-title">📈 Liquidity Preference Framework</div>
+            <div class="concept-title">📈 <span class="glossary-term" data-term="liquidity_preference">Liquidity Preference <span class="glossary-icon">💡</span></span> & <span class="glossary-term" data-term="liquidity_trap">Liquidity Trap <span class="glossary-icon">💡</span></span></div>
             <div class="concept-body">
               Total money demand \(M_d = L_1(Y) + L_2(i)\):
               <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
@@ -181,20 +190,53 @@
             </div>
           </div>
 
-          <!-- Concept 5: SARB Accommodation System -->
+          <!-- Diagram 1: Money Market Equilibrium SVG -->
           <div class="concept-box" style="grid-column: 1 / -1;">
-            <div class="concept-title">🎯 The SARB Accommodation System & Transmission Mechanism</div>
-            <div class="concept-body">
-              The SARB does not set money supply exogenously. It forces commercial banks into a daily <strong>liquidity deficit</strong> and accommodates this shortage at the <strong>Repo Rate</strong> via repurchase auctions.
-              <div style="background: var(--bg-surface); padding: 0.75rem; border-radius: var(--radius-sm); margin-top: 0.5rem; font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.8;">
-                Repo Rate (\(\uparrow\)) ➔ Prime Lending Rate (\(\uparrow\)) ➔ Cost of Credit (\(\uparrow\)) ➔ Spending \(C, I\) (\(\downarrow\)) ➔ Aggregate Demand (\(\downarrow\)) ➔ Inflation Cools (\(\downarrow\))
-              </div>
+            <div class="svg-diagram-card">
+              <span class="svg-diagram-title">Visual Derivation: Money Market Equilibrium & Policy Transmission</span>
+              <svg class="svg-diagram" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid / Axes -->
+                <line x1="60" y1="20" x2="60" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
+                <line x1="60" y1="270" x2="470" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
+                
+                <!-- Axis Labels -->
+                <text x="30" y="30" fill="var(--text-main)" font-size="12" font-family="sans-serif" font-weight="700">Interest Rate (i)</text>
+                <text x="350" y="295" fill="var(--text-main)" font-size="12" font-family="sans-serif" font-weight="700">Quantity of Money (M)</text>
+                
+                <!-- Money Supply Line (Vertical Exogenous or Policy Repo Target) -->
+                <line x1="240" y1="40" x2="240" y2="270" stroke="#10b981" stroke-width="3"/>
+                <text x="245" y="55" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">M_s (Target)</text>
+                
+                <!-- Money Demand Curve (Downward Sloping) -->
+                <path d="M 100 70 Q 200 200 440 250" fill="none" stroke="#0ea5e9" stroke-width="3"/>
+                <text x="410" y="240" fill="#0ea5e9" font-size="12" font-weight="700" font-family="sans-serif">M_d = L1(Y) + L2(i)</text>
+                
+                <!-- Equilibrium Point -->
+                <circle cx="240" cy="180" r="6" fill="#f59e0b"/>
+                <line x1="60" y1="180" x2="240" y2="180" stroke="#f59e0b" stroke-dasharray="4 4" stroke-width="1.5"/>
+                <line x1="240" y1="180" x2="240" y2="270" stroke="#f59e0b" stroke-dasharray="4 4" stroke-width="1.5"/>
+                <text x="25" y="184" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">i*</text>
+                <text x="235" y="290" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">M*</text>
+                
+                <!-- SARB Tightening Shift Annotation -->
+                <line x1="180" y1="40" x2="180" y2="270" stroke="#f43f5e" stroke-dasharray="3 3" stroke-width="2"/>
+                <text x="140" y="55" fill="#f43f5e" font-size="11" font-weight="700" font-family="sans-serif">M_s' (Tightening)</text>
+                <line x1="60" y1="145" x2="180" y2="145" stroke="#f43f5e" stroke-dasharray="3 3" stroke-width="1.5"/>
+                <text x="25" y="149" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">i_1</text>
+                <path d="M 230 110 L 190 110" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow)"/>
+              </svg>
+            </div>
+            
+            <div style="background: var(--bg-card); padding: 0.85rem 1rem; border-radius: var(--radius-sm); margin-top: 0.75rem; font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.8;">
+              <strong>SARB Repo Transmission:</strong> <span class="glossary-term" data-term="repo_rate">Repo Rate <span class="glossary-icon">💡</span></span> (\(\uparrow\)) ➔ Prime Rate (\(\uparrow\)) ➔ Credit Cost (\(\uparrow\)) ➔ Domestic Expenditure \(C, I\) (\(\downarrow\)) ➔ AD (\(\downarrow\)) ➔ Demand-pull Inflation cools (\(\downarrow\))
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Unit 2: Public Sector & Fiscal Policy -->
+      <!-- =========================================================================
+           UNIT 2: PUBLIC SECTOR & FISCAL POLICY (CHAPTER 15)
+           ========================================================================= -->
       <section class="unit-summary-card">
         <div class="unit-header">
           <div>
@@ -207,23 +249,23 @@
         <div class="concept-grid">
           <!-- Market Failure -->
           <div class="concept-box">
-            <div class="concept-title">⚖️ Market Failure & Public Goods</div>
+            <div class="concept-title">⚖️ Market Failure & <span class="glossary-term" data-term="pure_public_good">Public Goods <span class="glossary-icon">💡</span></span></div>
             <div class="concept-body">
-              <strong>Pure Public Goods:</strong> Non-rival in consumption and non-excludable in access (e.g. National Defense, streetlights).
+              <strong>Pure Public Goods:</strong> Non-rival in consumption and non-excludable in access (e.g. National Defense, lighthouse).
               <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Free-Rider Problem:</strong> Non-excludability allows individuals to enjoy benefits without paying, causing market failure and requiring tax funding.</li>
-                <li><strong>Common Property:</strong> Rival and non-excludable (leads to tragedy of the commons / overexploitation).</li>
+                <li><strong><span class="glossary-term" data-term="free_rider_problem">Free-Rider Problem <span class="glossary-icon">💡</span></span>:</strong> Non-excludability allows individuals to enjoy benefits without paying, causing private underproduction and requiring state tax financing.</li>
+                <li><strong>Common Property Resources:</strong> Rival and non-excludable (leads to the tragedy of the commons).</li>
               </ul>
             </div>
           </div>
 
           <!-- Negative Externality -->
           <div class="concept-box">
-            <div class="concept-title">🏭 Negative Production Externalities</div>
+            <div class="concept-title">🏭 <span class="glossary-term" data-term="negative_externality">Negative Externalities <span class="glossary-icon">💡</span></span></div>
             <div class="concept-body">
               Pollution generates external costs unpriced by competitive markets.
-              <div class="equation-highlight">MSC = MPC + Marginal External Cost</div>
-              Market equilibrium overproduces (\(Q_1 > Q_2\)) at too low a private price (\(P_1 < P_2\)). Corrected via <strong>Pigouvian Taxes</strong> (\(t = \text{MEC}\)) to eliminate Deadweight Loss (DWL).
+              <div class="equation-highlight">MSC = MPC + Marginal External Cost (MEC)</div>
+              Free market produces where \(P = MPC\), causing overproduction (\(Q_1 > Q_2\)). Solved via a <span class="glossary-term" data-term="pigouvian_tax">Pigouvian Tax <span class="glossary-icon">💡</span></span> (\(t = \text{MEC}\)) to internalize costs and eradicate <span class="glossary-term" data-term="deadweight_loss">Deadweight Loss <span class="glossary-icon">💡</span></span>.
             </div>
           </div>
 
@@ -232,9 +274,10 @@
             <div class="concept-title">🧾 Tax Classifications & Equity</div>
             <div class="concept-body">
               <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Progressive Tax:</strong> Average Tax Rate (ATR) rises as income rises (e.g. South African PIT, 18%–45%).</li>
-                <li><strong>Proportional Tax:</strong> ATR remains constant across all income levels.</li>
-                <li><strong>Regressive Tax:</strong> ATR falls as income rises. <em>VAT is regressive relative to income</em> because poor households spend a larger fraction of income on taxable goods.</li>
+                <li><strong><span class="glossary-term" data-term="progressive_tax">Progressive Tax <span class="glossary-icon">💡</span></span>:</strong> Average Tax Rate (ATR) rises as income rises (e.g. South African PIT, 18%–45%).</li>
+                <li><strong>Proportional Tax:</strong> ATR remains constant across all income tiers.</li>
+                <li><strong>Regressive Tax:</strong> ATR falls as income rises. <em>VAT is regressive relative to income</em> because lower-income households consume a larger share of disposable income.</li>
+                <li><strong><span class="glossary-term" data-term="fiscal_drag">Fiscal Drag <span class="glossary-icon">💡</span></span>:</strong> Inflation pushes nominal incomes into higher brackets without real purchasing growth.</li>
               </ul>
             </div>
           </div>
@@ -245,16 +288,68 @@
             <div class="concept-body">
               <div class="equation-highlight">Budget Deficit: G > T \implies \text{Financed via Treasury Bonds}</div>
               <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Expansionary Fiscal:</strong> \(G \uparrow\) or \(T \downarrow\) (shifts AD right to combat recessions).</li>
+                <li><strong>Expansionary Fiscal:</strong> \(G \uparrow\) or \(T \downarrow\) (boosts AD during economic downturns).</li>
                 <li><strong>Contractionary Fiscal:</strong> \(G \downarrow\) or \(T \uparrow\) (dampens demand-pull inflation).</li>
-                <li><strong>Crowding Out:</strong> Massive government borrowing pushes interest rates up, discouraging private investment.</li>
+                <li><strong>Crowding Out:</strong> Extensive state borrowing raises interest rates, suppressing private capital investment.</li>
               </ul>
+            </div>
+          </div>
+
+          <!-- Diagram 2: Negative Production Externality SVG -->
+          <div class="concept-box" style="grid-column: 1 / -1;">
+            <div class="svg-diagram-card">
+              <span class="svg-diagram-title">Visual Derivation: Negative Production Externality & Deadweight Loss (DWL)</span>
+              <svg class="svg-diagram" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
+                <!-- Axes -->
+                <line x1="60" y1="20" x2="60" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
+                <line x1="60" y1="270" x2="470" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
+                
+                <!-- Labels -->
+                <text x="25" y="30" fill="var(--text-main)" font-size="12" font-family="sans-serif" font-weight="700">Price, Cost (P, C)</text>
+                <text x="370" y="295" fill="var(--text-main)" font-size="12" font-family="sans-serif" font-weight="700">Output Quantity (Q)</text>
+                
+                <!-- Demand Curve (MSB = MPB) -->
+                <line x1="90" y1="60" x2="430" y2="250" stroke="#0ea5e9" stroke-width="3"/>
+                <text x="410" y="240" fill="#0ea5e9" font-size="12" font-weight="700" font-family="sans-serif">DD = MSB</text>
+                
+                <!-- MPC Curve (Market Supply) -->
+                <line x1="100" y1="250" x2="420" y2="90" stroke="#94a3b8" stroke-width="2.5"/>
+                <text x="425" y="105" fill="#94a3b8" font-size="12" font-weight="700" font-family="sans-serif">MPC (Supply)</text>
+                
+                <!-- MSC Curve (MPC + MEC) -->
+                <line x1="100" y1="190" x2="420" y2="30" stroke="#f43f5e" stroke-width="3"/>
+                <text x="425" y="45" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">MSC = MPC + MEC</text>
+                
+                <!-- Deadweight Loss Triangle (Shaded) -->
+                <polygon points="248,148 312,148 312,184" fill="rgba(244, 63, 94, 0.35)" stroke="#f43f5e" stroke-width="1"/>
+                <text x="290" y="165" fill="#f43f5e" font-size="11" font-weight="800" font-family="sans-serif">DWL</text>
+                
+                <!-- Social Optimum E2 -->
+                <circle cx="248" cy="148" r="5" fill="#10b981"/>
+                <line x1="60" y1="148" x2="248" y2="148" stroke="#10b981" stroke-dasharray="3 3"/>
+                <line x1="248" y1="148" x2="248" y2="270" stroke="#10b981" stroke-dasharray="3 3"/>
+                <text x="35" y="152" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">P2</text>
+                <text x="240" y="290" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">Q2 (Opt)</text>
+                
+                <!-- Market Equilibrium E1 -->
+                <circle cx="312" cy="184" r="5" fill="#f59e0b"/>
+                <line x1="60" y1="184" x2="312" y2="184" stroke="#f59e0b" stroke-dasharray="3 3"/>
+                <line x1="312" y1="184" x2="312" y2="270" stroke="#f59e0b" stroke-dasharray="3 3"/>
+                <text x="35" y="188" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">P1</text>
+                <text x="305" y="290" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">Q1 (Mkt)</text>
+                
+                <!-- Pigouvian Tax Bracket -->
+                <line x1="230" y1="148" x2="230" y2="190" stroke="#10b981" stroke-width="2"/>
+                <text x="175" y="172" fill="#10b981" font-size="11" font-weight="700" font-family="sans-serif">Tax = MEC</text>
+              </svg>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Unit 3: Inflation & Price Instability -->
+      <!-- =========================================================================
+           UNIT 3: INFLATION & PRICE INSTABILITY (CHAPTER 20)
+           ========================================================================= -->
       <section class="unit-summary-card">
         <div class="unit-header">
           <div>
@@ -269,7 +364,7 @@
           <div class="concept-box">
             <div class="concept-title">🔥 4 Pillars of Inflation Definition</div>
             <div class="concept-body">
-              Inflation is NOT a once-off price increase. It strictly requires:
+              Inflation is NOT an isolated price increase. It strictly requires:
               <ol style="margin: 0.5rem 0 0.5rem 1.25rem;">
                 <li>A dynamic, continuous process over time.</li>
                 <li>A considerable, significant percentage increase.</li>
@@ -281,21 +376,21 @@
 
           <!-- CPI vs GDP Deflator -->
           <div class="concept-box">
-            <div class="concept-title">📏 Measurement: CPI vs. GDP Deflator</div>
+            <div class="concept-title">📏 Measurement: <span class="glossary-term" data-term="cpi_basket">CPI <span class="glossary-icon">💡</span></span> vs. <span class="glossary-term" data-term="gdp_deflator">GDP Deflator <span class="glossary-icon">💡</span></span></div>
             <div class="concept-body">
               <div class="equation-highlight">\pi = \frac{CPI_t - CPI_{t-1}}{CPI_{t-1}} \times 100</div>
               <div class="equation-highlight">\text{GDP Deflator} = \frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100</div>
-              <strong>Scope Contrast:</strong> CPI includes imported consumption goods (crude oil, laptops) but excludes capital goods. GDP Deflator includes all domestic production but excludes imports.
+              <strong>Scope Contrast:</strong> CPI includes imported consumer goods (petrol, electronics) but excludes capital goods. GDP Deflator includes all domestically produced final goods and services but strictly excludes imports.
             </div>
           </div>
 
           <!-- Demand-Pull vs Cost-Push -->
           <div class="concept-box">
-            <div class="concept-title">🌪️ Demand-Pull vs. Cost-Push Inflation</div>
+            <div class="concept-title">🌪️ <span class="glossary-term" data-term="demand_pull_inflation">Demand-Pull <span class="glossary-icon">💡</span></span> vs. <span class="glossary-term" data-term="cost_push_inflation">Cost-Push <span class="glossary-icon">💡</span></span></div>
             <div class="concept-body">
               <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
                 <li><strong>Demand-Pull:</strong> AD shifts right. \(P \uparrow\), Real GDP \(Y \uparrow\), Unemployment \(\downarrow\).</li>
-                <li><strong>Cost-Push (Stagflation):</strong> AS shifts left (wages, oil shock, Rand depreciation). \(P \uparrow\), Output \(Y \downarrow\), Unemployment \(\uparrow\).</li>
+                <li><strong>Cost-Push (<span class="glossary-term" data-term="stagflation">Stagflation <span class="glossary-icon">💡</span></span>):</strong> AS shifts left (oil shock, Rand depreciation, wage spikes). \(P \uparrow\), Output \(Y \downarrow\), Unemployment \(\uparrow\).</li>
               </ul>
               SARB targets headline CPI inflation within the <strong>3% to 6%</strong> band.
             </div>
@@ -303,18 +398,87 @@
 
           <!-- Redistribution Effects -->
           <div class="concept-box">
-            <div class="concept-title">💸 Economic Redistribution Consequences</div>
+            <div class="concept-title">💸 Redistribution Consequences</div>
             <div class="concept-body">
               <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
-                <li><strong>Borrowers (Debtors):</strong> Benefit because they repay loans in depreciated currency.</li>
-                <li><strong>Lenders (Creditors) & Pensioners:</strong> Harmed as fixed nominal returns lose purchasing power.</li>
-                <li><strong>Fiscal Drag:</strong> Nominal wage gains push taxpayers into higher brackets without real income growth.</li>
+                <li><strong>Borrowers (Debtors):</strong> Benefit because debt is repaid with devalued currency.</li>
+                <li><strong>Lenders (Creditors) & Pensioners:</strong> Suffer because fixed nominal returns buy fewer goods.</li>
+                <li><strong>Exporters:</strong> Lose competitiveness if domestic inflation exceeds trading partner inflation.</li>
               </ul>
+            </div>
+          </div>
+
+          <!-- Diagram 3: Cost-Push Stagflation in AD-AS SVG -->
+          <div class="concept-box" style="grid-column: 1 / -1;">
+            <div class="svg-diagram-card">
+              <span class="svg-diagram-title">Visual Derivation: Cost-Push Stagflation in the AD-AS Framework</span>
+              <svg class="svg-diagram" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
+                <!-- Axes -->
+                <line x1="60" y1="20" x2="60" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
+                <line x1="60" y1="270" x2="470" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
+                
+                <!-- Labels -->
+                <text x="25" y="30" fill="var(--text-main)" font-size="12" font-family="sans-serif" font-weight="700">Price Level (P)</text>
+                <text x="360" y="295" fill="var(--text-main)" font-size="12" font-family="sans-serif" font-weight="700">Real GDP (Y)</text>
+                
+                <!-- LRAS Line (Vertical at Full Employment Yf) -->
+                <line x1="320" y1="30" x2="320" y2="270" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="4 4"/>
+                <text x="325" y="45" fill="#6366f1" font-size="12" font-weight="700" font-family="sans-serif">LRAS (Y_f)</text>
+                
+                <!-- AD Curve -->
+                <line x1="120" y1="60" x2="420" y2="250" stroke="#0ea5e9" stroke-width="3"/>
+                <text x="425" y="245" fill="#0ea5e9" font-size="12" font-weight="700" font-family="sans-serif">AD</text>
+                
+                <!-- SAS_0 (Initial Short-Run Supply) -->
+                <line x1="150" y1="250" x2="420" y2="100" stroke="#10b981" stroke-width="2.5"/>
+                <text x="425" y="115" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">SAS_0</text>
+                
+                <!-- SAS_1 (Leftward Shock: Cost-Push) -->
+                <line x1="90" y1="210" x2="360" y2="60" stroke="#f43f5e" stroke-width="3"/>
+                <text x="340" y="55" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">SAS_1 (Shock)</text>
+                
+                <!-- Initial Equilibrium E0 -->
+                <circle cx="320" cy="187" r="5" fill="#10b981"/>
+                <line x1="60" y1="187" x2="320" y2="187" stroke="#10b981" stroke-dasharray="3 3"/>
+                <text x="35" y="191" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">P_0</text>
+                <text x="312" y="290" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">Y_f</text>
+                
+                <!-- New Stagflation Equilibrium E1 -->
+                <circle cx="235" cy="133" r="5" fill="#f43f5e"/>
+                <line x1="60" y1="133" x2="235" y2="133" stroke="#f43f5e" stroke-dasharray="3 3"/>
+                <line x1="235" y1="133" x2="235" y2="270" stroke="#f43f5e" stroke-dasharray="3 3"/>
+                <text x="35" y="137" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">P_1</text>
+                <text x="225" y="290" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">Y_1</text>
+                
+                <!-- Stagflation Annotations -->
+                <path d="M 50 180 L 50 145" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow)"/>
+                <text x="12" y="165" fill="#f43f5e" font-size="10" font-weight="700" font-family="sans-serif">P ↑</text>
+                
+                <path d="M 310 282 L 245 282" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow)"/>
+                <text x="260" y="305" fill="#f43f5e" font-size="10" font-weight="700" font-family="sans-serif">Y ↓ (Unemployment ↑)</text>
+              </svg>
+            </div>
+            
+            <div style="background: var(--bg-card); padding: 0.85rem 1rem; border-radius: var(--radius-sm); margin-top: 0.75rem; font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.8;">
+              <strong>The Stagflation Dilemma:</strong> Cost-push shifts \(SAS\) left, forcing price levels up (\(P_0 \rightarrow P_1\)) while output contracts below potential (\(Y_f \rightarrow Y_1\)), creating a severe unemployment gap.
             </div>
           </div>
         </div>
       </section>
 
+    </div>
+  </div>
+
+  <!-- Interactive Glossary Modal Popup -->
+  <div class="glossary-modal-backdrop" id="glossaryModal">
+    <div class="glossary-card">
+      <div class="glossary-card-header">
+        <span class="glossary-card-title" id="glossaryModalTitle">Glossary Term</span>
+        <button class="glossary-close-btn" id="glossaryCloseBtn">&times;</button>
+      </div>
+      <div style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem;" id="glossaryModalDefEn">English Definition</div>
+      <div style="font-size: 0.88rem; font-style: italic; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;" id="glossaryModalDefAf">Afrikaans Definisie</div>
+      <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--accent-cyan);" id="glossaryModalRef">Philip Mohr Citation</div>
     </div>
   </div>
 
@@ -330,12 +494,13 @@
 
   <!-- Scripts -->
   <script src="js/telemetry.js"></script>
+  <script src="js/glossary-db.js"></script>
   <script src="js/canvas-engine.js"></script>
   <script src="js/questions-db.js"></script>
   <script src="js/exam-engine.js"></script>
   <script>
-    // Tab Switching & Theme Engine Setup
     document.addEventListener('DOMContentLoaded', () => {
+      // Tab Switching
       const tabAssessment = document.getElementById('tabAssessmentBtn');
       const tabSummary = document.getElementById('tabSummaryBtn');
       const assessmentView = document.getElementById('assessmentView');
@@ -367,6 +532,17 @@
         }
       });
 
+      // Mobile Palette Collapsible Toggle
+      const paletteToggleBar = document.getElementById('paletteToggleBar');
+      const questionGrid = document.getElementById('questionGrid');
+      const paletteCollapseIcon = document.getElementById('paletteCollapseIcon');
+      if (paletteToggleBar && questionGrid) {
+        paletteToggleBar.addEventListener('click', () => {
+          const isExp = questionGrid.classList.toggle('expanded');
+          paletteCollapseIcon.textContent = isExp ? '▲' : '▼';
+        });
+      }
+
       // Dark / Light Mode Toggle
       const themeBtn = document.getElementById('themeToggleBtn');
       const savedTheme = localStorage.getItem('axiom_theme') || 'dark';
@@ -379,6 +555,34 @@
         document.documentElement.setAttribute('data-theme', next);
         localStorage.setItem('axiom_theme', next);
         themeBtn.textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
+      });
+
+      // Glossary Popups
+      const modal = document.getElementById('glossaryModal');
+      const closeBtn = document.getElementById('glossaryCloseBtn');
+      const mTitle = document.getElementById('glossaryModalTitle');
+      const mEn = document.getElementById('glossaryModalDefEn');
+      const mAf = document.getElementById('glossaryModalDefAf');
+      const mRef = document.getElementById('glossaryModalRef');
+
+      document.body.addEventListener('click', (e) => {
+        const target = e.target.closest('.glossary-term');
+        if (target && window.AXIOM_GLOSSARY) {
+          const termKey = target.getAttribute('data-term');
+          const termData = window.AXIOM_GLOSSARY[termKey];
+          if (termData) {
+            mTitle.textContent = termData.title;
+            mEn.textContent = termData.def_en;
+            mAf.textContent = termData.def_af;
+            mRef.textContent = "📖 Source: " + termData.ref;
+            modal.classList.add('open');
+          }
+        }
+      });
+
+      closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('open');
       });
     });
   </script>
