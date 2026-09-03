@@ -49,8 +49,9 @@
       font-family: var(--font-mono);
       font-size: 2.2rem;
       font-weight: 800;
-      color: var(--accent-cyan);
+      color: var(--accent-azure);
     }
+    .stat-val.gold { color: var(--accent-gold); }
     .stat-val.emerald { color: var(--accent-emerald); }
     .stat-val.amber { color: var(--accent-amber); }
     .stat-sub {
@@ -62,8 +63,8 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: #10b981;
-      box-shadow: 0 0 8px #10b981;
+      background: var(--accent-emerald);
+      box-shadow: 0 0 8px var(--accent-emerald);
       margin-right: 6px;
       animation: pulse 2s infinite;
     }
@@ -157,7 +158,7 @@
           <span id="engagementPct" style="font-family: var(--font-mono); font-weight: 800; color: var(--accent-emerald);">0.0%</span>
         </div>
         <div style="width: 100%; height: 10px; background: var(--bg-surface); border-radius: 9999px; overflow: hidden; border: 1px solid var(--border-subtle);">
-          <div id="engagementBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald)); transition: width 0.5s ease;"></div>
+          <div id="engagementBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent-gold), var(--accent-emerald)); transition: width 0.5s ease;"></div>
         </div>
         <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-faint); margin-top: 0.4rem;">
           <span>0% Fleeting Clicks</span>

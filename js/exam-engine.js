@@ -199,9 +199,12 @@ class AxiomExamEngine {
       b.classList.toggle('active', idx === this.currentIndex);
     });
 
-    // KaTeX Math Rendering
-    if (window.renderMathInElement) {
-      renderMathInElement(document.getElementById('questionCard'), {
+    // KaTeX Math Rendering across question card and feedback
+    const qCard = document.getElementById('questionCard');
+    if (window.AxiomMath) {
+      window.AxiomMath.renderElement(qCard);
+    } else if (window.renderMathInElement) {
+      renderMathInElement(qCard, {
         delimiters: [
           {left: '$$', right: '$$', display: true},
           {left: '\\(', right: '\\)', display: false},
@@ -245,10 +248,15 @@ class AxiomExamEngine {
   parseFlexibleNumber(raw) {
     if (typeof raw === 'number') return raw;
     if (!raw) return NaN;
-    // Replace commas with dots, remove R, %, spaces, brackets
-    const cleaned = raw.toString()
-      .replace(/,/g, '.')
-      .replace(/[R\$%\s\(\)]/gi, '');
+    let s = raw.toString().trim();
+    // If comma is followed by 3 digits and not followed by more decimals or digits, strip commas as thousands separators:
+    // e.g. "1,195,000" or "R 1,195,000" or "16,250"
+    if (/^\s*[R\$]?\s*-?\d{1,3}(,\d{3})+(\.\d+)?\s*%?\s*$/i.test(s)) {
+      s = s.replace(/,/g, '');
+    } else {
+      s = s.replace(/,/g, '.');
+    }
+    const cleaned = s.replace(/[R\$%\s\(\)]/gi, '');
     return parseFloat(cleaned);
   }
 
@@ -373,7 +381,8 @@ class AxiomExamEngine {
       earnedMarks = isCorrect ? q.marks : 0;
     } else if (q.type === 'calculation') {
       const diff = Math.abs(ans - q.expectedNumber);
-      isCorrect = diff <= (q.tolerance || 0.1);
+      const tol = (q.tolerance !== undefined ? q.tolerance : 0.1);
+      isCorrect = diff <= (tol + 1e-7);
       earnedMarks = isCorrect ? q.marks : 0;
     } else if (q.type === 'canvas') {
       isCorrect = ans && ans.passed;
@@ -409,7 +418,9 @@ class AxiomExamEngine {
         const activeCorrectKey = this.shuffledOptionsMap[q.id]?.correctKey || q.correctKey;
         if (ans === activeCorrectKey) earnedMarks += q.marks;
       } else if (q.type === 'calculation') {
-        if (ans !== undefined && Math.abs(ans - q.expectedNumber) <= (q.tolerance || 0.1)) {
+        const diff = Math.abs(ans - q.expectedNumber);
+        const tol = (q.tolerance !== undefined ? q.tolerance : 0.1);
+        if (ans !== undefined && diff <= (tol + 1e-7)) {
           earnedMarks += q.marks;
         }
       } else if (q.type === 'canvas' && ans && ans.score) {

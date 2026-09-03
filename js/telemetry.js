@@ -86,9 +86,9 @@
       const devData = await devRes.json();
       const compData = await compRes.json();
 
-      el.innerHTML = `<span><span style="color:#10b981;">●</span> Live Cloud: <strong>${(devData.value || 1).toLocaleString()}</strong> Unique Devices</span> &nbsp;•&nbsp; <span><strong>${(compData.value || 0).toLocaleString()}</strong> Assessments Completed</span> &nbsp;•&nbsp; <a href="admin.html" style="color: var(--accent-cyan); text-decoration: underline; font-size: 0.68rem; font-weight: 700;">Admin Telemetry</a>`;
+      el.innerHTML = `<span><span style="color: var(--accent-emerald);">●</span> Live Cloud: <strong>${(devData.value || 1).toLocaleString()}</strong> Unique Devices</span> &nbsp;•&nbsp; <span><strong>${(compData.value || 0).toLocaleString()}</strong> Assessments Completed</span> &nbsp;•&nbsp; <a href="admin.html" style="color: var(--accent-gold); text-decoration: underline; font-size: 0.68rem; font-weight: 700;">Admin Telemetry</a>`;
     } catch (e) {
-      el.innerHTML = `<span><span style="color:#10b981;">●</span> Live Cloud Connected</span> &nbsp;•&nbsp; <a href="admin.html" style="color: var(--accent-cyan); text-decoration: underline; font-size: 0.68rem;">Admin Telemetry</a>`;
+      el.innerHTML = `<span><span style="color: var(--accent-emerald);">●</span> Live Cloud Connected</span> &nbsp;•&nbsp; <a href="admin.html" style="color: var(--accent-gold); text-decoration: underline; font-size: 0.68rem; font-weight: 700;">Admin Telemetry</a>`;
     }
   }
 

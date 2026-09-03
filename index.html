@@ -11,10 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/axiom.css">
 
-  <!-- KaTeX Mathematical Notation (CDN) -->
+  <!-- KaTeX Mathematical Notation (CDN) & Centralized Math Engine -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="if (window.AxiomMath) window.AxiomMath.onKaTeXLoaded();"></script>
+  <script src="js/axiom-math.js"></script>
 </head>
 <body>
   <div class="inst-banner">North-West University • Faculty of Economic & Management Sciences • Official Macroeconomics Testbed</div>
@@ -165,9 +166,9 @@
           <div class="concept-box">
             <div class="concept-title">📊 Monetary Aggregates (M1, M2, M3)</div>
             <div class="concept-body">
-              <div class="equation-highlight">M1 = Currency outside banks + Demand deposits</div>
-              <div class="equation-highlight">M2 = M1 + Quasi-Money (Short & Medium-term deposits)</div>
-              <div class="equation-highlight">M3 = M2 + Long-term deposits (Comprehensive Measure)</div>
+              <div class="equation-highlight">\(M_1 = \text{Currency outside banks} + \text{Demand deposits}\)</div>
+              <div class="equation-highlight">\(M_2 = M_1 + \text{Quasi-Money (Short \& Medium-term deposits)}\)</div>
+              <div class="equation-highlight">\(M_3 = M_2 + \text{Long-term deposits (Comprehensive Measure)}\)</div>
               SARB defines <strong>M3</strong> as the broadest and most reliable monetary indicator.
             </div>
           </div>
@@ -199,6 +200,11 @@
             <div class="svg-diagram-card">
               <span class="svg-diagram-title">Visual Derivation: Money Market Equilibrium & Policy Transmission</span>
               <svg class="svg-diagram" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <marker id="arrow1" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#f43f5e"/>
+                  </marker>
+                </defs>
                 <!-- Grid / Axes -->
                 <line x1="60" y1="20" x2="60" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
                 <line x1="60" y1="270" x2="470" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
@@ -209,11 +215,11 @@
                 
                 <!-- Money Supply Line (Vertical Exogenous or Policy Repo Target) -->
                 <line x1="240" y1="40" x2="240" y2="270" stroke="#10b981" stroke-width="3"/>
-                <text x="245" y="55" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">M_s (Target)</text>
+                <text x="245" y="55" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">s</tspan> (Target)</text>
                 
                 <!-- Money Demand Curve (Downward Sloping) -->
                 <path d="M 100 70 Q 200 200 440 250" fill="none" stroke="#0ea5e9" stroke-width="3"/>
-                <text x="410" y="240" fill="#0ea5e9" font-size="12" font-weight="700" font-family="sans-serif">M_d = L1(Y) + L2(i)</text>
+                <text x="360" y="240" fill="#0ea5e9" font-size="12" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">d</tspan> = L<tspan baseline-shift="sub" font-size="9">1</tspan>(Y) + L<tspan baseline-shift="sub" font-size="9">2</tspan>(i)</text>
                 
                 <!-- Equilibrium Point -->
                 <circle cx="240" cy="180" r="6" fill="#f59e0b"/>
@@ -224,10 +230,10 @@
                 
                 <!-- SARB Tightening Shift Annotation -->
                 <line x1="180" y1="40" x2="180" y2="270" stroke="#f43f5e" stroke-dasharray="3 3" stroke-width="2"/>
-                <text x="140" y="55" fill="#f43f5e" font-size="11" font-weight="700" font-family="sans-serif">M_s' (Tightening)</text>
+                <text x="130" y="55" fill="#f43f5e" font-size="11" font-weight="700" font-family="sans-serif">M<tspan baseline-shift="sub" font-size="9">s</tspan>′ (Tightening)</text>
                 <line x1="60" y1="145" x2="180" y2="145" stroke="#f43f5e" stroke-dasharray="3 3" stroke-width="1.5"/>
-                <text x="25" y="149" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">i_1</text>
-                <path d="M 230 110 L 190 110" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow)"/>
+                <text x="25" y="149" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">i<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+                <path d="M 230 110 L 190 110" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow1)"/>
               </svg>
             </div>
             
@@ -269,7 +275,7 @@
             <div class="concept-body">
               Pollution generates external costs unpriced by competitive markets.
               <div class="equation-highlight">\(\text{MSC} = \text{MPC} + \text{Marginal External Cost (MEC)}\)</div>
-              Free market produces where \(P = MPC\), causing overproduction (\(Q_1 > Q_2\)). Solved via a <span class="glossary-term" data-term="pigouvian_tax">Pigouvian Tax <span class="glossary-icon">💡</span></span> (\(t = \text{MEC}\)) to internalize costs and eradicate <span class="glossary-term" data-term="deadweight_loss">Deadweight Loss <span class="glossary-icon">💡</span></span>.
+              Free market produces where \(P = \text{MPC}\), causing overproduction (\(Q_1 > Q_2\)). Solved via a <span class="glossary-term" data-term="pigouvian_tax">Pigouvian Tax <span class="glossary-icon">💡</span></span> (\(t = \text{MEC}\)) to internalize costs and eradicate <span class="glossary-term" data-term="deadweight_loss">Deadweight Loss <span class="glossary-icon">💡</span></span>.
             </div>
           </div>
 
@@ -332,15 +338,15 @@
                 <circle cx="248" cy="148" r="5" fill="#10b981"/>
                 <line x1="60" y1="148" x2="248" y2="148" stroke="#10b981" stroke-dasharray="3 3"/>
                 <line x1="248" y1="148" x2="248" y2="270" stroke="#10b981" stroke-dasharray="3 3"/>
-                <text x="35" y="152" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">P2</text>
-                <text x="240" y="290" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">Q2 (Opt)</text>
+                <text x="35" y="152" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">P<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+                <text x="240" y="290" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">Q<tspan baseline-shift="sub" font-size="9">2</tspan> (Opt)</text>
                 
                 <!-- Market Equilibrium E1 -->
                 <circle cx="312" cy="184" r="5" fill="#f59e0b"/>
                 <line x1="60" y1="184" x2="312" y2="184" stroke="#f59e0b" stroke-dasharray="3 3"/>
                 <line x1="312" y1="184" x2="312" y2="270" stroke="#f59e0b" stroke-dasharray="3 3"/>
-                <text x="35" y="188" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">P1</text>
-                <text x="305" y="290" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">Q1 (Mkt)</text>
+                <text x="35" y="188" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">P<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+                <text x="305" y="290" fill="#f59e0b" font-size="12" font-weight="700" font-family="sans-serif">Q<tspan baseline-shift="sub" font-size="9">1</tspan> (Mkt)</text>
                 
                 <!-- Pigouvian Tax Bracket -->
                 <line x1="230" y1="148" x2="230" y2="190" stroke="#10b981" stroke-width="2"/>
@@ -417,6 +423,11 @@
             <div class="svg-diagram-card">
               <span class="svg-diagram-title">Visual Derivation: Cost-Push Stagflation in the AD-AS Framework</span>
               <svg class="svg-diagram" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <marker id="arrow3" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#f43f5e"/>
+                  </marker>
+                </defs>
                 <!-- Axes -->
                 <line x1="60" y1="20" x2="60" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
                 <line x1="60" y1="270" x2="470" y2="270" stroke="var(--border-strong)" stroke-width="2"/>
@@ -427,7 +438,7 @@
                 
                 <!-- LRAS Line (Vertical at Full Employment Yf) -->
                 <line x1="320" y1="30" x2="320" y2="270" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="4 4"/>
-                <text x="325" y="45" fill="#6366f1" font-size="12" font-weight="700" font-family="sans-serif">LRAS (Y_f)</text>
+                <text x="325" y="45" fill="#6366f1" font-size="12" font-weight="700" font-family="sans-serif">LRAS (Y<tspan baseline-shift="sub" font-size="9">f</tspan>)</text>
                 
                 <!-- AD Curve -->
                 <line x1="120" y1="60" x2="420" y2="250" stroke="#0ea5e9" stroke-width="3"/>
@@ -435,30 +446,30 @@
                 
                 <!-- SAS_0 (Initial Short-Run Supply) -->
                 <line x1="150" y1="250" x2="420" y2="100" stroke="#10b981" stroke-width="2.5"/>
-                <text x="425" y="115" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">SAS_0</text>
+                <text x="425" y="115" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">SAS<tspan baseline-shift="sub" font-size="9">0</tspan></text>
                 
                 <!-- SAS_1 (Leftward Shock: Cost-Push) -->
                 <line x1="90" y1="210" x2="360" y2="60" stroke="#f43f5e" stroke-width="3"/>
-                <text x="340" y="55" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">SAS_1 (Shock)</text>
+                <text x="340" y="55" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">SAS<tspan baseline-shift="sub" font-size="9">1</tspan> (Shock)</text>
                 
                 <!-- Initial Equilibrium E0 -->
                 <circle cx="320" cy="187" r="5" fill="#10b981"/>
                 <line x1="60" y1="187" x2="320" y2="187" stroke="#10b981" stroke-dasharray="3 3"/>
-                <text x="35" y="191" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">P_0</text>
-                <text x="312" y="290" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">Y_f</text>
+                <text x="35" y="191" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">P<tspan baseline-shift="sub" font-size="9">0</tspan></text>
+                <text x="312" y="290" fill="#10b981" font-size="12" font-weight="700" font-family="sans-serif">Y<tspan baseline-shift="sub" font-size="9">f</tspan></text>
                 
                 <!-- New Stagflation Equilibrium E1 -->
                 <circle cx="235" cy="133" r="5" fill="#f43f5e"/>
                 <line x1="60" y1="133" x2="235" y2="133" stroke="#f43f5e" stroke-dasharray="3 3"/>
                 <line x1="235" y1="133" x2="235" y2="270" stroke="#f43f5e" stroke-dasharray="3 3"/>
-                <text x="35" y="137" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">P_1</text>
-                <text x="225" y="290" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">Y_1</text>
+                <text x="35" y="137" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">P<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+                <text x="225" y="290" fill="#f43f5e" font-size="12" font-weight="700" font-family="sans-serif">Y<tspan baseline-shift="sub" font-size="9">1</tspan></text>
                 
                 <!-- Stagflation Annotations -->
-                <path d="M 50 180 L 50 145" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow)"/>
+                <path d="M 50 180 L 50 145" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow3)"/>
                 <text x="12" y="165" fill="#f43f5e" font-size="10" font-weight="700" font-family="sans-serif">P ↑</text>
                 
-                <path d="M 310 282 L 245 282" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow)"/>
+                <path d="M 310 282 L 245 282" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow3)"/>
                 <text x="260" y="305" fill="#f43f5e" font-size="10" font-weight="700" font-family="sans-serif">Y ↓ (Unemployment ↑)</text>
               </svg>
             </div>
@@ -546,16 +557,23 @@
   <script src="js/glossary-db.js"></script>
   <script src="js/canvas-engine.js"></script>
   <script src="js/questions-db.js"></script>
+  <script src="js/axiom-math.js"></script>
   <script src="js/exam-engine.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
-      if (window.renderMathInElement) {
+      // Initial KaTeX Render via Centralized AxiomMath Engine
+      if (window.AxiomMath) {
+        window.AxiomMath.init(() => {
+          window.AxiomMath.renderElement(document.body);
+        });
+        window.AxiomMath.renderElement(document.body);
+      } else if (window.renderMathInElement) {
         renderMathInElement(document.body, {
           delimiters: [
             {left: '$$', right: '$$', display: true},
-            {left: '\(', right: '\)', display: false},
-            {left: '\[', right: '\]', display: true},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true},
             {left: '$', right: '$', display: false}
           ],
           throwOnError: false
@@ -583,13 +601,17 @@
         assessmentView.style.display = 'none';
         summaryView.style.display = 'block';
         if (testControls) testControls.style.display = 'none';
-        if (window.renderMathInElement) {
+        if (window.AxiomMath) {
+          window.AxiomMath.renderElement(summaryView);
+        } else if (window.renderMathInElement) {
           renderMathInElement(summaryView, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '\\(', right: '\\)', display: false},
-              {left: '\\[', right: '\\]', display: true}
-            ]
+              {left: '\\[', right: '\\]', display: true},
+              {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
           });
         }
       });
@@ -638,6 +660,10 @@
             mAf.textContent = termData.def_af;
             mRef.textContent = "📖 Source: " + termData.ref;
             modal.classList.add('open');
+            // KaTeX rendering inside glossary modal
+            if (window.AxiomMath) {
+              window.AxiomMath.renderElement(modal);
+            }
           }
         }
       });

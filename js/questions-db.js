@@ -6,28 +6,28 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "Which one of the following correctly identifies a primary function of money that eliminates the necessity of a double coincidence of wants?",
-    "stem_af": "Watter een van die volgende identifiseer korrek 'n primêre funksie van geld wat die noodsaaklikheid van 'n dubbele toevalligheid van behoeftes uitskakel?",
+    "stem_en": "Which function of money eliminates the need for a double coincidence of wants in a barter economy?",
+    "stem_af": "Watter funksie van geld skakel die behoefte aan 'n dubbele toevalligheid van behoeftes in 'n ruilhandelstelsel uit?",
     "options": [
       {
         "key": "A",
-        "text_en": "Serving as a store of value against real asset depreciation.",
-        "text_af": "Dien as 'n waardebewaringstoestel teen batevermindering."
+        "text_en": "Serving as a store of value against future price inflation.",
+        "text_af": "Dien as 'n waardebewaringstoestel teen toekomstige prysstygings."
       },
       {
         "key": "B",
-        "text_en": "Acting as a universally accepted medium of exchange.",
-        "text_af": "Dien as 'n universeel aanvaarde ruilmiddel in transaksies."
+        "text_en": "Acting as a universally accepted medium of exchange in trade.",
+        "text_af": "Dien as 'n universeel aanvaarde ruilmiddel in marktransaksies."
       },
       {
         "key": "C",
-        "text_en": "Functioning as a standard of deferred future tax assessments.",
-        "text_af": "Dien as 'n standaard vir uitgestelde belastingaanslae."
+        "text_en": "Functioning as a standard of deferred future debt settlements.",
+        "text_af": "Dien as 'n standaard vir die vereffening van uitgestelde skuld."
       },
       {
         "key": "D",
-        "text_en": "Providing an indexed unit of account for foreign exchange hedges.",
-        "text_af": "Verskaf 'n geïndekseerde rekeneenheid vir buitelandse valutadekking."
+        "text_en": "Providing a common unit of account for quoting market prices.",
+        "text_af": "Dien as 'n gemeenskaplike rekeneenheid vir kwoteer van pryse."
       }
     ],
     "correctKey": "B",
@@ -45,23 +45,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "They are fully backed by gold bullion held in the central bank's physical reserves.",
-        "text_af": "Hulle ten volle deur goudreserwes in die sentrale bank se kluise gerugsteun word."
+        "text_en": "they are fully backed by convertible physical gold bullion held in central bank reserve vaults.",
+        "text_af": "hulle ten volle deur omskakelbare fisiese goudstawe in die sentrale bankkluise gerugsteun word."
       },
       {
         "key": "B",
-        "text_en": "Their intrinsic commodity value is negligible and their value rests entirely on public trust and legal tender status.",
-        "text_af": "Hul intrinsieke kommoditeitswaarde gering is en hul waarde berus op vertroue en wetlike betaalmiddelstatus."
+        "text_en": "their intrinsic commodity value is negligible, relying on public trust and legal tender status.",
+        "text_af": "hul intrinsieke waarde gering is en hulle funksioneer op grond van vertroue en wetlike status."
       },
       {
         "key": "C",
-        "text_en": "They automatically adjust in nominal quantity to neutralize domestic price inflation.",
-        "text_af": "Hul nominale hoeveelheid outomaties aanpas om inflasie te neutraliseer."
+        "text_en": "they automatically expand in nominal purchasing volume to neutralize headline consumer inflation.",
+        "text_af": "hulle outomaties in nominale koopkragwaarde toeneem om heersende verbruikersinflasie uit te wis."
       },
       {
         "key": "D",
-        "text_en": "They are legally convertible on demand into foreign currency reserves at a fixed par value.",
-        "text_af": "Hulle op aanvraag omskepbaar is in buitelandse valuta teen 'n vaste pariteitswaarde."
+        "text_en": "they are legally convertible on demand into foreign currency reserves at a fixed exchange parity.",
+        "text_af": "hulle op aanvraag wetlik omskepbaar is in buitelandse valuta teen 'n amptelike vaste wisselkoers."
       }
     ],
     "correctKey": "B",
@@ -79,23 +79,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Coins and banknotes in circulation outside the monetary sector plus demand deposits of the domestic private sector.",
-        "text_af": "Munte en banknote in omloop buite die banksektor plus onmiddellik opeisbare deposito's van die plaaslike privaatsektor."
+        "text_en": "currency in circulation outside the monetary banking sector plus demand deposits of the private sector.",
+        "text_af": "kontant in omloop buite die bankwese plus alle onmiddellik opeisbare deposito's van die privaatsektor."
       },
       {
         "key": "B",
-        "text_en": "Notes and coin in circulation plus all short-term and medium-term savings deposits.",
-        "text_af": "Note en munte in omloop plus alle kort- en mediumtermyn spaardeposito's."
+        "text_en": "coins and paper notes in domestic circulation plus all short-term and medium-term savings deposits.",
+        "text_af": "munte en banknote in omloop plus alle korttermyn- en mediumtermyn spaardeposito's by handelsbanke."
       },
       {
         "key": "C",
-        "text_en": "Total commercial bank vault cash plus statutory cash reserves deposited at the SARB.",
-        "text_af": "Totale bankkluisreserwes plus statutêre kontantreserwes by die Reserwebank."
+        "text_en": "total commercial bank physical vault cash plus statutory cash reserve balances deposited at the SARB.",
+        "text_af": "totale fisiese bankkluisreserwes plus statutêre kontantreserwes gedeponeer by die Reserwebank."
       },
       {
         "key": "D",
-        "text_en": "The monetary base (M0) plus all negotiable certificates of deposit maturing in under 30 days.",
-        "text_af": "Die monetêre basis (M0) plus verhandelbare depositosertifikate onder 30 dae."
+        "text_en": "the monetary base (M0) plus negotiable certificates of deposit with original maturity under 30 days.",
+        "text_af": "die monetêre basis (M0) plus verhandelbare depositosertifikate met 'n looptyd korter as dertig dae."
       }
     ],
     "correctKey": "A",
@@ -113,23 +113,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "M2 includes long-term fixed deposits while M1 excludes government deposits.",
-        "text_af": "M2 sluit langtermyn vaste deposito's in terwyl M1 staatsdeposito's uitsluit."
+        "text_en": "M2 includes long-term deposits while M1 excludes private cheque and transmission deposits.",
+        "text_af": "M2 sluit langtermyndeposito's in terwyl M1 private tjek- en transmissiedeposito's uitsluit."
       },
       {
         "key": "B",
-        "text_en": "M2 equals M1 plus 'quasi-money' (short-term and medium-term deposits).",
-        "text_af": "M2 is gelyk aan M1 plus 'kwasigeld' (kort- en mediumtermyn deposito's)."
+        "text_en": "M2 equals M1 plus 'quasi-money' (other short-term and medium-term commercial bank deposits).",
+        "text_af": "M2 is gelyk aan M1 plus 'kwasigeld' (ander kort- en mediumtermyn bankdeposito's by banke)."
       },
       {
         "key": "C",
-        "text_en": "M1 includes foreign currency deposits while M2 consists strictly of physical cash in circulation.",
-        "text_af": "M1 sluit buitelandse deposito's in terwyl M2 slegs uit fisiese kontant bestaan."
+        "text_en": "M1 includes foreign currency deposits while M2 consists strictly of physical currency notes.",
+        "text_af": "M1 sluit buitelandse deposito's in terwyl M2 slegs uit fisiese banknote in sirkulasie bestaan."
       },
       {
         "key": "D",
-        "text_en": "M2 excludes demand deposits but incorporates Treasury bills and municipal bonds.",
-        "text_af": "M2 sluit onmiddellik opeisbare deposito's uit maar sluit skatkiswissels in."
+        "text_en": "M2 excludes private demand deposits but incorporates short-term sovereign Treasury bills.",
+        "text_af": "M2 sluit private aanvraagdeposito's uit maar sluit korttermyn staatskatkiswissels ten volle in."
       }
     ],
     "correctKey": "B",
@@ -147,23 +147,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Because it measures only banknotes and coins directly controlled by the Governor of the Reserve Bank.",
-        "text_af": "Omdat dit slegs banknote en munte meet wat direk deur die Goewerneur beheer word."
+        "text_en": "because it measures banknotes and coin aggregates directly controlled by the central reserve bank.",
+        "text_af": "omdat dit banknote en munte meet wat direk onder beheer van die sentrale reserwebank staan."
       },
       {
         "key": "B",
-        "text_en": "Because it is the broadest monetary measure, reflecting M2 plus all long-term deposits of the domestic private sector.",
-        "text_af": "Omdat dit die breedste maatstaf is en M2 plus alle langtermyndeposito's van die privaatsektor insluit."
+        "text_en": "because it is the broadest measure, reflecting M2 plus all long-term deposits of the private sector.",
+        "text_af": "omdat dit die breedste maatstaf is en M2 plus alle langtermyndeposito's van die privaatsektor dek."
       },
       {
         "key": "C",
-        "text_en": "Because it measures commercial bank foreign borrowing denominated in international reserve assets.",
-        "text_af": "Omdat dit handelsbanke se buitelandse lenings in internasionale bates meet."
+        "text_en": "because it measures commercial bank foreign liabilities denominated in international reserve assets.",
+        "text_af": "omdat dit handelsbanke se buitelandse laste in internasionale buitelandse valutareserwes meet."
       },
       {
         "key": "D",
-        "text_en": "Because it excludes financial derivatives and retail overdraft commitments.",
-        "text_af": "Omdat dit finansiële afgeleide instrumente en oortrekkingsfasiliteite uitsluit."
+        "text_en": "because it excludes complex financial derivatives and long-term retail overdraft lending contracts.",
+        "text_af": "omdat dit afgeleide finansiële instrumente en langtermyn kleinhandel-oortrekkingsfasiliteite uitsluit."
       }
     ],
     "correctKey": "B",
@@ -181,23 +181,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "5.0",
-        "text_af": "5,0"
+        "text_en": "A theoretical credit expansion multiplier of 5.0",
+        "text_af": "'n Teoretiese kredietvermenigvuldiger van 5,0"
       },
       {
         "key": "B",
-        "text_en": "10.0",
-        "text_af": "10,0"
+        "text_en": "A theoretical credit expansion multiplier of 10.0",
+        "text_af": "'n Teoretiese kredietvermenigvuldiger van 10,0"
       },
       {
         "key": "C",
-        "text_en": "20.0",
-        "text_af": "20,0"
+        "text_en": "A theoretical credit expansion multiplier of 20.0",
+        "text_af": "'n Teoretiese kredietvermenigvuldiger van 20,0"
       },
       {
         "key": "D",
-        "text_en": "50.0",
-        "text_af": "50,0"
+        "text_en": "A theoretical credit expansion multiplier of 50.0",
+        "text_af": "'n Teoretiese kredietvermenigvuldiger van 50,0"
       }
     ],
     "correctKey": "C",
@@ -220,18 +220,18 @@ window.AXIOM_MASTER_BANK = [
       },
       {
         "key": "B",
-        "text_en": "The physical printing speed of banknotes at the South African Bank Note Company.",
-        "text_af": "Die fisiese drukspoed van banknote by die Suid-Afrikaanse Banknootmaatskappy."
+        "text_en": "The statutory ceiling on commercial bank prime overdraft interest rates set by the central bank.",
+        "text_af": "Die statutêre perk op handelsbanke se primakoers soos deur die sentrale bank voorgeskryf."
       },
       {
         "key": "C",
-        "text_en": "The total volume of gold bullion mined on the Witwatersrand basin annually.",
-        "text_af": "Die totale volume goud wat jaarliks in die Witwatersrandkom ontgin word."
+        "text_en": "The total quantity of foreign exchange reserves and gold bullion held by the central reserve bank.",
+        "text_af": "Die totale hoeveelheid buitelandse valutareserwes en goud wat deur die sentrale bank gehou word."
       },
       {
         "key": "D",
-        "text_en": "The balance of payments capital transfer account surplus.",
-        "text_af": "Die surplus op die kapitaaloordragrekening van die betalingsbalans."
+        "text_en": "The total market value of long-term sovereign government bonds listed on the domestic exchange.",
+        "text_af": "Die totale markwaarde van langtermyn staatseffekte wat op die binnelandse beurs genoteer is."
       }
     ],
     "correctKey": "A",
@@ -249,23 +249,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "A downward movement along a stationary speculative money demand curve.",
-        "text_af": "'n Afwaartse beweging langs 'n stilstaande spekulatiewe geldvraagkromme."
+        "text_en": "a downward movement along a stationary speculative money demand curve.",
+        "text_af": "'n afwaartse beweging langs 'n stilstaande spekulatiewe geldvraagkromme plaasvind."
       },
       {
         "key": "B",
-        "text_en": "A rightward shift in the total money demand curve (MD).",
-        "text_af": "'n Verskuiwing na regs van die totale geldvraagkromme (MD)."
+        "text_en": "a rightward shift in the total money demand curve across interest rates.",
+        "text_af": "'n verskuiwing na regs van die totale geldvraagkromme oor alle rentekoerse plaasvind."
       },
       {
         "key": "C",
-        "text_en": "A decrease in active transactions demand for money balances.",
-        "text_af": "'n Afname in die aktiewe transaksievraag na geldbalanse."
+        "text_en": "a persistent contraction in active transactions demand for cash balances.",
+        "text_af": "'n bestendige afname in die aktiewe transaksievraag na kontantbalanse voorkom."
       },
       {
         "key": "D",
-        "text_en": "An automatic flattening of the money supply schedule.",
-        "text_af": "'n Outomatiese afplatting van die geldvoorraadaanbod."
+        "text_en": "an automatic flattening of the central bank nominal money supply curve.",
+        "text_af": "'n outomatiese afplatting van die sentrale bank se nominale geldvoorraadkromme intree."
       }
     ],
     "correctKey": "B",
@@ -283,23 +283,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Bond prices are high and wealth-holders expect interest rates to rise further.",
-        "text_af": "Effektepryse hoog is en batevereenselwigers verwag dat rentekoerse verder sal styg."
+        "text_en": "bond prices are high and wealth-holders expect capital losses from falling prices.",
+        "text_af": "effektepryse hoog is en beleggers kapitaalverliese weens dalende effektepryse verwag."
       },
       {
         "key": "B",
-        "text_en": "The opportunity cost of holding cash is high and bond prices are low, leading agents to hold interest-bearing bonds rather than idle cash.",
-        "text_af": "Die geleentheidskoste van kontant hoog is en effektepryse laag is, sodat mense effekte verkies bo kontant."
+        "text_en": "the opportunity cost of holding cash is high and bonds yield attractive returns.",
+        "text_af": "die geleentheidskoste van kontant hoog is en effekte aantreklike opbrengste lewer."
       },
       {
         "key": "C",
-        "text_en": "Commercial banks refuse to accept customer demand deposits.",
-        "text_af": "Handelsbanke weier om kliënte se tjekdeposito's te aanvaar."
+        "text_en": "commercial banks restrict credit extension to prevent excessive consumer loans.",
+        "text_af": "handelsbanke kredietverlening inperk om oormatige verbruikerslenings te verhoed."
       },
       {
         "key": "D",
-        "text_en": "The velocity of circulation falls to zero due to liquidity hoarding.",
-        "text_af": "Die omloopsnelheid van geld tot nul daal weens kontanthoording."
+        "text_en": "the velocity of money circulation falls sharply due to widespread cash hoarding.",
+        "text_af": "die omloopsnelheid van geld skerp daal weens grootskaalse oppotting van likiditeit."
       }
     ],
     "correctKey": "B",
@@ -317,23 +317,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "By directly pegging the Rand to the trade-weighted nominal effective exchange rate.",
-        "text_af": "Deur die Rand direk aan die handelsgeweegde nominale wisselkoers te koppel."
+        "text_en": "By directly pegging the domestic exchange rate to trade-weighted international reserve currencies.",
+        "text_af": "Deur die wisselkoers direk aan handelsgeweegde internasionale reserwevalutas te koppel."
       },
       {
         "key": "B",
-        "text_en": "By forcing commercial banks into a liquidity deficit and refinancing it via repurchase (repo) auctions at the chosen repo rate.",
-        "text_af": "Deur handelsbanke in 'n likiditeitstekort te dwing en dit via herkoopveilings teen die amptelike repokoers te herfinansier."
+        "text_en": "By maintaining a commercial bank liquidity shortage and refinancing it via regular repo auctions.",
+        "text_af": "Deur 'n banklikiditeitstekort te handhaaf en dit via gereelde herkoopveilings te herfinansier."
       },
       {
         "key": "C",
-        "text_en": "By legally fixing the ceiling interest rate that commercial banks may charge on consumer mortgages.",
-        "text_af": "Deur 'n wetlike perk te plaas op die rentekoers wat banke op verbande mag hef."
+        "text_en": "By setting statutory ceilings on the nominal interest rates commercial banks may charge on credit.",
+        "text_af": "Deur statutêre plafonne op die nominale rentekoerse wat banke op lenings mag hef, te plaas."
       },
       {
         "key": "D",
-        "text_en": "By exogenously fixing the precise volume of M3 money in the economy every quarter.",
-        "text_af": "Deur die presiese volume M3-geld elke kwartaal eksogeen vas te stel."
+        "text_en": "By exogenously setting the precise quantitative volume of M3 broad money circulating each quarter.",
+        "text_af": "Deur die presiese kwantitatiewe volume van M3-geld elke kwartaal eksogeen vas te stel."
       }
     ],
     "correctKey": "B",
@@ -351,23 +351,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "A decrease in commercial bank prime lending rates.",
-        "text_af": "'n Daling in handelsbanke se primakoerse."
+        "text_en": "an immediate downward adjustment in commercial banking prime overdraft lending rates.",
+        "text_af": "'n onmiddellike afwaartse aanpassing in handelsbanke se prima-oortrekkingskoerse."
       },
       {
         "key": "B",
-        "text_en": "An increase in commercial bank lending rates, which raises the cost of credit for households and businesses.",
-        "text_af": "'n Verhoging in handelsbankkoerse, wat die koste van krediet vir huishoudings en besighede verhoog."
+        "text_en": "an increase in bank prime lending rates, raising credit costs for borrowers.",
+        "text_af": "'n styging in handelsbankkoerse wat die koste van krediet vir leners opstoot."
       },
       {
         "key": "C",
-        "text_en": "A mandatory reduction in the statutory cash reserve requirement ratio.",
-        "text_af": "'n Verpligte vermindering in die statutêre kontantreserweverhouding."
+        "text_en": "a mandatory legislative reduction in the statutory commercial bank cash reserve ratio.",
+        "text_af": "'n verpligte statutêre vermindering in die verpligte kontantreserweverhouding van banke."
       },
       {
         "key": "D",
-        "text_en": "An automatic increase in commercial bank excess liquidity reserves.",
-        "text_af": "'n Outomatiese styging in banke se oorskot-likiditeitsreserwes."
+        "text_en": "an automatic expansion in commercial bank excess settlement liquidity balances.",
+        "text_af": "'n outomatiese toename in handelsbanke se oorskot-vereffeningslikiditeitsreserwes."
       }
     ],
     "correctKey": "B",
@@ -419,23 +419,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Drain excess liquidity from the money market and maintain commercial banks' reliance on the repo window.",
+        "text_en": "Drain excess liquidity from the money market to maintain bank reliance on the repo window.",
         "text_af": "Oormatige likiditeit uit die mark te dreineer en banke afhanklik te hou van die repovenster."
       },
       {
         "key": "B",
-        "text_en": "Inject new reserves to lower overnight interbank borrowing rates.",
-        "text_af": "Nuwe reserwes in te spuit om oornaginterbankkoerse te verlaag."
+        "text_en": "Inject new liquidity reserves into commercial banks to lower interbank borrowing rates.",
+        "text_af": "Nuwe likiditeit in banke in te spuit om oornag-interbankkoerse op die geldmark te verlaag."
       },
       {
         "key": "C",
-        "text_en": "Finance the national revenue service's annual administrative operational expenses.",
-        "text_af": "Die inkomstediens se jaarlikse administratiewe bedryfsuitgawes te befonds."
+        "text_en": "Finance the national revenue service's annual administrative and operational expenses.",
+        "text_af": "Die inkomstediens se jaarlikse administratiewe bedryfsuitgawes direk te befonds."
       },
       {
         "key": "D",
-        "text_en": "Monetize national budget deficits by expanding the supply of physical paper currency.",
-        "text_af": "Begrotingstekorte te monetariseer deur die aanbod van fisiese papiergeld te vergroot."
+        "text_en": "Monetize national fiscal budget deficits through direct unbacked physical currency issues.",
+        "text_af": "Fiskale begrotingstekorte te finansier deur direkte ongerugsteunde banknote uit te reik."
       }
     ],
     "correctKey": "A",
@@ -461,12 +461,12 @@ window.AXIOM_MASTER_BANK = [
     "type": "calculation",
     "marks": 3,
     "difficulty": "Exam",
-    "stem_en": "Given the following monetary statistics for South Africa: Notes and coins in circulation = R85 000 million, Demand deposits = R520 000 million, Short-term deposits = R310 000 million, Medium-term deposits = R280 000 million, and Long-term deposits = R195 000 million. Calculate the total M2 money supply in R millions.",
-    "stem_af": "Gegewe die volgende monetêre data: Note en munte in omloop = R85 000m, Onmiddellik opeisbare deposito's = R520 000m, Korttermyn = R310 000m, Mediumtermyn = R280 000m, en Langtermyn = R195 000m. Bereken die totale M2-geldvoorraad in R miljoen.",
+    "stem_en": "Given the following monetary data for South Africa: Notes and coins in circulation = R85 000 million; Demand deposits = R520 000 million; Short-term deposits = R310 000 million; Medium-term deposits = R280 000 million; Long-term deposits = R195 000 million. Calculate the total M2 money supply (in R millions).",
+    "stem_af": "Gegewe die volgende monetêre data vir Suid-Afrika: Note en munte in omloop = R85 000 miljoen; Onmiddellik opeisbare deposito's = R520 000 miljoen; Korttermyndeposito's = R310 000 miljoen; Mediumtermyndeposito's = R280 000 miljoen; Langtermyndeposito's = R195 000 miljoen. Bereken die totale M2-geldvoorraad (in R miljoen).",
     "expectedNumber": 1195000,
     "tolerance": 50,
-    "derivation_en": "Step 1: Calculate Narrow Money M1 = Notes & coins (R85 000m) + Demand deposits (R520 000m) = R605 000 million. Step 2: Calculate Quasi-Money = Short-term (R310 000m) + Medium-term (R280 000m) = R590 000 million. Step 3: Total M2 = M1 + Quasi-Money = 605 000 + 590 000 = R1 195 000 million. (Quasi-money alone is R590 000m).",
-    "derivation_af": "Stap 1: Bereken M1 = R85 000m + R520 000m = R605 000m. Stap 2: Bereken Kwasigeld = R310 000m + R280 000m = R590 000m. Stap 3: Totale M2 = M1 + Kwasigeld = 605 000 + 590 000 = R1 195 000 miljoen."
+    "derivation_en": "Step 1: Calculate Narrow Money M1 = Notes & coins (R85 000m) + Demand deposits (R520 000m) = R605 000 million. Step 2: Calculate Quasi-Money = Short-term deposits (R310 000m) + Medium-term deposits (R280 000m) = R590 000 million. Step 3: Total M2 = M1 + Quasi-Money = 605 000 + 590 000 = R1 195 000 million. (Note: Quasi-money alone is R590 000m; M2 is the sum of M1 and Quasi-Money).",
+    "derivation_af": "Stap 1: Bereken M1 = Note en munte (R85 000m) + Onmiddellik opeisbare deposito's (R520 000m) = R605 000 miljoen. Stap 2: Bereken Kwasigeld = Korttermyndeposito's (R310 000m) + Mediumtermyndeposito's (R280 000m) = R590 000 miljoen. Stap 3: Totale M2 = M1 + Kwasigeld = 605 000 + 590 000 = R1 195 000 miljoen. (Let wel: Kwasigeld alleen is R590 000m; M2 is die som van M1 en Kwasigeld)."
   },
   {
     "id": "q14_16",
@@ -474,33 +474,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, the prime overdraft rate is historically set at a conventional spread of:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, the prime overdraft rate is historically set at a conventional spread of:",
+    "stem_en": "In South Africa, the commercial bank prime overdraft rate is conventionally benchmarked at:",
+    "stem_af": "In Suid-Afrika word handelsbanke se primakoers konvensioneel vasgestel op:",
     "options": [
       {
         "key": "A",
-        "text_en": "3.5 percentage points above the prevailing SARB Repo rate",
-        "text_af": "3.5 percentage points above the prevailing SARB Repo rate"
+        "text_en": "3.5 percentage points above the prevailing SARB repo rate.",
+        "text_af": "3,5 persentasiepunte bo die heersende SARB-repokoers."
       },
       {
         "key": "B",
-        "text_en": "5.0 percentage points below the Treasury bill rate",
-        "text_af": "5.0 percentage points below the Treasury bill rate"
+        "text_en": "3.5 percentage points below the 91-day Treasury bill rate.",
+        "text_af": "3,5 persentasiepunte onder die 91-dae skatkiswisselkoers."
       },
       {
         "key": "C",
-        "text_en": "exactly 1.0 percentage point above the inflation target",
-        "text_af": "exactly 1.0 percentage point above the inflation target"
+        "text_en": "2.5 percentage points above the headline CPI inflation rate.",
+        "text_af": "2,5 persentasiepunte bo die amptelike VPI-inflasiekoers."
       },
       {
         "key": "D",
-        "text_en": "a floating margin equal to the commercial bank reserve ratio",
-        "text_af": "a floating margin equal to the commercial bank reserve ratio"
+        "text_en": "a floating margin equal to the statutory cash reserve ratio.",
+        "text_af": "'n swewende marge gelyk aan die kontantreserweverhouding."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "In South Africa, the commercial bank prime overdraft rate is conventionally benchmarked at Repo rate + 3.5%.",
-    "derivation_af": "In South Africa, the commercial bank prime overdraft rate is conventionally benchmarked at Repo rate + 3.5%."
+    "derivation_en": "In South Africa, commercial banks set the benchmark prime overdraft rate at repo rate + 3.5 percentage points.",
+    "derivation_af": "In Suid-Afrika stel handelsbanke die prima-oortrekkingskoers vas op die amptelike repokoers plus 3,5 persentasiepunte."
   },
   {
     "id": "q14_17",
@@ -508,33 +508,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, an open market purchase of government bonds by the central bank will initially:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, an open market purchase of government bonds by the central bank will initially:",
+    "stem_en": "An open market purchase of government bonds by the South African Reserve Bank will initially:",
+    "stem_af": "'n Oopmarkaankoop van staatseffekte deur die Suid-Afrikaanse Reserwebank sal aanvanklik:",
     "options": [
       {
         "key": "A",
-        "text_en": "increase bank liquidity reserves and put downward pressure on short-term interbank money market rates",
-        "text_af": "increase bank liquidity reserves and put downward pressure on short-term interbank money market rates"
+        "text_en": "decrease bank liquidity reserves and put upward pressure on short-term interbank money market interest rates.",
+        "text_af": "banklikiditeitsreserwes verlaag en opwaartse druk op korttermyn-interbankgeldmarkkoerse uitoefen."
       },
       {
         "key": "B",
-        "text_en": "decrease the monetary base and force commercial banks to contract credit",
-        "text_af": "decrease the monetary base and force commercial banks to contract credit"
+        "text_en": "increase bank liquidity reserves and put downward pressure on short-term interbank money market interest rates.",
+        "text_af": "banklikiditeitsreserwes verhoog en afwaartse druk op korttermyn-interbankgeldmarkkoerse uitoefen."
       },
       {
         "key": "C",
-        "text_en": "raise the statutory reserve requirement across all banking institutions",
-        "text_af": "raise the statutory reserve requirement across all banking institutions"
+        "text_en": "force commercial banks to contract their total credit extension to private household and corporate borrowers.",
+        "text_af": "handelsbanke dwing om hul totale kredietverlening aan private huishoudings en besighede in te kort."
       },
       {
         "key": "D",
-        "text_en": "appreciate the domestic nominal exchange rate against international reserve currencies",
-        "text_af": "appreciate the domestic nominal exchange rate against international reserve currencies"
+        "text_en": "raise the statutory cash reserve requirement ratio across all registered commercial banking institutions.",
+        "text_af": "die statutêre kontantreserweverhouding oor alle geregistreerde handelsbankinstellings verhoog."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Purchasing bonds injects fresh cash into commercial bank settlement accounts, easing market liquidity.",
-    "derivation_af": "Purchasing bonds injects fresh cash into commercial bank settlement accounts, easing market liquidity."
+    "correctKey": "B",
+    "derivation_en": "Purchasing government bonds injects central bank reserves into commercial bank settlement accounts, increasing liquidity and lowering interbank rates.",
+    "derivation_af": "'n Aankoop van staatseffekte spuit nuwe reserwes in vereffeningsrekeninge in, wat marklikiditeit verhoog en interbankkoerse verlaag."
   },
   {
     "id": "q14_18",
@@ -542,33 +542,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, a commercial bank's reserves held in compliance with statutory requirements at the SARB:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, a commercial bank's reserves held in compliance with statutory requirements at the SARB:",
+    "stem_en": "Commercial bank reserves held to comply with statutory cash reserve requirements at the SARB:",
+    "stem_af": "Handelsbankreserwes wat gehou word om aan statutêre vereistes by die Reserwebank te voldoen:",
     "options": [
       {
         "key": "A",
-        "text_en": "earn zero interest and cannot be used for everyday commercial lending",
-        "text_af": "earn zero interest and cannot be used for everyday commercial lending"
+        "text_en": "earn interest calculated at the prevailing policy repurchase rate.",
+        "text_af": "verdien rente bereken teen die heersende amptelike repokoers."
       },
       {
         "key": "B",
-        "text_en": "yield a guaranteed market rate of return pegged to corporate debentures",
-        "text_af": "yield a guaranteed market rate of return pegged to corporate debentures"
+        "text_en": "may be lent out to corporate business borrowers for investment.",
+        "text_af": "mag aan sakeondernemings vir produktiewe investering uitgeleen word."
       },
       {
         "key": "C",
-        "text_en": "are invested directly in foreign sovereign wealth funds",
-        "text_af": "are invested directly in foreign sovereign wealth funds"
+        "text_en": "earn zero interest and cannot be used for ordinary retail lending.",
+        "text_af": "verdien geen rente nie en mag nie vir gewone banklenings dien nie."
       },
       {
         "key": "D",
-        "text_en": "can be withdrawn by depositors during normal retail banking hours",
-        "text_af": "can be withdrawn by depositors during normal retail banking hours"
+        "text_en": "can be freely withdrawn on demand by depositors during bank hours.",
+        "text_af": "kan vrylik op aanvraag deur spaarders tydens bankure onttrek word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Statutory cash reserves held with the SARB earn no interest, acting as a non-earning prudential buffer.",
-    "derivation_af": "Statutory cash reserves held with the SARB earn no interest, acting as a non-earning prudential buffer."
+    "correctKey": "C",
+    "derivation_en": "Statutory cash reserves held with the SARB (currently 2.5% of deposits) earn no interest and cannot be lent out to customers.",
+    "derivation_af": "Statutêre kontantreserwes by die SARB verdien geen rente nie en mag nie vir gewone kredietverlening aan kliënte aangewend word nie."
   },
   {
     "id": "q14_19",
@@ -576,33 +576,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, the transactions demand for money balances arises because:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, the transactions demand for money balances arises because:",
+    "stem_en": "In Keynesian monetary theory, the transactions demand for money balances arises because:",
+    "stem_af": "In Keynesiaanse monetêre teorie ontstaan die transaksievraag na geldbalanse omdat:",
     "options": [
       {
         "key": "A",
-        "text_en": "there is a lack of synchronization between the timing of income receipts and expenditure disbursements",
-        "text_af": "there is a lack of synchronization between the timing of income receipts and expenditure disbursements"
+        "text_en": "wealth-holders anticipate sharp declines in the market prices of long-term bonds.",
+        "text_af": "batedraers skerp dalings in die markpryse van langtermyneffekte verwag."
       },
       {
         "key": "B",
-        "text_en": "wealth-holders anticipate sharp declines in stock market dividend yields",
-        "text_af": "wealth-holders anticipate sharp declines in stock market dividend yields"
+        "text_en": "commercial banks impose prohibitive administrative fees on electronic transfers.",
+        "text_af": "handelsbanke buitensporige fooie op elektroniese fondsoorplasings hef."
       },
       {
         "key": "C",
-        "text_en": "the commercial banking sector imposes prohibitive transaction fees on digital transfers",
-        "text_af": "the commercial banking sector imposes prohibitive transaction fees on digital transfers"
+        "text_en": "households require an emergency financial reserve to cushion unexpected expenses.",
+        "text_af": "huishoudings 'n finansiële noodreserwe vir onverwagte uitgawes benodig."
       },
       {
         "key": "D",
-        "text_en": "the statutory reserve ratio varies unpredictably across business cycles",
-        "text_af": "the statutory reserve ratio varies unpredictably across business cycles"
+        "text_en": "the timing of regular income receipts does not synchronize with daily expenditure.",
+        "text_af": "die tydsberekening van inkomste-ontvangstes en daaglikse uitgawes nie ooreenstem nie."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Income arrives periodically (e.g. monthly) while expenditures occur continuously, necessitating transactions cash balances.",
-    "derivation_af": "Income arrives periodically (e.g. monthly) while expenditures occur continuously, necessitating transactions cash balances."
+    "correctKey": "D",
+    "derivation_en": "Income is received periodically (e.g. monthly) while expenditures occur continuously, necessitating transactions cash balances.",
+    "derivation_af": "Inkomste word periodiek ontvang terwyl uitgawes deurlopend plaasvind, wat transaksiekontantbalanse noodsaaklik maak."
   },
   {
     "id": "q14_20",
@@ -610,33 +610,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, the opportunity cost of holding liquid cash balances rather than purchasing financial assets is measured by:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, the opportunity cost of holding liquid cash balances rather than purchasing financial assets is measured by:",
+    "stem_en": "The opportunity cost of holding liquid cash balances rather than financial assets is measured by:",
+    "stem_af": "Die geleentheidskoste om likiede kontantbalanse eerder as finansiële bates te hou, word gemeet aan:",
     "options": [
       {
         "key": "A",
-        "text_en": "the nominal interest rate forgone on alternative interest-bearing financial securities",
-        "text_af": "the nominal interest rate forgone on alternative interest-bearing financial securities"
+        "text_en": "the statutory rate of value added tax applied to consumer goods.",
+        "text_af": "die statutêre koers van belasting op toegevoegde waarde op goedere."
       },
       {
         "key": "B",
-        "text_en": "the statutory value added tax rate applied to consumption goods",
-        "text_af": "the statutory value added tax rate applied to consumption goods"
+        "text_en": "the annual rate of physical depreciation on capital equipment.",
+        "text_af": "die jaarlikse tempo van fisiese slytasie op kapitaaltoerusting."
       },
       {
         "key": "C",
-        "text_en": "the real depreciation of fixed physical capital equipment",
-        "text_af": "the real depreciation of fixed physical capital equipment"
+        "text_en": "the nominal interest rate forgone on alternative bond holdings.",
+        "text_af": "die nominale rentekoers wat op rentedraende effekte verbeur word."
       },
       {
         "key": "D",
-        "text_en": "the administrative fee charged by the central bank on cash withdrawals",
-        "text_af": "the administrative fee charged by the central bank on cash withdrawals"
+        "text_en": "the administrative transaction fee charged on automated withdrawals.",
+        "text_af": "die administratiewe transaksiefooie wat op kitsbankonttrekkings geld."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Holding money yields no interest; the forgone interest on bonds represents the explicit opportunity cost.",
-    "derivation_af": "Holding money yields no interest; the forgone interest on bonds represents the explicit opportunity cost."
+    "correctKey": "C",
+    "derivation_en": "Holding money yields zero interest; the forgone interest return on alternative bonds represents the explicit opportunity cost.",
+    "derivation_af": "Geld verdien geen rente nie; die rente wat op alternatiewe effekte verbeur word, verteenwoordig die geleentheidskoste."
   },
   {
     "id": "q14_21",
@@ -644,33 +644,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, if the general price level (P) doubles while real output (Y) remains unchanged, the nominal transactions demand for money will:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, if the general price level (P) doubles while real output (Y) remains unchanged, the nominal transactions demand for money will:",
+    "stem_en": "If the general price level (P) doubles while real output (Y) remains unchanged, the nominal transactions demand for money will:",
+    "stem_af": "Indien die algemene pryspeil (P) verdubbel terwyl reële produksie (Y) konstant bly, sal die nominale transaksievraag na geld:",
     "options": [
       {
         "key": "A",
-        "text_en": "double in exact proportion to the price level increase",
-        "text_af": "double in exact proportion to the price level increase"
+        "text_en": "double in exact proportion to the price level increase.",
+        "text_af": "verdubbel in presiese verhouding tot die prysstyging."
       },
       {
         "key": "B",
-        "text_en": "remain unchanged because real output is constant",
-        "text_af": "remain unchanged because real output is constant"
+        "text_en": "remain completely unchanged because real output is fixed.",
+        "text_af": "heeltemal onveranderd bly omdat reële uitset vas bly."
       },
       {
         "key": "C",
-        "text_en": "fall by half as agents substitute towards durable real assets",
-        "text_af": "fall by half as agents substitute towards durable real assets"
+        "text_en": "fall by half as consumers substitute into physical assets.",
+        "text_af": "halveer omdat verbruikers na fisiese bates oorskakel."
       },
       {
         "key": "D",
-        "text_en": "quadruple due to compounded inflationary expectations",
-        "text_af": "quadruple due to compounded inflationary expectations"
+        "text_en": "quadruple due to compounding domestic price expectations.",
+        "text_af": "vervierdubbel weens kumulatiewe inflasieverwagtinge."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "Transactions demand is proportional to nominal income (P * Y). If P doubles, nominal money demand doubles.",
-    "derivation_af": "Transactions demand is proportional to nominal income (P * Y). If P doubles, nominal money demand doubles."
+    "derivation_en": "Transactions money demand is proportional to nominal national income (P * Y). If P doubles while Y is unchanged, nominal money demand doubles.",
+    "derivation_af": "Transaksievraag is eweredig aan nominale inkomste (P * Y). As P verdubbel terwyl Y konstant bly, verdubbel die nominale geldvraag."
   },
   {
     "id": "q14_22",
@@ -678,33 +678,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, in South Africa, the Monetary Policy Committee (MPC) of the SARB meets on a scheduled basis to:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, in South Africa, the Monetary Policy Committee (MPC) of the SARB meets on a scheduled basis to:",
+    "stem_en": "In South Africa, the Monetary Policy Committee (MPC) of the SARB meets regularly to:",
+    "stem_af": "In Suid-Afrika vergader die Monetêre Beleidskomitee (MBK) van die Reserwebank gereeld om:",
     "options": [
       {
         "key": "A",
-        "text_en": "assess inflationary pressures and set the policy repurchase (repo) rate",
-        "text_af": "assess inflationary pressures and set the policy repurchase (repo) rate"
+        "text_en": "draft the national government's annual budget deficit financing framework.",
+        "text_af": "die nasionale regering se jaarlikse begrotingstekortraamwerk op te stel."
       },
       {
         "key": "B",
-        "text_en": "draft the annual national budget deficit financing framework",
-        "text_af": "draft the annual national budget deficit financing framework"
+        "text_en": "audit the financial accounts and tax returns of private commercial banks.",
+        "text_af": "die finansiële state en belastingaanslae van handelsbanke te oudit."
       },
       {
         "key": "C",
-        "text_en": "audit individual retail commercial bank income tax returns",
-        "text_af": "audit individual retail commercial bank income tax returns"
+        "text_en": "determine municipal property valuations and rates across metropolitan areas.",
+        "text_af": "munisipale eiendomswaardasies en tariewe in metropolitaanse gebiede te bepaal."
       },
       {
         "key": "D",
-        "text_en": "determine municipal property valuation assessments across metropolitan areas",
-        "text_af": "determine municipal property valuation assessments across metropolitan areas"
+        "text_en": "assess economic conditions and determine the policy repurchase (repo) rate.",
+        "text_af": "ekonomiese toestande te evalueer en die amptelike repokoers vas te stel."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "The MPC meets bi-monthly to review macroeconomic indicators and determine the official repo rate.",
-    "derivation_af": "The MPC meets bi-monthly to review macroeconomic indicators and determine the official repo rate."
+    "correctKey": "D",
+    "derivation_en": "The MPC meets regularly to evaluate domestic and global macroeconomic conditions and decide on the level of the repo rate to achieve price stability.",
+    "derivation_af": "Die MBK vergader gereeld om ekonomiese aanwysers te hersien en die repokoers vas te stel ter bereiking van prysstabiliteit."
   },
   {
     "id": "q14_23",
@@ -712,33 +712,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, when the SARB acts as the 'lender of last resort', it provides:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, when the SARB acts as the 'lender of last resort', it provides:",
+    "stem_en": "When the South African Reserve Bank acts as 'lender of last resort', it provides:",
+    "stem_af": "Wanneer die Suid-Afrikaanse Reserwebank as 'lener in laaste instansie' optree, verskaf dit:",
     "options": [
       {
         "key": "A",
-        "text_en": "emergency liquidity assistance to solvent banks facing temporary liquidity shortages",
-        "text_af": "emergency liquidity assistance to solvent banks facing temporary liquidity shortages"
+        "text_en": "permanent grant subsidies to insolvent and loss-making commercial firms.",
+        "text_af": "permanente subsidies aan insolvente en verlieslydende privaat firmas."
       },
       {
         "key": "B",
-        "text_en": "permanent direct grant subsidies to loss-making retail commercial firms",
-        "text_af": "permanent direct grant subsidies to loss-making retail commercial firms"
+        "text_en": "unlimited interest-free overdrafts to provincial government departments.",
+        "text_af": "onbeperkte rentevrye oortrekkingsfasiliteite aan provinsiale owerhede."
       },
       {
         "key": "C",
-        "text_en": "unlimited zero-interest overdrafts to provincial municipalities",
-        "text_af": "unlimited zero-interest overdrafts to provincial municipalities"
+        "text_en": "emergency liquidity assistance to solvent banks facing temporary crises.",
+        "text_af": "noodlikiditeit aan solvente banke wat tydelike likiditeitstekorte ervaar."
       },
       {
         "key": "D",
-        "text_en": "equity capital injections to speculative property development syndicates",
-        "text_af": "equity capital injections to speculative property development syndicates"
+        "text_en": "direct venture capital injections to speculative business enterprises.",
+        "text_af": "direkte waagkapitaal aan spekulatiewe binnelandse sake-ondernemings."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Lender of last resort protects financial stability by providing emergency liquidity to solvent banks experiencing liquidity runs.",
-    "derivation_af": "Lender of last resort protects financial stability by providing emergency liquidity to solvent banks experiencing liquidity runs."
+    "correctKey": "C",
+    "derivation_en": "As lender of last resort, the SARB provides short-term emergency liquidity to solvent financial institutions to prevent systemic banking failure.",
+    "derivation_af": "As lener in laaste instansie verskaf die SARB noodlenings aan solvente finansiële instellings om sistemiese bankkrisisse te voorkom."
   },
   {
     "id": "q14_24",
@@ -746,33 +746,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, a contraction in commercial bank lending resulting from stricter borrower credit criteria will:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, a contraction in commercial bank lending resulting from stricter borrower credit criteria will:",
+    "stem_en": "A contraction in commercial bank lending resulting from stricter borrower credit criteria will:",
+    "stem_af": "'n Inkrimping in banklenings weens strenger kredietkriteria vir leners sal:",
     "options": [
       {
         "key": "A",
-        "text_en": "slow down the rate of growth of the M3 money supply",
-        "text_af": "slow down the rate of growth of the M3 money supply"
+        "text_en": "automatically expand the stock of base money (M0) held by the central bank.",
+        "text_af": "die voorraad basisgeld (M0) by die sentrale bank outomaties laat toeneem."
       },
       {
         "key": "B",
-        "text_en": "automatically expand the monetary base (M0) held by the central bank",
-        "text_af": "automatically expand the monetary base (M0) held by the central bank"
+        "text_en": "slow down the rate of growth of the M3 money supply in the national economy.",
+        "text_af": "die groeikoers van die breë geldvoorraad (M3) in die nasionale ekonomie vertraag."
       },
       {
         "key": "C",
-        "text_en": "force the SARB to raise the statutory cash reserve requirement",
-        "text_af": "force the SARB to raise the statutory cash reserve requirement"
+        "text_en": "force the central bank to immediately raise statutory cash reserve ratios.",
+        "text_af": "die sentrale bank dwing om die statutêre kontantreserweverhouding te verhoog."
       },
       {
         "key": "D",
-        "text_en": "eliminate the structural liquidity deficit in the accommodation system",
-        "text_af": "eliminate the structural liquidity deficit in the accommodation system"
+        "text_en": "eliminate the structural liquidity deficit across the interbank settlement.",
+        "text_af": "die strukturele likiditeitstekort in die vereffeningstelsel heeltemal uitwis."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Because commercial bank loans create deposits (money), tighter credit criteria slows broad money (M3) growth.",
-    "derivation_af": "Because commercial bank loans create deposits (money), tighter credit criteria slows broad money (M3) growth."
+    "correctKey": "B",
+    "derivation_en": "Because bank loans create deposits, stricter lending criteria reduce credit creation, which directly slows the growth rate of broad money (M3).",
+    "derivation_af": "Omdat banklenings deposito's skep, lei strenger kredietkriteria tot minder leningstoestaan en 'n verlangsaming in die groei van M3."
   },
   {
     "id": "q14_25",
@@ -780,33 +780,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, which component is included in M3 but strictly excluded from M2 in South Africa?:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, which component is included in M3 but strictly excluded from M2 in South Africa?:",
+    "stem_en": "Which component is included in the M3 money supply but strictly excluded from M2 in South Africa?",
+    "stem_af": "Watter komponent word by die M3-geldvoorraad ingesluit maar streng van M2 in Suid-Afrika uitgesluit?",
     "options": [
       {
         "key": "A",
-        "text_en": "Long-term deposits with monetary institutions (maturing after 6 months).",
-        "text_af": "Long-term deposits with monetary institutions (maturing after 6 months)."
+        "text_en": "Cheque and transmission deposits of the domestic private sector.",
+        "text_af": "Tjek- en transmissiedeposito's van die plaaslike privaatsektor."
       },
       {
         "key": "B",
-        "text_en": "Short-term savings accounts withdrawable within 30 days.",
-        "text_af": "Short-term savings accounts withdrawable within 30 days."
+        "text_en": "Long-term deposits with monetary institutions maturing after 6 months.",
+        "text_af": "Langtermyndeposito's by monetêre instellings wat na 6 maande verval."
       },
       {
         "key": "C",
-        "text_en": "Banknotes and coins held by the domestic non-bank private sector.",
-        "text_af": "Banknotes and coins held by the domestic non-bank private sector."
+        "text_en": "Short-term savings accounts and notice deposits withdrawable on demand.",
+        "text_af": "Korttermyn spaardeposito's en kennisgewingdeposito's by instellings."
       },
       {
         "key": "D",
-        "text_en": "Negotiable transmission deposits of registered corporate entities.",
-        "text_af": "Negotiable transmission deposits of registered corporate entities."
+        "text_en": "Banknotes and commercial coins circulating outside the banking system.",
+        "text_af": "Banknote en munte wat buite die binnelandse bankstelsel sirkuleer."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "M3 includes long-term deposits; M2 only extends up to short- and medium-term deposits.",
-    "derivation_af": "M3 includes long-term deposits; M2 only extends up to short- and medium-term deposits."
+    "correctKey": "B",
+    "derivation_en": "M2 includes M1 plus short-term and medium-term deposits (quasi-money). M3 adds long-term deposits (maturing after 6 months).",
+    "derivation_af": "M2 bestaan uit M1 plus kort- en mediumtermyndeposito's (kwasigeld). M3 voeg langtermyndeposito's (ouer as 6 maande) hierby."
   },
   {
     "id": "q14_26",
@@ -814,33 +814,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, the monetary base (M0 or high-powered money) consists of:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, the monetary base (M0 or high-powered money) consists of:",
+    "stem_en": "The monetary base (M0 or high-powered money) in macroeconomic analysis consists of:",
+    "stem_af": "Die monetêre basis (M0 of hoëkrag-geld) in makro-ekonomiese analise bestaan uit:",
     "options": [
       {
         "key": "A",
-        "text_en": "banknotes and coins in circulation plus total reserves held by commercial banks at the central bank",
-        "text_af": "banknotes and coins in circulation plus total reserves held by commercial banks at the central bank"
+        "text_en": "all short-term savings deposits and notice accounts in commercial banks.",
+        "text_af": "alle korttermyn spaardeposito's en kennisgewingrekeninge by handelsbanke."
       },
       {
         "key": "B",
-        "text_en": "all demand, savings, and fixed-term deposits in the banking network",
-        "text_af": "all demand, savings, and fixed-term deposits in the banking network"
+        "text_en": "the total market value of government bonds listed on the stock exchange.",
+        "text_af": "die totale markwaarde van alle genoteerde staatseffekte op die effektebeurs."
       },
       {
         "key": "C",
-        "text_en": "the total market value of government bonds listed on the stock exchange",
-        "text_af": "the total market value of government bonds listed on the stock exchange"
+        "text_en": "currency in circulation plus total reserves held by banks at the central bank.",
+        "text_af": "kontant in omloop buite die banksektor plus totale bankreserwes by die SARB."
       },
       {
         "key": "D",
-        "text_en": "net foreign exchange reserves held by private commercial corporations",
-        "text_af": "net foreign exchange reserves held by private commercial corporations"
+        "text_en": "foreign exchange reserves and sovereign debt held by private corporations.",
+        "text_af": "buitelandse valutareserwes en staatskuld wat deur privaat maatskappye gehou word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "The monetary base comprises physical currency in circulation plus commercial bank reserves held at the central bank.",
-    "derivation_af": "The monetary base comprises physical currency in circulation plus commercial bank reserves held at the central bank."
+    "correctKey": "C",
+    "derivation_en": "The monetary base (M0) consists of banknotes and coin in circulation plus commercial bank required and excess reserves at the central bank.",
+    "derivation_af": "Die monetêre basis (M0) bestaan uit banknote en munte in omloop plus alle handelsbankreserwes wat by die sentrale bank gehou word."
   },
   {
     "id": "q14_27",
@@ -848,33 +848,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, if the public decides to hold a higher proportion of cash relative to bank deposits (currency drain), the credit multiplier will:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, if the public decides to hold a higher proportion of cash relative to bank deposits (currency drain), the credit multiplier will:",
+    "stem_en": "If the public decides to hold a higher proportion of cash relative to bank deposits (a currency drain), the credit multiplier will:",
+    "stem_af": "Indien die publiek besluit om 'n groter deel van hul geld as kontant eerder as bankdeposito's te hou (kontantlekkasie), sal die kredietvermenigvuldiger:",
     "options": [
       {
         "key": "A",
-        "text_en": "decrease, because banks lose base reserves needed to support multi-stage deposit expansion",
-        "text_af": "decrease, because banks lose base reserves needed to support multi-stage deposit expansion"
+        "text_en": "increase, because physical cash circulating in retail shops is more liquid than commercial bank deposits.",
+        "text_af": "toeneem, aangesien fisiese kontant in omloop baie meer likied is as gewone handelsbankdeposito's."
       },
       {
         "key": "B",
-        "text_en": "increase, because physical cash is more liquid than bank deposits",
-        "text_af": "increase, because physical cash is more liquid than bank deposits"
+        "text_en": "remain unchanged, because the statutory cash reserve ratio is set exogenously by the Reserve Bank.",
+        "text_af": "onveranderd bly, aangesien die statutêre kontantreserweverhouding eksogeen deur die Reserwebank bepaal word."
       },
       {
         "key": "C",
-        "text_en": "remain unchanged because the statutory reserve ratio is determined by law",
-        "text_af": "remain unchanged because the statutory reserve ratio is determined by law"
+        "text_en": "double, because currency outside banks directly expands the statutory capacity of banks to create credit.",
+        "text_af": "verdubbel, aangesien kontant buite banke die statutêre vermoë van banke om krediet te skep vergroot."
       },
       {
         "key": "D",
-        "text_en": "double, because currency directly expands commercial bank lending limits",
-        "text_af": "double, because currency directly expands commercial bank lending limits"
+        "text_en": "decrease, because banks lose base cash reserves needed to support multi-stage commercial deposit expansion.",
+        "text_af": "afneem, aangesien banke basisreserwes verloor wat benodig word om multi-stadium depositoskepping te steun."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Cash leakages reduce bank reserves, diminishing the system's capacity to create new loans and deposits.",
-    "derivation_af": "Cash leakages reduce bank reserves, diminishing the system's capacity to create new loans and deposits."
+    "correctKey": "D",
+    "derivation_en": "A cash drain withdraws high-powered money from the banking system, depriving banks of reserves required to create new loans and deposits.",
+    "derivation_af": "Kontantlekkasie onttrek reserwes uit die bankstelsel, wat die stelsel se vermoë om nuwe lenings en deposito's te skep verminder."
   },
   {
     "id": "q14_28",
@@ -882,33 +882,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, in the Keynesian money market diagram, with the interest rate on the vertical axis and money on the horizontal axis, an exogenous increase in the money supply shifts the supply curve:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, in the Keynesian money market diagram, with the interest rate on the vertical axis and money on the horizontal axis, an exogenous increase in the money supply shifts the supply curve:",
+    "stem_en": "In the Keynesian money market diagram (interest rate on vertical axis, money quantity on horizontal axis), an increase in the money supply shifts the supply curve:",
+    "stem_af": "In die Keynesiaanse geldmarkdiagram (rentekoers op vertikale as, geldhoeveelheid op horisontale as), verskuif 'n toename in die geldvoorraad die aanbodkromme:",
     "options": [
       {
         "key": "A",
-        "text_en": "rightward, resulting in a lower equilibrium interest rate along a downward-sloping money demand curve",
-        "text_af": "rightward, resulting in a lower equilibrium interest rate along a downward-sloping money demand curve"
+        "text_en": "rightward, resulting in a lower equilibrium interest rate along a downward-sloping money demand curve.",
+        "text_af": "na regs, wat lei tot 'n laer ewewigsrentekoers langs 'n afwaartshellende geldvraagkromme."
       },
       {
         "key": "B",
-        "text_en": "upward, causing a sharp contraction in aggregate private consumption",
-        "text_af": "upward, causing a sharp contraction in aggregate private consumption"
+        "text_en": "upward, causing a sharp contraction in household consumption expenditure across commercial markets.",
+        "text_af": "opwaarts, wat 'n skerp afname in huishoudelike verbruiksbesteding oor kommersiële markte veroorsaak."
       },
       {
         "key": "C",
-        "text_en": "leftward, raising the opportunity cost of holding liquid financial assets",
-        "text_af": "leftward, raising the opportunity cost of holding liquid financial assets"
+        "text_en": "leftward, raising the opportunity cost of holding liquid money balances across all economic sectors.",
+        "text_af": "na links, wat die geleentheidskoste van likiede geldbalanse oor alle ekonomiese sektore verhoog."
       },
       {
         "key": "D",
-        "text_en": "downward, reducing the real purchasing power of the existing price level",
-        "text_af": "downward, reducing the real purchasing power of the existing price level"
+        "text_en": "downward, reducing the real purchasing power of the existing price level across the national economy.",
+        "text_af": "afwaarts, wat die reële koopkrag van die bestaande pryspeil oor die nasionale ekonomie verminder."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "An expansion in money supply shifts Ms rightward, lowering the equilibrium interest rate along the downward-sloping MD curve.",
-    "derivation_af": "An expansion in money supply shifts Ms rightward, lowering the equilibrium interest rate along the downward-sloping MD curve."
+    "derivation_en": "An exogenous expansion of the money supply shifts Ms rightward, establishing a lower equilibrium interest rate along the downward-sloping MD schedule.",
+    "derivation_af": "'n Verhoging in die geldvoorraad verskuif Ms na regs, wat lei tot 'n laer ewewigsrentekoers langs die afwaartshellende geldvraagkromme (MD)."
   },
   {
     "id": "q14_29",
@@ -916,33 +916,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "According to South African macroeconomic principles, which of the following assets possesses the highest degree of liquidity in economic analysis?:",
-    "stem_af": "Volgens Suid-Afrikaanse makro-ekonomiese beginsels, which of the following assets possesses the highest degree of liquidity in economic analysis?:",
+    "stem_en": "Which of the following financial assets possesses the highest degree of liquidity in macroeconomic analysis?",
+    "stem_af": "Watter van die volgende finansiële bates besit die hoogste graad van likiditeit in makro-ekonomiese analise?",
     "options": [
       {
         "key": "A",
-        "text_en": "Banknotes and coins in circulation.",
-        "text_af": "Banknotes and coins in circulation."
+        "text_en": "Banknotes and coins held in circulation by the private sector.",
+        "text_af": "Banknote en munte wat deur die privaatsektor gehou word."
       },
       {
         "key": "B",
-        "text_en": "A 60-month fixed-term residential mortgage debenture.",
-        "text_af": "A 60-month fixed-term residential mortgage debenture."
+        "text_en": "A five-year fixed-term residential commercial mortgage bond.",
+        "text_af": "'n Vyfjaar vaste-termyn residensiële verbandverbandakte."
       },
       {
         "key": "C",
-        "text_en": "Listed corporate shares traded on the national stock exchange.",
-        "text_af": "Listed corporate shares traded on the national stock exchange."
+        "text_en": "Listed corporate equities traded on the national stock exchange.",
+        "text_af": "Genoteerde maatskappy-aandele op die nasionale aandelebeurs."
       },
       {
         "key": "D",
-        "text_en": "Commercial real estate and industrial warehousing property.",
-        "text_af": "Commercial real estate and industrial warehousing property."
+        "text_en": "Industrial warehouse real estate and commercial office property.",
+        "text_af": "Industriële pakhuise en kommersiële kantooreiendomme."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "Physical cash is perfectly liquid: it requires zero conversion time or cost to serve as a medium of exchange.",
-    "derivation_af": "Physical cash is perfectly liquid: it requires zero conversion time or cost to serve as a medium of exchange."
+    "derivation_en": "Banknotes and coin are perfectly liquid: they act as an immediate medium of exchange with zero conversion delay or transaction costs.",
+    "derivation_af": "Banknote en munte is volkome likied: dit funksioneer as 'n onmiddellike ruilmiddel sonder omskakelingstyd of transaksiekoste."
   },
   {
     "id": "q14_30",
@@ -950,33 +950,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "The transmission mechanism of monetary policy explains how:",
-    "stem_af": "In Suid-Afrikaanse monetêre ontleding, the transmission mechanism of monetary policy explains how:",
+    "stem_en": "The monetary policy transmission mechanism explains how:",
+    "stem_af": "Die transmissiemeganisme van monetêre beleid verduidelik hoe:",
     "options": [
       {
         "key": "A",
-        "text_en": "changes in the policy interest rate influence aggregate domestic demand, output, and inflation through interest, credit, asset price, and exchange rate channels.",
-        "text_af": "changes in the policy interest rate influence aggregate domestic demand, output, and inflation through interest, credit, asset price, and exchange rate channels."
+        "text_en": "the central bank prints physical paper currency to directly fund parliamentary spending bills.",
+        "text_af": "die sentrale bank papiergeld druk om parlementêre begrotingsuitgawes direk te finansier."
       },
       {
         "key": "B",
-        "text_en": "the central bank prints physical paper banknotes to directly finance parliamentary spending bills.",
-        "text_af": "the central bank prints physical paper banknotes to directly finance parliamentary spending bills."
+        "text_en": "commercial banks calculate their statutory corporate income tax obligations to the revenue service.",
+        "text_af": "handelsbanke hul statutêre maatskappybelastingverpligtinge aan die inkomstediens bereken."
       },
       {
         "key": "C",
-        "text_en": "commercial banks calculate statutory corporate income tax obligations.",
-        "text_af": "commercial banks calculate statutory corporate income tax obligations."
+        "text_en": "changes in the policy repo rate influence aggregate domestic demand, real output, and price inflation.",
+        "text_af": "veranderings in die repokoers totale binnelandse vraag, reële produksie en inflasie beïnvloed."
       },
       {
         "key": "D",
-        "text_en": "foreign institutional investors hedge against domestic sovereign credit downgrades.",
-        "text_af": "foreign institutional investors hedge against domestic sovereign credit downgrades."
+        "text_en": "foreign institutional investors hedge against domestic sovereign credit rating downgrades.",
+        "text_af": "buitelandse beleggers teen binnelandse soewereine kredietgraderingsafgraderings verskans."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Transmission mechanism describes the sequence of links from repo rate changes to final macroeconomic variables.",
-    "derivation_af": "Transmission mechanism describes the sequence of links from repo rate changes to final macroeconomic variables."
+    "correctKey": "C",
+    "derivation_en": "The transmission mechanism traces the channels (market interest rates, credit extension, asset valuations, exchange rate) through which repo rate adjustments impact aggregate output and inflation.",
+    "derivation_af": "Die transmissiemeganisme beskryf die verskillende kanale waardeur rentekoersveranderings uiteindelik totale vraag, indiensneming en die pryspeil beïnvloed."
   },
   {
     "id": "q14_31",
@@ -984,33 +984,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "If the sarb wishes to curb excessive credit extension during high demand-pull inflation, it will:",
-    "stem_af": "In Suid-Afrikaanse monetêre ontleding, if the sarb wishes to curb excessive credit extension during high demand-pull inflation, it will:",
+    "stem_en": "If the South African Reserve Bank decides to curb excessive bank credit growth during demand-pull inflation, it will:",
+    "stem_af": "Indien die Suid-Afrikaanse Reserwebank buitensporige kredietgroei tydens vraagtrekinflasie wil demp, sal dit:",
     "options": [
       {
         "key": "A",
-        "text_en": "increase the repo rate, making refinancing more costly for commercial banks and raising consumer lending rates.",
-        "text_af": "increase the repo rate, making refinancing more costly for commercial banks and raising consumer lending rates."
+        "text_en": "lower the statutory cash reserve requirement ratio to encourage commercial bank lending.",
+        "text_af": "die statutêre kontantreserweverhouding verlaag om handelsbanklenings aan te moedig."
       },
       {
         "key": "B",
-        "text_en": "lower the statutory cash reserve requirement to encourage bank lending.",
-        "text_af": "lower the statutory cash reserve requirement to encourage bank lending."
+        "text_en": "conduct aggressive large-scale open market purchases of long-term government securities.",
+        "text_af": "grootskaalse oopmarkaankope van langtermyn staatseffekte in die kapitaalmark uitvoer."
       },
       {
         "key": "C",
-        "text_en": "conduct large-scale open market purchases of long-term government bonds.",
-        "text_af": "conduct large-scale open market purchases of long-term government bonds."
+        "text_en": "force commercial banks to eliminate collateral requirements on household mortgages.",
+        "text_af": "handelsbanke verplig om alle sekuriteitsvereistes vir huislenings af te skaf."
       },
       {
         "key": "D",
-        "text_en": "force commercial banks to eliminate all collateral requirements for household mortgages.",
-        "text_af": "force commercial banks to eliminate all collateral requirements for household mortgages."
+        "text_en": "raise the repo rate, increasing refinancing costs for banks and pushing up lending rates.",
+        "text_af": "die repokoers verhoog, wat herfinansiering duurder maak en bankkoerse laat styg."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Raising the repo rate increases lending rates, reducing borrowing and cooling demand-pull pressure.",
-    "derivation_af": "Raising the repo rate increases lending rates, reducing borrowing and cooling demand-pull pressure."
+    "correctKey": "D",
+    "derivation_en": "Raising the repo rate increases the marginal cost of liquidity for commercial banks, prompting higher prime overdraft rates and dampening borrowing.",
+    "derivation_af": "'n Verhoging in die repokoers maak akkommodasie by die sentrale bank duurder, wat banke noop om hul primakoerse te verhoog en lenings aan bande te lê."
   },
   {
     "id": "q14_32",
@@ -1018,33 +1018,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "Which of the following is an example of active balances in keynes's liquidity preference framework?:",
-    "stem_af": "In Suid-Afrikaanse monetêre ontleding, which of the following is an example of active balances in keynes's liquidity preference framework?:",
+    "stem_en": "In Keynes's liquidity preference framework, an example of 'active balances' (L1) is:",
+    "stem_af": "In Keynes se likiditeitsvoorkeurteorie is 'n voorbeeld van 'aktiewe saldo's' (L1):",
     "options": [
       {
         "key": "A",
-        "text_en": "Money held to bridge the time gap between monthly wage receipts and day-to-day purchases (transactions motive).",
-        "text_af": "Money held to bridge the time gap between monthly wage receipts and day-to-day purchases (transactions motive)."
+        "text_en": "money held in speculative expectation of a future decline in long-term bond prices.",
+        "text_af": "geld wat gehou word in afwagting van 'n toekomstige daling in effektepryse."
       },
       {
         "key": "B",
-        "text_en": "Money held in speculative expectation of a collapse in long-term bond prices.",
-        "text_af": "Money held in speculative expectation of a collapse in long-term bond prices."
+        "text_en": "unutilized corporate commercial credit limits reserved for foreign corporate takeovers.",
+        "text_af": "ongebruikte kredietfasiliteite wat vir buitelandse maatskappy-oornames gereserveer word."
       },
       {
         "key": "C",
-        "text_en": "Unused corporate credit card lines kept for offshore acquisitions.",
-        "text_af": "Unused corporate credit card lines kept for offshore acquisitions."
+        "text_en": "money held to bridge the gap between monthly wage receipts and daily transactions.",
+        "text_af": "geld gehou om die gaping tussen maandelikse loonontvangste en daaglikse uitgawes te oorbrug."
       },
       {
         "key": "D",
-        "text_en": "Sovereign bond holdings pledged as collateral for central bank clearing.",
-        "text_af": "Sovereign bond holdings pledged as collateral for central bank clearing."
+        "text_en": "sovereign treasury bills pledged as collateral for clearing interbank settlements.",
+        "text_af": "skatkiswissels wat as kollateraal vir daaglikse interbankvereffening verpand word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Active balances are held to conduct transactions and provide for unforeseen emergencies (L1).",
-    "derivation_af": "Active balances are held to conduct transactions and provide for unforeseen emergencies (L1)."
+    "correctKey": "C",
+    "derivation_en": "Active balances (transactions and precautionary motives, L1) are held to finance day-to-day trade and unforeseen operational expenditures.",
+    "derivation_af": "Aktiewe saldo's (transaksie- en voorsorgvraag, L1) word gehou om daaglikse transaksies en onvoorsiene nooduitgawes te finansier."
   },
   {
     "id": "q14_33",
@@ -1053,32 +1053,32 @@ window.AXIOM_MASTER_BANK = [
     "marks": 2,
     "difficulty": "Exam",
     "stem_en": "Money serves as a 'unit of account' when it:",
-    "stem_af": "In Suid-Afrikaanse monetêre ontleding, money serves as a 'unit of account' when it:",
+    "stem_af": "Geld dien as 'n 'rekeneenheid' wanneer dit:",
     "options": [
       {
         "key": "A",
-        "text_en": "provides a common monetary denominator in which the prices of all goods and services are quoted and accounts are recorded.",
-        "text_af": "provides a common monetary denominator in which the prices of all goods and services are quoted and accounts are recorded."
+        "text_en": "retains its real purchasing power unimpaired across multi-decade hyperinflationary regimes.",
+        "text_af": "sy reële koopkrag volkome behou tydens langdurige tydperke van ernstige hiperinflasie."
       },
       {
         "key": "B",
-        "text_en": "retains its purchasing power unimpaired across multi-decade hyperinflationary periods.",
-        "text_af": "retains its purchasing power unimpaired across multi-decade hyperinflationary periods."
+        "text_en": "is physically exchanged across commercial retail counters for final consumer merchandise.",
+        "text_af": "fisies oor winkeltoonbanke vir finale verbruikersgoedere en -dienste verruil word."
       },
       {
         "key": "C",
-        "text_en": "is physically exchanged across retail counters for commercial merchandise.",
-        "text_af": "is physically exchanged across retail counters for commercial merchandise."
+        "text_en": "is backed 100% by physical gold bullion certificates stored in central bank reserve vaults.",
+        "text_af": "100% deur fisiese goudstaaf-sertifikate in die sentrale bank se kluise gerugsteun word."
       },
       {
         "key": "D",
-        "text_en": "is backed 100% by physical gold bullion certificates in banking vaults.",
-        "text_af": "is backed 100% by physical gold bullion certificates in banking vaults."
+        "text_en": "provides a common monetary measure in which prices are quoted and accounts are recorded.",
+        "text_af": "dien as 'n gemeenskaplike maatstaf waarin pryse gekwoteer en finansiële rekeninge gehou word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Unit of account means money serves as the standard numerical unit of measurement for market prices.",
-    "derivation_af": "Unit of account means money serves as the standard numerical unit of measurement for market prices."
+    "correctKey": "D",
+    "derivation_en": "As a unit of account, money provides a standard numerical denominator for valuing goods, services, assets, and liabilities.",
+    "derivation_af": "As rekeneenheid verskaf geld 'n gemeenskaplike numeriese noemer waarin die waarde van alle goedere en rekeninge uitgedruk word."
   },
   {
     "id": "q14_34",
@@ -1086,33 +1086,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In the interbank overnight money market, banks with surplus settlement balances lend funds to banks with deficits at:",
-    "stem_af": "In Suid-Afrikaanse monetêre ontleding, in the interbank overnight money market, banks with surplus settlement balances lend funds to banks with deficits at:",
+    "stem_en": "In the interbank overnight money market, banks with surplus settlement balances lend to deficit banks at:",
+    "stem_af": "In die oornag-interbankmark leen banke met oorskot-vereffeningsaldo's fondse aan tekortbanke teen:",
     "options": [
       {
         "key": "A",
-        "text_en": "the interbank overnight lending rate (such as the South African Benchmark Overnight Rate / SABOR).",
-        "text_af": "the interbank overnight lending rate (such as the South African Benchmark Overnight Rate / SABOR)."
+        "text_en": "the fixed statutory corporate dividend tax rate enacted by the national Parliament.",
+        "text_af": "die vaste statutêre maatskappy-dividendbelastingkoers wat deur die Parlement bepaal is."
       },
       {
         "key": "B",
-        "text_en": "the fixed statutory corporate dividend tax rate.",
-        "text_af": "the fixed statutory corporate dividend tax rate."
+        "text_en": "a floating percentage rate equal to double the statutory personal income tax threshold.",
+        "text_af": "'n rentekoers gelyk aan dubbel die statutêre persoonlike inkomstebelastingdrempel."
       },
       {
         "key": "C",
-        "text_en": "a rate equal to double the statutory personal income tax threshold.",
-        "text_af": "a rate equal to double the statutory personal income tax threshold."
+        "text_en": "the interbank overnight lending rate (such as the South African Benchmark Overnight Rate).",
+        "text_af": "die interbank-oornagkoers (soos die Suid-Afrikaanse Maatstaf-Oornagkoers / SABOR)."
       },
       {
         "key": "D",
-        "text_en": "the annual percentage yield of the Johannesburg Stock Exchange All-Share Index.",
-        "text_af": "the annual percentage yield of the Johannesburg Stock Exchange All-Share Index."
+        "text_en": "the historical average percentage dividend yield of the Johannesburg Stock Exchange Index.",
+        "text_af": "die historiese gemiddelde dividendopbrengs van die Johannesburgse Aandelebeurs-indeks."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Interbank overnight rates fluctuate around the policy rate as banks settle daily clearing balances.",
-    "derivation_af": "Interbank overnight rates fluctuate around the policy rate as banks settle daily clearing balances."
+    "correctKey": "C",
+    "derivation_en": "The interbank overnight rate (e.g. SABOR) is the rate at which private banks lend liquidity to each other to settle daily clearance positions.",
+    "derivation_af": "Die interbank-oornagkoers (bv. SABOR) is die rentekoers waarteen handelsbanke oornagfondse aan mekaar leen om daaglikse vereffeningsaldo's te sluit."
   },
   {
     "id": "q14_35",
@@ -1121,32 +1121,32 @@ window.AXIOM_MASTER_BANK = [
     "marks": 2,
     "difficulty": "Exam",
     "stem_en": "An increase in the statutory cash reserve ratio from 2.5% to 5.0% would theoretically:",
-    "stem_af": "In Suid-Afrikaanse monetêre ontleding, an increase in the statutory cash reserve ratio from 2.5% to 5.0% would theoretically:",
+    "stem_af": "'n Verhoging in die statutêre kontantreserweverhouding van 2,5% na 5,0% sal teoreties:",
     "options": [
       {
         "key": "A",
-        "text_en": "reduce the credit multiplier from 40 to 20, constraining commercial bank credit expansion.",
-        "text_af": "reduce the credit multiplier from 40 to 20, constraining commercial bank credit expansion."
+        "text_en": "increase the credit multiplier from 10 to 25, accelerating national commercial bank lending.",
+        "text_af": "die kredietvermenigvuldiger van 10 tot 25 verhoog, wat banklenings drasties laat toeneem."
       },
       {
         "key": "B",
-        "text_en": "increase the credit multiplier from 10 to 25, accelerating money growth.",
-        "text_af": "increase the credit multiplier from 10 to 25, accelerating money growth."
+        "text_en": "have zero effect on commercial credit creation because bank cash reserves earn zero interest.",
+        "text_af": "geen impak op bankkrediet hê nie omdat statutêre kontantreserwes geen rente verdien nie."
       },
       {
         "key": "C",
-        "text_en": "have zero effect on commercial bank credit creation because reserves earn zero interest.",
-        "text_af": "have zero effect on commercial bank credit creation because reserves earn zero interest."
+        "text_en": "automatically double the total stock of M1 money circulating in the domestic macroeconomy.",
+        "text_af": "die totale voorraad M1-geld wat in die binnelandse ekonomie sirkuleer outomaties verdubbel."
       },
       {
         "key": "D",
-        "text_en": "automatically double the total stock of M1 money in the national economy.",
-        "text_af": "automatically double the total stock of M1 money in the national economy."
+        "text_en": "reduce the credit multiplier from 40 to 20, constraining commercial bank credit expansion.",
+        "text_af": "die kredietvermenigvuldiger van 40 na 20 verlaag, wat bankkredietuitbreiding aan bande lê."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Credit multiplier m = 1/r. If r rises from 0.025 to 0.05, m falls from 40 to 20.",
-    "derivation_af": "Credit multiplier m = 1/r. If r rises from 0.025 to 0.05, m falls from 40 to 20."
+    "correctKey": "D",
+    "derivation_en": "The credit multiplier formula is m = 1 / r. When r increases from 0.025 to 0.05, m falls from 40 to 20, restricting bank credit capacity.",
+    "derivation_af": "Die kredietvermenigvuldiger is m = 1 / r. As r styg van 0,025 na 0,05, daal m van 40 na 20, wat banke se kredietpotensiaal inperk."
   },
   {
     "id": "q14_36",
@@ -1155,32 +1155,32 @@ window.AXIOM_MASTER_BANK = [
     "marks": 2,
     "difficulty": "Exam",
     "stem_en": "Commercial banks create brand new demand deposits whenever they:",
-    "stem_af": "In Suid-Afrikaanse monetêre ontleding, commercial banks create brand new demand deposits whenever they:",
+    "stem_af": "Handelsbanke skep nuwe onmiddellik opeisbare deposito's wanneer hulle:",
     "options": [
       {
         "key": "A",
-        "text_en": "grant approved loans and credit the transaction accounts of borrowers with credit balances.",
-        "text_af": "grant approved loans and credit the transaction accounts of borrowers with credit balances."
+        "text_en": "transfer physical banknotes and coins from teller tills into central bank reserve vaults.",
+        "text_af": "fisiese banknote en munte vanaf tellerkaste na sentrale bankkassareserwes oordra."
       },
       {
         "key": "B",
-        "text_en": "transfer physical paper currency from teller drawers into central bank clearing vaults.",
-        "text_af": "transfer physical paper currency from teller drawers into central bank clearing vaults."
+        "text_en": "collect municipal utility service payments and property taxes on behalf of local councils.",
+        "text_af": "munisipale dienstegelde en eiendomsbelasting namens plaaslike stadsrade invorder."
       },
       {
         "key": "C",
-        "text_en": "collect municipal utility charges on behalf of local government councils.",
-        "text_af": "collect municipal utility charges on behalf of local government councils."
+        "text_en": "approve customer loan applications and credit borrowers' accounts with new demand balances.",
+        "text_af": "leningsaansoeke goedkeur en leners se lopende rekeninge met nuwe depositobalanse krediteer."
       },
       {
         "key": "D",
-        "text_en": "issue annual financial statements audited by external public chartered accountants.",
-        "text_af": "issue annual financial statements audited by external public chartered accountants."
+        "text_en": "publish annual financial statements audited by independent external chartered accountants.",
+        "text_af": "jaarlikse finansiële state publiseer wat deur eksterne geoktrooieerde rekenmeesters geoudit is."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "When a bank approves a loan, it creates a corresponding deposit liability, thereby expanding the money supply.",
-    "derivation_af": "When a bank approves a loan, it creates a corresponding deposit liability, thereby expanding the money supply."
+    "correctKey": "C",
+    "derivation_en": "In a fractional reserve banking system, banks create money by extending loans: the loan is credited as a new demand deposit liability.",
+    "derivation_af": "Handelsbanke skep geld wanneer hulle lenings toestaan: die goedgekeurde lening word as 'n nuwe depositoverpligting op die kliënt se rekening geskep."
   },
   {
     "id": "q14_37",
@@ -1188,33 +1188,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "A significant financial innovation such as the widespread adoption of digital contactless payments and instant clearing tends to:",
-    "stem_af": "In Suid-Afrikaanse monetêre ontleding, a significant financial innovation such as the widespread adoption of digital contactless payments and instant clearing tends to:",
+    "stem_en": "The widespread adoption of digital contactless payments and instant clearing systems tends to:",
+    "stem_af": "Die grootskaalse aanvaarding van kontaklose digitale betalings en onmiddellike vereffening neig om:",
     "options": [
       {
         "key": "A",
-        "text_en": "reduce the average transactions demand for holding physical cash balances.",
-        "text_af": "reduce the average transactions demand for holding physical cash balances."
+        "text_en": "increase the statutory cash reserve requirement ratio imposed by the central monetary bank.",
+        "text_af": "die statutêre kontantreserweverhouding wat deur die sentrale bank vereis word, te verhoog."
       },
       {
         "key": "B",
-        "text_en": "increase the statutory cash reserve ratio required by the central bank.",
-        "text_af": "increase the statutory cash reserve ratio required by the central bank."
+        "text_en": "force the Monetary Policy Committee to discontinue its policy repo rate auctions permanently.",
+        "text_af": "die Monetêre Beleidskomitee te dwing om amptelike repokoersveilings permanent te staak."
       },
       {
         "key": "C",
-        "text_en": "force the monetary policy committee to abandon repo rate auctions permanently.",
-        "text_af": "force the monetary policy committee to abandon repo rate auctions permanently."
+        "text_en": "eliminate the need for commercial banks to assess the creditworthiness of corporate clients.",
+        "text_af": "die behoefte van handelsbanke om die kredietwaardigheid van korporatiewe leners te toets, uitwis."
       },
       {
         "key": "D",
-        "text_en": "eliminate the need for commercial banks to assess borrower creditworthiness.",
-        "text_af": "eliminate the need for commercial banks to assess borrower creditworthiness."
+        "text_en": "reduce the average transactions demand for holding physical banknotes and coin currency.",
+        "text_af": "die gemiddelde transaksievraag na die hou van fisiese banknote en munte te verminder."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Fast digital payment systems reduce the need to hold physical cash for transactions.",
-    "derivation_af": "Fast digital payment systems reduce the need to hold physical cash for transactions."
+    "correctKey": "D",
+    "derivation_en": "Technological innovations that lower payment transaction costs reduce the need for economic agents to hold physical cash balances for day-to-day trade.",
+    "derivation_af": "Digitale betalingstegnologie verlaag transaksiekoste en verminder die behoefte om fisiese banknote en munte vir daaglikse aankope te hou."
   },
   {
     "id": "q15_01",
@@ -1222,8 +1222,8 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "Which pair of characteristics strictly defines a pure public good in welfare economics?",
-    "stem_af": "Watter paar kenmerke definieer 'n suiwer openbare goed in welvaartsekonomie?",
+    "stem_en": "A pure public good is defined by which two characteristics?",
+    "stem_af": "'n Suiwer openbare goed word deur watter twee kenmerke gekenmerk?",
     "options": [
       {
         "key": "A",
@@ -1261,23 +1261,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Private producers have absolute monopoly control over transport infrastructure.",
-        "text_af": "Private produsente monopoliebeheer het oor vervoerinfrastruktuur."
+        "text_en": "private producers establish absolute monopoly control over transport distribution infrastructure.",
+        "text_af": "private produsente absolute monopoliebeheer oor nasionale vervoerinfrastruktuur uitoefen."
       },
       {
         "key": "B",
-        "text_en": "Non-payers cannot be effectively excluded from enjoying the benefits of a public good once provided.",
-        "text_af": "Nie-betalers nie uitgesluit kan word van die voordele van 'n openbare goed as dit eers voorsien is nie."
+        "text_en": "non-payers cannot be excluded from enjoying the benefits of a public good once it is provided.",
+        "text_af": "nie-betalers nie uitgesluit kan word van openbare goedere se voordele sodra dit voorsien word nie."
       },
       {
         "key": "C",
-        "text_en": "Government fiscal deficits prevent private financial institutions from advancing credit.",
-        "text_af": "Begrotingstekorte verhoed dat banke krediet toestaan."
+        "text_en": "national fiscal budget deficits prevent commercial banks from extending private credit advances.",
+        "text_af": "nasionale begrotingstekorte verhoed dat handelsbanke private kredietvoorskotte aan klante toestaan."
       },
       {
         "key": "D",
-        "text_en": "Corporate income tax rates exceed the private marginal return on productive capital.",
-        "text_af": "Maatskappybelastingkoerse die private opbrengs op kapitaal oorskry."
+        "text_en": "statutory corporate tax rates exceed the private marginal rate of return on productive capital.",
+        "text_af": "statutêre maatskappybelastingkoerse die private marginale opbrengskoers op kapitaal oorskry."
       }
     ],
     "correctKey": "B",
@@ -1363,23 +1363,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Because lower-income households spend a larger fraction of their total income on taxable consumer goods compared to affluent households.",
-        "text_af": "Omdat laer-inkomste huishoudings 'n groter deel van hul totale inkomste aan belasbare verbruiksgoedere bestee as ryk huishoudings."
+        "text_en": "Poorer households spend a higher fraction of their income on taxable goods than wealthy households.",
+        "text_af": "Armer huishoudings 'n groter deel van hul inkomste aan belasbare goedere bestee as ryk huishoudings."
       },
       {
         "key": "B",
-        "text_en": "Because luxury retail goods attract a lower statutory VAT rate than basic food items.",
-        "text_af": "Omdat luukse goedere aan 'n laer statutêre BTW-koers onderhewig is as basiese voedsel."
+        "text_en": "Luxury consumer retail goods attract a lower statutory indirect tax rate than basic food products.",
+        "text_af": "Luukse verbruiksgoedere aan 'n laer statutêre belastingkoers onderhewig is as basiese voedselsoorte."
       },
       {
         "key": "C",
-        "text_en": "Because affluent taxpayers receive annual VAT tax rebates from the revenue service.",
-        "text_af": "Omdat ryk belastingbetalers jaarlikse BTW-kortings van die inkomstediens ontvang."
+        "text_en": "Affluent taxpayers receive statutory VAT rebates and refund vouchers from national revenue authorities.",
+        "text_af": "Ryk belastingbetalers statutêre BTW-kortings en terugbetalings van inkomstediens-owerhede ontvang."
       },
       {
         "key": "D",
-        "text_en": "Because the absolute Rand amount of VAT paid by the poor exceeds that paid by the rich.",
-        "text_af": "Omdat die absolute Randbedrag BTW wat armes betaal groter is as dié van rykes."
+        "text_en": "The absolute Rand amount of indirect VAT paid by poor families exceeds that paid by wealthy families.",
+        "text_af": "Die absolute Randbedrag aan BTW wat arm gesinne betaal groter is as die bedrag wat rykes betaal."
       }
     ],
     "correctKey": "A",
@@ -1423,23 +1423,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Inflation increases individuals' nominal incomes, pushing them into higher marginal tax brackets even though their real income has not increased.",
-        "text_af": "Inflasie individue se nominale inkomste verhoog en hulle in hoër belastingskale instoot sonder dat hul reële inkomste gestyg het."
+        "text_en": "inflation pushes nominal wages into higher marginal brackets, raising taxes without higher real income.",
+        "text_af": "inflasie nominale lone in hoër marginale skale indruk, wat belasting verhoog sonder hoër reële inkomste."
       },
       {
         "key": "B",
-        "text_en": "The national Treasury delays transferring allocated funds to provincial education departments.",
-        "text_af": "Die nasionale Tesourie toekennings aan provinsiale onderwysdepartemente vertraag."
+        "text_en": "the national Treasury delays transferring budgeted equalization allocations to provincial departments.",
+        "text_af": "die nasionale Tesourie geskeduleerde toekennings aan provinsiale onderwysdepartemente doelbewus vertraag."
       },
       {
         "key": "C",
-        "text_en": "The statutory corporate tax rate is reduced below the top personal income tax bracket.",
-        "text_af": "Die maatskappybelastingkoers verlaag word tot onder die boonste persoonlike skaal."
+        "text_en": "the statutory corporate tax rate is reduced significantly below the top personal income tax brackets.",
+        "text_af": "die maatskappybelastingkoers aansienlik laer as die boonste persoonlike inkomstebelastingskaal daal."
       },
       {
         "key": "D",
-        "text_en": "Commercial banks refuse to act as authorized tax-clearing intermediaries for SARS.",
-        "text_af": "Handelsbanke weier om as belastinginvorderingsagente vir die SAID op te tree."
+        "text_en": "commercial banks refuse to act as registered tax-clearing intermediaries for domestic revenue offices.",
+        "text_af": "handelsbanke weier om as geregistreerde belastingvereffeningsagente vir die nasionale inkomstediens op te tree."
       }
     ],
     "correctKey": "A",
@@ -1457,23 +1457,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Maximize government tax revenue regardless of the economic distortions caused to private businesses.",
-        "text_af": "Owerheidsinkomste moet maksimeer ongeag die ekonomiese distorsie vir besighede."
+        "text_en": "maximize government revenue regardless of distortions caused to private commercial market businesses.",
+        "text_af": "owerheidsinkomste maksimeer ongeag die ekonomiese distorsies wat vir private besighede veroorsaak word."
       },
       {
         "key": "B",
-        "text_en": "Interfere as little as possible with consumer choices, producer decisions, and market resource allocation.",
-        "text_af": "So min as moontlik inmeng met verbruikerskeuses, produksiebesluite en markhulpbrontoewysing."
+        "text_en": "interfere minimally with consumer choices, producer decisions, and optimal market resource allocation.",
+        "text_af": "minimaal inmeng met verbruikerskeuses, produksiebesluite en doeltreffende markhulpbrontoewysing."
       },
       {
         "key": "C",
-        "text_en": "Be entirely voluntary so that taxpayers can select their own contribution levels.",
-        "text_af": "Heeltemal vrywillig moet wees sodat belastingbetalers self hul bydraes kies."
+        "text_en": "operate on a voluntary basis so that registered taxpayers can determine their own contribution quotas.",
+        "text_af": "op 'n vrywillige grondslag funksioneer sodat belastingbetalers self hul eie bydraekoerse kan kies."
       },
       {
         "key": "D",
-        "text_en": "Equal the statutory interest rate established by the central reserve bank.",
-        "text_af": "Presies gelyk moet wees aan die sentrale bank se amptelike rentekoers."
+        "text_en": "equal the statutory repo discount rate established periodically by the central monetary authorities.",
+        "text_af": "presies gelyk wees aan die amptelike repokoers wat periodiek deur die sentrale bank vasgestel word."
       }
     ],
     "correctKey": "B",
@@ -1491,23 +1491,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Marginal Social Cost (MSC) exceeds Marginal Private Cost (MPC), leading the market to overproduce relative to the social optimum.",
-        "text_af": "Marginale Sosiale Koste (MSC) Marginale Private Koste (MPC) oorskry, sodat die mark oorproduseer relatief tot die sosiale optimum."
+        "text_en": "Marginal Social Cost exceeds Marginal Private Cost, causing firms to overproduce beyond the social optimum.",
+        "text_af": "Marginale Sosiale Koste Marginale Private Koste oorskry, sodat firmas verby die sosiale optimum produseer."
       },
       {
         "key": "B",
-        "text_en": "Firms produce zero output because external costs completely eliminate consumer demand.",
-        "text_af": "Firmas nul uitset lewer omdat eksterne koste verbruikersvraag heeltemal uitwis."
+        "text_en": "industrial firms produce zero output because external pollution costs eliminate private consumer demand.",
+        "text_af": "firmas nul uitset lewer omdat eksterne besoedelingskoste alle private verbruikersvraag heeltemal uitwis."
       },
       {
         "key": "C",
-        "text_en": "The competitive market price settles at a level strictly above the socially efficient price.",
-        "text_af": "Die mededingende markprys op 'n vlak vestig wat hoër is as die sosiaal-doeltreffende prys."
+        "text_en": "the competitive market clearing price settles permanently above the allocatively efficient social level.",
+        "text_af": "die markewewigsprys permanent hoër vestig as die vlak wat toewysingsdoeltreffend vir die gemeenskap is."
       },
       {
         "key": "D",
-        "text_en": "Marginal private benefit is negative across all levels of production.",
-        "text_af": "Marginale private voordeel negatief is oor alle produksievlakke."
+        "text_en": "marginal private consumption benefits drop below zero across all possible volumes of chemical output.",
+        "text_af": "marginale private voordele onder nul daal oor alle denkbare produksievlakke van chemiese vervaardiging."
       }
     ],
     "correctKey": "A",
@@ -1525,23 +1525,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "By granting unconditional production subsidies to polluting chemical manufacturers.",
-        "text_af": "Deur onvoorwaardelike produksiesubsidies aan besoedelende vervaardigers toe te staan."
+        "text_en": "By paying unconditional state production subsidies to polluting manufacturing firms.",
+        "text_af": "Deur onvoorwaardelike produksiesubsidies aan besoedelende vervaardigingsfirmas te betaal."
       },
       {
         "key": "B",
-        "text_en": "By imposing a Pigouvian tax per unit of output equal to the marginal external pollution cost.",
-        "text_af": "Deur 'n Pigouviaanse belasting per eenheid uitset te hef gelyk aan die marginale eksterne besoedelingskoste."
+        "text_en": "By levying a Pigouvian tax per unit equal to the marginal external pollution cost.",
+        "text_af": "Deur 'n Pigouviaanse belasting per eenheid gelyk aan die eksterne besoedelingskoste te hef."
       },
       {
         "key": "C",
-        "text_en": "By setting a statutory price ceiling below marginal private cost.",
-        "text_af": "Deur 'n statutêre prysmafplafon onder marginale private koste in te stel."
+        "text_en": "By setting a statutory retail price ceiling significantly below marginal cost.",
+        "text_af": "Deur 'n statutêre kleinhandel-prysmafplafon aansienlik onder marginale koste in te stel."
       },
       {
         "key": "D",
-        "text_en": "By eliminating all property rights along industrial river basins.",
-        "text_af": "Deur alle eiendomsregte langs nywerheidsrivierbekkens af te skaf."
+        "text_en": "By abolishing all private legal property rights along industrial river basins.",
+        "text_af": "Deur alle private regmatige eiendomsregte langs nywerheidsrivierbekkens summier af te skaf."
       }
     ],
     "correctKey": "B",
@@ -1606,23 +1606,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "The legal identification of the registered taxpayer required by statute to remit money to SARS.",
-        "text_af": "Die wetlike registrasie van die belastingbetaler wat statutêr verplig is om aan die SAID te betaal."
+        "text_en": "the legal identity of the registered taxpayer required by statute to remit tax revenues.",
+        "text_af": "die wetlike identiteit van die belastingbetaler wat statutêr verplig is om te betaal."
       },
       {
         "key": "B",
-        "text_en": "Who ultimately bears the real financial burden of the tax after market price adjustments take place.",
-        "text_af": "Wie uiteindelik die werklike finansiële las van die belasting dra na markprysaanpassings."
+        "text_en": "who ultimately bears the real financial burden of the tax after market prices adjust.",
+        "text_af": "wie uiteindelik die werklike finansiële las van die belasting dra na markaanpassings."
       },
       {
         "key": "C",
-        "text_en": "The administrative accounting cost incurred by corporate payroll accountants.",
-        "text_af": "Die administratiewe rekeningkundige koste van betaalstaat-rekenmeesters."
+        "text_en": "the total administrative compliance costs incurred by certified corporate accountants.",
+        "text_af": "die totale administratiewe nakomingskoste wat deur maatskappy-rekenmeesters aangegaan word."
       },
       {
         "key": "D",
-        "text_en": "The calendar deadline for submitting provisional company tax documentation.",
-        "text_af": "Die kalenderspertyd vir die indiening van voorlopige maatskappybelasting."
+        "text_en": "the official calendar deadline for submitting annual provisional company tax returns.",
+        "text_af": "die amptelike kalenderspertyd vir die indiening van jaarlikse voorlopige belastingopgawes."
       }
     ],
     "correctKey": "B",
@@ -1640,23 +1640,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Predominantly on consumers, because sellers can easily pass the tax forward through higher prices.",
-        "text_af": "Hoofsaaklik op verbruikers val, omdat verkopers die belasting maklik vorentoe kan wentel deur hoër pryse."
+        "text_en": "predominantly on consumers, as sellers readily pass the tax forward in prices.",
+        "text_af": "hoofsaaklik op verbruikers, aangesien verkopers die belasting maklik in pryse wentel."
       },
       {
         "key": "B",
-        "text_en": "Entirely on the owners of the manufacturing factories.",
-        "text_af": "Ten volle op die eienaars van die vervaardigingsfabrieke val."
+        "text_en": "exclusively on the corporate shareholders of domestic manufacturing plants.",
+        "text_af": "uitsluitlik op die korporatiewe aandeelhouers van vervaardigingsaanlegte val."
       },
       {
         "key": "C",
-        "text_en": "Equally on foreign import clearing agents and domestic wholesalers.",
-        "text_af": "Gelykop op buitelandse invoeragente en groothandelaars val."
+        "text_en": "equally between foreign trade clearing agents and licensed retail merchants.",
+        "text_af": "gelykop tussen buitelandse handelsvereffeningsagente en plaaslike handelaars verdeel word."
       },
       {
         "key": "D",
-        "text_en": "Exclusively on municipal local government treasuries.",
-        "text_af": "Uitsluitlik op munisipale plaaslike tesourieë val."
+        "text_en": "entirely on provincial revenue departments and municipal city treasuries.",
+        "text_af": "heeltemal op provinsiale inkomstedienste en munisipale plaaslike tesourieë val."
       }
     ],
     "correctKey": "A",
@@ -1669,33 +1669,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, proportional taxation means that:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, proportional taxation means that:",
+    "stem_en": "Under a proportional tax system, as an individual's income rises, the average tax rate:",
+    "stem_af": "Onder 'n proporsionele belastingstelsel, soos 'n individu se inkomste styg, sal die gemiddelde belastingkoers:",
     "options": [
       {
         "key": "A",
-        "text_en": "all income earners pay the exact same percentage of their income in tax, so the average tax rate remains constant across all income levels",
-        "text_af": "all income earners pay the exact same percentage of their income in tax, so the average tax rate remains constant across all income levels"
+        "text_en": "remains constant because all income is taxed at the exact same percentage rate.",
+        "text_af": "konstant bly omdat alle inkomste teen presies dieselfde persentasie belas word."
       },
       {
         "key": "B",
-        "text_en": "tax revenue collected remains fixed regardless of national income growth",
-        "text_af": "tax revenue collected remains fixed regardless of national income growth"
+        "text_en": "increases progressively because higher tax brackets impose heavier fiscal burdens.",
+        "text_af": "progressief toeneem omdat hoër belastingkerwe swaarder fiskale laste oplê."
       },
       {
         "key": "C",
-        "text_en": "the marginal tax rate is double the statutory average tax rate",
-        "text_af": "the marginal tax rate is double the statutory average tax rate"
+        "text_en": "declines steadily because basic subsistence allowances reduce the net tax base.",
+        "text_af": "bestendig daal aangesien basiese bestaansvrystellings die belastingbasis verklein."
       },
       {
         "key": "D",
-        "text_en": "higher-income individuals are exempt from capital gains taxation",
-        "text_af": "higher-income individuals are exempt from capital gains taxation"
+        "text_en": "fluctuates unpredictably in response to cyclical movements in the budget deficit.",
+        "text_af": "onvoorspelbaar wissel na gelang van sikliese skommelinge in die begrotingstekort."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "Under a proportional tax system, the Average Tax Rate is constant (ATR = MTR).",
-    "derivation_af": "Under a proportional tax system, the Average Tax Rate is constant (ATR = MTR)."
+    "derivation_en": "Under a proportional tax system, the average tax rate equals the marginal tax rate (ATR = MTR), remaining constant regardless of income.",
+    "derivation_af": "Onder 'n proporsionele stelsel is die gemiddelde belastingkoers gelyk aan die marginale koers (GBK = MBK) en bly dit konstant by alle inkomstevlakke."
   },
   {
     "id": "q15_17",
@@ -1703,33 +1703,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, the statutory incidence of Value Added Tax falls on registered vendors, but the economic incidence falls predominantly on:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, the statutory incidence of Value Added Tax falls on registered vendors, but the economic incidence falls predominantly on:",
+    "stem_en": "While the statutory incidence of Value Added Tax falls on registered businesses, the economic incidence falls on:",
+    "stem_af": "Terwyl die statutêre insidensie van BTW op geregistreerde ondernemings rus, rus die ekonomiese insidensie op:",
     "options": [
       {
         "key": "A",
-        "text_en": "final household consumers who purchase taxable finished goods and services",
-        "text_af": "final household consumers who purchase taxable finished goods and services"
+        "text_en": "foreign institutional lenders who hold sovereign debt bonds issued by the Treasury.",
+        "text_af": "buitelandse institusionele leners wat staatskuld hou wat deur die Tesourie uitgereik is."
       },
       {
         "key": "B",
-        "text_en": "foreign sovereign central banks clearing balance of payments deficits",
-        "text_af": "foreign sovereign central banks clearing balance of payments deficits"
+        "text_en": "final household consumers who purchase taxable goods and services at market prices.",
+        "text_af": "finale huishoudelike verbruikers wat belasbare goedere en dienste teen markpryse koop."
       },
       {
         "key": "C",
-        "text_en": "the South African Revenue Service as an administrative compliance cost",
-        "text_af": "the South African Revenue Service as an administrative compliance cost"
+        "text_en": "commercial banking institutions that process electronic credit card card payments.",
+        "text_af": "handelsbankinstellings wat elektroniese kredietkaartbetalings vir handelaars verwerk."
       },
       {
         "key": "D",
-        "text_en": "commercial banks issuing credit cards for wholesale corporate accounts",
-        "text_af": "commercial banks issuing credit cards for wholesale corporate accounts"
+        "text_en": "salaried civil servants employed across national and provincial departments of state.",
+        "text_af": "gesalarieerde staatsamptenare in diens van nasionale en provinsiale staatsdepartemente."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Vendors collect and remit VAT (statutory incidence), but the final burden is borne by consumers (economic incidence).",
-    "derivation_af": "Vendors collect and remit VAT (statutory incidence), but the final burden is borne by consumers (economic incidence)."
+    "correctKey": "B",
+    "derivation_en": "Statutory incidence denotes legal liability to collect/pay, whereas economic incidence reflects who ultimately bears the financial burden (passed onto consumers via higher prices).",
+    "derivation_af": "Statutêre insidensie verwys na wie die belasting regtens moet oorbetaal, terwyl ekonomiese insidensie aantoon wie uiteindelik die finansiële las dra (verbruikers via hoër pryse)."
   },
   {
     "id": "q15_18",
@@ -1737,33 +1737,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, a pure common property resource (such as marine ocean fish stocks outside territorial waters) is characterized by:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, a pure common property resource (such as marine ocean fish stocks outside territorial waters) is characterized by:",
+    "stem_en": "Fiscal drag (bracket creep) occurs during periods of inflation when:",
+    "stem_af": "Fiskale sleuring (kerpsluiping) vind plaas tydens tydperke van inflasie wanneer:",
     "options": [
       {
         "key": "A",
-        "text_en": "rivalry in consumption and non-excludability in access, leading to the tragedy of the commons",
-        "text_af": "rivalry in consumption and non-excludability in access, leading to the tragedy of the commons"
+        "text_en": "the national Treasury increases statutory company tax rates to balance the budget.",
+        "text_af": "die nasionale Tesourie statutêre maatskappybelasting verhoog om die begroting te sluit."
       },
       {
         "key": "B",
-        "text_en": "non-rivalry in consumption combined with strict legal excludability",
-        "text_af": "non-rivalry in consumption combined with strict legal excludability"
+        "text_en": "commercial banks raise real interest rates to suppress excessive consumer demand.",
+        "text_af": "handelsbanke reële rentekoerse verhoog om buitensporige verbruikersvraag te demp."
       },
       {
         "key": "C",
-        "text_en": "zero production costs accompanied by government-mandated price floors",
-        "text_af": "zero production costs accompanied by government-mandated price floors"
+        "text_en": "nominal wage gains push taxpayers into higher tax brackets without rising real income.",
+        "text_af": "nominale loonstygings belastingbetalers in hoër kerwe druk sonder hoër reële inkomste."
       },
       {
         "key": "D",
-        "text_en": "complete private ownership protected by constitutional land registry patents",
-        "text_af": "complete private ownership protected by constitutional land registry patents"
+        "text_en": "tax authorities fail to collect customs tariffs at international seaports and borders.",
+        "text_af": "doeane-owerhede versuim om invoertariewe by internasionale seehawens en grense in te vorder."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Common property resources are rival (one person's catch leaves fewer fish) but non-excludable (open access), causing overexploitation.",
-    "derivation_af": "Common property resources are rival (one person's catch leaves fewer fish) but non-excludable (open access), causing overexploitation."
+    "correctKey": "C",
+    "derivation_en": "Fiscal drag occurs when inflation increases nominal earnings, pushing taxpayers into higher progressive income tax brackets even though their real purchasing power has not increased.",
+    "derivation_af": "Fiskale sleuring ontstaan wanneer inflasie nominale inkomste opstoot en belastingbetalers in hoër kerwe beland, hoewel hul reële koopkrag dieselfde gebly het."
   },
   {
     "id": "q15_19",
@@ -1771,33 +1771,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, which of the following represents an example of a merit good that governments typically subsidize or provide directly?:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, which of the following represents an example of a merit good that governments typically subsidize or provide directly?:",
+    "stem_en": "Which of the following is classified as a transfer payment in government expenditure accounts?",
+    "stem_af": "Watter van die volgende word as 'n oordragbetaling in staatsuitgawerekeninge geklassifiseer?",
     "options": [
       {
         "key": "A",
-        "text_en": "Basic public education and primary healthcare vaccinations.",
-        "text_af": "Basic public education and primary healthcare vaccinations."
+        "text_en": "Social grant payments disbursed to elderly pensioners and support beneficiaries.",
+        "text_af": "Maatskaplike toelae wat aan bejaarde pensioenarisse en kinders uitbetaal word."
       },
       {
         "key": "B",
-        "text_en": "Imported luxury sports vehicles and high-end consumer electronics.",
-        "text_af": "Imported luxury sports vehicles and high-end consumer electronics."
+        "text_en": "Salaries paid monthly to state hospital registered nurses and specialist physicians.",
+        "text_af": "Salarisse wat maandeliks aan staatshospitaalverpleegsters en dokters betaal word."
       },
       {
         "key": "C",
-        "text_en": "Commercial betting and gambling casino operations.",
-        "text_af": "Commercial betting and gambling casino operations."
+        "text_en": "Procurement spending on construction equipment for major national freeway bridges.",
+        "text_af": "Aankope van konstruksietoerusting vir groot nasionale snelweg- en brugprojekte."
       },
       {
         "key": "D",
-        "text_en": "Tobacco products and distilled liquor merchandise.",
-        "text_af": "Tobacco products and distilled liquor merchandise."
+        "text_en": "Operating expenditures incurred to purchase fuel for public passenger transport fleets.",
+        "text_af": "Bedryfsuitgawes aangegaan om brandstof vir openbare passasiersvervoer aan te koop."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "Merit goods (education, healthcare) generate positive externalities and are underconsumed if left purely to market forces.",
-    "derivation_af": "Merit goods (education, healthcare) generate positive externalities and are underconsumed if left purely to market forces."
+    "derivation_en": "Transfer payments are government disbursements (e.g. old-age pensions, child support grants) for which no direct good or productive economic service is received in return.",
+    "derivation_af": "Oordragbetalings is staatstoelae waarvoor geen direkte goedere of produktiewe dienste in ruil gelewer word nie."
   },
   {
     "id": "q15_20",
@@ -1805,33 +1805,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, government transfer payments (such as child support grants and old-age social pensions) are economically defined as:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, government transfer payments (such as child support grants and old-age social pensions) are economically defined as:",
+    "stem_en": "When government expenditure exceeds total tax revenue during a fiscal budget year, the difference is the:",
+    "stem_af": "Wanneer staatsbesteding totale belastinginkomste tydens 'n fiskale begrotingsjaar oorskry, is die verskil die:",
     "options": [
       {
         "key": "A",
-        "text_en": "payments made to individuals without any corresponding current production of goods or services in return",
-        "text_af": "payments made to individuals without any corresponding current production of goods or services in return"
+        "text_en": "current account balance of payments trade surplus.",
+        "text_af": "lopenderangskonto-handelsoorskot van die betalingsbalans."
       },
       {
         "key": "B",
-        "text_en": "direct capital purchases of military defense equipment and national road networks",
-        "text_af": "direct capital purchases of military defense equipment and national road networks"
+        "text_en": "statutory corporate liquidity reserve requirement.",
+        "text_af": "statutêre maatskappy-likiditeitsreserweverpligting."
       },
       {
         "key": "C",
-        "text_en": "commercial interest payments made to offshore institutional bondholders",
-        "text_af": "commercial interest payments made to offshore institutional bondholders"
+        "text_en": "commercial banking interbank settlement deficit.",
+        "text_af": "handelsbankwese se interbank-vereffeningstekort."
       },
       {
         "key": "D",
-        "text_en": "subsidies paid exclusively to state-owned electric utility monopolies",
-        "text_af": "subsidies paid exclusively to state-owned electric utility monopolies"
+        "text_en": "budget deficit, which must be funded by borrowing.",
+        "text_af": "begrotingstekort, wat deur lenings gefinansier word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Transfers redistribute income without any current productive service rendered in exchange.",
-    "derivation_af": "Transfers redistribute income without any current productive service rendered in exchange."
+    "correctKey": "D",
+    "derivation_en": "When G > T, the government runs a budget deficit, requiring the issuance of sovereign bonds to finance the borrowing requirement.",
+    "derivation_af": "Wanneer G > T, het die regering 'n begrotingstekort wat gefinansier word deur staatseffekte uit te reik."
   },
   {
     "id": "q15_21",
@@ -1839,33 +1839,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, a budget deficit occurs when:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, a budget deficit occurs when:",
+    "stem_en": "The economic incidence of a specific excise tax will fall predominantly on consumers rather than producers if:",
+    "stem_af": "Die ekonomiese insidensie van 'n spesifieke aksynsbelasting sal hoofsaaklik op verbruikers rus indien:",
     "options": [
       {
         "key": "A",
-        "text_en": "total government expenditure exceeds total government revenue during a specific fiscal year",
-        "text_af": "total government expenditure exceeds total government revenue during a specific fiscal year"
+        "text_en": "the demand for the commodity is perfectly price elastic across all income brackets.",
+        "text_af": "die vraag na die kommoditeit volkome pryselasties oor alle inkomstegroepe is."
       },
       {
         "key": "B",
-        "text_en": "total national imports exceed total national merchandise exports on the current account",
-        "text_af": "total national imports exceed total national merchandise exports on the current account"
+        "text_en": "the supply curve of the commodity is perfectly inelastic in competitive markets.",
+        "text_af": "die aanbodkromme van die kommoditeit volkome onelasties in mededingende markte is."
       },
       {
         "key": "C",
-        "text_en": "commercial bank cash reserves exceed the statutory reserve requirement ratio",
-        "text_af": "commercial bank cash reserves exceed the statutory reserve requirement ratio"
+        "text_en": "the price elasticity of demand is much lower than the price elasticity of supply.",
+        "text_af": "die pryselastisiteit van die vraag baie laer is as die elastisiteit van die aanbod."
       },
       {
         "key": "D",
-        "text_en": "the nominal repo rate is lower than the headline consumer inflation rate",
-        "text_af": "the nominal repo rate is lower than the headline consumer inflation rate"
+        "text_en": "the revenue authority grants immediate rebates on corporate income tax liabilities.",
+        "text_af": "die inkomstediens onmiddellike kortings op korporatiewe belastingverpligtinge bied."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Budget deficit = G > T (expenditures exceed revenues in the fiscal year).",
-    "derivation_af": "Budget deficit = G > T (expenditures exceed revenues in the fiscal year)."
+    "correctKey": "C",
+    "derivation_en": "Tax incidence depends on relative elasticities: the more inelastic side of the market bears the larger burden because it cannot easily substitute away.",
+    "derivation_af": "Belastinginsidensie hang af van relatiewe elastisiteit: die meer onelastiese kant van die mark dra die swaarste las omdat dit nie maklik kan aanpas nie."
   },
   {
     "id": "q15_22",
@@ -1873,33 +1873,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, how does the South African national government primarily finance its persistent budget deficits?:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, how does the South African national government primarily finance its persistent budget deficits?:",
+    "stem_en": "In Adam Smith's canons of taxation, the principle of 'certainty' requires that:",
+    "stem_af": "In Adam Smith se belastingbeginsels vereis die beginsel van 'sekerheid' dat:",
     "options": [
       {
         "key": "A",
-        "text_en": "By issuing long-term domestic and foreign government bonds and Treasury bills in the capital market.",
-        "text_af": "By issuing long-term domestic and foreign government bonds and Treasury bills in the capital market."
+        "text_en": "the revenue collected covers all current operating and capital public expenditures.",
+        "text_af": "die belastinginkomste alle lopende bedryfs- en kapitaalbesteding van die staat dek."
       },
       {
         "key": "B",
-        "text_en": "By printing physical banknotes directly at the Pretoria coin mint.",
-        "text_af": "By printing physical banknotes directly at the Pretoria coin mint."
+        "text_en": "the time, manner, and amount of tax payable should be clear and plain to the taxpayer.",
+        "text_af": "die tyd, wyse en bedrag van betaling duidelik en presies aan die belastingbetaler bekend is."
       },
       {
         "key": "C",
-        "text_en": "By confiscating commercial bank customer demand deposits without compensation.",
-        "text_af": "By confiscating commercial bank customer demand deposits without compensation."
+        "text_en": "tax liabilities be based strictly on the market value of immovable luxury properties.",
+        "text_af": "belastingaanslae streng gebaseer moet wees op die markwaarde van vaste luukse bates."
       },
       {
         "key": "D",
-        "text_en": "By selling off national wildlife reserves to international sovereign wealth funds",
-        "text_af": "By selling off national wildlife reserves to international sovereign wealth funds"
+        "text_en": "collection costs incurred by the revenue authority should exceed total compliance fees.",
+        "text_af": "invorderingskoste wat die inkomstediens aangaan, alle private nakomingskoste oortref."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Government finances deficits legitimately by borrowing in financial markets through Treasury bills and government bonds.",
-    "derivation_af": "Government finances deficits legitimately by borrowing in financial markets through Treasury bills and government bonds."
+    "correctKey": "B",
+    "derivation_en": "Smith's canon of certainty states that taxpayers must know well in advance when, how, and exactly how much tax they are required to pay.",
+    "derivation_af": "Smith se sekerheidsbeginsel vereis dat belastingbetalers vooraf presies moet weet wanneer, hoe en hoeveel belasting betaal moet word."
   },
   {
     "id": "q15_23",
@@ -1907,33 +1907,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, an increase in the statutory company tax rate from 27% to 35% is likely to:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, an increase in the statutory company tax rate from 27% to 35% is likely to:",
+    "stem_en": "A regressive tax system is characterized by:",
+    "stem_af": "'n Regressiewe belastingstelsel word gekenmerk deur:",
     "options": [
       {
         "key": "A",
-        "text_en": "reduce the net after-tax return on corporate investment, potentially discouraging capital formation",
-        "text_af": "reduce the net after-tax return on corporate investment, potentially discouraging capital formation"
+        "text_en": "a marginal tax rate that increases continuously as taxable income expands.",
+        "text_af": "'n marginale belastingkoers wat deurlopend toeneem namate inkomste styg."
       },
       {
         "key": "B",
-        "text_en": "automatically accelerate the pace of commercial bank money creation",
-        "text_af": "automatically accelerate the pace of commercial bank money creation"
+        "text_en": "the complete statutory exemption of all corporate dividend profit earnings.",
+        "text_af": "die algehele statutêre vrystelling van alle korporatiewe dividendinkomste."
       },
       {
         "key": "C",
-        "text_en": "eliminate the national debt within a single fiscal quarter",
-        "text_af": "eliminate the national debt within a single fiscal quarter"
+        "text_en": "an average tax rate that decreases as the taxpayer's income level increases.",
+        "text_af": "'n gemiddelde belastingkoers wat daal namate die belastingbetaler se inkomste styg."
       },
       {
         "key": "D",
-        "text_en": "lower the statutory VAT percentage charged on basic food commodities",
-        "text_af": "lower the statutory VAT percentage charged on basic food commodities"
+        "text_en": "an identical rand amount of tax paid by all households regardless of wealth.",
+        "text_af": "'n identiese randbedrag aan belasting betaal deur alle huishoudings."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Higher corporate tax rates lower after-tax profits, reducing the incentive for domestic and foreign business investment.",
-    "derivation_af": "Higher corporate tax rates lower after-tax profits, reducing the incentive for domestic and foreign business investment."
+    "correctKey": "C",
+    "derivation_en": "Under a regressive tax, lower-income households pay a higher proportion of their income than higher-income households (ATR decreases as Y increases).",
+    "derivation_af": "Onder 'n regressiewe belastingstelsel neem die gemiddelde belastingkoers af namate inkomste toeneem, sodat armes proporsioneel swaarder belas word."
   },
   {
     "id": "q15_24",
@@ -1941,33 +1941,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, the canon of 'Administrative Simplicity' in taxation requires that:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, the canon of 'Administrative Simplicity' in taxation requires that:",
+    "stem_en": "Which of the following creates a market failure that warrants public sector intervention?",
+    "stem_af": "Watter van die volgende skep 'n markmislukking wat ingryping deur die openbare sektor regverdig?",
     "options": [
       {
         "key": "A",
-        "text_en": "the tax system should be plain, transparent, and inexpensive to administer for the revenue authority and simple for taxpayers to comply with",
-        "text_af": "the tax system should be plain, transparent, and inexpensive to administer for the revenue authority and simple for taxpayers to comply with"
+        "text_en": "Competitive price adjustments clearing market inventories in wholesale trading.",
+        "text_af": "Mededingende prysaanpassings wat voorraad in groothandelsmarkte doeltreffend ruim."
       },
       {
         "key": "B",
-        "text_en": "tax collection should require mandatory manual paperwork filed in person at national revenue offices",
-        "text_af": "tax collection should require mandatory manual paperwork filed in person at national revenue offices"
+        "text_en": "Voluntary consumer substitution between identical branded consumer commodities.",
+        "text_af": "Vrywillige verbruikersverskuiwings tussen identiese handelsmerkverbruiksgoedere."
       },
       {
         "key": "C",
-        "text_en": "all tax brackets should be recalibrated on a daily basis according to stock market movements",
-        "text_af": "all tax brackets should be recalibrated on a daily basis according to stock market movements"
+        "text_en": "Technological innovations lowering average costs of production for manufactures.",
+        "text_af": "Tegnologiese innovasies wat die gemiddelde produksiekoste vir vervaardigers verlaag."
       },
       {
         "key": "D",
-        "text_en": "tax laws should be drafted using complex judicial jurisprudence that only legal barristers can interpret",
-        "text_af": "tax laws should be drafted using complex judicial jurisprudence that only legal barristers can interpret"
+        "text_en": "Negative environmental externalities where factory pollution imposes social costs.",
+        "text_af": "Negatiewe eksternaliteite waar fabriekbesoedeling maatskaplike koste veroorsaak."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Simplicity minimizes compliance costs for citizens and collection costs for SARS.",
-    "derivation_af": "Simplicity minimizes compliance costs for citizens and collection costs for SARS."
+    "correctKey": "D",
+    "derivation_en": "Externalities drive a wedge between private and social marginal costs, causing unregulated markets to overproduce socially harmful goods (market failure).",
+    "derivation_af": "Negatiewe eksternaliteite veroorsaak dat private en maatskaplike koste verskil, wat lei tot oorproduksie van besoedelende goedere (markmislukking)."
   },
   {
     "id": "q15_25",
@@ -1975,33 +1975,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, a regressive tax structure exists when:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, a regressive tax structure exists when:",
+    "stem_en": "In public finance, the 'free-rider problem' arises because pure public goods are:",
+    "stem_af": "In openbare finansies ontstaan die 'ryloop-probleem' omdat suiwer openbare goedere:",
     "options": [
       {
         "key": "A",
-        "text_en": "the average tax rate declines as taxable income rises, placing a relatively heavier burden on low-income earners",
-        "text_af": "the average tax rate declines as taxable income rises, placing a relatively heavier burden on low-income earners"
+        "text_en": "prohibitively expensive to purchase using consumer installment credit agreements.",
+        "text_af": "buitensporig duur is om met behulp van paaiementkredietooreenkomste aan te koop."
       },
       {
         "key": "B",
-        "text_en": "the total Rand amount of tax collected increases during economic recessions",
-        "text_af": "the total Rand amount of tax collected increases during economic recessions"
+        "text_en": "subject to steep diminishing marginal utility as household consumption expands.",
+        "text_af": "onderworpe is aan skerp dalende marginale nut namate huishoudelike verbruik toeneem."
       },
       {
         "key": "C",
-        "text_en": "marginal tax brackets rise steeply across high managerial salary bands",
-        "text_af": "marginal tax brackets rise steeply across high managerial salary bands"
+        "text_en": "non-excludable, enabling individuals to enjoy benefits without paying for them.",
+        "text_af": "nie-uitsluitbaar is, sodat individue voordele kan geniet sonder om daarvoor te betaal."
       },
       {
         "key": "D",
-        "text_en": "corporate dividends are taxed at the same percentage as wage remuneration",
-        "text_af": "corporate dividends are taxed at the same percentage as wage remuneration"
+        "text_en": "produced exclusively by registered private enterprises operating on global stock exchanges.",
+        "text_af": "uitsluitlik deur geregistreerde privaat maatskappye op globale aandelebeurse vervaardig word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "A regressive tax takes a larger percentage from low-income earners than from high-income earners.",
-    "derivation_af": "A regressive tax takes a larger percentage from low-income earners than from high-income earners."
+    "correctKey": "C",
+    "derivation_en": "Because non-payers cannot be excluded from enjoying non-excludable public goods (like national defense), individuals have an incentive not to pay (free riding).",
+    "derivation_af": "Omdat nie-betalers nie van nie-uitsluitbare goedere uitgesluit kan word nie, het individue geen aansporing om vrywillig daarvoor te betaal nie (ryloop-gedrag)."
   },
   {
     "id": "q15_26",
@@ -2009,33 +2009,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, which of the following goods is zero-rated under the South African Value Added Tax Act?:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, which of the following goods is zero-rated under the South African Value Added Tax Act?:",
+    "stem_en": "In South Africa, which of the following food categories is zero-rated for Value Added Tax (VAT)?",
+    "stem_af": "In Suid-Afrika, watter van die volgende voedselkategorieë is teen nulkoers (0%) vir BTW vrygestel?",
     "options": [
       {
         "key": "A",
-        "text_en": "Basic staple foodstuffs such as brown bread, maize meal, and fresh milk.",
-        "text_af": "Basic staple foodstuffs such as brown bread, maize meal, and fresh milk."
+        "text_en": "Basic foodstuffs such as brown bread, maize meal, dried beans, milk, and fresh eggs.",
+        "text_af": "Basiese voedselsoorte soos bruinbrood, mieliemeel, droë bone, melk en vars eiers."
       },
       {
         "key": "B",
-        "text_en": "Alcoholic beverages, wines, and manufactured tobacco products.",
-        "text_af": "Alcoholic beverages, wines, and manufactured tobacco products."
+        "text_en": "Imported luxury confectionery, gourmet chocolate desserts, and carbonated soda drinks.",
+        "text_af": "Ingevoerde fyngebak, fynproewer-sjokolade en versoete koolsuurhoudende koeldranke."
       },
       {
         "key": "C",
-        "text_en": "Imported passenger luxury sedans and recreational quad bikes.",
-        "text_af": "Imported passenger luxury sedans and recreational quad bikes."
+        "text_en": "Prepared hot takeaway meals purchased at franchised fast-food restaurant outlets.",
+        "text_af": "Voorbereide warm wegneemetes wat by kitskosrestaurante en eetplekke gekoop word."
       },
       {
         "key": "D",
-        "text_en": "Commercial hotel accommodation and private airline travel tickets.",
-        "text_af": "Commercial hotel accommodation and private airline travel tickets."
+        "text_en": "Alcoholic beverages, distilled spirits, premium estate wines, and tobacco products.",
+        "text_af": "Alkoholiese drankies, gedistilleerde spiritualieë, landgoedwyne en tabakprodukte."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "Essential foodstuffs (brown bread, maize meal, samp, eggs, milk) are zero-rated (0% VAT) to alleviate the tax burden on poor households.",
-    "derivation_af": "Essential foodstuffs (brown bread, maize meal, samp, eggs, milk) are zero-rated (0% VAT) to alleviate the tax burden on poor households."
+    "derivation_en": "Nineteen basic nutritional food staples are zero-rated under South African VAT legislation to protect the living standards of low-income households.",
+    "derivation_af": "Negentien basiese voedselitems (soos bruinbrood, mieliemeel en melk) is nulkoers-belas om arm huishoudings teen die las van BTW te beskerm."
   },
   {
     "id": "q15_27",
@@ -2043,33 +2043,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, when the government finances a budget deficit by borrowing heavily in the domestic capital market, it may cause 'crowding out', which means:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, when the government finances a budget deficit by borrowing heavily in the domestic capital market, it may cause 'crowding out', which means:",
+    "stem_en": "When government finances a budget deficit by borrowing heavily in the domestic bond market, 'crowding out' occurs because:",
+    "stem_af": "Wanneer die regering 'n begrotingstekort finansier deur swaar in die binnelandse effektemark te leen, vind 'verdringing' plaas omdat:",
     "options": [
       {
         "key": "A",
-        "text_en": "high government borrowing drives up domestic interest rates, reducing private sector capital investment spending",
-        "text_af": "high government borrowing drives up domestic interest rates, reducing private sector capital investment spending"
+        "text_en": "foreign tourists face administrative travel restrictions on private domestic booking.",
+        "text_af": "buitelandse toeriste administratiewe reisbeperkings op plaaslike besprekings ervaar."
       },
       {
         "key": "B",
-        "text_en": "foreign tourists are prohibited from booking private domestic accommodation",
-        "text_af": "foreign tourists are prohibited from booking private domestic accommodation"
+        "text_en": "higher public borrowing pushes up market interest rates, dampening private capital investment.",
+        "text_af": "hoër staatslenings markrentekoerse opstoot, wat private kapitaalinvestering demp."
       },
       {
         "key": "C",
-        "text_en": "commercial banks are legally prevented from opening branches in metropolitan shopping centers",
-        "text_af": "commercial banks are legally prevented from opening branches in metropolitan shopping centers"
+        "text_en": "commercial banks are legally prevented from opening retail branches in shopping centers.",
+        "text_af": "handelsbanke wetlik verbied word om nuwe kleinhandeltakke in winkelsentrums oop te maak."
       },
       {
         "key": "D",
-        "text_en": "provincial education departments are forced to hire only state-certified teachers",
-        "text_af": "provincial education departments are forced to hire only state-certified teachers"
+        "text_en": "provincial revenue departments are required to eliminate all municipal property rates.",
+        "text_af": "provinsiale inkomstekantore verplig word om alle plaaslike eiendomsbelasting af te skaf."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Crowding out occurs when public debt issuance pushes interest rates up, making borrowing too costly for private firms.",
-    "derivation_af": "Crowding out occurs when public debt issuance pushes interest rates up, making borrowing too costly for private firms."
+    "correctKey": "B",
+    "derivation_en": "Crowding out occurs when substantial government bond issuance raises real interest rates in capital markets, making borrowing more costly and depressing private business investment.",
+    "derivation_af": "Verdringing vind plaas wanneer omvangryke staatslenings die rentekoers in die kapitaalmark opstoot, wat private besigheidsinvestering ontmoedig."
   },
   {
     "id": "q15_28",
@@ -2077,33 +2077,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, the South African national budget is officially presented to Parliament annually by:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, the South African national budget is officially presented to Parliament annually by:",
+    "stem_en": "In public finance, an ad valorem tax is defined as a tax levied as:",
+    "stem_af": "In openbare finansies word 'n ad valorem-belasting gedefinieer as 'n belasting gehef as:",
     "options": [
       {
         "key": "A",
-        "text_en": "the Minister of Finance in the National Assembly.",
-        "text_af": "the Minister of Finance in the National Assembly."
+        "text_en": "a fixed percentage of the monetary value or price of the transacted commodity.",
+        "text_af": "'n vaste persentasie van die monetêre waarde of prys van die verhandelde goed."
       },
       {
         "key": "B",
-        "text_en": "the Governor of the South African Reserve Bank at the central banking conference.",
-        "text_af": "the Governor of the South African Reserve Bank at the central banking conference."
+        "text_en": "a fixed rand amount per physical unit or volume of the commodity purchased.",
+        "text_af": "'n vaste randbedrag per fisiese eenheid of volume van die aangekoopte produk."
       },
       {
         "key": "C",
-        "text_en": "the Chief Executive Officer of the Johannesburg Stock Exchange.",
-        "text_af": "the Chief Executive Officer of the Johannesburg Stock Exchange."
+        "text_en": "a lump-sum fee imposed exclusively on registered domestic corporate exporters.",
+        "text_af": "'n enkelbedragheffing wat uitsluitlik op binnelandse uitvoerders van stapel loop."
       },
       {
         "key": "D",
-        "text_en": "the Commissioner of the Financial Sector Conduct Authority.",
-        "text_af": "the Commissioner of the Financial Sector Conduct Authority."
+        "text_en": "a sliding penalty rate determined by the commercial banking reserve deficit.",
+        "text_af": "'n glyskaalboete wat deur die handelsbankwese se likiditeitstekort bepaal word."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "The Minister of Finance presents the national budget speech to Parliament every February.",
-    "derivation_af": "The Minister of Finance presents the national budget speech to Parliament every February."
+    "derivation_en": "An ad valorem tax (such as VAT at 15%) is calculated as a percentage of the value of the good, unlike a specific tax which is a fixed rand amount per physical unit.",
+    "derivation_af": "'n Ad valorem-belasting (soos BTW teen 15%) word as 'n persentasie van die prys gehef, anders as 'n spesifieke belasting wat per fisiese eenheid geld."
   },
   {
     "id": "q15_29",
@@ -2111,33 +2111,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African public finance, which of the following criteria is essential for an equitable tax system according to the 'Ability-to-Pay' principle?:",
-    "stem_af": "In Suid-Afrikaanse openbare finansies, which of the following criteria is essential for an equitable tax system according to the 'Ability-to-Pay' principle?:",
+    "stem_en": "Government intervention through the provision of national defense and street lighting is justified because these are:",
+    "stem_af": "Owerheidsingryping deur die verskaffing van nasionale verdediging en straatbeligting word geregverdig omdat dit:",
     "options": [
       {
         "key": "A",
-        "text_en": "Individuals with higher taxable income and greater wealth should contribute a larger share of their income in tax than poorer citizens.",
-        "text_af": "Individuals with higher taxable income and greater wealth should contribute a larger share of their income in tax than poorer citizens."
+        "text_en": "merit commodities that generate negative external pollution spillovers on third parties.",
+        "text_af": "merietegoedere is wat negatiewe eksterne besoedelingsmorste op derde partye veroorsaak."
       },
       {
         "key": "B",
-        "text_en": "Every citizen should pay the exact same absolute Rand amount of tax regardless of income.",
-        "text_af": "Every citizen should pay the exact same absolute Rand amount of tax regardless of income."
+        "text_en": "private goods easily financed through commercial price discrimination across retail firms.",
+        "text_af": "private goedere is wat maklik deur prysdiskriminasie in die mark gefinansier kan word."
       },
       {
         "key": "C",
-        "text_en": "Taxes should be levied exclusively on individuals who directly utilize national toll highways.",
-        "text_af": "Taxes should be levied exclusively on individuals who directly utilize national toll highways."
+        "text_en": "rival products with high marginal collection costs for registered revenue authorities.",
+        "text_af": "mededingende produkte is met hoë invorderingskoste vir geregistreerde inkomstedienste."
       },
       {
         "key": "D",
-        "text_en": "Foreign visitors should be exempt from all consumption and value added taxes.",
-        "text_af": "Foreign visitors should be exempt from all consumption and value added taxes."
+        "text_en": "pure public goods characterized by non-rivalry in consumption and non-excludability.",
+        "text_af": "suiwer openbare goedere is wat gekenmerk word deur nie-mededingendheid en nie-uitsluitbaarheid."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "The ability-to-pay principle asserts that tax liability should be linked to economic capacity (income/wealth).",
-    "derivation_af": "The ability-to-pay principle asserts that tax liability should be linked to economic capacity (income/wealth)."
+    "correctKey": "D",
+    "derivation_en": "Pure public goods like defense and street lights cannot be profitably provided by competitive free markets due to non-excludability (the free-rider problem).",
+    "derivation_af": "Suiwer openbare goedere soos verdediging en straatligte kan weens nie-uitsluitbaarheid en vryryers nie winsgewend deur die mark voorsien word nie."
   },
   {
     "id": "q15_30",
@@ -2145,33 +2145,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African fiscal analysis, a primary surplus in the government budget occurs when:",
-    "stem_af": "In Suid-Afrikaanse fiskale ontleding, a primary surplus in the government budget occurs when:",
+    "stem_en": "The 'benefit principle' of tax equity proposes that:",
+    "stem_af": "Die 'voordeelbeginsel' van belastingbillikheid stel voor dat:",
     "options": [
       {
         "key": "A",
-        "text_en": "total government revenue exceeds total government expenditure excluding interest payments on public debt.",
-        "text_af": "total government revenue exceeds total government expenditure excluding interest payments on public debt."
+        "text_en": "higher-income individuals must always contribute a higher proportion of their earnings.",
+        "text_af": "hoër-inkomste individue altyd 'n groter persentasie van hul inkomste moet bydra."
       },
       {
         "key": "B",
-        "text_en": "the national central bank expands its gold reserves faster than broad money M3.",
-        "text_af": "the national central bank expands its gold reserves faster than broad money M3."
+        "text_en": "corporate profit earnings should be completely exempt from statutory taxation rates.",
+        "text_af": "korporatiewe winste heeltemal van statutêre belastingkoerse vrygestel moet word."
       },
       {
         "key": "C",
-        "text_en": "corporate income tax revenue matches individual personal income tax collections exactly.",
-        "text_af": "corporate income tax revenue matches individual personal income tax collections exactly."
+        "text_en": "taxpayers should pay taxes in direct proportion to the benefits received from public services.",
+        "text_af": "belastingbetalers moet bydra in verhouding tot die voordele wat hulle van die staat ontvang."
       },
       {
         "key": "D",
-        "text_en": "provincial municipal councils eliminate all local property assessment rates.",
-        "text_af": "provincial municipal councils eliminate all local property assessment rates."
+        "text_en": "tax liabilities should depend exclusively on the physical acreage of commercial land held.",
+        "text_af": "belastingverpligtinge slegs moet afhang van die fisiese omvang van landbougrond in besit."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Primary balance = Total Revenue - (Total Expenditure - Debt Interest Payments).",
-    "derivation_af": "Primary balance = Total Revenue - (Total Expenditure - Debt Interest Payments)."
+    "correctKey": "C",
+    "derivation_en": "The benefit principle links tax liability directly to the consumption of public goods and services (e.g. fuel levies funding road construction).",
+    "derivation_af": "Die voordeelbeginsel koppel belasting direk aan die voordeel wat geniet word (bv. brandstofheffings wat paaie befonds)."
   },
   {
     "id": "q15_31",
@@ -2179,33 +2179,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African fiscal analysis, public debt becomes unsustainable over time if:",
-    "stem_af": "In Suid-Afrikaanse fiskale ontleding, public debt becomes unsustainable over time if:",
+    "stem_en": "In macroeconomic fiscal analysis, sovereign public debt becomes unsustainable over time if:",
+    "stem_af": "In makro-ekonomiese fiskale analise raak soewereine staatskuld mettertyd onvolhoubaar indien:",
     "options": [
       {
         "key": "A",
-        "text_en": "the real economic growth rate of the country is persistently lower than the real interest rate paid on government debt.",
-        "text_af": "the real economic growth rate of the country is persistently lower than the real interest rate paid on government debt."
+        "text_en": "the statutory VAT rate is kept unchanged at 15% across several consecutive fiscal budget cycles.",
+        "text_af": "die statutêre BTW-koers onveranderd op 15% oor verskeie opeenvolgende begrotingsiklusse gehou word."
       },
       {
         "key": "B",
-        "text_en": "the statutory VAT rate is maintained at 15% for more than five consecutive fiscal years.",
-        "text_af": "the statutory VAT rate is maintained at 15% for more than five consecutive fiscal years."
+        "text_en": "the national Treasury issues short-term Treasury bills rather than long-term sovereign debt bonds.",
+        "text_af": "die nasionale Tesourie korttermyn skatkiswissels eerder as langtermyn staatseffekte uitreik."
       },
       {
         "key": "C",
-        "text_en": "commercial banks refuse to accept foreign exchange deposits from international tourists.",
-        "text_af": "commercial banks refuse to accept foreign exchange deposits from international tourists."
+        "text_en": "commercial banks maintain cash reserves exceeding the statutory minimum required by the SARB.",
+        "text_af": "handelsbanke kontantreserwes hou wat die statutêre minimum vereiste van die SARB oortref."
       },
       {
         "key": "D",
-        "text_en": "the government operates a primary budget surplus during cyclical economic booms.",
-        "text_af": "the government operates a primary budget surplus during cyclical economic booms."
+        "text_en": "the real interest rate paid on government debt persistently exceeds the real economic growth rate.",
+        "text_af": "die reële rentekoers op staatskuld die nasionale reële ekonomiese groeikoers volgehou oorskry."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "When r > g, the debt-to-GDP ratio expands automatically unless the government runs large primary surpluses.",
-    "derivation_af": "When r > g, the debt-to-GDP ratio expands automatically unless the government runs large primary surpluses."
+    "correctKey": "D",
+    "derivation_en": "When the real interest rate exceeds real GDP growth (r > g), the debt-to-GDP ratio explodes unless the government runs substantial primary surpluses.",
+    "derivation_af": "Wanneer die reële rentekoers hoër is as die reële groeikoers (r > g), styg die skuld-tot-BBP-verhouding outomaties tensy groot primêre surplusse gehandhaaf word."
   },
   {
     "id": "q15_32",
@@ -2213,33 +2213,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African fiscal analysis, the 'benefit principle' of taxation proposes that:",
-    "stem_af": "In Suid-Afrikaanse fiskale ontleding, the 'benefit principle' of taxation proposes that:",
+    "stem_en": "The 'benefit principle' of taxation proposes that:",
+    "stem_af": "Die 'voordeelbeginsel' van belasting stel voor dat:",
     "options": [
       {
         "key": "A",
-        "text_en": "individuals should pay taxes in proportion to the benefits they receive from government-provided goods and services.",
-        "text_af": "individuals should pay taxes in proportion to the benefits they receive from government-provided goods and services."
+        "text_en": "only corporate entities earning above-average accounting profits should pay environmental levies.",
+        "text_af": "slegs maatskappye met bogemiddelde winsrekeninge omgewingsheffings aan die staat behoort te betaal."
       },
       {
         "key": "B",
-        "text_en": "only corporations that report net operating profits should be subjected to environmental levies.",
-        "text_af": "only corporations that report net operating profits should be subjected to environmental levies."
+        "text_en": "social transfer grant recipients should be legally exempt from all indirect consumption duties.",
+        "text_af": "ontvangers van maatskaplike toelae wetlik van alle indirekte verbruiksbelastings vrygestel moet wees."
       },
       {
         "key": "C",
-        "text_en": "citizens should receive identical social transfer grant payments irrespective of age or employment status.",
-        "text_af": "citizens should receive identical social transfer grant payments irrespective of age or employment status."
+        "text_en": "individuals should contribute taxes in direct proportion to the benefits received from public goods.",
+        "text_af": "belastingbetalers moet bydra in verhouding tot die voordele wat hulle van openbare dienste geniet."
       },
       {
         "key": "D",
-        "text_en": "all tax revenue should be allocated exclusively to provincial healthcare clinics.",
-        "text_af": "all tax revenue should be allocated exclusively to provincial healthcare clinics."
+        "text_en": "all national tax revenues should be distributed exclusively to municipal public health clinics.",
+        "text_af": "alle nasionale belastinginkomste uitsluitlik aan munisipale gesondheidsklinieke toegewys moet word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "The benefit principle links tax obligations directly to the consumption of public services (e.g. fuel levies funding road maintenance).",
-    "derivation_af": "The benefit principle links tax obligations directly to the consumption of public services (e.g. fuel levies funding road maintenance)."
+    "correctKey": "C",
+    "derivation_en": "The benefit principle states that tax liabilities should match the benefits received from public services (e.g. road user charges funding transport networks).",
+    "derivation_af": "Die voordeelbeginsel koppel belastingverpligtinge direk aan die voordele wat uit openbare dienste geput word (bv. tolgelde vir paaie)."
   },
   {
     "id": "q15_33",
@@ -2247,33 +2247,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African fiscal analysis, a toll fee charged to motorists using a national dual-carriage highway is an example of:",
-    "stem_af": "In Suid-Afrikaanse fiskale ontleding, a toll fee charged to motorists using a national dual-carriage highway is an example of:",
+    "stem_en": "A toll fee charged to motorists driving on a national dual-carriage highway is an application of:",
+    "stem_af": "'n Tolgeld wat gehef word op motoriste wat 'n nasionale dubbelbaan-snelweg gebruik, is 'n toepassing van:",
     "options": [
       {
         "key": "A",
-        "text_en": "the benefit principle of taxation applied to an excludable club good.",
-        "text_af": "the benefit principle of taxation applied to an excludable club good."
+        "text_en": "a progressive wealth redistribution surcharge levied on non-motorized transport alternatives.",
+        "text_af": "'n progressiewe herverdelingsheffing op nie-gemotoriseerde vervoeralternatiewe in stedelike gebiede."
       },
       {
         "key": "B",
-        "text_en": "a progressive wealth redistribution levy on non-motorized transport.",
-        "text_af": "a progressive wealth redistribution levy on non-motorized transport."
+        "text_en": "a negative production externality tax imposed exclusively on commercial petrochemical plants.",
+        "text_af": "'n negatiewe produksie-eksternaliteitsbelasting wat slegs op petrochemiese raffinaderye geld."
       },
       {
         "key": "C",
-        "text_en": "a negative production externality tax charged on commercial diesel refineries.",
-        "text_af": "a negative production externality tax charged on commercial diesel refineries."
+        "text_en": "an administrative penalty fine levied on unlicensed freight logistics transport companies.",
+        "text_af": "'n administratiewe boete wat op ongelisensieerde vragmotor-vervoermaatskappye opgelê word."
       },
       {
         "key": "D",
-        "text_en": "an administrative fine imposed on unlicensed commercial freight drivers.",
-        "text_af": "an administrative fine imposed on unlicensed commercial freight drivers."
+        "text_en": "the benefit principle of public finance applied to a commercially excludable club commodity.",
+        "text_af": "die voordeelbeginsel van openbare finansies toegepas op 'n uitsluitbare klubgoed vir padverbruikers."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Toll roads apply the benefit principle: users of the highway pay directly for its construction and upkeep.",
-    "derivation_af": "Toll roads apply the benefit principle: users of the highway pay directly for its construction and upkeep."
+    "correctKey": "D",
+    "derivation_en": "Highway tolling applies the benefit principle: motorists who benefit from the high-quality infrastructure pay directly for its financing and upkeep.",
+    "derivation_af": "Padkoste-tolling pas die voordeelbeginsel toe: motoriste wat die snelweg gebruik, betaal direk vir die bou en instandhouding daarvan."
   },
   {
     "id": "q15_34",
@@ -2281,33 +2281,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African fiscal analysis, direct personal income taxes in south africa are deducted on a monthly basis by employers under:",
-    "stem_af": "In Suid-Afrikaanse fiskale ontleding, direct personal income taxes in south africa are deducted on a monthly basis by employers under:",
+    "stem_en": "In South Africa, personal income taxes on salaried employees are withheld monthly by employers under:",
+    "stem_af": "In Suid-Afrika word persoonlike inkomstebelasting op gesalarieerde werknemers maandeliks ingehou onder:",
     "options": [
       {
         "key": "A",
-        "text_en": "the Pay-As-You-Earn (PAYE) withholding taxation system.",
-        "text_af": "the Pay-As-You-Earn (PAYE) withholding taxation system."
+        "text_en": "the automated interbank settlement protocol operated by the South African Reserve Bank.",
+        "text_af": "die outomatiese interbank-vereffeningstelsel wat deur die Reserwebank bedryf word."
       },
       {
         "key": "B",
-        "text_en": "the automated central bank interbank settlement protocol.",
-        "text_af": "the automated central bank interbank settlement protocol."
+        "text_en": "the municipal property valuation equalization framework enacted by local councils.",
+        "text_af": "die munisipale eiendomswaardasie-raamwerk wat deur plaaslike owerhede toegepas word."
       },
       {
         "key": "C",
-        "text_en": "the municipal property valuation equalization framework.",
-        "text_af": "the municipal property valuation equalization framework."
+        "text_en": "the statutory Pay-As-You-Earn (PAYE) income tax employee withholding system.",
+        "text_af": "die statutêre Lopende Betaalstelsel (LBS / PAYE) vir maandelikse werknemers."
       },
       {
         "key": "D",
-        "text_en": "the Johannesburg Stock Exchange clearing house dividend allocation scheme.",
-        "text_af": "the Johannesburg Stock Exchange clearing house dividend allocation scheme."
+        "text_en": "the Johannesburg Stock Exchange clearing house dividend distribution scheme.",
+        "text_af": "die Johannesburgse Aandelebeurs se dividenduitkerings- en vereffeningskema."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "PAYE is the statutory withholding tax deducted directly from employee wage salaries every month.",
-    "derivation_af": "PAYE is the statutory withholding tax deducted directly from employee wage salaries every month."
+    "correctKey": "C",
+    "derivation_en": "PAYE is the statutory withholding tax deducted directly from employee wage remuneration at the end of each month and paid over to SARS.",
+    "derivation_af": "LBS (PAYE) is die statutêre weerhoudingsbelasting wat maandeliks van werknemers se salarisse afgetrek en aan die SAID oorbetaal word."
   },
   {
     "id": "q15_35",
@@ -2315,33 +2315,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African fiscal analysis, if the marginal tax rate on an individual's income is 41% and their average tax rate is 28%, an additional r10 000 bonus will:",
-    "stem_af": "In Suid-Afrikaanse fiskale ontleding, if the marginal tax rate on an individual's income is 41% and their average tax rate is 28%, an additional r10 000 bonus will:",
+    "stem_en": "If an individual's marginal tax rate is 41% while their average tax rate is 28%, an additional R10 000 bonus will:",
+    "stem_af": "Indien 'n individu se marginale belastingkoers 41% is terwyl die gemiddelde koers 28% is, sal 'n bykomende R10 000 bonus:",
     "options": [
       {
         "key": "A",
-        "text_en": "be taxed at 41%, increasing the overall average tax rate.",
-        "text_af": "be taxed at 41%, increasing the overall average tax rate."
+        "text_en": "be taxed at the average rate of 28%, leaving the average tax rate completely unchanged.",
+        "text_af": "teen die gemiddelde koers van 28% belas word en die gemiddelde koers onveranderd laat."
       },
       {
         "key": "B",
-        "text_en": "be taxed at 28%, leaving the average tax rate completely unchanged.",
-        "text_af": "be taxed at 28%, leaving the average tax rate completely unchanged."
+        "text_en": "be completely exempt from statutory taxation under national primary rebate provisions.",
+        "text_af": "heeltemal van belasting vrygestel wees ingevolge primêre statutêre belastingkortings."
       },
       {
         "key": "C",
-        "text_en": "be exempt from taxation under statutory primary rebate provisions.",
-        "text_af": "be exempt from taxation under statutory primary rebate provisions."
+        "text_en": "be taxed at the statutory flat company rate of 27% applicable to corporate dividends.",
+        "text_af": "teen die statutêre maatskappykoers van 27% op korporatiewe dividende belas word."
       },
       {
         "key": "D",
-        "text_en": "be taxed at the statutory flat corporate income tax rate of 27%.",
-        "text_af": "be taxed at the statutory flat corporate income tax rate of 27%."
+        "text_en": "be taxed at the marginal rate of 41%, thereby pulling up the taxpayer's average rate.",
+        "text_af": "teen die marginale koers van 41% belas word, wat die gemiddelde koers sal laat styg."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Additional income is taxed at the marginal tax rate (41%), which raises the average tax rate.",
-    "derivation_af": "Additional income is taxed at the marginal tax rate (41%), which raises the average tax rate."
+    "correctKey": "D",
+    "derivation_en": "Any increment of income is taxed at the marginal tax rate (41%). Since MTR > ATR, the additional tax paid pulls up the overall average tax rate.",
+    "derivation_af": "Enige bykomende inkomste word teen die marginale koers (41%) belas. Omdat MBK > GBK, trek die ekstra belasting die gemiddelde koers op."
   },
   {
     "id": "q15_36",
@@ -2349,33 +2349,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African fiscal analysis, an ad valorem indirect tax differs from a specific indirect tax in that an ad valorem tax is:",
-    "stem_af": "In Suid-Afrikaanse fiskale ontleding, an ad valorem indirect tax differs from a specific indirect tax in that an ad valorem tax is:",
+    "stem_en": "An ad valorem indirect tax differs from a specific indirect tax because an ad valorem tax is:",
+    "stem_af": "'n Ad valorem indirekte belasting verskil van 'n spesifieke belasting omdat 'n ad valorem-belasting:",
     "options": [
       {
         "key": "A",
-        "text_en": "levied as a fixed percentage of the market price of the good (such as VAT at 15%).",
-        "text_af": "levied as a fixed percentage of the market price of the good (such as VAT at 15%)."
+        "text_en": "levied as a fixed rand amount per physical unit or volume of the commodity purchased.",
+        "text_af": "as 'n vaste randbedrag per fisiese eenheid of volume van die produk gehef word."
       },
       {
         "key": "B",
-        "text_en": "charged as a fixed monetary Rand amount per physical unit of the commodity (such as R3.50 per liter of petrol).",
-        "text_af": "charged as a fixed monetary Rand amount per physical unit of the commodity (such as R3.50 per liter of petrol)."
+        "text_en": "deducted directly from the net operating capital value of registered corporate assets.",
+        "text_af": "direk van die netto bedryfskapitaalwaarde van geregistreerde firmas afgetrek word."
       },
       {
         "key": "C",
-        "text_en": "deducted directly from corporate net operating asset values.",
-        "text_af": "deducted directly from corporate net operating asset values."
+        "text_en": "calculated as a fixed percentage of the transaction value or market price of the good.",
+        "text_af": "bereken word as 'n vaste persentasie van die transaksiewaarde of markprys van die goed."
       },
       {
         "key": "D",
-        "text_en": "applied exclusively to exported agricultural raw materials.",
-        "text_af": "applied exclusively to exported agricultural raw materials."
+        "text_en": "imposed exclusively on raw agricultural commodities exported across foreign borders.",
+        "text_af": "uitsluitlik op onverwerkte landboukommoditeite gehef word wat na die buiteland gaan."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Ad valorem is a percentage of value (e.g. VAT); specific tax is a fixed Rand amount per physical unit (e.g. fuel levy).",
-    "derivation_af": "Ad valorem is a percentage of value (e.g. VAT); specific tax is a fixed Rand amount per physical unit (e.g. fuel levy)."
+    "correctKey": "C",
+    "derivation_en": "An ad valorem tax (e.g. VAT at 15%) is proportional to the price/value; a specific tax (e.g. fuel levy at R3.50/litre) is fixed per physical unit.",
+    "derivation_af": "'n Ad valorem-belasting (bv. BTW teen 15%) is 'n persentasie van die prys; 'n spesifieke belasting (bv. brandstofheffing per liter) is 'n vaste randbedrag."
   },
   {
     "id": "q15_37",
@@ -2383,33 +2383,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In South African fiscal analysis, a government subsidy paid to private solar panel installers is economically justified because:",
-    "stem_af": "In Suid-Afrikaanse fiskale ontleding, a government subsidy paid to private solar panel installers is economically justified because:",
+    "stem_en": "A government subsidy paid to households installing residential solar panels is economically justified when:",
+    "stem_af": "'n Owerheidsubsidie aan huishoudings wat residensiële sonpanele installeer, word ekonomies geregverdig wanneer:",
     "options": [
       {
         "key": "A",
-        "text_en": "clean renewable energy generates positive consumption and production externalities that the free market underprovides.",
-        "text_af": "clean renewable energy generates positive consumption and production externalities that the free market underprovides."
+        "text_en": "commercial solar energy manufacturers operate as completely unregulated natural monopolies.",
+        "text_af": "kommersiële sonkragvervaardigers as heeltemal ongereguleerde natuurlike markmonopolieë optree."
       },
       {
         "key": "B",
-        "text_en": "the statutory corporate income tax rate on energy utilities is currently zero.",
-        "text_af": "the statutory corporate income tax rate on energy utilities is currently zero."
+        "text_en": "the price elasticity of demand for grid electricity generation is perfectly price elastic.",
+        "text_af": "die pryselastisiteit van die vraag na elektrisiteit op die nasionale netwerk volkome elasties is."
       },
       {
         "key": "C",
-        "text_en": "commercial solar energy manufacturers operate as unregulated natural monopolies.",
-        "text_af": "commercial solar energy manufacturers operate as unregulated natural monopolies."
+        "text_en": "solar panel installations completely eliminate the need for national fiscal budget balances.",
+        "text_af": "sonpaneel-installasies die behoefte aan nasionale fiskale begrotingsbalanse heeltemal uitwis."
       },
       {
         "key": "D",
-        "text_en": "solar panel installations completely eliminate the need for national fiscal budgets.",
-        "text_af": "solar panel installations completely eliminate the need for national fiscal budgets."
+        "text_en": "clean renewable energy generates positive externalities that exceed private market returns.",
+        "text_af": "skoon hernubare krag positiewe eksterne voordele genereer wat private markopbrengste oortref."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Positive externalities mean social benefits exceed private benefits, justifying subsidies to expand output to the social optimum.",
-    "derivation_af": "Positive externalities mean social benefits exceed private benefits, justifying subsidies to expand output to the social optimum."
+    "correctKey": "D",
+    "derivation_en": "Renewable energy generates positive externalities (lower emissions, reduced grid strain) that private markets do not reward, justifying subsidies.",
+    "derivation_af": "Hernubare energie skep positiewe eksterne voordele wat nie deur die mark beloon word nie; subsidies help om uitset tot die optimum te verhoog."
   },
   {
     "id": "q20_01",
@@ -2417,28 +2417,28 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "Which one of the following correctly expresses the canonical macroeconomic definition of inflation?",
-    "stem_af": "Watter een van die volgende verwoord die kanonieke makro-ekonomiese definisie van inflasie korrek?",
+    "stem_en": "Inflation is formally defined in economics as:",
+    "stem_af": "Inflasie word in die ekonomie formeel gedefinieer as:",
     "options": [
       {
         "key": "A",
-        "text_en": "A single once-off administrative increase in the price of municipal electricity.",
-        "text_af": "'n Enkele eenmalige administratiewe verhoging in die elektrisiteitsprys."
+        "text_en": "a single once-off increase in the price of electricity and municipal services.",
+        "text_af": "'n enkel eenmalige styging in die prys van elektrisiteit en munisipale dienste."
       },
       {
         "key": "B",
-        "text_en": "A continuous and considerable increase in the general price level accompanied by an ongoing decline in the purchasing power of money.",
-        "text_af": "'n Volgehoue en beduidende toename in die algemene pryspeil gepaardgaande met 'n daling in koopkrag."
+        "text_en": "a continuous and considerable increase in the general price level over time.",
+        "text_af": "'n volgehoue en aansienlike toename in die algemene pryspeil oor 'n tydperk."
       },
       {
         "key": "C",
-        "text_en": "An increase in real GDP that expands faster than commercial bank credit creation.",
-        "text_af": "'n Toename in reële BBP wat vinniger groei as bankkrediet."
+        "text_en": "an increase in real GDP that expands faster than commercial bank credit lines.",
+        "text_af": "'n toename in reële BBP wat vinniger groei as handelsbankkredietverlening."
       },
       {
         "key": "D",
-        "text_en": "A temporary seasonal price spike in retail hospitality services during December.",
-        "text_af": "'n Tydelike seisoenale prysstyging in die kleinhandel gedurende Desember."
+        "text_en": "a temporary seasonal spike in agricultural food prices during drought periods.",
+        "text_af": "'n tydelike seisoenale styging in landbouvoedselpryse tydens droogtetye."
       }
     ],
     "correctKey": "B",
@@ -2495,23 +2495,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "The CPI measures prices of consumer goods including imported goods, whereas the GDP deflator measures prices of all domestically produced final goods and excludes imports.",
-        "text_af": "Die VPI meet verbruiksgoedere insluitend invoere, terwyl die BBP-deflator alle binnelandse produksie meet en invoere uitsluit."
+        "text_en": "The CPI includes imported consumer goods, whereas the GDP deflator covers domestic goods only.",
+        "text_af": "Die VPI sluit ingevoerde verbruiksgoedere in, terwyl die BBP-deflator slegs plaaslike goedere dek."
       },
       {
         "key": "B",
-        "text_en": "The CPI includes factory machinery while the GDP deflator is confined to food and beverages.",
-        "text_af": "Die VPI sluit fabrieksmasjinerie in terwyl die BBP-deflator tot voedsel beperk is."
+        "text_en": "The CPI includes heavy factory machinery, whereas the deflator is confined to retail food items.",
+        "text_af": "Die VPI sluit swaar fabrieksmasjinerie in, terwyl die deflator slegs tot kleinhandelkossorterings beperk is."
       },
       {
         "key": "C",
-        "text_en": "The GDP deflator is measured weekly by private supermarkets whereas the CPI is updated once per decade.",
-        "text_af": "Die BBP-deflator word weekliks deur supermarkte gemeet terwyl VPI elke dekade bereken word."
+        "text_en": "The GDP deflator is measured weekly by retailers, whereas the CPI is updated once each decade.",
+        "text_af": "Die BBP-deflator word weekliks deur kleinhandelaars gemeet, terwyl die VPI slegs elke dekade opgedateer word."
       },
       {
         "key": "D",
-        "text_en": "The CPI excludes value added taxes while the deflator includes import tariffs.",
-        "text_af": "Die VPI sluit BTW uit terwyl die deflator invoertariewe insluit."
+        "text_en": "The CPI excludes indirect sales taxes, whereas the deflator includes statutory import tariffs.",
+        "text_af": "Die VPI sluit indirekte verkopebelasting uit, terwyl die deflator statutêre invoertariewe insluit."
       }
     ],
     "correctKey": "A",
@@ -2529,23 +2529,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "A rightward shift in the Aggregate Demand curve, causing price level to rise and real GDP to expand in the short run.",
-        "text_af": "'n Verskuiwing na regs van die Totale Vraagkromme, wat pryse laat styg en reële BBP laat toeneem in die korttermyn."
+        "text_en": "a rightward shift in Aggregate Demand, raising price levels and expanding real GDP in the short run.",
+        "text_af": "'n verskuiwing na regs van Totale Vraag, wat pryse laat styg en reële BBP in die korttermyn verhoog."
       },
       {
         "key": "B",
-        "text_en": "A leftward shift in the Aggregate Supply curve, causing stagflation and rising unemployment.",
-        "text_af": "'n Verskuiwing na links van die Totale Aanbodkromme, wat stagflasie veroorsaak."
+        "text_en": "a leftward shift in Aggregate Supply, triggering domestic stagflation and rising unemployment rates.",
+        "text_af": "'n verskuiwing na links van Totale Aanbod, wat stagflasie en hoër nasionale werkloosheid veroorsaak."
       },
       {
         "key": "C",
-        "text_en": "An unexpected decline in the nominal money supply engineered by the central bank.",
-        "text_af": "'n Onverwagse daling in die geldvoorraad deur die sentrale bank."
+        "text_en": "an unexpected contraction in nominal money supply balances engineered by monetary policymakers.",
+        "text_af": "'n onverwagse daling in die nominale geldvoorraad wat doelbewus deur sentrale bankiers geskep word."
       },
       {
         "key": "D",
-        "text_en": "A mandatory reduction in domestic trade tariffs on imported consumer goods.",
-        "text_af": "'n Verpligte verlaging in invoertariewe op verbruiksgoedere."
+        "text_en": "a mandatory legislative reduction in domestic tariff rates on foreign imported consumer goods.",
+        "text_af": "'n verpligte statutêre vermindering in doeanetariewe op ingevoerde buitelandse verbruiksgoedere."
       }
     ],
     "correctKey": "A",
@@ -2563,23 +2563,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Stagflation: a simultaneous increase in the general price level and a contraction in real output accompanied by rising unemployment.",
-        "text_af": "Stagflasie: 'n gelyktydige toename in die prysvlak en 'n afname in reële produksie gepaardgaande met stygende werkloosheid."
+        "text_en": "Stagflation, characterized by a higher price level and falling real output.",
+        "text_af": "Stagflasie, gekenmerk deur 'n hoër prysvlak en dalende reële produksie."
       },
       {
         "key": "B",
-        "text_en": "A rapid acceleration in private business capital investment expenditure.",
-        "text_af": "'n Vinnige versnelling in private besigheidsinvesteringsbesteding."
+        "text_en": "Economic expansion, with a lower general price level and rising real output.",
+        "text_af": "Ekonomiese uitbreiding, met 'n laer prysvlak en stygende reële produksie."
       },
       {
         "key": "C",
-        "text_en": "An automatic decrease in the nominal cost of living for low-income households.",
-        "text_af": "'n Outomatiese daling in die lewenskoste vir lae-inkomste huishoudings."
+        "text_en": "Demand deflation, with falling consumer prices and expanding market output.",
+        "text_af": "Vraagdeflasie, met dalende pryse en 'n uitbreiding in nasionale produksie."
       },
       {
         "key": "D",
-        "text_en": "An expansion in real manufacturing output and rising employment levels.",
-        "text_af": "'n Uitbreiding in reële vervaardigingsuitset en stygende indiensneming."
+        "text_en": "Fiscal expansion, with balanced government budgets and rising real output.",
+        "text_af": "Fiskale uitbreiding, met gebalanseerde begrotings en hoër indiensneming."
       }
     ],
     "correctKey": "A",
@@ -2597,23 +2597,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Sharp increases in nominal wages that significantly exceed labor productivity gains, combined with rising imported energy costs.",
-        "text_af": "Skerp stygings in nominale lone wat arbeidsproduktiwiteit oorskry, gekombineer met stygende ingevoerde energiekoste."
+        "text_en": "nominal wage gains exceeding labor productivity growth, combined with rising imported energy costs.",
+        "text_af": "nominale loonstygings wat produktiwiteit oortref, tesame met stygende ingevoerde energiekoste."
       },
       {
         "key": "B",
-        "text_en": "A sustained collapse in commercial bank consumer credit advances.",
-        "text_af": "'n Volgehoue ineenstorting in handelsbankkredietverlening."
+        "text_en": "a sustained and sudden collapse in commercial banking private sector consumer credit advances.",
+        "text_af": "'n skielike en volgehoue ineenstorting in handelsbanke se kredietverlening aan verbruikers."
       },
       {
         "key": "C",
-        "text_en": "Substantial reductions in municipal electricity tariffs and water rates.",
-        "text_af": "Aansienlike verlagings in munisipale elektrisiteitstariewe."
+        "text_en": "substantial across-the-board reductions in municipal electricity tariffs and public water rates.",
+        "text_af": "aansienlike algemene afnames in munisipale elektrisiteitstariewe en plaaslike watertariewe."
       },
       {
         "key": "D",
-        "text_en": "A persistent appreciation of the Rand against major international trade currencies.",
-        "text_af": "'n Volgehoue appreciasie van die Rand teen groot internasionale geldeenhede."
+        "text_en": "a persistent and rapid appreciation of the Rand against major international trading currencies.",
+        "text_af": "'n volgehoue en vinnige versterking van die Rand teenoor buitelandse handelsvennote se valuta."
       }
     ],
     "correctKey": "A",
@@ -2631,23 +2631,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Because it directly increases the Rand cost of imported intermediate inputs, machinery, and crude oil, shifting domestic supply curves leftward.",
-        "text_af": "Omdat dit die Randkoste van ingevoerde insette, masjinerie en ru-olie verhoog en aanbodkrommes na links verskuif."
+        "text_en": "it raises the Rand cost of imported oil and capital inputs, shifting aggregate supply leftward.",
+        "text_af": "dit verhoog die Randkoste van ru-olie en kapitaalbronne, wat totale aanbod na links laat verskuif."
       },
       {
         "key": "B",
-        "text_en": "Because it legally obliges the South African Revenue Service to double all import tariff percentages.",
-        "text_af": "Omdat dit die SAID verplig om alle doeanetariewe te verdubbel."
+        "text_en": "it legally obliges national revenue authorities to double statutory import tariff percentages.",
+        "text_af": "dit verplig nasionale inkomstediens-owerhede wetlik om alle invoertariefpersentasies te verdubbel."
       },
       {
         "key": "C",
-        "text_en": "Because it eliminates all foreign demand for South African mineral exports.",
-        "text_af": "Omdat dit alle buitelandse vraag na minerale uitvoere uitskakel."
+        "text_en": "it eliminates all international trading demand for South African mineral and agricultural exports.",
+        "text_af": "dit wis alle internasionale vraag na Suid-Afrikaanse minerale en landbou-uitvoere heeltemal uit."
       },
       {
         "key": "D",
-        "text_en": "Because commercial banks automatically convert all domestic savings into US Dollar accounts.",
-        "text_af": "Omdat banke alle binnelandse spaargeld outomaties in dollarrekeninge omskep."
+        "text_en": "it compels commercial banks to convert domestic Rand savings accounts into foreign currencies.",
+        "text_af": "dit dwing banke om plaaslike Rand-spaarrekeninge outomaties in buitelandse valuta om te skakel."
       }
     ],
     "correctKey": "A",
@@ -2665,23 +2665,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "It benefits debtors and harms creditors, because borrowers repay loans using money with lower real purchasing power than when borrowed.",
-        "text_af": "Dit bevoordeel debiteure en benadeel krediteure, omdat leners hul skuld terugbetaal met geld wat minder koopkrag het."
+        "text_en": "It benefits debtors and harms creditors, as loans are repaid in money with lower real purchasing value.",
+        "text_af": "Dit bevoordeel debiteure en benadeel krediteure, aangesien skuld met laer reële koopkrag terugbetaal word."
       },
       {
         "key": "B",
-        "text_en": "It harms debtors and benefits creditors by multiplying the real value of collateral pledged.",
-        "text_af": "Dit benadeel debiteure en bevoordeel krediteure deur die reële waarde van sekuriteit te vermeerder."
+        "text_en": "It harms debtors and benefits creditors by multiplying the real purchasing value of mortgage debt.",
+        "text_af": "Dit benadeel debiteure en bevoordeel krediteure deur die reële waarde van verbandskuld te vergroot."
       },
       {
         "key": "C",
-        "text_en": "It has zero redistributional impact because nominal loan contracts adjust retroactively by law.",
-        "text_af": "Dit het geen impak nie omdat leningskontrakte outomaties terugwerkend aanpas."
+        "text_en": "It exerts zero redistributional wealth effect as debt contracts adjust retroactively by legislation.",
+        "text_af": "Dit het geen herverdelingseffek nie aangesien skuld outomaties wetlik terugwerkend aangepas word."
       },
       {
         "key": "D",
-        "text_en": "It transfers real wealth exclusively to foreign offshore currency speculation funds.",
-        "text_af": "Dit dra welvaart slegs oor na buitelandse valutaspekulante."
+        "text_en": "It transfers financial wealth exclusively into the portfolios of offshore currency hedge funds.",
+        "text_af": "Dit dra finansiële bates uitsluitlik oor na die portefeuljes van buitelandse verskansingsfondse."
       }
     ],
     "correctKey": "A",
@@ -2712,23 +2712,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "0% to 2% headline CPI inflation.",
-        "text_af": "0% tot 2% hoof-VPI-inflasie."
+        "text_en": "a rigid band of 0% to 2% headline CPI inflation focused strictly on total price stability.",
+        "text_af": "'n starre band van 0% tot 2% hoof-VPI-inflasie gefokus op totale prysstabiliteit."
       },
       {
         "key": "B",
-        "text_en": "3% to 6% headline CPI inflation, with policy focused on anchoring expectations around the 4.5% midpoint.",
-        "text_af": "3% tot 6% hoof-VPI-inflasie, met die mikpunt om verwagtinge rondom die 4,5% middelpunt te anker."
+        "text_en": "a continuous band of 3% to 6% headline CPI, anchored specifically around the 4.5% midpoint.",
+        "text_af": "'n deurlopende band van 3% tot 6% hoof-VPI-inflasie, geanker rondom die 4,5% middelpunt."
       },
       {
         "key": "C",
-        "text_en": "6% to 10% wholesale producer price inflation.",
-        "text_af": "6% tot 10% produsenteprysinflasie."
+        "text_en": "an adjustable band of 6% to 10% producer price inflation applied across wholesale markets.",
+        "text_af": "'n aanpasbare band van 6% tot 10% produsenteprysinflasie van toepassing op groothandelsmarkte."
       },
       {
         "key": "D",
-        "text_en": "An identical rate to the prevailing US Federal Reserve funds target.",
-        "text_af": "'n Koers presies gelyk aan die Amerikaanse beleidsteiken."
+        "text_en": "a variable interest target set to match the prevailing rate of the US Federal Reserve Board.",
+        "text_af": "'n veranderlike rentekoersteiken wat die heersende Amerikaanse beleidskoers naboots."
       }
     ],
     "correctKey": "B",
@@ -2746,23 +2746,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Inflation may decelerate, but at the cost of further reducing real output and causing even higher unemployment.",
-        "text_af": "Inflasie mag verlangsaam, maar ten koste van verdere produksiedalings en selfs hoër werkloosheid."
+        "text_en": "inflation slows down, but at the direct cost of deeper output declines and higher unemployment.",
+        "text_af": "inflasie daal, maar ten koste van verdere produksie-afnames en toenemende werkloosheid."
       },
       {
         "key": "B",
-        "text_en": "Real GDP will immediately double while the general price level spikes exponentially.",
-        "text_af": "Reële BBP sal verdubbel terwyl pryse eksponensieel styg."
+        "text_en": "real national GDP instantly doubles while the domestic aggregate price level spikes upwards.",
+        "text_af": "reële nasionale BBP onmiddellik verdubbel terwyl die binnelandse prysvlak drasties die hoogte inskiet."
       },
       {
         "key": "C",
-        "text_en": "Commercial bank lending to small enterprises will automatically expand at zero interest.",
-        "text_af": "Banklenings aan klein besighede sal teen nul rente toeneem."
+        "text_en": "commercial bank lending to small enterprises expands rapidly at zero nominal interest rates.",
+        "text_af": "handelsbankkrediet aan klein besighede vinnig en onvoorwaardelik teen nul rentekoers uitbrei."
       },
       {
         "key": "D",
-        "text_en": "The national currency will permanently lose its legal tender status.",
-        "text_af": "Die plaaslike geldeenheid sal sy regstatus permanent verloor."
+        "text_en": "the national currency immediately loses its statutory legal tender status across all markets.",
+        "text_af": "die nasionale geldeenheid dadelik sy amptelike wetlike betaalmiddelstatus heeltemal verloor."
       }
     ],
     "correctKey": "A",
@@ -2775,28 +2775,28 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "Why does the Consumer Price Index (CPI) tend to slightly overstate the true increase in the cost of living over time (substitution bias)?",
-    "stem_af": "Waarom neig die Verbruikersprysindeks (VPI) om die werklike toename in lewenskoste oor tyd effens te oorskat (substitusie-sydigheid)?",
+    "stem_en": "The Consumer Price Index (CPI) tends to overstate the true cost of living due to substitution bias because it:",
+    "stem_af": "Die Verbruikersprysindeks (VPI) neig om die lewenskoste weens substitusie-sydigheid te oorskat omdat dit:",
     "options": [
       {
         "key": "A",
-        "text_en": "Because it relies on a fixed basket of goods and fails to fully account for consumers substituting towards cheaper relative goods when prices rise.",
-        "text_af": "Omdat dit 'n vaste mandjie gebruik en nie ten volle in ag neem dat verbruikers na goedkoper plaasvervangers oorskakel nie."
+        "text_en": "relies on a fixed consumer basket and ignores shifts toward relatively cheaper substitute goods.",
+        "text_af": "'n vaste mandjie gebruik en verbruikersverskuiwings na goedkoper plaasvervangers ignoreer."
       },
       {
         "key": "B",
-        "text_en": "Because it includes non-market subsistence agricultural output produced by rural households.",
-        "text_af": "Omdat dit nie-mark landbouproduksie vir eie gebruik insluit."
+        "text_en": "measures price movements exclusively at wholesale factory gates rather than retail store outlets.",
+        "text_af": "prysbewegings slegs by fabriekshekke meet in plaas van gewone kleinhandelwinkels."
       },
       {
         "key": "C",
-        "text_en": "Because commercial supermarkets intentionally falsify retail price tags sent to statistical agencies.",
-        "text_af": "Omdat supermarkte vals prysetikette aan statistiese kantore stuur."
+        "text_en": "fails to account for quality improvements in manufactured durable consumer electronics over time.",
+        "text_af": "versuim om gehalteverbeterings in duursame vervaardigde verbruiksgoedere in ag te neem."
       },
       {
         "key": "D",
-        "text_en": "Because it completely excludes all clothing and residential rental housing expenditures.",
-        "text_af": "Omdat dit klerasie en huurbehuising heeltemal uitsluit."
+        "text_en": "excludes all indirect consumption taxes such as Value Added Tax and statutory duties on fuel.",
+        "text_af": "alle indirekte verbruiksbelastings soos BTW en statutêre brandstofheffings heeltemal uitsluit."
       }
     ],
     "correctKey": "A",
@@ -2822,33 +2822,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, core inflation is measured by statistical agencies because it:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, core inflation is measured by statistical agencies because it:",
+    "stem_en": "Statistical agencies measure core inflation in addition to headline inflation because core inflation:",
+    "stem_af": "Statistiese agentskappe meet kerninflasie benewens hooflyninflasie omdat kerninflasie:",
     "options": [
       {
         "key": "A",
-        "text_en": "excludes volatile items such as fresh food and energy prices to reveal underlying medium-term inflationary trends",
-        "text_af": "excludes volatile items such as fresh food and energy prices to reveal underlying medium-term inflationary trends"
+        "text_en": "excludes highly volatile food and energy prices to reveal underlying persistent inflation trends.",
+        "text_af": "baie wisselvallige voedsel- en energiepryse uitsluit om onderliggende inflasietendense te toon."
       },
       {
         "key": "B",
-        "text_en": "measures only the price of physical residential property sales across metropolitan areas",
-        "text_af": "measures only the price of physical residential property sales across metropolitan areas"
+        "text_en": "measures price movements exclusively within informal municipal street trading markets.",
+        "text_af": "prysbewegings uitsluitlik binne informele munisipale straathandelsmarkte meet."
       },
       {
         "key": "C",
-        "text_en": "evaluates price movements exclusively in the informal street trading economy",
-        "text_af": "evaluates price movements exclusively in the informal street trading economy"
+        "text_en": "records price adjustments across heavy defense procurement and military hardware only.",
+        "text_af": "prysaanpassings slegs oor swaar nasionale verdedigingstoerusting en wapentuig aanteken."
       },
       {
         "key": "D",
-        "text_en": "calculates the price changes in military defense procurement equipment",
-        "text_af": "calculates the price changes in military defense procurement equipment"
+        "text_en": "tracks changes in residential real estate valuations across metropolitan housing areas.",
+        "text_af": "veranderings in residensiële eiendomswaardasies oor metropolitaanse behuisingsones dophou."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "Core inflation strips out volatile components (food and energy) to capture underlying inflation momentum.",
-    "derivation_af": "Core inflation strips out volatile components (food and energy) to capture underlying inflation momentum."
+    "derivation_en": "Core inflation strips out volatile food and energy prices to give monetary policymakers a clearer view of underlying demand-driven price pressures.",
+    "derivation_af": "Kerninflasie stroop wisselvallige pryse (soos voedsel en brandstof) af om 'n duideliker beeld van onderliggende inflasiedruk te gee."
   },
   {
     "id": "q20_17",
@@ -2856,33 +2856,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, hyperinflation is conventionally defined in economics as:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, hyperinflation is conventionally defined in economics as:",
+    "stem_en": "In macroeconomic theory, hyperinflation is conventionally defined as an economic situation where:",
+    "stem_af": "In makro-ekonomiese teorie word hiperinflasie konvensioneel gedefinieer as 'n situasie waar:",
     "options": [
       {
         "key": "A",
-        "text_en": "an extremely rapid and out-of-control inflation rate typically exceeding 50% per month, leading to the collapse of monetary exchange",
-        "text_af": "an extremely rapid and out-of-control inflation rate typically exceeding 50% per month, leading to the collapse of monetary exchange"
+        "text_en": "the national headline consumer price index exceeds the SARB inflation target for two quarters.",
+        "text_af": "die amptelike verbruikersprysindeks die SARB-inflasieteikenband vir twee kwartale oorskry."
       },
       {
         "key": "B",
-        "text_en": "any inflation rate that exceeds the central bank's upper 6% target band for two quarters",
-        "text_af": "any inflation rate that exceeds the central bank's upper 6% target band for two quarters"
+        "text_en": "the monthly rate of general price inflation exceeds 50% (equivalent to over 12 000% annually).",
+        "text_af": "die maandelikse inflasiekoers 50% oorskry (gelykstaande aan meer as 12 000% op 'n jaargrondslag)."
       },
       {
         "key": "C",
-        "text_en": "a persistent decline in the general price level across durable goods",
-        "text_af": "a persistent decline in the general price level across durable goods"
+        "text_en": "the commercial banking prime overdraft rate drops below zero due to excess liquidity deposits.",
+        "text_af": "handelsbanke se primakoers onder nul daal as gevolg van buitensporige likiditeitsdeposito's."
       },
       {
         "key": "D",
-        "text_en": "an increase in the nominal yield on sovereign Treasury bonds above prime",
-        "text_af": "an increase in the nominal yield on sovereign Treasury bonds above prime"
+        "text_en": "the central bank replaces physical currency notes with interest-bearing sovereign debentures.",
+        "text_af": "die sentrale bank fisiese banknote met rentedraende soewereine skuldbriewe vervang."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Hyperinflation involves catastrophic price increases (conventionally >50% per month) destroying money's value.",
-    "derivation_af": "Hyperinflation involves catastrophic price increases (conventionally >50% per month) destroying money's value."
+    "correctKey": "B",
+    "derivation_en": "Philip Cagan's canonical economic benchmark defines hyperinflation as beginning when monthly inflation exceeds 50% (over 12 000% per year).",
+    "derivation_af": "Cagan se standaarddefinisie stel hiperinflasie vas op 'n maandelikse prysstyging van meer as 50% (meer as 12 000% per jaar)."
   },
   {
     "id": "q20_18",
@@ -2890,33 +2890,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, the Producer Price Index (PPI) differs fundamentally from the CPI because the PPI:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, the Producer Price Index (PPI) differs fundamentally from the CPI because the PPI:",
+    "stem_en": "Demand-pull inflation is initiated in the AD-AS framework by:",
+    "stem_af": "Vraagtrekinflasie word in die AD-AS raamwerk ontketen deur:",
     "options": [
       {
         "key": "A",
-        "text_en": "measures price changes at the factory gate or wholesale level of domestic production and imports, serving as a leading indicator of future CPI movements",
-        "text_af": "measures price changes at the factory gate or wholesale level of domestic production and imports, serving as a leading indicator of future CPI movements"
+        "text_en": "a sudden supply-side increase in the international price of imported crude oil and fuel.",
+        "text_af": "'n skielike aanbodkant-styging in die internasionale prys van ingevoerde ru-olie."
       },
       {
         "key": "B",
-        "text_en": "evaluates prices paid by final household consumers at retail shopping malls",
-        "text_af": "evaluates prices paid by final household consumers at retail shopping malls"
+        "text_en": "a nationwide labor strike forcing industrial wages up faster than worker labor productivity.",
+        "text_af": "'n landwye arbeidstaking wat industriële lone vinniger as arbeidsproduktiwiteit opstoot."
       },
       {
         "key": "C",
-        "text_en": "measures only the cost of labor inputs per unit of industrial output",
-        "text_af": "measures only the cost of labor inputs per unit of industrial output"
+        "text_en": "a rightward shift in Aggregate Demand when total spending exceeds aggregate full-capacity output.",
+        "text_af": "'n verskuiwing na regs van Totale Vraag wanneer besteding die volle produksievermoë oorskry."
       },
       {
         "key": "D",
-        "text_en": "is calculated exclusively by private commercial retail banking syndicates",
-        "text_af": "is calculated exclusively by private commercial retail banking syndicates"
+        "text_en": "an increase in statutory corporate profit tax rates enacted by the national Parliament.",
+        "text_af": "'n toename in statutêre maatskappybelastingkoerse wat deur die Parlement goedgekeur word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "PPI measures wholesale factory-gate prices. Increases in PPI often pass through into CPI with a lag.",
-    "derivation_af": "PPI measures wholesale factory-gate prices. Increases in PPI often pass through into CPI with a lag."
+    "correctKey": "C",
+    "derivation_en": "Demand-pull inflation occurs when aggregate spending (C + I + G + X - Z) expands beyond potential output, shifting AD rightward and bidding up the price level.",
+    "derivation_af": "Vraagtrekinflasie ontstaan wanneer totale besteding die ekonomie se produksievermoë oorskry, wat AD na regs verskuif en pryse opjaag."
   },
   {
     "id": "q20_19",
@@ -2924,33 +2924,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, in a period of high inflation, 'bracket creep' or fiscal drag harms workers because:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, in a period of high inflation, 'bracket creep' or fiscal drag harms workers because:",
+    "stem_en": "In a progressive income tax regime, 'bracket creep' (fiscal drag) during inflation harms workers because:",
+    "stem_af": "In 'n progressiewe inkomstebelastingstelsel benadeel 'kerpsluiping' (fiskale sleuring) werkers tydens inflasie omdat:",
     "options": [
       {
         "key": "A",
-        "text_en": "nominal salary increases push taxpayers into higher statutory marginal tax brackets, increasing their real tax burden even if real purchasing power remains constant",
-        "text_af": "nominal salary increases push taxpayers into higher statutory marginal tax brackets, increasing their real tax burden even if real purchasing power remains constant"
+        "text_en": "employers are legally prohibited from paying overtime allowances during economic booms.",
+        "text_af": "werkgewers wetlik verbied word om oortydtoelaes tydens ekonomiese opswaaie uit te betaal."
       },
       {
         "key": "B",
-        "text_en": "employers are legally prohibited from paying overtime wages during inflationary periods",
-        "text_af": "employers are legally prohibited from paying overtime wages during inflationary periods"
+        "text_en": "commercial banks automatically deduct value added consumption taxes from savings deposits.",
+        "text_af": "handelsbanke outomaties belasting op toegevoegde waarde van spaardeposito's aftrek."
       },
       {
         "key": "C",
-        "text_en": "commercial banks automatically deduct value added tax from checking account balances",
-        "text_af": "commercial banks automatically deduct value added tax from checking account balances"
+        "text_en": "the central bank replaces higher-denomination banknotes with low-yielding debentures.",
+        "text_af": "die sentrale bank hoë-denominasie banknote met lae-opbrengs skuldbriewe vervang."
       },
       {
         "key": "D",
-        "text_en": "the central bank cancels all paper currency denominations above R50",
-        "text_af": "the central bank cancels all paper currency denominations above R50"
+        "text_en": "nominal wage gains push taxpayers into higher tax brackets, raising their average tax rate.",
+        "text_af": "nominale loonstygings belastingbetalers in hoër kerwe druk, wat hul gemiddelde belastingkoers verhoog."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Bracket creep raises the average tax rate when inflation pushes nominal wages into higher brackets.",
-    "derivation_af": "Bracket creep raises the average tax rate when inflation pushes nominal wages into higher brackets."
+    "correctKey": "D",
+    "derivation_en": "Bracket creep occurs when inflation pushes nominal income into higher tax brackets without any increase in real purchasing power, raising the average tax rate.",
+    "derivation_af": "Kerpsluiping vind plaas wanneer nominale loonstygings mense in hoër belastingkerwe druk, sodat hul gemiddelde belastingkoers styg sonder dat reële inkomste toeneem."
   },
   {
     "id": "q20_20",
@@ -2958,33 +2958,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, an increase in the velocity of money circulation (V) during an inflationary episode implies that:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, an increase in the velocity of money circulation (V) during an inflationary episode implies that:",
+    "stem_en": "An increase in the velocity of money circulation (V) during high inflation implies that:",
+    "stem_af": "'n Toename in die omloopsnelheid van geld (V) tydens hoë inflasie impliseer dat:",
     "options": [
       {
         "key": "A",
-        "text_en": "people spend cash balances more rapidly because they anticipate that money will lose its purchasing power in the near future",
-        "text_af": "people spend cash balances more rapidly because they anticipate that money will lose its purchasing power in the near future"
+        "text_en": "commercial banks hold larger excess cash reserves than required by the South African Reserve Bank.",
+        "text_af": "handelsbanke groter oorskot-kontantreserwes hou as wat deur die Reserwebank vereis word."
       },
       {
         "key": "B",
-        "text_en": "commercial banks are holding higher cash reserves than legally required by the SARB",
-        "text_af": "commercial banks are holding higher cash reserves than legally required by the SARB"
+        "text_en": "the physical condition of banknotes deteriorates more rapidly across retail grocery stores.",
+        "text_af": "die fisiese toestand van banknote vinniger oor kleinhandel-kruidenierswinkels agteruitgaan."
       },
       {
         "key": "C",
-        "text_en": "the physical paper quality of banknotes deteriorates more rapidly in retail trade",
-        "text_af": "the physical paper quality of banknotes deteriorates more rapidly in retail trade"
+        "text_en": "agents spend money more rapidly because they anticipate that cash will lose purchasing power.",
+        "text_af": "mense geld vinniger bestee omdat hulle verwag dat kontant sy koopkrag binnekort sal verloor."
       },
       {
         "key": "D",
-        "text_en": "the central bank has permanently pegged the domestic repo rate to zero",
-        "text_af": "the central bank has permanently pegged the domestic repo rate to zero"
+        "text_en": "the national Treasury reduces the headline value added tax rate across all consumer durables.",
+        "text_af": "die nasionale Tesourie die statutêre BTW-koers op alle duursame verbruiksgoedere verlaag."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "When people expect prices to rise, they spend money faster (V rises) to avoid holding depreciating cash.",
-    "derivation_af": "When people expect prices to rise, they spend money faster (V rises) to avoid holding depreciating cash."
+    "correctKey": "C",
+    "derivation_en": "When inflation accelerates, holding money incurs a rapid loss of purchasing power; individuals spend money faster, increasing the velocity of circulation (V).",
+    "derivation_af": "Wanneer inflasie toeneem, verloor kontant vinnig waarde; mense raak vinniger van geld ontslae, wat die omloopsnelheid (V) laat toeneem."
   },
   {
     "id": "q20_21",
@@ -2992,33 +2992,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, if the nominal interest rate on a savings deposit is 7% and the expected inflation rate is 8%, the real return to the saver is:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, if the nominal interest rate on a savings deposit is 7% and the expected inflation rate is 8%, the real return to the saver is:",
+    "stem_en": "If the nominal interest rate on a fixed deposit is 7% while the annual inflation rate is 8%, the real return is:",
+    "stem_af": "Indien die nominale rentekoers op 'n vaste deposito 7% is terwyl die jaarlikse inflasiekoers 8% is, is die reële opbrengs:",
     "options": [
       {
         "key": "A",
-        "text_en": "negative 1%, meaning the purchasing power of the saved funds will decline over the period",
-        "text_af": "negative 1%, meaning the purchasing power of the saved funds will decline over the period"
+        "text_en": "positive 15.0%, resulting in a substantial accumulation of real household wealth over time.",
+        "text_af": "positief 15,0%, wat mettertyd tot 'n aansienlike toename in reële huishoudelike rykdom lei."
       },
       {
         "key": "B",
-        "text_en": "positive 15%, resulting in a rapid expansion in household real wealth",
-        "text_af": "positive 15%, resulting in a rapid expansion in household real wealth"
+        "text_en": "exactly zero because commercial retail banks absorb all inflationary risks on term deposits.",
+        "text_af": "presies nul omdat kommersiële kleinhandelbanke alle inflasierisiko's op termyndeposito's dra."
       },
       {
         "key": "C",
-        "text_en": "exactly zero because the commercial bank absorbs all inflationary price risks",
-        "text_af": "exactly zero because the commercial bank absorbs all inflationary price risks"
+        "text_en": "positive 1.0% after statutory adjustments for corporate capital gains tax rebate allowances.",
+        "text_af": "positief 1,0% na statutêre aanpassings vir korporatiewe kapitaalwinsbelasting-kortings."
       },
       {
         "key": "D",
-        "text_en": "positive 1.14% after adjusting for statutory capital gains tax rebates",
-        "text_af": "positive 1.14% after adjusting for statutory capital gains tax rebates"
+        "text_en": "negative 1.0%, meaning that the real purchasing power of the invested funds has contracted.",
+        "text_af": "negatief 1,0%, wat beteken dat die reële koopkrag van die belegde fondse gekrimp het."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Real return = Nominal interest - Inflation = 7% - 8% = -1% (loss of real purchasing power).",
-    "derivation_af": "Real return = Nominal interest - Inflation = 7% - 8% = -1% (loss of real purchasing power)."
+    "correctKey": "D",
+    "derivation_en": "Real Interest Rate approx = Nominal Interest Rate - Inflation Rate = 7% - 8% = -1.0% (purchasing power falls by 1%).",
+    "derivation_af": "Reële rentekoers = Nominale koers minus Inflasie = 7% - 8% = -1,0% (die koopkrag van die spaargeld daal met 1%)."
   },
   {
     "id": "q20_22",
@@ -3026,33 +3026,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, which of the following policies would be appropriate to counteract demand-pull inflation?:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, which of the following policies would be appropriate to counteract demand-pull inflation?:",
+    "stem_en": "Which of the following macroeconomic policy packages is appropriate to counteract demand-pull inflation?",
+    "stem_af": "Watter van die volgende makro-ekonomiese beleidspakkette is geskik om vraagtrekinflasie te bekamp?",
     "options": [
       {
         "key": "A",
-        "text_en": "A contractionary monetary policy that raises the repo rate, reducing credit-financed consumer spending and private investment.",
-        "text_af": "A contractionary monetary policy that raises the repo rate, reducing credit-financed consumer spending and private investment."
+        "text_en": "An expansionary fiscal policy featuring major social infrastructure expenditure financed by debt.",
+        "text_af": "'n Verruimende fiskale beleid met groot openbare besteding wat deur staatskuld gefinansier word."
       },
       {
         "key": "B",
-        "text_en": "An aggressive increase in government social grant expenditure financed by borrowing.",
-        "text_af": "An aggressive increase in government social grant expenditure financed by borrowing."
+        "text_en": "A contractionary monetary policy raising the repo rate to reduce consumer and investment spending.",
+        "text_af": "'n Beperkende monetêre beleid wat die repokoers verhoog om verbruikers- en investeringsbesteding te demp."
       },
       {
         "key": "C",
-        "text_en": "A substantial cut in the corporate income tax rate across all manufacturing firms.",
-        "text_af": "A substantial cut in the corporate income tax rate across all manufacturing firms."
+        "text_en": "A substantial cut in corporate income tax rates combined with subsidies to commercial exporters.",
+        "text_af": "'n Skerp verlaging in maatskappybelasting gekoppel aan direkte subsidies vir kommersiële uitvoerders."
       },
       {
         "key": "D",
-        "text_en": "A devaluation of the domestic currency to stimulate manufactured export demand.",
-        "text_af": "A devaluation of the domestic currency to stimulate manufactured export demand."
+        "text_en": "A deliberate nominal currency devaluation aimed at stimulating domestic manufacturing output.",
+        "text_af": "'n Doelbewuste devaluasie van die wisselkoers om binnelandse vervaardigingsuitset te stimuleer."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Demand-pull inflation requires dampening aggregate demand through higher interest rates or lower government spending.",
-    "derivation_af": "Demand-pull inflation requires dampening aggregate demand through higher interest rates or lower government spending."
+    "correctKey": "B",
+    "derivation_en": "Demand-pull inflation requires dampening aggregate demand, achieved through restrictive monetary policy (raising the repo rate) or tighter fiscal policy.",
+    "derivation_af": "Vraagtrekinflasie word bekamp deur totale vraag af te koel via 'n hoër repokoers (beperkende monetêre beleid) of verlaagde staatsbesteding."
   },
   {
     "id": "q20_23",
@@ -3060,33 +3060,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, the cost of holding money during periods of severe inflation is high because:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, the cost of holding money during periods of severe inflation is high because:",
+    "stem_en": "The opportunity cost of holding liquid cash balances during periods of severe inflation is high because:",
+    "stem_af": "Die geleentheidskoste om likiede kontant tydens periodes van hoë inflasie te hou is baie hoog omdat:",
     "options": [
       {
         "key": "A",
-        "text_en": "money yields no interest and continuously loses real purchasing power as prices rise",
-        "text_af": "money yields no interest and continuously loses real purchasing power as prices rise"
+        "text_en": "commercial banks impose punitive administrative storage surcharges on paper cash in safety vaults.",
+        "text_af": "handelsbanke strafregtelike administratiewe bergingsfooie op kontant in bankkluise hef."
       },
       {
         "key": "B",
-        "text_en": "commercial banks charge punitive administrative storage fees for paper cash vaults",
-        "text_af": "commercial banks charge punitive administrative storage fees for paper cash vaults"
+        "text_en": "the South African Revenue Service levies a statutory 15% excise duty on domestic bank balances.",
+        "text_af": "die Suid-Afrikaanse Inkomstediens 'n statutêre 15% aksynsreg op binnelandse bankbalanse plaas."
       },
       {
         "key": "C",
-        "text_en": "the South African Revenue Service taxes physical currency holdings at 15%",
-        "text_af": "the South African Revenue Service taxes physical currency holdings at 15%"
+        "text_en": "cash yields zero nominal interest while its real purchasing power is continuously eroded by rising prices.",
+        "text_af": "kontant geen rente verdien nie terwyl die reële koopkrag daarvan deurlopend deur stygende pryse verweer word."
       },
       {
         "key": "D",
-        "text_en": "foreign central banks refuse to honor bilateral tourist currency exchanges",
-        "text_af": "foreign central banks refuse to honor bilateral tourist currency exchanges"
+        "text_en": "foreign central banks refuse to settle international trade payments denominated in local currency.",
+        "text_af": "buitelandse sentrale banke weier om internasionale handelsbetalings in plaaslike valuta te vereffen."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Inflation acts as a tax on cash holdings by steadily eroding real purchasing power.",
-    "derivation_af": "Inflation acts as a tax on cash holdings by steadily eroding real purchasing power."
+    "correctKey": "C",
+    "derivation_en": "Inflation acts as a negative real return on cash: because cash earns no interest, its purchasing power steadily shrinks as the price level climbs.",
+    "derivation_af": "Geld verdien geen nominale rente nie; tydens inflasie daal die reële koopkrag van kontant voortdurend namate die pryspeil styg."
   },
   {
     "id": "q20_24",
@@ -3094,33 +3094,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, when firms with market pricing power raise their profit margins by increasing prices above production costs, the resulting inflation is classified as:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, when firms with market pricing power raise their profit margins by increasing prices above production costs, the resulting inflation is classified as:",
+    "stem_en": "When oligopolistic firms with substantial market power raise their profit markups above cost increases, it causes:",
+    "stem_af": "Wanneer oligopolistiese firmas met aansienlike markkrag hul winsmarges bo kosteverhogings uitlig, veroorsaak dit:",
     "options": [
       {
         "key": "A",
-        "text_en": "cost-push inflation (specifically profit-push inflation)",
-        "text_af": "cost-push inflation (specifically profit-push inflation)"
+        "text_en": "demand-pull inflation driven by excessive credit creation across the commercial banking system.",
+        "text_af": "vraagtrekinflasie gedrewe deur oormatige kredietuitbreiding oor die hele handelsbankstelsel."
       },
       {
         "key": "B",
-        "text_en": "demand-pull inflation driven by excessive fiscal budget deficits",
-        "text_af": "demand-pull inflation driven by excessive fiscal budget deficits"
+        "text_en": "a spontaneous hyperinflationary collapse in the velocity of domestic currency circulation.",
+        "text_af": "'n spontane hiperinflasionêre ineenstorting in die omloopsnelheid van plaaslike banknote."
       },
       {
         "key": "C",
-        "text_en": "hyperinflation caused by physical banknote printing",
-        "text_af": "hyperinflation caused by physical banknote printing"
+        "text_en": "pure monetary inflation caused by an exogenous expansion in base money issued by the central bank.",
+        "text_af": "suiwer monetêre inflasie wat veroorsaak word deur 'n eksogene toename in die sentrale bank se basisgeld."
       },
       {
         "key": "D",
-        "text_en": "imported inflation caused by international transport supply chain failures",
-        "text_af": "imported inflation caused by international transport supply chain failures"
+        "text_en": "cost-push inflation (specifically profit-push inflation), shifting the aggregate supply curve leftward.",
+        "text_af": "kostedrukinflasie (spesifiek winsdrukinflasie), wat die totale aanbodkromme na links laat skuif."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "When firms raise markups above input costs, it shifts AS leftward, causing profit-push inflation.",
-    "derivation_af": "When firms raise markups above input costs, it shifts AS leftward, causing profit-push inflation."
+    "correctKey": "D",
+    "derivation_en": "Profit-push inflation occurs when firms exploit pricing power to widen markups, increasing supply-side costs and shifting AS to the left.",
+    "derivation_af": "Winsdrukinflasie ontstaan wanneer firmas met markmag hul prysmarges bo koste verhoog, wat AS na links verskuif en pryse opstoot."
   },
   {
     "id": "q20_25",
@@ -3128,33 +3128,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, the deflationary spiral is considered dangerous by central banks because falling prices:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, the deflationary spiral is considered dangerous by central banks because falling prices:",
+    "stem_en": "A deflationary spiral is considered particularly damaging to an economy by central banks because falling prices:",
+    "stem_af": "'n Deflasionêre spiraal word deur sentrale banke as besonder skadelik beskou omdat dalende pryse:",
     "options": [
       {
         "key": "A",
-        "text_en": "encourage consumers to postpone purchases in expectation of lower future prices, causing aggregate demand and employment to collapse",
-        "text_af": "encourage consumers to postpone purchases in expectation of lower future prices, causing aggregate demand and employment to collapse"
+        "text_en": "automatically double the nominal book value of official foreign currency and gold reserves.",
+        "text_af": "die nominale boekwaarde van amptelike buitelandse valutareserwes en goud outomaties verdubbel."
       },
       {
         "key": "B",
-        "text_en": "force the national Treasury to increase statutory personal income tax rates",
-        "text_af": "force the national Treasury to increase statutory personal income tax rates"
+        "text_en": "induce rapid demand-pull inflationary pressures across imported durable consumer goods.",
+        "text_af": "vinnige vraagtrekinflasiedruk oor ingevoerde duursame verbruiksgoedere ontketen."
       },
       {
         "key": "C",
-        "text_en": "automatically double the nominal value of national foreign currency reserves",
-        "text_af": "automatically double the nominal value of national foreign currency reserves"
+        "text_en": "induce households to delay spending in expectation of lower future prices, causing output to contract.",
+        "text_af": "huishoudings aanspoor om besteding uit te stel weens laer verwagte pryse, wat produksie laat krimp."
       },
       {
         "key": "D",
-        "text_en": "provoke immediate demand-pull inflation across imported commodity markets",
-        "text_af": "provoke immediate demand-pull inflation across imported commodity markets"
+        "text_en": "force the national Treasury to eliminate all statutory brackets for personal income taxation.",
+        "text_af": "die nasionale Tesourie dwing om alle statutêre kerwe vir persoonlike inkomstebelasting af te skaf."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Deflation induces consumers to delay spending, leading to falling output, lower wages, and higher real debt burdens.",
-    "derivation_af": "Deflation induces consumers to delay spending, leading to falling output, lower wages, and higher real debt burdens."
+    "correctKey": "C",
+    "derivation_en": "When deflation sets in, consumers delay spending anticipating cheaper prices tomorrow. Aggregate demand drops, causing layoffs, wage cuts, and further deflation.",
+    "derivation_af": "Deflasie moedig verbruikers aan om aankope uit te stel; totale vraag krimp, produksie en lone daal, en die ekonomie beland in 'n bose spiraal."
   },
   {
     "id": "q20_26",
@@ -3162,33 +3162,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, an inflation-indexed government bond protects investors against inflation by:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, an inflation-indexed government bond protects investors against inflation by:",
+    "stem_en": "An inflation-indexed government bond protects long-term investors against purchasing power loss by:",
+    "stem_af": "'n Inflasiegereflekteerde staatseffek beskerm langtermynbeleggers teen koopkragverlies deur:",
     "options": [
       {
         "key": "A",
-        "text_en": "automatically adjusting the principal value of the bond in line with changes in the headline Consumer Price Index",
-        "text_af": "automatically adjusting the principal value of the bond in line with changes in the headline Consumer Price Index"
+        "text_en": "fixing the nominal coupon payout at double the prevailing commercial bank prime overdraft rate.",
+        "text_af": "die nominale koeponbetaling vas te pen op dubbel die heersende primakoers van handelsbanke."
       },
       {
         "key": "B",
-        "text_en": "guaranteeing an annual payout equal to the prime commercial overdraft lending rate",
-        "text_af": "guaranteeing an annual payout equal to the prime commercial overdraft lending rate"
+        "text_en": "exempting the bondholder completely from statutory municipal property rates and transfer duties.",
+        "text_af": "die effektehouer heeltemal vry te stel van statutêre munisipale belastings en hereregte."
       },
       {
         "key": "C",
-        "text_en": "exempting the bondholder from all statutory municipal property valuations",
-        "text_af": "exempting the bondholder from all statutory municipal property valuations"
+        "text_en": "paying interest returns exclusively in physical gold bullion stored in central bank vaults.",
+        "text_af": "rente-opbrengste uitsluitlik in fisiese staafgoud in sentrale bankkassakluise uit te betaal."
       },
       {
         "key": "D",
-        "text_en": "paying interest exclusively in physical gold bullion certificates",
-        "text_af": "paying interest exclusively in physical gold bullion certificates"
+        "text_en": "adjusting the bond's principal value and coupon payments upward in proportion to changes in the CPI.",
+        "text_af": "die effek se hoofsom en koeponbetalings outomaties opwaarts aan te pas volgens veranderings in die VPI."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Inflation-linked bonds adjust their capital value with CPI, preserving real purchasing power for investors.",
-    "derivation_af": "Inflation-linked bonds adjust their capital value with CPI, preserving real purchasing power for investors."
+    "correctKey": "D",
+    "derivation_en": "Inflation-indexed bonds increase both the principal capital value and regular interest coupon payments in line with the CPI, preserving the real purchasing power of the return.",
+    "derivation_af": "Inflasiegereflekteerde effekte pas sowel die hoofsom as koeponbetalings aan volgens die VPI, wat die belegger se reële opbrengs teen inflasie beskerm."
   },
   {
     "id": "q20_27",
@@ -3196,33 +3196,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, if nominal wages increase by 8% over a year while the Consumer Price Index rises by 5%, real wages have:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, if nominal wages increase by 8% over a year while the Consumer Price Index rises by 5%, real wages have:",
+    "stem_en": "If nominal wages increase by 8% over a year while the Consumer Price Index rises by 5%, real wages have:",
+    "stem_af": "Indien nominale lone met 8% oor 'n jaar styg terwyl die Verbruikersprysindeks met 5% toeneem, het reële lone:",
     "options": [
       {
         "key": "A",
-        "text_en": "increased by approximately 3%, meaning workers enjoy higher real purchasing power",
-        "text_af": "increased by approximately 3%, meaning workers enjoy higher real purchasing power"
+        "text_en": "decreased by approximately 3.0% due to progressive fiscal drag bracket creep across wage earners.",
+        "text_af": "met ongeveer 3,0% gedaal as gevolg van fiskale sleuring en progressiewe kerpsluiping op werkers."
       },
       {
         "key": "B",
-        "text_en": "decreased by 3% due to progressive fiscal drag bracket creep",
-        "text_af": "decreased by 3% due to progressive fiscal drag bracket creep"
+        "text_en": "increased by approximately 3.0%, indicating an improvement in the real purchasing power of labor.",
+        "text_af": "met ongeveer 3,0% gestyg, wat dui op 'n verbetering in die reële koopkrag van salarisontvangers."
       },
       {
         "key": "C",
-        "text_en": "remained completely unchanged because nominal wages matched inflation",
-        "text_af": "remained completely unchanged because nominal wages matched inflation"
+        "text_en": "remained completely unchanged because nominal wage settlements were matched by statutory rebates.",
+        "text_af": "heeltemal onveranderd gebly omdat nominale loonooreenkomste deur statutêre kortings geëwenaar is."
       },
       {
         "key": "D",
-        "text_en": "increased by 13% after adjusting for statutory value added taxes",
-        "text_af": "increased by 13% after adjusting for statutory value added taxes"
+        "text_en": "increased by 13.0% after statutory adjustments for standard indirect value added consumption taxes.",
+        "text_af": "met 13,0% gestyg na statutêre aanpassings vir algemene indirekte belasting op toegevoegde waarde."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Change in real wage approx = Nominal wage growth - Inflation = 8% - 5% = +3%.",
-    "derivation_af": "Change in real wage approx = Nominal wage growth - Inflation = 8% - 5% = +3%."
+    "correctKey": "B",
+    "derivation_en": "Change in real wage approx = %Δ Nominal Wage - %Δ CPI = 8% - 5% = +3%. Real purchasing power has expanded.",
+    "derivation_af": "Verandering in reële loon = %Δ Nominale loon minus %Δ VPI = 8% - 5% = +3%. Werknemers se reële koopkrag het verbeter."
   },
   {
     "id": "q20_28",
@@ -3230,33 +3230,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, which of the following is an example of an 'administered price' in South Africa that can contribute to cost-push inflation?:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, which of the following is an example of an 'administered price' in South Africa that can contribute to cost-push inflation?:",
+    "stem_en": "Which of the following constitutes an 'administered price' in South Africa that can generate cost-push inflation?",
+    "stem_af": "Watter van die volgende verteenwoordig 'n 'geadministreerde prys' in Suid-Afrika wat kostedrukinflasie kan veroorsaak?",
     "options": [
       {
         "key": "A",
-        "text_en": "Regulated petrol fuel prices, Eskom electricity tariffs, and municipal assessment water rates.",
-        "text_af": "Regulated petrol fuel prices, Eskom electricity tariffs, and municipal assessment water rates."
+        "text_en": "Regulated petrol retail fuel prices, Eskom electricity tariffs, and municipal water rates.",
+        "text_af": "Gereguleerde petrolpryse, Eskom-elektrisiteitstariewe en munisipale water- en rioolheffings."
       },
       {
         "key": "B",
-        "text_en": "The market price of fresh tomatoes sold at the Johannesburg municipal produce market.",
-        "text_af": "The market price of fresh tomatoes sold at the Johannesburg municipal produce market."
+        "text_en": "The wholesale spot market price of fresh tomatoes sold at municipal fresh produce auctions.",
+        "text_af": "Die groothandel-veilingprys van vars tamaties wat by munisipale varsproduktemarkte verkoop word."
       },
       {
         "key": "C",
-        "text_en": "The daily exchange rate of the South African Rand against the British Pound.",
-        "text_af": "The daily exchange rate of the South African Rand against the British Pound."
+        "text_en": "The daily spot exchange rate of the South African Rand against major trading currencies.",
+        "text_af": "Die daaglikse wisselkoers van die Suid-Afrikaanse Rand teenoor belangrike buitelandse valutas."
       },
       {
         "key": "D",
-        "text_en": "The spot price of fine platinum bullion traded on international commodity exchanges.",
-        "text_af": "The spot price of fine platinum bullion traded on international commodity exchanges."
+        "text_en": "The market price of platinum bullion traded electronically on international exchanges.",
+        "text_af": "Die markprys van platinumstawe wat op internasionale kommoditeitsbeurse verhandel word."
       }
     ],
     "correctKey": "A",
-    "derivation_en": "Administered prices are set or regulated by government agencies rather than free market forces (e.g. fuel, electricity tariffs).",
-    "derivation_af": "Administered prices are set or regulated by government agencies rather than free market forces (e.g. fuel, electricity tariffs)."
+    "derivation_en": "Administered prices are set or regulated by government or statutory authorities rather than market demand and supply (e.g. petrol, electricity).",
+    "derivation_af": "Geadministreerde pryse word deur regeringsliggame of statutêre regulering bepaal (bv. petrol, kragtariewe) eerder as deur vrye markkragte."
   },
   {
     "id": "q20_29",
@@ -3264,33 +3264,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, demand-pull inflation accompanied by rising employment and expanding GDP typically occurs when:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, demand-pull inflation accompanied by rising employment and expanding GDP typically occurs when:",
+    "stem_en": "Demand-pull inflation accompanied by rising employment and expanding GDP typically occurs when:",
+    "stem_af": "Vraagtrekinflasie gepaardgaande met stygende indiensneming en toenemende BBP kom tipies voor wanneer:",
     "options": [
       {
         "key": "A",
-        "text_en": "an economy approaches full employment capacity and aggregate demand expands faster than productive capacity",
-        "text_af": "an economy approaches full employment capacity and aggregate demand expands faster than productive capacity"
+        "text_en": "the central bank increases statutory cash reserve requirements across commercial retail banking.",
+        "text_af": "die sentrale bank statutêre kontantreserweverhoudings oor die hele kleinhandelbankwese verhoog."
       },
       {
         "key": "B",
-        "text_en": "the central bank raises the statutory required cash reserve ratio on commercial banks",
-        "text_af": "the central bank raises the statutory required cash reserve ratio on commercial banks"
+        "text_en": "international crude oil transport routes are disrupted by prolonged global geopolitical conflict.",
+        "text_af": "internasionale ru-olie skeepsroetes deur langdurige globale geopolitieke konflikte ontwrig word."
       },
       {
         "key": "C",
-        "text_en": "international crude oil shipping lanes are closed by geopolitical conflict",
-        "text_af": "international crude oil shipping lanes are closed by geopolitical conflict"
+        "text_en": "an economy approaches capacity limits and aggregate demand expands faster than productive capacity.",
+        "text_af": "'n ekonomie volle produksiekapasiteit nader en totale vraag vinniger as produksievermoë toeneem."
       },
       {
         "key": "D",
-        "text_en": "manufacturing labor productivity grows twice as fast as nominal employee wages",
-        "text_af": "manufacturing labor productivity grows twice as fast as nominal employee wages"
+        "text_en": "manufacturing labor productivity grows at twice the rate of nominal industrial wage settlements.",
+        "text_af": "vervaardigings-arbeidsproduktiwiteit teen dubbel die koers van nominale industriële lone toeneem."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Demand-pull occurs when booming spending presses against supply limits near full employment.",
-    "derivation_af": "Demand-pull occurs when booming spending presses against supply limits near full employment."
+    "correctKey": "C",
+    "derivation_en": "Demand-pull inflation happens when booming aggregate spending presses against the production frontier, pulling up prices and employment.",
+    "derivation_af": "Vraagtrekinflasie vind plaas wanneer toenemende besteding teen die ekonomie se kapasiteitsgrense druk, wat pryse en indiensneming opstoot."
   },
   {
     "id": "q20_30",
@@ -3298,33 +3298,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, headline inflation measures:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, headline inflation measures:",
+    "stem_en": "In South African macroeconomic statistics, headline inflation measures:",
+    "stem_af": "In Suid-Afrikaanse makro-ekonomiese statistiek meet hooflyninflasie:",
     "options": [
       {
         "key": "A",
-        "text_en": "the total change in the Consumer Price Index across all goods and services in the representative basket, including volatile food and fuel.",
-        "text_af": "the total change in the Consumer Price Index across all goods and services in the representative basket, including volatile food and fuel."
+        "text_en": "only the percentage price adjustments observed across industrial capital goods and factory plants.",
+        "text_af": "slegs die persentasie prysaanpassings wat oor industriële kapitaalgoedere en fabrieke waargeneem word."
       },
       {
         "key": "B",
-        "text_en": "only the price changes in durable capital manufacturing machinery.",
-        "text_af": "only the price changes in durable capital manufacturing machinery."
+        "text_en": "the total rate of change in the CPI across all goods and services, including food and energy prices.",
+        "text_af": "die totale koers van verandering in die VPI oor alle goedere en dienste, insluitend voedsel en brandstof."
       },
       {
         "key": "C",
-        "text_en": "the annual rate of change in nominal commercial bank overdraft lending.",
-        "text_af": "the annual rate of change in nominal commercial bank overdraft lending."
+        "text_en": "the annual rate of expansion in commercial bank credit extension to private corporate enterprises.",
+        "text_af": "die jaarlikse koers van uitbreiding in handelsbankkredietverlening aan private korporatiewe firmas."
       },
       {
         "key": "D",
-        "text_en": "the percentage change in real GDP per capita adjusted for population growth.",
-        "text_af": "the percentage change in real GDP per capita adjusted for population growth."
+        "text_en": "the percentage change in real gross domestic product adjusted for structural demographic shifts.",
+        "text_af": "die persentasieverandering in reële bruto binnelandse produk aangepas vir strukturele bevolkingsgroei."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Headline inflation is the unadjusted overall CPI inflation rate published by Stats SA.",
-    "derivation_af": "Headline inflation is the unadjusted overall CPI inflation rate published by Stats SA."
+    "correctKey": "B",
+    "derivation_en": "Headline inflation is the unadjusted percentage change in the entire CPI basket, including volatile food, fuel, and administered prices.",
+    "derivation_af": "Hooflyninflasie is die totale persentasieverandering in die hele VPI-mandjie, insluitend wisselvallige voedsel-, brandstof- en gereguleerde pryse."
   },
   {
     "id": "q20_31",
@@ -3332,33 +3332,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, the 'shoe-leather cost' of inflation refers to:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, the 'shoe-leather cost' of inflation refers to:",
+    "stem_en": "In the study of inflation, the term 'shoe-leather cost' refers specifically to:",
+    "stem_af": "In die studie van inflasie verwys die term 'skoenleerkoste' spesifiek na:",
     "options": [
       {
         "key": "A",
-        "text_en": "the time and effort wasted by individuals attempting to minimize cash holdings by making frequent trips to financial institutions.",
-        "text_af": "the time and effort wasted by individuals attempting to minimize cash holdings by making frequent trips to financial institutions."
+        "text_en": "the statutory ad valorem customs tariff levied on manufactured imported luxury leather footwear.",
+        "text_af": "die statutêre ad valorem-doeanetarief wat op ingevoerde vervaardigde luukse leerskoene gehef word."
       },
       {
         "key": "B",
-        "text_en": "the statutory customs duty levied on imported leather footwear.",
-        "text_af": "the statutory customs duty levied on imported leather footwear."
+        "text_en": "the administrative expenditures incurred by retail outlets in constantly replacing printed tags.",
+        "text_af": "die administratiewe uitgawes wat kleinhandelaars aangaan om gedrukte prysetikette te vervang."
       },
       {
         "key": "C",
-        "text_en": "the cost incurred by retail shops in constantly printing new price menus and tags.",
-        "text_af": "the cost incurred by retail shops in constantly printing new price menus and tags."
+        "text_en": "the real purchasing power losses suffered by commercial holders of fixed-rate sovereign debentures.",
+        "text_af": "die verlies aan reële koopkrag wat beleggers in vaste-koers soewereine staatseffekte in die gesig staar."
       },
       {
         "key": "D",
-        "text_en": "the loss of real purchasing power suffered by fixed-interest sovereign bondholders.",
-        "text_af": "the loss of real purchasing power suffered by fixed-interest sovereign bondholders."
+        "text_en": "the time and effort wasted by individuals minimizing cash holdings by making frequent bank visits.",
+        "text_af": "die tyd en moeite wat individue vermors om kontantbalanse laag te hou deur gereelde bankbesoeke."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Shoe-leather costs represent the transactions waste incurred running to banks to avoid holding depreciating money.",
-    "derivation_af": "Shoe-leather costs represent the transactions waste incurred running to banks to avoid holding depreciating money."
+    "correctKey": "D",
+    "derivation_en": "Shoe-leather costs represent the transaction time and effort expended converting interest-bearing deposits into cash to avoid holding depreciating money.",
+    "derivation_af": "Skoenleerkoste verteenwoordig die tyd en moeite wat vermors word om kontantbalanse laag te hou en gereeld geld te trek tydens hoë inflasie."
   },
   {
     "id": "q20_32",
@@ -3366,33 +3366,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, the 'menu cost' of inflation refers to:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, the 'menu cost' of inflation refers to:",
+    "stem_en": "In the study of inflation, 'menu costs' refer to:",
+    "stem_af": "In die studie van inflasie verwys 'spyskaartkoste' na:",
     "options": [
       {
         "key": "A",
-        "text_en": "the real physical resources and labor expended by firms in continually updating price lists, catalogues, and digital barcode systems.",
-        "text_af": "the real physical resources and labor expended by firms in continually updating price lists, catalogues, and digital barcode systems."
+        "text_en": "the statutory value added tax levied on food preparation services in restaurant hospitality.",
+        "text_af": "die statutêre belasting op toegevoegde waarde gehef op spyseniering in die restaurantbedryf."
       },
       {
         "key": "B",
-        "text_en": "the statutory VAT rate levied on restaurant hospitality services.",
-        "text_af": "the statutory VAT rate levied on restaurant hospitality services."
+        "text_en": "the severe nutritional deficits experienced by households when basic staple food prices double.",
+        "text_af": "die ernstige voedingsgebreke wat huishoudings ervaar wanneer basiese voedselpryse verdubbel."
       },
       {
         "key": "C",
-        "text_en": "the nutritional deficiency caused by rising prices of essential staple foodstuffs.",
-        "text_af": "the nutritional deficiency caused by rising prices of essential staple foodstuffs."
+        "text_en": "the real resources expended by firms in continually updating price lists, catalogues, and labels.",
+        "text_af": "die werklike hulpbronne wat firmas bestee om pryslyste, katalogusse en rekenaarstelsels te hernu."
       },
       {
         "key": "D",
-        "text_en": "the interest rate spread charged by commercial banks on restaurant overdraft lines.",
-        "text_af": "the interest rate spread charged by commercial banks on restaurant overdraft lines."
+        "text_en": "the commercial interest rate spread charged on working capital overdrafts extended to catering.",
+        "text_af": "die rentekoersverspreiding wat op bedryfskapitaal-oortrekkings aan restaurante gehef word."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Menu costs are the explicit business costs of updating prices and repricing inventory during inflation.",
-    "derivation_af": "Menu costs are the explicit business costs of updating prices and repricing inventory during inflation."
+    "correctKey": "C",
+    "derivation_en": "Menu costs are the physical and labor costs of repricing goods (e.g. changing digital price databases, reprinting catalogues, replacing tags).",
+    "derivation_af": "Spyskaartkoste is die werklike koste wat ondernemings aangaan om pryse aan te pas (herdruk van pryslyste, verandering van strepieskodes)."
   },
   {
     "id": "q20_33",
@@ -3400,33 +3400,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, a positive supply shock, such as an unexpected technological breakthrough that significantly lowers manufacturing costs, will:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, a positive supply shock, such as an unexpected technological breakthrough that significantly lowers manufacturing costs, will:",
+    "stem_en": "A positive supply shock, such as an unexpected technological innovation that lowers production costs, will:",
+    "stem_af": "'n Positiewe aanbodskok, soos 'n onverwagte tegnologiese deurbraak wat produksiekoste verlaag, sal:",
     "options": [
       {
         "key": "A",
-        "text_en": "shift the Aggregate Supply curve rightward, lowering the price level and expanding real output.",
-        "text_af": "shift the Aggregate Supply curve rightward, lowering the price level and expanding real output."
+        "text_en": "shift the Aggregate Demand curve leftward, precipitating severe stagflation across the economy.",
+        "text_af": "die Totale Vraagkromme na links laat verskuif en ernstige stagflasie in die ekonomie ontketen."
       },
       {
         "key": "B",
-        "text_en": "shift the Aggregate Demand curve leftward, precipitating severe stagflation.",
-        "text_af": "shift the Aggregate Demand curve leftward, precipitating severe stagflation."
+        "text_en": "force the central bank to hike the repo rate immediately to curb demand-pull price pressures.",
+        "text_af": "die sentrale bank dwing om die repokoers te verhoog om vraagtrekinflasiedruk hok te slaan."
       },
       {
         "key": "C",
-        "text_en": "force the central bank to raise the policy repo rate to curb demand-pull pressures.",
-        "text_af": "force the central bank to raise the policy repo rate to curb demand-pull pressures."
+        "text_en": "eliminate the statutory obligation for commercial retail banks to maintain liquid cash reserves.",
+        "text_af": "die statutêre verpligting vir handelsbanke om likiede kontantreserwes te hou, heeltemal afskaf."
       },
       {
         "key": "D",
-        "text_en": "eliminate the need for commercial banks to maintain statutory cash reserves.",
-        "text_af": "eliminate the need for commercial banks to maintain statutory cash reserves."
+        "text_en": "shift the Aggregate Supply curve rightward, lowering the price level and expanding real output.",
+        "text_af": "die Totale Aanbodkromme na regs laat verskuif, wat die pryspeil verlaag en produksie laat toeneem."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Favorable supply shocks shift AS rightward, generating higher output and lower price levels.",
-    "derivation_af": "Favorable supply shocks shift AS rightward, generating higher output and lower price levels."
+    "correctKey": "D",
+    "derivation_en": "A favorable supply shock lowers unit costs, shifting AS to the right, which expands real GDP while decreasing the general price level.",
+    "derivation_af": "'n Gunstige aanbodskok verlaag eenheidskoste en verskuif AS na regs, wat reële BBP verhoog en die pryspeil laat daal."
   },
   {
     "id": "q20_34",
@@ -3434,33 +3434,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, when nominal gdp expands by 10% in a year while the general price level rises by 6%, real gdp has grown by approximately:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, when nominal gdp expands by 10% in a year while the general price level rises by 6%, real gdp has grown by approximately:",
+    "stem_en": "If nominal GDP expands by 10% in a given year while the general price level rises by 6%, real GDP has grown by approximately:",
+    "stem_af": "Indien nominale BBP met 10% in 'n gegewe jaar groei terwyl die algemene pryspeil met 6% styg, het reële BBP gegroei met ongeveer:",
     "options": [
       {
         "key": "A",
-        "text_en": "4%, reflecting the true expansion in physical goods and services produced.",
-        "text_af": "4%, reflecting the true expansion in physical goods and services produced."
+        "text_en": "16.0%, representing an unprecedented national boom in physical industrial output.",
+        "text_af": "16,0%, wat dui op 'n ongekende nasionale opswaai in fisiese industriële uitset."
       },
       {
         "key": "B",
-        "text_en": "16%, indicating an unprecedented national economic boom.",
-        "text_af": "16%, indicating an unprecedented national economic boom."
+        "text_en": "0.6%, after adjusting for statutory ad valorem value added consumption tax rates.",
+        "text_af": "0,6%, na statutêre aanpassings vir algemene ad valorem-verbruiksbelastingkoerse."
       },
       {
         "key": "C",
-        "text_en": "0.6%, after adjusting for statutory value added taxes.",
-        "text_af": "0.6%, after adjusting for statutory value added taxes."
+        "text_en": "60.0%, reflecting rapid commercial banking credit creation across retail sectors.",
+        "text_af": "60,0%, wat dui op vinnige handelsbankkredietuitbreiding oor kleinhandelsektore."
       },
       {
         "key": "D",
-        "text_en": "60%, reflecting high commercial bank credit creation.",
-        "text_af": "60%, reflecting high commercial bank credit creation."
+        "text_en": "4.0%, representing the true expansion in physical goods and services produced.",
+        "text_af": "4,0%, wat die werklike toename in fisiese goedere en dienste geproduseer weerspieël."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Real GDP growth approx = Nominal GDP growth - Inflation = 10% - 6% = 4%.",
-    "derivation_af": "Real GDP growth approx = Nominal GDP growth - Inflation = 10% - 6% = 4%."
+    "correctKey": "D",
+    "derivation_en": "Real GDP growth approx = Nominal GDP growth - Inflation = 10% - 6% = 4%. Only the output expansion represents real growth.",
+    "derivation_af": "Reële BBP-groei = Nominale BBP-groei minus Inflasie = 10% - 6% = 4%. Slegs die fisiese uitsettoename verteenwoordig reële groei."
   },
   {
     "id": "q20_35",
@@ -3468,33 +3468,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, in the quantity theory of money (mv = py), assuming velocity (v) and real output (y) are constant in the long run, an increase in the money supply (m) results in:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, in the quantity theory of money (mv = py), assuming velocity (v) and real output (y) are constant in the long run, an increase in the money supply (m) results in:",
+    "stem_en": "In the classical Quantity Theory of Money (MV = PY), if velocity (V) and output (Y) are held constant, money growth causes:",
+    "stem_af": "In die klassieke Kwantiteitsteorie van Geld (MV = PY), indien omloopsnelheid (V) en uitset (Y) konstant is, veroorsaak geldgroei:",
     "options": [
       {
         "key": "A",
-        "text_en": "an equiproportional increase in the general price level (P).",
-        "text_af": "an equiproportional increase in the general price level (P)."
+        "text_en": "an immediate collapse in commercial bank consumer credit advances across all sectors.",
+        "text_af": "'n onmiddellike ineenstorting in handelsbanke se verbruikerskredietverlening."
       },
       {
         "key": "B",
-        "text_en": "an immediate collapse in commercial bank consumer credit advances.",
-        "text_af": "an immediate collapse in commercial bank consumer credit advances."
+        "text_en": "a permanent increase in the real purchasing power of the domestic national currency.",
+        "text_af": "'n permanente toename in die reële koopkrag van die binnelandse nasionale geldeenheid."
       },
       {
         "key": "C",
-        "text_en": "a permanent increase in the real purchasing power of the national currency.",
-        "text_af": "a permanent increase in the real purchasing power of the national currency."
+        "text_en": "an exactly equiproportional percentage increase in the general macroeconomic price level.",
+        "text_af": "'n presies gelyke persentasietoename in die algemene makro-ekonomiese pryspeil van goedere."
       },
       {
         "key": "D",
-        "text_en": "a decrease in the statutory corporate income tax rate.",
-        "text_af": "a decrease in the statutory corporate income tax rate."
+        "text_en": "an automatic reduction in statutory corporate profit tax rates enacted by Parliament.",
+        "text_af": "'n outomatiese verlaging in statutêre maatskappybelastingkoerse goedgekeur deur die staat."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Classical Quantity Theory: If V and Y are constant, percentage change in M translates 1-to-1 into percentage change in P.",
-    "derivation_af": "Classical Quantity Theory: If V and Y are constant, percentage change in M translates 1-to-1 into percentage change in P."
+    "correctKey": "C",
+    "derivation_en": "In MV = PY, with V and Y fixed by assumption, %ΔM translates directly into an equal %ΔP (pure monetary inflation).",
+    "derivation_af": "In MV = PY met V en Y konstant, lei 'n verandering in M direk tot 'n presies gelyke proporsionele verandering in P."
   },
   {
     "id": "q20_36",
@@ -3502,33 +3502,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, why is high and variable inflation economically harmful to long-term business investment?:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, why is high and variable inflation economically harmful to long-term business investment?:",
+    "stem_en": "High and volatile inflation is economically harmful to long-term domestic business investment because it:",
+    "stem_af": "Hoë en wisselvallige inflasie is ekonomies skadelik vir langtermyn-besigheidsinvestering omdat dit:",
     "options": [
       {
         "key": "A",
-        "text_en": "It creates price uncertainty, obscures relative price signals, and increases risk premiums, discouraging long-term capital commitments.",
-        "text_af": "It creates price uncertainty, obscures relative price signals, and increases risk premiums, discouraging long-term capital commitments."
+        "text_en": "forces commercial banks to eliminate collateral requirements on industrial overdraft facilities.",
+        "text_af": "handelsbanke verplig om kollateraalvereistes op industriële oortrekkingsfasiliteite af te skaf."
       },
       {
         "key": "B",
-        "text_en": "It forces commercial banks to eliminate all collateral requirements on business overdrafts.",
-        "text_af": "It forces commercial banks to eliminate all collateral requirements on business overdrafts."
+        "text_en": "automatically raises the statutory corporate company income tax rate to one hundred percent.",
+        "text_af": "die statutêre maatskappybelastingkoers outomaties tot honderd persent op alle winste verhoog."
       },
       {
         "key": "C",
-        "text_en": "It automatically increases the statutory company income tax rate to 100%.",
-        "text_af": "It automatically increases the statutory company income tax rate to 100%."
+        "text_en": "prohibits manufacturing enterprises from marketing commercial products through media channels.",
+        "text_af": "vervaardigingsondernemings verbied om kommersiële produkte deur mediakanale te adverteer."
       },
       {
         "key": "D",
-        "text_en": "It prevents manufacturing firms from advertising their products in commercial media.",
-        "text_af": "It prevents manufacturing firms from advertising their products in commercial media."
+        "text_en": "creates price uncertainty, distorts relative price signals, and raises investment risk premiums.",
+        "text_af": "prysonsekerheid skep, relatiewe prysseine verdraai en beleggingsrisikopremies aansienlik verhoog."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Inflation uncertainty impairs economic calculation and distorts market signals, deterring investment.",
-    "derivation_af": "Inflation uncertainty impairs economic calculation and distorts market signals, deterring investment."
+    "correctKey": "D",
+    "derivation_en": "Unpredictable inflation makes capital budgeting difficult, obscures true relative price signals, and elevates risk premiums, discouraging fixed investment.",
+    "derivation_af": "Wisselvallige inflasie bemoeilik finansiële beplanning, vertroebel markseine en jaag risikopremies op, wat langtermynbeleggings ontmoedig."
   },
   {
     "id": "q20_37",
@@ -3536,33 +3536,33 @@ window.AXIOM_MASTER_BANK = [
     "type": "mcq",
     "marks": 2,
     "difficulty": "Exam",
-    "stem_en": "In macroeconomic inflation analysis, if the sarb successfully anchors inflation expectations at 4.5%, it helps to:",
-    "stem_af": "In makro-ekonomiese inflasie-ontleding, if the sarb successfully anchors inflation expectations at 4.5%, it helps to:",
+    "stem_en": "When the South African Reserve Bank successfully anchors inflation expectations at 4.5%, it helps to:",
+    "stem_af": "Wanneer die Suid-Afrikaanse Reserwebank inflasieverwagtinge suksesvol op 4,5% anker, help dit om:",
     "options": [
       {
         "key": "A",
-        "text_en": "prevent wage-price spirals from forming, stabilizing long-term borrowing costs and promoting sustainable economic growth.",
-        "text_af": "prevent wage-price spirals from forming, stabilizing long-term borrowing costs and promoting sustainable economic growth."
+        "text_en": "compel all commercial retail grocery stores to sell staple foodstuffs at identical prices.",
+        "text_af": "alle kleinhandel-kruidenierswinkels te dwing om basiese kossorte teen identiese pryse te verkoop."
       },
       {
         "key": "B",
-        "text_en": "force all retail supermarkets to sell basic commodities at identical prices.",
-        "text_af": "force all retail supermarkets to sell basic commodities at identical prices."
+        "text_en": "eliminate all daily exchange rate fluctuations of the rand against international currencies.",
+        "text_af": "alle daaglikse wisselkoersskommelinge van die rand teenoor buitelandse valutas heeltemal uit te wis."
       },
       {
         "key": "C",
-        "text_en": "eliminate all fluctuations in the foreign exchange rate against international currencies.",
-        "text_af": "eliminate all fluctuations in the foreign exchange rate against international currencies."
+        "text_en": "guarantee that commercial retail banks will never incur non-performing loan debt impairments.",
+        "text_af": "te waarborg dat handelsbanke nooit enige verliese op slegte lenings of wanbetalings sal ly nie."
       },
       {
         "key": "D",
-        "text_en": "guarantee that commercial banks will never report bad debt impairments.",
-        "text_af": "guarantee that commercial banks will never report bad debt impairments."
+        "text_en": "prevent wage-price spirals from forming, stabilizing long-term interest rates and supporting growth.",
+        "text_af": "loon-prys-spirale te verhoed, langtermyn-rentekoerse te stabiliseer en ekonomiese groei te ondersteun."
       }
     ],
-    "correctKey": "A",
-    "derivation_en": "Anchored expectations prevent self-fulfilling inflationary spirals, stabilizing interest rates and growth.",
-    "derivation_af": "Anchored expectations prevent self-fulfilling inflationary spirals, stabilizing interest rates and growth."
+    "correctKey": "D",
+    "derivation_en": "Anchored inflation expectations prevent self-reinforcing wage-price spirals, allowing lower nominal interest rates and fostering stable investment conditions.",
+    "derivation_af": "Geankerde verwagtinge stuit selfvoedende loon-prys-spirale, verlaag langtermynrente en skep stabiliteit vir volhoubare ekonomiese groei."
   },
   {
     "id": "q14_38",
@@ -3588,26 +3588,26 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Interest rates are so low that the speculative demand for money becomes perfectly elastic (horizontal), rendering monetary policy ineffective at further reducing rates.",
-        "text_af": "Rentekoerse so laag is dat die spekulasievraag na geld volkome elasties (horisontaal) word en monetêre beleid oneffektief raak."
+        "text_en": "Commercial banks face statutory lending ceilings that restrict consumer credit creation.",
+        "text_af": "Handelsbanke wetlike leningsplafonne in die gesig staar wat verbruikerskrediet inperk."
       },
       {
         "key": "B",
-        "text_en": "Commercial banks are legally prohibited from extending credit to residential property buyers.",
-        "text_af": "Banke wetlik verbied word om krediet aan huiskopers toe te staan."
+        "text_en": "High inflation expectations drive real money demand down to zero across all sectors.",
+        "text_af": "Hoë inflasieverwagtinge reële geldvraag na nul toe dryf oor alle ekonomiese sektore."
       },
       {
         "key": "C",
-        "text_en": "The national currency automatically converts into foreign reserve currencies at fixed central bank rates.",
-        "text_af": "Die geldeenheid outomaties omskakel in buitelandse reserwes teen vaste koerse."
+        "text_en": "Interest rates are so low that speculative money demand becomes completely horizontal.",
+        "text_af": "Rentekoerse so laag is dat die spekulasievraag na geld volkome horisontaal word."
       },
       {
         "key": "D",
-        "text_en": "The total volume of notes and coins in circulation falls to zero due to digital banking.",
-        "text_af": "Die volume note en munte tot nul daal weens digitale bankwese."
+        "text_en": "Commercial bank excess reserves are fully absorbed by central bank debenture auctions.",
+        "text_af": "Banke se oorskotreserwes ten volle deur sentrale bank skuldbriefveilings geabsorbeer word."
       }
     ],
-    "correctKey": "A",
+    "correctKey": "C",
     "derivation_en": "At rock-bottom interest rates, bond prices are at their ceiling. Everyone expects interest rates to rise (bond prices to fall), so agents hoard all additional money (perfectly elastic demand).",
     "derivation_af": "By baie lae rentekoerse verkies almal om kontant te hou (horisontale MD), wat monetêre beleid oneffektief maak."
   },
@@ -3622,26 +3622,26 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "An endogenous view holds that the money supply is created credit-driven by commercial banks in response to credit demand, while the central bank controls the interest rate.",
-        "text_af": "'n Endogene beskouing hou dat geld kredietgedrewe deur banke geskep word volgens vraag, terwyl die sentrale bank die rentekoers beheer."
+        "text_en": "Exogenous views hold that commercial banks set the repo rate while central banks fix loans.",
+        "text_af": "Eksogene beskouings voer aan banke bepaal die repokoers terwyl die sentrale bank lenings stel."
       },
       {
         "key": "B",
-        "text_en": "An exogenous view asserts that commercial banks determine the repo rate while the central bank sets market loan quantities.",
-        "text_af": "'n Eksogene beskouing voer aan dat banke die repokoers bepaal terwyl die sentrale bank leningshoeveelhede vasstel."
+        "text_en": "Endogenous views require bank deposits to be backed 100% by physical central bank bullion.",
+        "text_af": "Endogene beskouings vereis dat bankdeposito's 100% deur sentrale bank goud gerugsteun word."
       },
       {
         "key": "C",
-        "text_en": "An endogenous money supply requires 100% backing by physical foreign currency reserves.",
-        "text_af": "'n Endogene geldvoorraad vereis 100% dekking deur buitelandse valutareserwes."
+        "text_en": "Exogenous views assume that commercial banks operate without statutory reserve ratios.",
+        "text_af": "Eksogene beskouings aanvaar dat handelsbanke heeltemal sonder statutêre reserwes funksioneer."
       },
       {
         "key": "D",
-        "text_en": "An exogenous money supply eliminates all commercial bank reserve requirements.",
-        "text_af": "'n Eksogene geldvoorraad skaf alle bankreserwevereistes af."
+        "text_en": "Endogenous views hold that banks create credit deposits, while the central bank sets rates.",
+        "text_af": "Endogene beskouings hou dat banke kredietdeposito's skep terwyl die sentrale bank koerse stel."
       }
     ],
-    "correctKey": "A",
+    "correctKey": "D",
     "derivation_en": "Modern central banking recognizes money as endogenous: banks create deposits by extending loans, and the SARB controls the price of liquidity (Repo rate) rather than fixing money supply exogenously.",
     "derivation_af": "In 'n endogene stelsel skep banke geld wanneer hulle lenings toestaan, en die sentrale bank beïnvloed dit via die repokoers."
   },
@@ -3669,23 +3669,23 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Higher interest rates dampen consumer and investment spending, while attracting capital inflows that tend to appreciate the domestic currency in the short run.",
-        "text_af": "Hoër rentekoerse demp verbruik en investering, terwyl kapitaalinvloeie aangemoedig word wat die geldeenheid kan laat appresieer."
+        "text_en": "Higher interest rates dampen domestic spending and attract capital inflows that support the currency.",
+        "text_af": "Hoër rentekoerse demp binnelandse besteding en lok kapitaalinvloei wat die geldeenheid ondersteun."
       },
       {
         "key": "B",
-        "text_en": "Consumer borrowing accelerates sharply while foreign investors withdraw all financial capital.",
-        "text_af": "Verbruikerslenings versnel skerp terwyl buitelandse beleggers alle kapitaal onttrek."
+        "text_en": "Household borrowing accelerates sharply while foreign portfolio investors liquidate government bonds.",
+        "text_af": "Huishoudelike lenings versnel skerp terwyl buitelandse beleggers staatseffekte haastig likwideer."
       },
       {
         "key": "C",
-        "text_en": "The commercial bank prime lending rate automatically drops below the headline inflation rate.",
-        "text_af": "Die primakoers daal outomaties tot onder die inflasiekoers."
+        "text_en": "Commercial bank prime overdraft lending rates drop automatically below the headline inflation rate.",
+        "text_af": "Handelsbanke se primakoers daal outomaties tot onder die amptelike verbruikersprys-inflasiekoers."
       },
       {
         "key": "D",
-        "text_en": "The statutory value added tax rate falls by an equal percentage margin.",
-        "text_af": "Die BTW-koers daal met dieselfde persentasie."
+        "text_en": "Statutory consumption taxes decline by an equivalent percentage margin across all retail companies.",
+        "text_af": "Statutêre verbruiksbelasting daal met 'n gelykwaardige marge oor alle geregistreerde handelaars."
       }
     ],
     "correctKey": "A",
@@ -3729,26 +3729,26 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "National equilibrium income (Y) will increase by an amount exactly equal to the change in government spending (multiplier = 1).",
-        "text_af": "Nasionale ewewiginkomste (Y) sal toeneem met 'n bedrag presies gelyk aan die verandering in staatsbesteding (vermenigvuldiger = 1)."
+        "text_en": "Aggregate demand remains completely unchanged because higher taxes cancel out public spending.",
+        "text_af": "Totale vraag bly heeltemal onveranderd omdat hoër belasting besteding presies uitkanselleer."
       },
       {
         "key": "B",
-        "text_en": "Aggregate demand will remain completely unchanged because taxes cancel out spending completely.",
-        "text_af": "Totale vraag heeltemal onveranderd sal bly omdat belasting besteding presies uitkanselleer."
+        "text_en": "The national debt expands automatically by double the amount of the initial public spending.",
+        "text_af": "Die staatskuld brei outomaties uit met dubbel die bedrag van die aanvanklike besteding."
       },
       {
         "key": "C",
-        "text_en": "The national debt will automatically expand by double the original spending increase.",
-        "text_af": "Die staatskuld sal outomaties verdubbel."
+        "text_en": "The commercial banking credit multiplier drops to zero due to private liquidity absorption.",
+        "text_af": "Die bankkredietvermenigvuldiger daal na nul weens oormatige likiditeitsabsorpsie in die mark."
       },
       {
         "key": "D",
-        "text_en": "The commercial banking credit multiplier will drop to zero.",
-        "text_af": "Die bankkredietvermenigvuldiger tot nul sal daal."
+        "text_en": "Equilibrium income increases by an amount exactly equal to the change in government spending.",
+        "text_af": "Ewewiginkomste neem toe met 'n bedrag presies gelyk aan die verandering in staatsbesteding."
       }
     ],
-    "correctKey": "A",
+    "correctKey": "D",
     "derivation_en": "The balanced budget multiplier is equal to 1. Because government spending has a direct 1-to-1 impact on AD while taxes impact AD through consumption (c * ΔT), an equal rise in G and T increases output by ΔG.",
     "derivation_af": "Die gebalanseerde begrotingsvermenigvuldiger is gelyk aan 1. Uitset styg met presies die toename in G."
   },
@@ -3763,26 +3763,26 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "The loss of total economic surplus (consumer plus producer surplus) that is not captured by government as tax revenue.",
-        "text_af": "Die verlies aan totale ekonomiese surplus wat nie deur die owerheid as belastinginkomste ingevorder word nie."
+        "text_en": "The total administrative expenditure incurred by SARS auditors during annual tax assessments.",
+        "text_af": "Die totale administratiewe uitgawes van SAID-ouditeure tydens jaarlikse belastingaanslae."
       },
       {
         "key": "B",
-        "text_en": "The total salary expenses paid to tax collection auditors at the South African Revenue Service.",
-        "text_af": "Die totale salarisuitgawes van belastingouditeure by die SAID."
+        "text_en": "The legal fines and penalties imposed by commercial courts on corporate tax avoidance.",
+        "text_af": "Die regstraf en boetes wat howe oplê vir maatskappybelastingontduiking en doeanebedrog."
       },
       {
         "key": "C",
-        "text_en": "The legal penalties imposed on fraudulent commercial enterprises by the courts.",
-        "text_af": "Die regstraf wat deur howe op bedrieglike maatskappye opgelê word."
+        "text_en": "The loss of economic surplus (consumer plus producer surplus) not captured as tax revenue.",
+        "text_af": "Die verlies aan ekonomiese surplus wat nie deur die owerheid as belasting ingevorder word nie."
       },
       {
         "key": "D",
-        "text_en": "The interest paid on sovereign foreign currency debt bonds.",
-        "text_af": "Die rente betaal op buitelandse staatskuldeffekte."
+        "text_en": "The interest charges paid to foreign institutional investors on outstanding national debt.",
+        "text_af": "Die rentekoste wat aan buitelandse institusionele beleggers op staatskuld betaal word."
       }
     ],
-    "correctKey": "A",
+    "correctKey": "C",
     "derivation_en": "Deadweight loss arises because taxes alter relative prices, causing consumers to buy less and producers to sell less, destroying mutually beneficial trade surplus.",
     "derivation_af": "Dooiegewigverlies is die verlies aan maatskaplike welvaart wat ontstaan omdat belasting vrye markbesluite verwring."
   },
@@ -3802,18 +3802,18 @@ window.AXIOM_MASTER_BANK = [
       },
       {
         "key": "B",
-        "text_en": "Customs import tariffs collected at commercial harbor seaports.",
-        "text_af": "Doeane-invoertariewe ingevorder by kommersiële seehawens."
+        "text_en": "Customs import tariffs collected at commercial harbor seaports and airports.",
+        "text_af": "Doeane-invoertariewe ingevorder by kommersiële seehawens en internasionale lughawens."
       },
       {
         "key": "C",
-        "text_en": "Specific excise taxes levied on domestic tobacco production.",
-        "text_af": "Spesifieke aksynsregte op plaaslike tabakproduksie."
+        "text_en": "Specific excise duties levied on domestic petroleum refining and tobacco.",
+        "text_af": "Spesifieke aksynsregte gehef op binnelandse petroleumraffinering en tabakprodukte."
       },
       {
         "key": "D",
-        "text_en": "Municipal property assessment rates collected on residential housing.",
-        "text_af": "Munisipale eiendomsbelasting op residensiële behuising."
+        "text_en": "Municipal property assessment rates collected on urban residential houses.",
+        "text_af": "Munisipale eiendomsbelasting ingevorder op stedelike residensiële eiendomme."
       }
     ],
     "correctKey": "A",
@@ -3857,26 +3857,26 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "The rate of inflation and the rate of unemployment.",
-        "text_af": "Die inflasiekoers en die werkloosheidskoers."
+        "text_en": "Statutory corporate tax rates and the overall size of the fiscal budget deficit.",
+        "text_af": "Statutêre maatskappybelastingkoerse en die omvang van die nasionale begrotingstekort."
       },
       {
         "key": "B",
-        "text_en": "The statutory corporate tax rate and the national fiscal budget deficit.",
-        "text_af": "Die maatskappybelastingkoers en die begrotingstekort."
+        "text_en": "The commercial bank cash reserve ratio and the speed of broad money creation.",
+        "text_af": "Die bankreserweverhouding en die spoed van breë geldskepping in die bankstelsel."
       },
       {
         "key": "C",
-        "text_en": "The commercial bank cash reserve ratio and the credit multiplier.",
-        "text_af": "Die bankreserweverhouding en die kredietvermenigvuldiger."
+        "text_en": "The rate of general price inflation and the national rate of unemployment.",
+        "text_af": "Die tempo van algemene prys-inflasie en die nasionale koers van werkloosheid."
       },
       {
         "key": "D",
-        "text_en": "The nominal exchange rate and the balance of payments current account surplus.",
-        "text_af": "Die wisselkoers en die lopenderangskonto van die betalingsbalans."
+        "text_en": "The nominal exchange rate and the current account balance of payments deficit.",
+        "text_af": "Die nominale wisselkoers en die lopenderangskonto van die nasionale betalingsbalans."
       }
     ],
-    "correctKey": "A",
+    "correctKey": "C",
     "derivation_en": "The short-run Phillips curve shows an inverse relationship: lower unemployment is associated with higher wage inflation, and vice versa.",
     "derivation_af": "Die Phillips-kromme toon 'n inverse verwantskap tussen inflasie en werkloosheid in die korttermyn."
   },
@@ -3891,26 +3891,26 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Workers demand higher nominal wages to compensate for past inflation, prompting firms to raise product prices to maintain profit margins, which triggers further wage demands.",
-        "text_af": "Werkers hoër lone eis om vir inflasie te vergoed, firmas pryse verhoog om winsmarges te behou, wat verdere looneise ontketen."
+        "text_en": "Commercial banks reduce overdraft lending rates below the statutory inflation target band.",
+        "text_af": "Handelsbanke oortrekkingskoerse verlaag tot onder die statutêre inflasieteikenband."
       },
       {
         "key": "B",
-        "text_en": "Commercial banks reduce lending rates below the statutory inflation target band.",
-        "text_af": "Handelsbanke leningskoerse verlaag tot onder die inflasieteikenband."
+        "text_en": "The national Treasury eliminates all social grant transfers to balance the national budget.",
+        "text_af": "Die nasionale Tesourie alle maatskaplike toelae afskaf om die begroting te balanseer."
       },
       {
         "key": "C",
-        "text_en": "The government runs a balanced budget by eliminating social transfer grants.",
-        "text_af": "Die regering 'n gebalanseerde begroting handhaaf deur toelae af te skaf."
+        "text_en": "International export commodity prices collapse, reducing private corporate profit margins.",
+        "text_af": "Internasionale kommoditeitspryse ineenstort en maatskappye se winsmarges drasties daal."
       },
       {
         "key": "D",
-        "text_en": "Foreign tourists convert foreign currencies into domestic commercial bank deposits.",
-        "text_af": "Buitelandse toeriste buitelandse valuta in binnelandse deposito's omskep."
+        "text_en": "Workers demand higher wages to match inflation, leading firms to raise prices even further.",
+        "text_af": "Werkers hoër lone eis weens inflasie, waarna firmas hul pryse nog verder verhoog."
       }
     ],
-    "correctKey": "A",
+    "correctKey": "D",
     "derivation_en": "Wage-price spiral: Higher prices -> Workers demand higher wages -> Firms pass on wage costs as higher prices -> Repeat.",
     "derivation_af": "Loon-prys-spiraal: Hoër pryse lei tot hoër looneise, wat produksiekoste verhoog en pryse weer laat styg."
   },
@@ -3925,26 +3925,26 @@ window.AXIOM_MASTER_BANK = [
     "options": [
       {
         "key": "A",
-        "text_en": "Because persistent deflation or near-zero inflation risks postponing consumption and investment, increasing the real burden of debt, and reducing downward nominal wage flexibility.",
-        "text_af": "Omdat deflasie besteding laat uitstel, die reële skuldlas verhoog, en loonaanpassings bemoeilik."
+        "text_en": "Commercial banks are forced to eliminate nominal interest charges on household deposits.",
+        "text_af": "Handelsbanke verplig word om nominale rente op huishoudelike deposito's af te skaf."
       },
       {
         "key": "B",
-        "text_en": "Because commercial banks are legally mandated to declare bankruptcy if CPI falls below 3%.",
-        "text_af": "Omdat banke verplig word om bankrot te speel as VPI onder 3% daal."
+        "text_en": "Deflation risks postponing spending, raising real debt burdens, and limiting wage flexibility.",
+        "text_af": "Deflasie besteding laat uitstel, die reële skuldlas verhoog, en loonaanpassings bemoeilik."
       },
       {
         "key": "C",
-        "text_en": "Because the national Treasury cannot collect Value Added Tax during price stability.",
-        "text_af": "Omdat die Tesourie nie BTW kan invorder tydens prysstabiliteit nie."
+        "text_en": "The national Treasury is unable to issue sovereign bonds to fund critical public infrastructure.",
+        "text_af": "Die nasionale Tesourie nie staatseffekte kan uitreik om openbare infrastruktuur te befonds nie."
       },
       {
         "key": "D",
-        "text_en": "Because all foreign export revenue would immediately be denominated in gold bullion.",
-        "text_af": "Omdat uitvoerinkomste outomaties in goud omgeskakel sou word."
+        "text_en": "Foreign export revenues are legally required to be converted into physical central bank bullion.",
+        "text_af": "Buitelandse uitvoerinkomste wetlik in fisiese staafgoud by die sentrale bank omgeskakel moet word."
       }
     ],
-    "correctKey": "A",
+    "correctKey": "B",
     "derivation_en": "Very low or negative inflation risks deflationary depression, increases real debt burdens, and leaves no room for real wage adjustments when nominal wages are sticky downwards.",
     "derivation_af": "Deflasie ontmoedig besteding en verhoog die reële las van skuld, wat ernstige ekonomiese inkrimping kan veroorsaak."
   }

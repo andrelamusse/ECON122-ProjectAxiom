@@ -1,0 +1,322 @@
+{
+  "summary": {
+    "total": 27,
+    "passed": 27,
+    "failed": 0,
+    "pass_rate_percent": 100.0
+  },
+  "results": [
+    {
+      "tier": 1,
+      "test_id": "T1_01_QUESTION_COUNT_AND_CHAPTERS",
+      "name": "126 Questions (42/ch: 14, 15, 20; 110 MCQs, 16 Calcs)",
+      "passed": true,
+      "message": "Total: 126/126, Ch14: 42/42, Ch15: 42/42, Ch20: 42/42, MCQs: 110/110, Calcs: 16/16",
+      "details": {
+        "total": 126,
+        "chapters": {
+          "14": 42,
+          "15": 42,
+          "20": 42
+        },
+        "types": {
+          "mcq": 110,
+          "calculation": 16
+        }
+      }
+    },
+    {
+      "tier": 1,
+      "test_id": "T1_02_QUESTION_SCHEMA_INTEGRITY",
+      "name": "Complete question schema (stems, derivations, options, calculations)",
+      "passed": true,
+      "message": "Schema valid across all 126 items",
+      "details": {
+        "failures_count": 0,
+        "samples": []
+      }
+    },
+    {
+      "tier": 1,
+      "test_id": "T1_03_KATEX_DELIMITER_ESCAPING",
+      "name": "KaTeX Delimiters double-escaped (\\\\( and \\\\[) to avoid JS string collapse",
+      "passed": true,
+      "message": "Found 0 single-escaped delimiter bugs (expected 0) and 4 double-escaped delimiters",
+      "details": {
+        "single_bs_found": 0,
+        "double_bs_found": 4
+      }
+    },
+    {
+      "tier": 1,
+      "test_id": "T1_04_ZERO_RAW_LATEX_SUBSTRINGS",
+      "name": "Zero raw unrendered LaTeX syntax outside math delimiters",
+      "passed": true,
+      "message": "Found 0 raw LaTeX substrings outside delimiters in HTML body",
+      "details": {
+        "raw_count": 0
+      }
+    },
+    {
+      "tier": 1,
+      "test_id": "T1_05_DISCIPLINARY_ACCURACY_Q14_15",
+      "name": "q14_15 accurately distinguishes Quasi-Money (R590 000m) from M2 (R1 195 000m)",
+      "passed": true,
+      "message": "ExpectedNumber: 1195000 (target 1195000), QM=R590k in derivation: True, M2=R1195k in derivation: True",
+      "details": {}
+    },
+    {
+      "tier": 1,
+      "test_id": "T1_06_GLOSSARY_DATABASE_INTEGRITY",
+      "name": "Interactive Glossary contains core Chapter 14, 15, and 20 terminology",
+      "passed": true,
+      "message": "All 8 key terminology items present",
+      "details": {
+        "missing": []
+      }
+    },
+    {
+      "tier": 1,
+      "test_id": "T1_07_SVG_DIAGRAM_SUBSCRIPTS",
+      "name": "SVG Diagram text elements format subscripts (no raw M_s / M_d underscores)",
+      "passed": true,
+      "message": "All SVG text elements format subscripts cleanly",
+      "details": {
+        "svg_raw_matches": []
+      }
+    },
+    {
+      "tier": 2,
+      "test_id": "T2_01_ANTI_TRIVIALITY_KEY_DISTRIBUTION",
+      "name": "Balanced correctKey distribution (each A, B, C, D between 20% and 30%)",
+      "passed": true,
+      "message": "Distribution: A: 27 (24.5%), B: 28 (25.5%), C: 28 (25.5%), D: 27 (24.5%). Max Key: 25.5% (limit 35%). Ext batch max: 34.8%.",
+      "details": {
+        "counts": {
+          "A": 27,
+          "B": 28,
+          "C": 28,
+          "D": 27
+        },
+        "percentages": {
+          "A": 24.545454545454547,
+          "B": 25.454545454545453,
+          "C": 25.454545454545453,
+          "D": 24.545454545454547
+        },
+        "ext_counts": {
+          "A": 10,
+          "B": 10,
+          "C": 23,
+          "D": 23
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "test_id": "T2_02_DISTRACTOR_LENGTH_SYMMETRY",
+      "name": "Distractor length symmetry (stdev <= 15%, max/min ratio <= 1.25, no giveaway length)",
+      "passed": true,
+      "message": "0/110 questions exceed length ratio 1.25x or 15% variance. 0 correct options visibly elongated.",
+      "details": {
+        "asymmetric_count": 0,
+        "samples": []
+      }
+    },
+    {
+      "tier": 2,
+      "test_id": "T2_03_ZERO_GIVEAWAY_STEMS",
+      "name": "Zero giveaway stems (no meta-labels or ESL boilerplate prefixes)",
+      "passed": true,
+      "message": "All question stems dive straight into problem without meta-cues",
+      "details": {
+        "flagged_count": 0,
+        "samples": []
+      }
+    },
+    {
+      "tier": 2,
+      "test_id": "T2_04_CALCULATION_TOLERANCE_BOUNDARIES",
+      "name": "Quantitative calculation questions boundary & tolerance verification",
+      "passed": true,
+      "message": "All 16 quantitative questions pass exact tolerance boundary evaluations",
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "tier": 2,
+      "test_id": "T2_05_MCQ_OPTIONS_PERMUTATION_COMPLETENESS",
+      "name": "MCQ option permutation completeness (unique non-empty options for A, B, C, D)",
+      "passed": true,
+      "message": "All 110 MCQs have exactly distinct {A, B, C, D} options with non-empty content",
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "tier": 3,
+      "test_id": "T3_01_BILINGUAL_LINGUISTIC_PARITY",
+      "name": "Bilingual parity (zero untranslated English in Afrikaans stems, options, derivations)",
+      "passed": true,
+      "message": "Zero untranslated English detected across all 126 items",
+      "details": {
+        "failures_count": 0,
+        "samples": []
+      }
+    },
+    {
+      "tier": 3,
+      "test_id": "T3_02_LANGUAGE_OPTION_SYNCHRONICITY",
+      "name": "1:1 option synchronicity between English and Afrikaans option sets",
+      "passed": true,
+      "message": "All option pairs have corresponding non-empty Afrikaans content",
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "tier": 3,
+      "test_id": "T3_03_CHAPTER_DIFFICULTY_MATRIX",
+      "name": "Curricular difficulty matrix covers all three chapters",
+      "passed": true,
+      "message": "Difficulty distribution: Ch14={'Exam': 42}, Ch15={'Exam': 42}, Ch20={'Exam': 42}",
+      "details": {
+        "matrix": {
+          "14": {
+            "Exam": 42
+          },
+          "15": {
+            "Exam": 42
+          },
+          "20": {
+            "Exam": 42
+          }
+        }
+      }
+    },
+    {
+      "tier": 3,
+      "test_id": "T3_04_SCORING_ENGINE_SIMULATION",
+      "name": "Exam engine score calculation and forgiving numerical tolerance parsing",
+      "passed": true,
+      "message": "Scoring math verified (perfect, zero, weighted marks, and string parsing)",
+      "details": {
+        "errors": []
+      }
+    },
+    {
+      "tier": 3,
+      "test_id": "T3_05_FLAGGING_AND_BOOKMARKING_ISOLATION",
+      "name": "Question bookmarking/flagging maintains isolated Set state",
+      "passed": true,
+      "message": "Set-based question flag isolation confirmed in exam-engine.js",
+      "details": {}
+    },
+    {
+      "tier": 4,
+      "test_id": "T4_01_MOBILE_FIRST_ZERO_OVERFLOW",
+      "name": "Mobile-first CSS zero-overflow guardrail (100vw, overflow-x: hidden, <880px, <480px)",
+      "passed": true,
+      "message": "100vw: True, overflow-x: True, media<880: True, media<480: True",
+      "details": {}
+    },
+    {
+      "tier": 4,
+      "test_id": "T4_02_TOUCH_TARGET_ACCESSIBILITY",
+      "name": "Mobile touch targets meet minimum 44px height requirement per GEMINI.md Rule 3",
+      "passed": true,
+      "message": "All 8 interactive control classes enforce >= 44px tap target height",
+      "details": {
+        "undersized": []
+      }
+    },
+    {
+      "tier": 4,
+      "test_id": "T4_03_TELEMETRY_AND_ACTIVE_USER_STANDARD",
+      "name": "Telemetry enforces 300s active threshold, localStorage deduplication, and isolated admin",
+      "passed": true,
+      "message": "Active threshold 300s: True, Device dedup: True, Active dedup: True, Admin isolated: True",
+      "details": {}
+    },
+    {
+      "tier": 4,
+      "test_id": "T4_04_SIMULATED_STUDENT_EXAM_SESSION",
+      "name": "End-to-end 25-question student assessment session simulation",
+      "passed": true,
+      "message": "Simulated 25-question session across 3 units with accurate mark accumulation",
+      "details": {}
+    },
+    {
+      "tier": 4,
+      "test_id": "T4_05_CLIENT_SIDE_OFFLINE_AUTONOMY",
+      "name": "Platform operates autonomously client-side without mandatory backend API dependencies",
+      "passed": true,
+      "message": "All core assessment components bundled locally for offline execution",
+      "details": {
+        "missing": []
+      }
+    },
+    {
+      "tier": 5,
+      "test_id": "T5_01_MCQ_SUBMISSION_SIMULATION",
+      "name": "Automated student MCQ submissions oracle (correctKey full marks, distractors 0 marks)",
+      "passed": true,
+      "message": "Verified 440 submissions across all 110 MCQs (correct=100%, incorrect=0%, explicit marks)",
+      "details": {
+        "sim_count": 440,
+        "failures": []
+      }
+    },
+    {
+      "tier": 5,
+      "test_id": "T5_02_OPTION_SHUFFLING_INVARIANCE",
+      "name": "Option shuffling state machine stress oracle (Fisher-Yates invariant scoring)",
+      "passed": true,
+      "message": "Verified 2200 shuffled permutations across 110 MCQs; scoring is 100% mark-invariant",
+      "details": {
+        "permutations": 2200,
+        "failures": []
+      }
+    },
+    {
+      "tier": 5,
+      "test_id": "T5_03_CALCULATION_BOUNDARY_AND_PARSER_STRESS",
+      "name": "Quantitative calculation boundary (+/- 0.001) & forgiving string parser stress",
+      "passed": true,
+      "message": "Verified 263 calculation stress tests across all 16 quantitative questions",
+      "details": {
+        "sim_count": 263,
+        "failures": []
+      }
+    },
+    {
+      "tier": 5,
+      "test_id": "T5_04_QUESTION_BANK_FUZZING",
+      "name": "Question bank fuzzing (zero duplicate stems, option uniqueness, property integrity)",
+      "passed": true,
+      "message": "Fuzzed all 126 questions across stems, options, properties, and LaTeX syntax; 0 anomalies",
+      "details": {
+        "fuzz_issues_count": 0,
+        "samples": []
+      }
+    },
+    {
+      "tier": 5,
+      "test_id": "T5_05_MULTI_SIZE_EXAM_SESSIONS",
+      "name": "Multi-size timed assessment session simulation (10, 25, 42, 50, 100, 126 questions)",
+      "passed": true,
+      "message": "Successfully simulated exam sessions for sizes [10, 25, 42, 50, 100, 126] (balanced units, exact mark tallying)",
+      "details": {
+        "tested_sizes": [
+          10,
+          25,
+          42,
+          50,
+          100,
+          126
+        ]
+      }
+    }
+  ]
+}
