@@ -1,38 +1,148 @@
 // Project Axiom - Live Assessment State Machine & Active Feedback Engine
-// KaTeX Math Rendering • Spatial Canvas Integration • Dual-Mode Support
+// Features: Option Shuffling, Forgiving Numerical/String Parsing, Test Size Selector (10, 25, 50, 100, All), Unit Filtering
 
 class AxiomExamEngine {
   constructor() {
-    this.questions = window.AXIOM_QUESTIONS || [];
+    this.masterBank = window.AXIOM_MASTER_BANK || [];
+    this.testSize = 25; // Default: 25 questions
+    this.selectedUnit = 'all'; // 'all', 14, 15, 20
+    this.mode = 'practice'; // 'practice' or 'timed'
+    this.timeRemaining = 45 * 60;
+    this.timerInterval = null;
+
+    this.activeQuestions = [];
     this.currentIndex = 0;
     this.userAnswers = {}; // { qId: answerValue }
+    this.shuffledOptionsMap = {}; // { qId: { options: [], correctKey: 'A' } }
     this.flagged = new Set();
-    this.mode = 'practice'; // 'timed' or 'practice'
-    this.timeRemaining = 45 * 60; // 45 minutes in seconds
-    this.timerInterval = null;
-    this.canvasEngines = {}; // { qId: AxiomCanvasEngineInstance }
+    this.canvasEngines = {};
 
     this.initUI();
+    this.startNewAssessment();
+  }
+
+  // Fisher-Yates shuffle
+  shuffle(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  startNewAssessment() {
+    // 1. Filter by unit if requested
+    let pool = [...this.masterBank];
+    if (this.selectedUnit !== 'all') {
+      pool = pool.filter(q => q.ch === parseInt(this.selectedUnit, 10));
+    }
+
+    // 2. Sample questions evenly
+    let selected = [];
+    if (this.testSize === 'all' || pool.length <= this.testSize) {
+      selected = this.shuffle(pool);
+    } else {
+      if (this.selectedUnit === 'all') {
+        const u14 = this.shuffle(pool.filter(q => q.ch === 14));
+        const u15 = this.shuffle(pool.filter(q => q.ch === 15));
+        const u20 = this.shuffle(pool.filter(q => q.ch === 20));
+        const perUnit = Math.floor(this.testSize / 3);
+        const remainder = this.testSize % 3;
+
+        selected = [
+          ...u14.slice(0, perUnit + (remainder > 0 ? 1 : 0)),
+          ...u15.slice(0, perUnit + (remainder > 1 ? 1 : 0)),
+          ...u20.slice(0, perUnit)
+        ];
+        selected = this.shuffle(selected);
+      } else {
+        selected = this.shuffle(pool).slice(0, this.testSize);
+      }
+    }
+
+    this.activeQuestions = selected;
+    this.currentIndex = 0;
+    this.userAnswers = {};
+    this.shuffledOptionsMap = {};
+    this.flagged.clear();
+
+    // 3. Pre-shuffle options for each MCQ so letter keys are not predictable
+    this.activeQuestions.forEach(q => {
+      if (q.type === 'mcq' && q.options) {
+        const originalCorrectOpt = q.options.find(o => o.key === q.correctKey);
+        const shuffledOpts = this.shuffle(q.options);
+        const keys = ['A', 'B', 'C', 'D', 'E'];
+        let newCorrectKey = 'A';
+
+        const mappedOpts = shuffledOpts.map((opt, idx) => {
+          const newKey = keys[idx] || 'A';
+          if (opt === originalCorrectOpt || opt.text_en === originalCorrectOpt?.text_en) {
+            newCorrectKey = newKey;
+          }
+          return {
+            key: newKey,
+            text_en: opt.text_en,
+            text_af: opt.text_af
+          };
+        });
+
+        this.shuffledOptionsMap[q.id] = {
+          options: mappedOpts,
+          correctKey: newCorrectKey
+        };
+      }
+    });
+
+    this.renderQuestionGrid();
     this.renderQuestion();
-    this.startTimer();
+    this.resetTimer();
   }
 
   initUI() {
-    this.renderQuestionGrid();
+    // Navigation
     document.getElementById('prevBtn').addEventListener('click', () => this.navigate(-1));
     document.getElementById('nextBtn').addEventListener('click', () => this.navigate(1));
     document.getElementById('flagBtn').addEventListener('click', () => this.toggleFlag());
     document.getElementById('submitExamBtn').addEventListener('click', () => this.submitExam());
     document.getElementById('modeToggleBtn').addEventListener('click', () => this.toggleMode());
+
+    // Test Size Selector
+    const sizeSelect = document.getElementById('testSizeSelect');
+    if (sizeSelect) {
+      sizeSelect.addEventListener('change', (e) => {
+        const val = e.target.value;
+        this.testSize = val === 'all' ? 'all' : parseInt(val, 10);
+        this.startNewAssessment();
+      });
+    }
+
+    // Unit Focus Selector
+    const unitSelect = document.getElementById('unitFocusSelect');
+    if (unitSelect) {
+      unitSelect.addEventListener('change', (e) => {
+        this.selectedUnit = e.target.value;
+        this.startNewAssessment();
+      });
+    }
+
+    // New Test Shuffle Button
+    const newTestBtn = document.getElementById('newTestBtn');
+    if (newTestBtn) {
+      newTestBtn.addEventListener('click', () => this.startNewAssessment());
+    }
   }
 
   renderQuestionGrid() {
     const grid = document.getElementById('questionGrid');
     grid.innerHTML = '';
-    this.questions.forEach((q, idx) => {
+    const total = this.activeQuestions.length;
+    document.getElementById('paletteCount').textContent = `${total} Questions`;
+
+    this.activeQuestions.forEach((q, idx) => {
       const box = document.createElement('div');
       box.className = 'q-box' + (idx === this.currentIndex ? ' active' : '');
-      box.textContent = q.qNum;
+      box.textContent = (idx + 1);
       box.id = `qbox_${q.id}`;
       box.addEventListener('click', () => {
         this.currentIndex = idx;
@@ -43,14 +153,14 @@ class AxiomExamEngine {
   }
 
   renderQuestion() {
-    const q = this.questions[this.currentIndex];
+    const q = this.activeQuestions[this.currentIndex];
     if (!q) return;
 
-    // Update Header
-    document.getElementById('currentQNum').textContent = `Question ${q.qNum} of ${this.questions.length}`;
-    document.getElementById('currentMarks').textContent = `[${q.marks} Marks]`;
+    // Header & Badge
+    document.getElementById('currentQNum').textContent = `Question ${this.currentIndex + 1} of ${this.activeQuestions.length}`;
+    document.getElementById('currentMarks').textContent = `[${q.marks} Marks • ${q.difficulty || 'Exam'}]`;
 
-    // Flag button state
+    // Flag State
     const flagBtn = document.getElementById('flagBtn');
     if (this.flagged.has(q.id)) {
       flagBtn.classList.add('active');
@@ -60,11 +170,11 @@ class AxiomExamEngine {
       flagBtn.textContent = '🏳️ Flag for Review';
     }
 
-    // Question Stems
+    // Dual-Language Stems
     document.getElementById('stemEn').textContent = q.stem_en;
     document.getElementById('stemAf').textContent = q.stem_af;
 
-    // Render Answer Area based on Type
+    // Interactive Input Area
     const interactiveArea = document.getElementById('interactiveArea');
     interactiveArea.innerHTML = '';
 
@@ -76,7 +186,7 @@ class AxiomExamEngine {
       this.renderCanvasInterface(q, interactiveArea);
     }
 
-    // Feedback area
+    // Feedback Display
     const fbContainer = document.getElementById('feedbackContainer');
     if (this.mode === 'practice' && this.userAnswers[q.id] !== undefined) {
       this.showFeedback(q, fbContainer);
@@ -84,12 +194,12 @@ class AxiomExamEngine {
       fbContainer.innerHTML = '';
     }
 
-    // Update Palette active state
+    // Palette highlight
     document.querySelectorAll('.q-box').forEach((b, idx) => {
       b.classList.toggle('active', idx === this.currentIndex);
     });
 
-    // Render KaTeX Math
+    // KaTeX Math Rendering
     if (window.renderMathInElement) {
       renderMathInElement(document.getElementById('questionCard'), {
         delimiters: [
@@ -105,7 +215,11 @@ class AxiomExamEngine {
     const stack = document.createElement('div');
     stack.className = 'options-stack';
 
-    q.options.forEach(opt => {
+    // Retrieve the shuffled options for this question
+    const shuffledData = this.shuffledOptionsMap[q.id] || { options: q.options };
+    const optionsToRender = shuffledData.options;
+
+    optionsToRender.forEach(opt => {
       const row = document.createElement('div');
       row.className = 'option-row' + (this.userAnswers[q.id] === opt.key ? ' selected' : '');
       row.innerHTML = `
@@ -125,15 +239,27 @@ class AxiomExamEngine {
     container.appendChild(stack);
   }
 
+  // Forgiving Numerical Parser
+  parseFlexibleNumber(raw) {
+    if (typeof raw === 'number') return raw;
+    if (!raw) return NaN;
+    // Replace commas with dots, remove R, %, spaces, brackets
+    const cleaned = raw.toString()
+      .replace(/,/g, '.')
+      .replace(/[R\$%\s\(\)]/gi, '');
+    return parseFloat(cleaned);
+  }
+
   renderCalcInput(q, container) {
+    const currentVal = this.userAnswers[q.id] !== undefined ? this.userAnswers[q.id] : '';
     const block = document.createElement('div');
     block.className = 'calc-input-block';
     block.innerHTML = `
       <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase;">
-        Enter Numerical Solution:
+        Enter Numerical Solution (Leniency Enabled: Accepts Rands, %, Commas):
       </div>
       <div style="display: flex; gap: 0.75rem; align-items: center;">
-        <input type="number" step="any" class="calc-field" id="calcInput_${q.id}" value="${this.userAnswers[q.id] || ''}" placeholder="e.g. 18.18">
+        <input type="text" class="calc-field" id="calcInput_${q.id}" value="${currentVal}" placeholder="e.g. 18.18 or 18,18 or R95 000">
         <button class="primary-btn" id="calcSubmitBtn_${q.id}">Submit Answer</button>
       </div>
     `;
@@ -141,13 +267,19 @@ class AxiomExamEngine {
 
     const input = block.querySelector(`#calcInput_${q.id}`);
     const btn = block.querySelector(`#calcSubmitBtn_${q.id}`);
-    btn.addEventListener('click', () => {
-      const val = parseFloat(input.value);
-      if (!isNaN(val)) {
-        this.recordAnswer(q.id, val);
+
+    const submitAction = () => {
+      const parsed = this.parseFlexibleNumber(input.value);
+      if (!isNaN(parsed)) {
+        this.recordAnswer(q.id, parsed);
         this.renderQuestion();
+      } else {
+        alert('Please enter a valid numeric value.');
       }
-    });
+    };
+
+    btn.addEventListener('click', submitAction);
+    input.addEventListener('keydown', (e) => { if (e.key === 'Enter') submitAction(); });
   }
 
   renderCanvasInterface(q, container) {
@@ -155,30 +287,29 @@ class AxiomExamEngine {
     wrapper.className = 'canvas-wrapper';
     wrapper.innerHTML = `
       <div class="canvas-toolbar">
-        <button class="tool-btn active" data-tool="line" data-label="DD">✏️ Line (DD)</button>
-        <button class="tool-btn" data-tool="line" data-label="MPC">✏️ Line (MPC)</button>
+        <button class="tool-btn active" data-tool="line" data-label="DD">✏️ Line (DD / MPB)</button>
+        <button class="tool-btn" data-tool="line" data-label="MPC">✏️ Line (MPC / SS)</button>
         <button class="tool-btn" data-tool="line" data-label="MSC">✏️ Line (MSC)</button>
-        <button class="tool-btn" data-tool="curve" data-label="L">〰️ Curve</button>
-        <button class="tool-btn" data-tool="dot" data-label="E1">📍 Dot (E1)</button>
-        <button class="tool-btn" data-tool="dot" data-label="E2">📍 Dot (E2)</button>
+        <button class="tool-btn" data-tool="curve" data-label="L">〰️ Spline Curve</button>
+        <button class="tool-btn" data-tool="dot" data-label="E1">📍 Point E1 (Market)</button>
+        <button class="tool-btn" data-tool="dot" data-label="E2">📍 Point E2 (Optimum)</button>
         <button class="tool-btn" data-tool="dwl">🔺 Deadweight Loss</button>
         <button class="tool-btn" id="canvasUndoBtn">↩️ Undo</button>
         <button class="tool-btn" id="canvasClearBtn">🗑️ Clear</button>
       </div>
       <canvas id="graphCanvas" width="680" height="380"></canvas>
       <div style="margin-top: 0.85rem; display: flex; justify-content: flex-end;">
-        <button class="primary-btn" id="canvasGradeBtn">Submit Graph for Instant Spatial Grading</button>
+        <button class="primary-btn" id="canvasGradeBtn">Submit Graph for Spatial Slope Grading</button>
       </div>
     `;
     container.appendChild(wrapper);
 
-    // Initialize Canvas Engine
     setTimeout(() => {
-      const ce = new AxiomCanvasEngine('graphCanvas', { targetProblem: q.problemType });
+      const ce = new AxiomCanvasEngine('graphCanvas', { targetProblem: q.problemType || 'externality' });
       this.canvasEngines[q.id] = ce;
 
       wrapper.querySelectorAll('.tool-btn[data-tool]').forEach(b => {
-        b.addEventListener('click', (e) => {
+        b.addEventListener('click', () => {
           wrapper.querySelectorAll('.tool-btn').forEach(btn => btn.classList.remove('active'));
           b.classList.add('active');
           ce.setTool(b.getAttribute('data-tool'), b.getAttribute('data-label'));
@@ -202,7 +333,7 @@ class AxiomExamEngine {
   }
 
   toggleFlag() {
-    const q = this.questions[this.currentIndex];
+    const q = this.activeQuestions[this.currentIndex];
     if (!q) return;
     if (this.flagged.has(q.id)) {
       this.flagged.delete(q.id);
@@ -216,7 +347,7 @@ class AxiomExamEngine {
 
   navigate(dir) {
     const next = this.currentIndex + dir;
-    if (next >= 0 && next < this.questions.length) {
+    if (next >= 0 && next < this.activeQuestions.length) {
       this.currentIndex = next;
       this.renderQuestion();
     }
@@ -235,7 +366,8 @@ class AxiomExamEngine {
     let detailsHtml = '';
 
     if (q.type === 'mcq') {
-      isCorrect = ans === q.correctKey;
+      const activeCorrectKey = this.shuffledOptionsMap[q.id]?.correctKey || q.correctKey;
+      isCorrect = ans === activeCorrectKey;
       earnedMarks = isCorrect ? q.marks : 0;
     } else if (q.type === 'calculation') {
       const diff = Math.abs(ans - q.expectedNumber);
@@ -268,12 +400,19 @@ class AxiomExamEngine {
     let totalMarks = 0;
     let earnedMarks = 0;
 
-    this.questions.forEach(q => {
+    this.activeQuestions.forEach(q => {
       totalMarks += q.marks;
       const ans = this.userAnswers[q.id];
-      if (q.type === 'mcq' && ans === q.correctKey) earnedMarks += q.marks;
-      else if (q.type === 'calculation' && Math.abs(ans - q.expectedNumber) <= (q.tolerance || 0.1)) earnedMarks += q.marks;
-      else if (q.type === 'canvas' && ans && ans.score) earnedMarks += ans.score;
+      if (q.type === 'mcq') {
+        const activeCorrectKey = this.shuffledOptionsMap[q.id]?.correctKey || q.correctKey;
+        if (ans === activeCorrectKey) earnedMarks += q.marks;
+      } else if (q.type === 'calculation') {
+        if (ans !== undefined && Math.abs(ans - q.expectedNumber) <= (q.tolerance || 0.1)) {
+          earnedMarks += q.marks;
+        }
+      } else if (q.type === 'canvas' && ans && ans.score) {
+        earnedMarks += ans.score;
+      }
     });
 
     const pct = Math.round((earnedMarks / totalMarks) * 100);
@@ -281,12 +420,16 @@ class AxiomExamEngine {
       window.AxiomTelemetry.logAssessmentCompleted();
     }
 
-    alert(`ASSESSMENT SUBMITTED SUCCESSFULLY!\n\nScore: ${earnedMarks} / ${totalMarks} Marks (${pct}%)\n\nReview your answers and detailed derivations.`);
+    alert(`ASSESSMENT FINISHED!\n\nScore: ${earnedMarks} / ${totalMarks} Marks (${pct}%)\n\nSwitching to practice mode so you can review full step-by-step solutions.`);
     this.mode = 'practice';
     this.renderQuestion();
   }
 
-  startTimer() {
+  resetTimer() {
+    if (this.timerInterval) clearInterval(this.timerInterval);
+    const count = this.activeQuestions.length;
+    this.timeRemaining = Math.max(count * 90, 600); // 1.5 minutes per question, min 10 mins
+
     this.timerInterval = setInterval(() => {
       if (this.timeRemaining > 0) {
         this.timeRemaining--;

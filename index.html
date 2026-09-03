@@ -23,13 +23,40 @@
     <div class="header-bar">
       <div class="brand-group">
         <span class="brand-name">NWU ECON122</span>
-        <span class="exam-tag">Blind Assessment Testbed</span>
+        <span class="exam-tag">Project Axiom • Blind Testbed</span>
       </div>
+
+      <!-- Test Customization Bar -->
+      <div class="test-controls-bar">
+        <div class="control-item">
+          <label for="testSizeSelect">Length:</label>
+          <select id="testSizeSelect" class="header-select">
+            <option value="10">10 Questions</option>
+            <option value="25" selected>25 Questions</option>
+            <option value="50">50 Questions</option>
+            <option value="100">100 Questions</option>
+            <option value="all">All Questions (126)</option>
+          </select>
+        </div>
+
+        <div class="control-item">
+          <label for="unitFocusSelect">Scope:</label>
+          <select id="unitFocusSelect" class="header-select">
+            <option value="all" selected>All 3 Semester Units</option>
+            <option value="14">Unit 1 (Ch 14 Monetary)</option>
+            <option value="15">Unit 2 (Ch 15 Fiscal)</option>
+            <option value="20">Unit 3 (Ch 20 Inflation)</option>
+          </select>
+        </div>
+
+        <button class="icon-action-btn" id="newTestBtn" title="Generate New Shuffled Test">🔀 New Test</button>
+      </div>
+
       <div class="stats-group">
         <button class="mode-toggle-btn" id="modeToggleBtn">Mode: Practice (Instant Feedback)</button>
         <div class="timer-pill">
           <span>⏱️</span>
-          <span id="timerDisplay">45:00</span>
+          <span id="timerDisplay">37:30</span>
         </div>
       </div>
     </div>
@@ -42,7 +69,7 @@
     <aside class="sidebar-panel">
       <div class="sidebar-title">
         <span>Question Palette</span>
-        <span id="paletteCount">23 Questions</span>
+        <span id="paletteCount">25 Questions</span>
       </div>
       <div class="question-grid" id="questionGrid"></div>
       
@@ -56,8 +83,8 @@
       <div class="question-card" id="questionCard">
         <div class="q-header-row">
           <div>
-            <span class="q-num-label" id="currentQNum">Question 1 of 23</span>
-            <span class="q-marks-label" id="currentMarks">[2 Marks]</span>
+            <span class="q-num-label" id="currentQNum">Question 1 of 25</span>
+            <span class="q-marks-label" id="currentMarks">[2 Marks • Exam Standard]</span>
           </div>
           <button class="flag-btn" id="flagBtn">🏳️ Flag for Review</button>
         </div>
