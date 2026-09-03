@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Project Axiom • Administrator Telemetry Dashboard</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/axiom.css">
+
+  <style>
+    .admin-wrapper {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .admin-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .stat-val {
+      font-family: var(--font-mono);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent-cyan);
+    }
+    .stat-val.emerald { color: var(--accent-emerald); }
+    .stat-val.amber { color: var(--accent-amber); }
+    .stat-sub {
+      font-size: 0.75rem;
+      color: var(--text-faint);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-bar">
+      <div class="brand-group">
+        <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+          <span class="brand-name">NWU ECON122</span>
+          <span class="exam-tag">Admin Analytics Portal</span>
+        </a>
+      </div>
+      <div class="stats-group">
+        <button class="theme-toggle-btn" id="themeToggleBtn">🌓 Theme</button>
+        <a href="index.html" class="mode-toggle-btn" style="text-decoration: none;">← Return to Testbed</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-wrapper">
+    <div class="admin-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
+        <div>
+          <h1 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.25rem;">Live Visitor & Engagement Telemetry</h1>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Real-time metrics tracked via client-side SHA-256 IP resolution and engagement heartbeats.</p>
+        </div>
+        <button class="icon-action-btn" id="refreshBtn">🔄 Refresh Data</button>
+      </div>
+
+      <div class="stats-grid">
+        <!-- Metric 1: Total Users / Unique IPs -->
+        <div class="stat-box">
+          <span class="stat-label">Total Users (Unique IPs)</span>
+          <span class="stat-val" id="totalUsersVal">--</span>
+          <span class="stat-sub">Deduplicated per physical device IP</span>
+        </div>
+
+        <!-- Metric 2: Active Users (> 5 mins) -->
+        <div class="stat-box">
+          <span class="stat-label">Active Users (> 5 Mins)</span>
+          <span class="stat-val emerald" id="activeUsersVal">--</span>
+          <span class="stat-sub">Visitors actively studying for &gt; 300s</span>
+        </div>
+
+        <!-- Metric 3: Average Time Spent by Active Users -->
+        <div class="stat-box">
+          <span class="stat-label">Avg Time of Active Users</span>
+          <span class="stat-val amber" id="avgActiveTimeVal">--</span>
+          <span class="stat-sub">Average duration for engaged learners</span>
+        </div>
+
+        <!-- Metric 4: Total Cumulative Time of All Users -->
+        <div class="stat-box">
+          <span class="stat-label">Total Time of All Users</span>
+          <span class="stat-val" id="totalTimeVal">--</span>
+          <span class="stat-sub">Cumulative learning seconds logged</span>
+        </div>
+
+        <!-- Metric 5: Total Assessments Completed -->
+        <div class="stat-box">
+          <span class="stat-label">Assessments Completed</span>
+          <span class="stat-val emerald" id="totalAssessmentsVal">--</span>
+          <span class="stat-sub">Full test submissions recorded</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Methodology Notice -->
+    <div style="font-size: 0.75rem; color: var(--text-faint); line-height: 1.6; text-align: center; max-width: 600px; margin: 0 auto;">
+      Admin telemetry operates client-side with privacy-preserving SHA-256 hashing. All active user criteria are measured using a continuous 5-second engagement heartbeat. Zero duplicates on page reload.
+    </div>
+  </main>
+
+  <script src="js/telemetry.js"></script>
+  <script>
+    function formatTime(seconds) {
+      const h = Math.floor(seconds / 3600);
+      const m = Math.floor((seconds % 3600) / 60);
+      const s = seconds % 60;
+      if (h > 0) return `${h}h ${m}m ${s}s`;
+      return `${m}m ${s}s`;
+    }
+
+    function updateDashboard() {
+      if (!window.AxiomTelemetry) return;
+      const m = window.AxiomTelemetry.getAdminMetrics();
+      
+      document.getElementById('totalUsersVal').textContent = m.totalDevices.toLocaleString();
+      document.getElementById('activeUsersVal').textContent = m.activeUsers.toLocaleString();
+      document.getElementById('avgActiveTimeVal').textContent = formatTime(m.averageActiveSeconds);
+      document.getElementById('totalTimeVal').textContent = formatTime(m.totalTimeSeconds);
+      document.getElementById('totalAssessmentsVal').textContent = m.totalCompleted.toLocaleString();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+    // Theme Sync
+    const themeBtn = document.getElementById('themeToggleBtn');
+    const savedTheme = localStorage.getItem('axiom_theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    themeBtn.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('axiom_theme', next);
+      themeBtn.textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
+    });
+
+      setTimeout(updateDashboard, 150);
+      setInterval(updateDashboard, 2000); // Live poll every 2s
+      document.getElementById('refreshBtn').addEventListener('click', updateDashboard);
+    });
+  </script>
+</body>
+</html>

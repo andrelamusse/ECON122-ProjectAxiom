@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NWU ECON122 • Project Axiom Active Assessment Engine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>NWU ECON122 • Project Axiom Active Assessment & Executive Summary</title>
   
   <!-- Typography & Styling -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/axiom.css">
 
   <!-- KaTeX Mathematical Notation (CDN) -->
@@ -18,16 +18,23 @@
 </head>
 <body>
 
-  <!-- Navigation & Status Chrome -->
+  <!-- Top Navigation & Controls Bar -->
   <header>
     <div class="header-bar">
+      
+      <!-- Brand & View Selector -->
       <div class="brand-group">
         <span class="brand-name">NWU ECON122</span>
-        <span class="exam-tag">Project Axiom • Blind Testbed</span>
+        <span class="exam-tag">Project Axiom</span>
+        
+        <div class="view-tabs">
+          <button class="tab-btn active" id="tabAssessmentBtn">📝 Assessment Mode</button>
+          <button class="tab-btn" id="tabSummaryBtn">📖 Executive Summary</button>
+        </div>
       </div>
 
-      <!-- Test Customization Bar -->
-      <div class="test-controls-bar">
+      <!-- Test Customization Bar (Visible in Assessment Mode) -->
+      <div class="test-controls-bar" id="testControlsBar">
         <div class="control-item">
           <label for="testSizeSelect">Length:</label>
           <select id="testSizeSelect" class="header-select">
@@ -35,7 +42,7 @@
             <option value="25" selected>25 Questions</option>
             <option value="50">50 Questions</option>
             <option value="100">100 Questions</option>
-            <option value="all">All Questions (126)</option>
+            <option value="all">All (126 Questions)</option>
           </select>
         </div>
 
@@ -52,18 +59,21 @@
         <button class="icon-action-btn" id="newTestBtn" title="Generate New Shuffled Test">🔀 New Test</button>
       </div>
 
+      <!-- Stats & Theme Controls -->
       <div class="stats-group">
-        <button class="mode-toggle-btn" id="modeToggleBtn">Mode: Practice (Instant Feedback)</button>
-        <div class="timer-pill">
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode">🌓 Theme</button>
+        <button class="mode-toggle-btn" id="modeToggleBtn">Practice Mode</button>
+        <div class="timer-pill" id="timerPill">
           <span>⏱️</span>
           <span id="timerDisplay">37:30</span>
         </div>
       </div>
+
     </div>
   </header>
 
-  <!-- Main Assessment Workspace -->
-  <main class="main-wrapper">
+  <!-- VIEW 1: ACTIVE BLIND ASSESSMENT ENGINE -->
+  <main class="main-wrapper" id="assessmentView">
     
     <!-- Sidebar Question Palette -->
     <aside class="sidebar-panel">
@@ -100,7 +110,7 @@
         <div id="feedbackContainer"></div>
 
         <!-- Navigation Buttons -->
-        <div style="display: flex; justify-content: space-between; margin-top: 2rem; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+        <div style="display: flex; justify-content: space-between; margin-top: 1.75rem; border-top: 1px solid var(--border-subtle); padding-top: 1.15rem;">
           <button class="secondary-btn" id="prevBtn">← Previous Question</button>
           <button class="primary-btn" id="nextBtn">Next Question →</button>
         </div>
@@ -109,7 +119,206 @@
 
   </main>
 
-  <!-- Discreet Greyscale Transparent Sources & Credits Footer -->
+  <!-- VIEW 2: VISUAL EXECUTIVE SUMMARY & CONCEPT MASTERY SUITE -->
+  <div id="summaryView" style="padding: 1.5rem 1rem 4rem;">
+    <div class="summary-container">
+
+      <!-- Unit 1: Monetary Sector & SARB -->
+      <section class="unit-summary-card">
+        <div class="unit-header">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase;">Study Unit 1 • Chapter 14</span>
+            <h2 class="unit-title">The Monetary Sector & The South African Reserve Bank</h2>
+          </div>
+          <span class="exam-tag">Core Theory</span>
+        </div>
+
+        <div class="concept-grid">
+          <!-- Concept 1: Money Functions -->
+          <div class="concept-box">
+            <div class="concept-title">🪙 Functions & Evolution of Money</div>
+            <div class="concept-body">
+              Money overcomes the barter economy's <strong>double coincidence of wants</strong>.
+              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
+                <li><strong>Medium of Exchange:</strong> Generally accepted in payment for goods and settlement of debt.</li>
+                <li><strong>Unit of Account:</strong> Common denominator quoting relative prices.</li>
+                <li><strong>Store of Value:</strong> Retains purchasing power across time (eroded by inflation).</li>
+              </ul>
+              South African currency is <strong>fiduciary (fiat) money</strong>: intrinsically worthless paper backed by public trust and legal tender law.
+            </div>
+          </div>
+
+          <!-- Concept 2: Monetary Aggregates -->
+          <div class="concept-box">
+            <div class="concept-title">📊 Monetary Aggregates (M1, M2, M3)</div>
+            <div class="concept-body">
+              <div class="equation-highlight">M1 = Currency outside banks + Demand deposits</div>
+              <div class="equation-highlight">M2 = M1 + Quasi-Money (Short & Medium-term deposits)</div>
+              <div class="equation-highlight">M3 = M2 + Long-term deposits (Comprehensive Measure)</div>
+              SARB defines <strong>M3</strong> as the broadest and most reliable monetary indicator.
+            </div>
+          </div>
+
+          <!-- Concept 3: Credit Multiplier -->
+          <div class="concept-box">
+            <div class="concept-title">🏦 Commercial Bank Credit Creation</div>
+            <div class="concept-body">
+              Commercial banks create money by advancing credit (loans) through fractional reserves.
+              <div class="equation-highlight">Credit Multiplier: m = \frac{1}{r}</div>
+              Where <em>r</em> is the cash reserve requirement ratio (e.g., if \(r = 2.5\%\), \(m = 40\)). Constrained by reserve ratios, capital adequacy, and borrower creditworthiness.
+            </div>
+          </div>
+
+          <!-- Concept 4: Keynesian Money Demand -->
+          <div class="concept-box">
+            <div class="concept-title">📈 Liquidity Preference Framework</div>
+            <div class="concept-body">
+              Total money demand \(M_d = L_1(Y) + L_2(i)\):
+              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
+                <li><strong>Active Balances \(L_1(Y)\):</strong> Transactions & precautionary demand; positive function of income \(Y\), insensitive to interest rates.</li>
+                <li><strong>Speculative Balances \(L_2(i)\):</strong> Idle cash; inverse function of nominal interest rate \(i\) (downward-sloping).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Concept 5: SARB Accommodation System -->
+          <div class="concept-box" style="grid-column: 1 / -1;">
+            <div class="concept-title">🎯 The SARB Accommodation System & Transmission Mechanism</div>
+            <div class="concept-body">
+              The SARB does not set money supply exogenously. It forces commercial banks into a daily <strong>liquidity deficit</strong> and accommodates this shortage at the <strong>Repo Rate</strong> via repurchase auctions.
+              <div style="background: var(--bg-surface); padding: 0.75rem; border-radius: var(--radius-sm); margin-top: 0.5rem; font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.8;">
+                Repo Rate (\(\uparrow\)) ➔ Prime Lending Rate (\(\uparrow\)) ➔ Cost of Credit (\(\uparrow\)) ➔ Spending \(C, I\) (\(\downarrow\)) ➔ Aggregate Demand (\(\downarrow\)) ➔ Inflation Cools (\(\downarrow\))
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit 2: Public Sector & Fiscal Policy -->
+      <section class="unit-summary-card">
+        <div class="unit-header">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-emerald); text-transform: uppercase;">Study Unit 2 • Chapter 15</span>
+            <h2 class="unit-title">The Public Sector & Fiscal Policy</h2>
+          </div>
+          <span class="exam-tag" style="border-color: var(--accent-emerald); color: var(--accent-emerald);">Core Theory</span>
+        </div>
+
+        <div class="concept-grid">
+          <!-- Market Failure -->
+          <div class="concept-box">
+            <div class="concept-title">⚖️ Market Failure & Public Goods</div>
+            <div class="concept-body">
+              <strong>Pure Public Goods:</strong> Non-rival in consumption and non-excludable in access (e.g. National Defense, streetlights).
+              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
+                <li><strong>Free-Rider Problem:</strong> Non-excludability allows individuals to enjoy benefits without paying, causing market failure and requiring tax funding.</li>
+                <li><strong>Common Property:</strong> Rival and non-excludable (leads to tragedy of the commons / overexploitation).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Negative Externality -->
+          <div class="concept-box">
+            <div class="concept-title">🏭 Negative Production Externalities</div>
+            <div class="concept-body">
+              Pollution generates external costs unpriced by competitive markets.
+              <div class="equation-highlight">MSC = MPC + Marginal External Cost</div>
+              Market equilibrium overproduces (\(Q_1 > Q_2\)) at too low a private price (\(P_1 < P_2\)). Corrected via <strong>Pigouvian Taxes</strong> (\(t = \text{MEC}\)) to eliminate Deadweight Loss (DWL).
+            </div>
+          </div>
+
+          <!-- Tax Structures -->
+          <div class="concept-box">
+            <div class="concept-title">🧾 Tax Classifications & Equity</div>
+            <div class="concept-body">
+              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
+                <li><strong>Progressive Tax:</strong> Average Tax Rate (ATR) rises as income rises (e.g. South African PIT, 18%–45%).</li>
+                <li><strong>Proportional Tax:</strong> ATR remains constant across all income levels.</li>
+                <li><strong>Regressive Tax:</strong> ATR falls as income rises. <em>VAT is regressive relative to income</em> because poor households spend a larger fraction of income on taxable goods.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fiscal Policy & Budget -->
+          <div class="concept-box">
+            <div class="concept-title">🏛️ National Budget & Fiscal Stances</div>
+            <div class="concept-body">
+              <div class="equation-highlight">Budget Deficit: G > T \implies \text{Financed via Treasury Bonds}</div>
+              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
+                <li><strong>Expansionary Fiscal:</strong> \(G \uparrow\) or \(T \downarrow\) (shifts AD right to combat recessions).</li>
+                <li><strong>Contractionary Fiscal:</strong> \(G \downarrow\) or \(T \uparrow\) (dampens demand-pull inflation).</li>
+                <li><strong>Crowding Out:</strong> Massive government borrowing pushes interest rates up, discouraging private investment.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unit 3: Inflation & Price Instability -->
+      <section class="unit-summary-card">
+        <div class="unit-header">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-rose); text-transform: uppercase;">Study Unit 3 • Chapter 20</span>
+            <h2 class="unit-title">Inflation & Price Instability</h2>
+          </div>
+          <span class="exam-tag" style="border-color: var(--accent-rose); color: var(--accent-rose);">Core Theory</span>
+        </div>
+
+        <div class="concept-grid">
+          <!-- 4 Pillars -->
+          <div class="concept-box">
+            <div class="concept-title">🔥 4 Pillars of Inflation Definition</div>
+            <div class="concept-body">
+              Inflation is NOT a once-off price increase. It strictly requires:
+              <ol style="margin: 0.5rem 0 0.5rem 1.25rem;">
+                <li>A dynamic, continuous process over time.</li>
+                <li>A considerable, significant percentage increase.</li>
+                <li>Affecting the general price level across the economy.</li>
+                <li>Erosion of the real purchasing power of money.</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- CPI vs GDP Deflator -->
+          <div class="concept-box">
+            <div class="concept-title">📏 Measurement: CPI vs. GDP Deflator</div>
+            <div class="concept-body">
+              <div class="equation-highlight">\pi = \frac{CPI_t - CPI_{t-1}}{CPI_{t-1}} \times 100</div>
+              <div class="equation-highlight">\text{GDP Deflator} = \frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100</div>
+              <strong>Scope Contrast:</strong> CPI includes imported consumption goods (crude oil, laptops) but excludes capital goods. GDP Deflator includes all domestic production but excludes imports.
+            </div>
+          </div>
+
+          <!-- Demand-Pull vs Cost-Push -->
+          <div class="concept-box">
+            <div class="concept-title">🌪️ Demand-Pull vs. Cost-Push Inflation</div>
+            <div class="concept-body">
+              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
+                <li><strong>Demand-Pull:</strong> AD shifts right. \(P \uparrow\), Real GDP \(Y \uparrow\), Unemployment \(\downarrow\).</li>
+                <li><strong>Cost-Push (Stagflation):</strong> AS shifts left (wages, oil shock, Rand depreciation). \(P \uparrow\), Output \(Y \downarrow\), Unemployment \(\uparrow\).</li>
+              </ul>
+              SARB targets headline CPI inflation within the <strong>3% to 6%</strong> band.
+            </div>
+          </div>
+
+          <!-- Redistribution Effects -->
+          <div class="concept-box">
+            <div class="concept-title">💸 Economic Redistribution Consequences</div>
+            <div class="concept-body">
+              <ul style="margin: 0.5rem 0 0.5rem 1.25rem;">
+                <li><strong>Borrowers (Debtors):</strong> Benefit because they repay loans in depreciated currency.</li>
+                <li><strong>Lenders (Creditors) & Pensioners:</strong> Harmed as fixed nominal returns lose purchasing power.</li>
+                <li><strong>Fiscal Drag:</strong> Nominal wage gains push taxpayers into higher brackets without real income growth.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Discreet Footer -->
   <footer>
     <div id="telemetry-badge" style="font-size: 0.72rem; color: var(--text-faint); margin-bottom: 0.75rem; font-family: var(--font-mono);">
       Connecting to telemetry cluster...
@@ -119,10 +328,59 @@
     </div>
   </footer>
 
-  <!-- Core State & Engine Scripts -->
+  <!-- Scripts -->
   <script src="js/telemetry.js"></script>
   <script src="js/canvas-engine.js"></script>
   <script src="js/questions-db.js"></script>
   <script src="js/exam-engine.js"></script>
+  <script>
+    // Tab Switching & Theme Engine Setup
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabAssessment = document.getElementById('tabAssessmentBtn');
+      const tabSummary = document.getElementById('tabSummaryBtn');
+      const assessmentView = document.getElementById('assessmentView');
+      const summaryView = document.getElementById('summaryView');
+      const testControls = document.getElementById('testControlsBar');
+
+      tabAssessment.addEventListener('click', () => {
+        tabAssessment.classList.add('active');
+        tabSummary.classList.remove('active');
+        assessmentView.style.display = 'grid';
+        summaryView.style.display = 'none';
+        if (testControls) testControls.style.display = 'flex';
+      });
+
+      tabSummary.addEventListener('click', () => {
+        tabSummary.classList.add('active');
+        tabAssessment.classList.remove('active');
+        assessmentView.style.display = 'none';
+        summaryView.style.display = 'block';
+        if (testControls) testControls.style.display = 'none';
+        if (window.renderMathInElement) {
+          renderMathInElement(summaryView, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ]
+          });
+        }
+      });
+
+      // Dark / Light Mode Toggle
+      const themeBtn = document.getElementById('themeToggleBtn');
+      const savedTheme = localStorage.getItem('axiom_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      themeBtn.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+
+      themeBtn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('axiom_theme', next);
+        themeBtn.textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
+      });
+    });
+  </script>
 </body>
 </html>
